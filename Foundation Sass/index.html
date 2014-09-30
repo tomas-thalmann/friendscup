@@ -1,0 +1,104 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Friends Cup</title>
+    <link rel="stylesheet" href="fonts/iconfont/foundation-icons.css" />
+    <link rel="stylesheet" href="fonts/raleway/ralewayfontimport.css" />
+    <link rel="stylesheet" href="fonts/lobster-two/lobstertwofontimport.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/momentary.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+    <!-- BEGIN - Login Modal -->
+    <div id="login-modal" class="reveal-modal tiny" data-reveal>
+        <h2>Login</h2>
+        <form>
+            <label>Username
+                <input type="text" />
+            </label>
+            <label>Password
+                <input type="text" />
+            </label>
+        </form>
+        <a href="#" class="button small expand">Login</a>
+        
+        <a class="close-reveal-modal"><i class="fi-x"></i></a>
+    </div>
+    <!-- END - Login Modal -->
+    
+    <!-- BEGIN - Navigation -->
+    <div class="contain-to-grid">
+        <nav class="top-bar" data-topbar>
+            <ul class="title-area">
+                <li class="name"><h1><a href="index.html">Friends Cup</a></h1></li>
+                <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+            </ul>
+            
+            <section class="top-bar-section">
+                <ul class="right">
+                    <li><a href="#">Menu Item</a></li>
+                    <li class="active"><a href="#">Active Item</a></li>
+                    <li class="has-dropdown">
+                        <a href="#">Dropdown</a>
+                        <ul class="dropdown">
+                            <li><a href="#">Erstes Teil</a></li>
+                            <li><label>Header</label></li>
+                            <li><a href="#">Element unter Header</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Element unter Divider</a></li>
+                        </ul>
+                    </li>
+                    <li class="hide-for-small-only login-button-not-mobile" data-reveal-id="login-modal"><a href="#">Login</a></li>
+                </ul>
+            </section>
+        </nav>
+    </div>
+    
+    <a href="#" class="button alert show-for-small-only login-button-mobile">Login</a>
+    <!-- END - Navigation -->
+    
+    <!-- BEGIN - Content -->
+    <div class="panel callout">
+        <div class="row">
+            <div class="small-12 columns">
+                <h1>Welcome to Friends Cup</h1>
+                <br />
+                <h3>Icon Font Bsp: <i class="fi-star"></i></h3>
+                <br />
+                <h3>Lobster Two Font:</h3>
+                <p class="lobster">
+                    Marie, I said Cheetos, not Fritos. I must've said Cheetos like
+                    ten times. You need me to write it down for you? Well, I'm just
+                    saying, y'know, I said Cheetos. Ch-ch-ch sound. Virtually
+                    impossible to confuse Cheetos with Fritos it seems to me. Where
+                    are you going?
+                </p>
+                <br />
+                <h3>italic Lobster Two Font:</h3>
+                <p class="lobster">
+                    <em>
+                    Marie, I said Cheetos, not Fritos. I must've said Cheetos like
+                    ten times. You need me to write it down for you? Well, I'm just
+                    saying, y'know, I said Cheetos. Ch-ch-ch sound. Virtually
+                    impossible to confuse Cheetos with Fritos it seems to me. Where
+                    are you going?
+                    </em>
+                </p>
+                <a href="usermenu.html" class="button success">Top Bar von angemeldeter Sicht...</a>
+                <a href="all-elements.html" class="button success">alle UI Elemente anzeigen...</a>
+            </div>
+        </div>
+    </div>
+    <!-- END - Content -->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
