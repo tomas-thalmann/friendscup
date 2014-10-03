@@ -244,6 +244,86 @@ http://compass-style.org/
     padding-right: $topbar-link-padding + (40px / 2);
 }
 
+// ----------------------------------
+// Custom Panels
+// ----------------------------------
+
+@mixin custom-panels($size) {
+    // BG Light Panel
+
+    .bg-light-panel {
+        background: $fc-primary-bg;
+        padding: $column-gutter / 2;
+    }
+
+    // BG Light Arrow Panel
+
+    .bg-light-arrow-panel {
+        @extend .bg-light-panel;
+        position: relative;
+    }
+
+    .bg-light-arrow-panel:after {
+        content: " ";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border: $size solid transparent;
+        border-top: $size solid $fc-primary-bg;
+        margin-left: -$size;
+        margin-bottom: -($size * 2);
+        z-index: 10;
+    }
+
+    // BG White Arror Panel
+
+    .bg-white-arrow-panel {
+        @extend .bg-light-panel;
+        background: #fff;
+        position: relative;
+    }
+
+    .bg-white-arrow-panel:after {
+        @extend .bg-light-arrow-panel:after;
+        border-top-color: #fff;
+    }
+
+    // BG Image Panel
+
+    .bg-image-panel {
+        @extend .bg-light-panel;
+        background-image: url('../img/bg-image-panel.png');
+        background-size: cover;
+    }
+
+    // BG Image Arrow Panel
+
+    .bg-image-arrow-panel {
+        @extend .bg-image-panel;
+        position: relative;
+    }
+
+    .bg-image-arrow-panel:after {
+        @extend .bg-light-arrow-panel:after;
+        border-top-color: $fc-primary;
+    }
+}
+
+@media #{$small-only} {
+    @include custom-panels(20px);
+}
+
+@media #{$medium-up} {
+    @include custom-panels(40px);
+}
+
+
+
+
+
 
 
 

@@ -7257,7 +7257,7 @@ meta.foundation-mq-topbar {
 /* line 192, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 {
   line-height: 70px;
-  font-size: 120%;
+  font-size: 160%;
   margin: 0;
 }
 /* line 196, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -9153,4 +9153,115 @@ http://compass-style.org/
   background-position: 150% 50%;
   padding-left: 43.33333px;
   padding-right: 43.33333px;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 254, ../scss/_styles.scss */
+  .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
+    background: #e8edf5;
+    padding: 0.9375rem;
+  }
+
+  /* line 261, ../scss/_styles.scss */
+  .bg-light-arrow-panel {
+    position: relative;
+  }
+
+  /* line 266, ../scss/_styles.scss */
+  .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid #e8edf5;
+    margin-left: -20px;
+    margin-bottom: -40px;
+    z-index: 10;
+  }
+
+  /* line 283, ../scss/_styles.scss */
+  .bg-white-arrow-panel {
+    background: #fff;
+    position: relative;
+  }
+
+  /* line 289, ../scss/_styles.scss */
+  .bg-white-arrow-panel:after {
+    border-top-color: #fff;
+  }
+
+  /* line 296, ../scss/_styles.scss */
+  .bg-image-panel, .bg-image-arrow-panel {
+    background-image: url("../img/bg-image-panel.png");
+    background-size: cover;
+  }
+
+  /* line 304, ../scss/_styles.scss */
+  .bg-image-arrow-panel {
+    position: relative;
+  }
+
+  /* line 309, ../scss/_styles.scss */
+  .bg-image-arrow-panel:after {
+    border-top-color: #018ad2;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 254, ../scss/_styles.scss */
+  .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
+    background: #e8edf5;
+    padding: 0.9375rem;
+  }
+
+  /* line 261, ../scss/_styles.scss */
+  .bg-light-arrow-panel {
+    position: relative;
+  }
+
+  /* line 266, ../scss/_styles.scss */
+  .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-top: 40px solid #e8edf5;
+    margin-left: -40px;
+    margin-bottom: -80px;
+    z-index: 10;
+  }
+
+  /* line 283, ../scss/_styles.scss */
+  .bg-white-arrow-panel {
+    background: #fff;
+    position: relative;
+  }
+
+  /* line 289, ../scss/_styles.scss */
+  .bg-white-arrow-panel:after {
+    border-top-color: #fff;
+  }
+
+  /* line 296, ../scss/_styles.scss */
+  .bg-image-panel, .bg-image-arrow-panel {
+    background-image: url("../img/bg-image-panel.png");
+    background-size: cover;
+  }
+
+  /* line 304, ../scss/_styles.scss */
+  .bg-image-arrow-panel {
+    position: relative;
+  }
+
+  /* line 309, ../scss/_styles.scss */
+  .bg-image-arrow-panel:after {
+    border-top-color: #018ad2;
+  }
 }
