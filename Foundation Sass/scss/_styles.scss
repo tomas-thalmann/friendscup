@@ -13,7 +13,7 @@ http://compass-style.org/
 */
 
 // ----------------------------------
-// Left Section
+// Top Bar Left Section
 // ----------------------------------
 
 // Site Name
@@ -245,6 +245,16 @@ http://compass-style.org/
 }
 
 // ----------------------------------
+// Login Modal
+// ----------------------------------
+
+@media #{$medium-up} {
+    #login-modal {
+        width: rem-calc(500);
+    }
+}
+
+// ----------------------------------
 // Custom Panels
 // ----------------------------------
 
@@ -320,7 +330,23 @@ http://compass-style.org/
     @include custom-panels(40px);
 }
 
+// ----------------------------------
+// Cup Page
+// ----------------------------------
 
+// Cup Header
+
+/*$h1-font-size: rem-calc(44) !default;
+$h2-font-size: rem-calc(37) !default;
+$h3-font-size: rem-calc(27) !default;
+$h4-font-size: rem-calc(23) !default;
+$h5-font-size: rem-calc(18) !default;
+$h6-font-size: 1rem !default;*/
+
+.cup-header {
+    color: #fff;
+    background-color: $fc-orange;
+}
 
 
 
