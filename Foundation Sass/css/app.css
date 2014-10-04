@@ -9162,18 +9162,18 @@ http://compass-style.org/
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 264, ../scss/_styles.scss */
+  /* line 265, ../scss/_styles.scss */
   .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
     background: #e8edf5;
-    padding: 0.9375rem;
+    padding: 1.25rem;
   }
 
-  /* line 271, ../scss/_styles.scss */
+  /* line 272, ../scss/_styles.scss */
   .bg-light-arrow-panel {
     position: relative;
   }
 
-  /* line 276, ../scss/_styles.scss */
+  /* line 277, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     content: " ";
     display: block;
@@ -9189,46 +9189,64 @@ http://compass-style.org/
     z-index: 10;
   }
 
-  /* line 293, ../scss/_styles.scss */
+  /* line 294, ../scss/_styles.scss */
   .bg-white-arrow-panel {
     background: #fff;
     position: relative;
   }
 
-  /* line 299, ../scss/_styles.scss */
+  /* line 300, ../scss/_styles.scss */
   .bg-white-arrow-panel:after {
     border-top-color: #fff;
   }
 
-  /* line 306, ../scss/_styles.scss */
+  /* line 307, ../scss/_styles.scss */
   .bg-image-panel, .bg-image-arrow-panel {
     background-image: url("../img/bg-image-panel.png");
     background-size: cover;
   }
+  /* line 320, ../scss/_styles.scss */
+  .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
+  .bg-image-panel p,
+  .bg-image-arrow-panel p,
+  .bg-image-panel ul li,
+  .bg-image-arrow-panel ul li,
+  .bg-image-panel ol li,
+  .bg-image-arrow-panel ol li,
+  .bg-image-panel blockquote,
+  .bg-image-arrow-panel blockquote,
+  .bg-image-panel table th,
+  .bg-image-arrow-panel table th,
+  .bg-image-panel table td,
+  .bg-image-arrow-panel table td,
+  .bg-image-panel .lead,
+  .bg-image-arrow-panel .lead {
+    color: #fff;
+  }
 
-  /* line 314, ../scss/_styles.scss */
+  /* line 327, ../scss/_styles.scss */
   .bg-image-arrow-panel {
     position: relative;
   }
 
-  /* line 319, ../scss/_styles.scss */
+  /* line 332, ../scss/_styles.scss */
   .bg-image-arrow-panel:after {
     border-top-color: #018ad2;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 264, ../scss/_styles.scss */
+  /* line 265, ../scss/_styles.scss */
   .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
     background: #e8edf5;
-    padding: 0.9375rem;
+    padding: 1.25rem;
   }
 
-  /* line 271, ../scss/_styles.scss */
+  /* line 272, ../scss/_styles.scss */
   .bg-light-arrow-panel {
     position: relative;
   }
 
-  /* line 276, ../scss/_styles.scss */
+  /* line 277, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     content: " ";
     display: block;
@@ -9244,41 +9262,195 @@ http://compass-style.org/
     z-index: 10;
   }
 
-  /* line 293, ../scss/_styles.scss */
+  /* line 294, ../scss/_styles.scss */
   .bg-white-arrow-panel {
     background: #fff;
     position: relative;
   }
 
-  /* line 299, ../scss/_styles.scss */
+  /* line 300, ../scss/_styles.scss */
   .bg-white-arrow-panel:after {
     border-top-color: #fff;
   }
 
-  /* line 306, ../scss/_styles.scss */
+  /* line 307, ../scss/_styles.scss */
   .bg-image-panel, .bg-image-arrow-panel {
     background-image: url("../img/bg-image-panel.png");
     background-size: cover;
   }
+  /* line 320, ../scss/_styles.scss */
+  .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
+  .bg-image-panel p,
+  .bg-image-arrow-panel p,
+  .bg-image-panel ul li,
+  .bg-image-arrow-panel ul li,
+  .bg-image-panel ol li,
+  .bg-image-arrow-panel ol li,
+  .bg-image-panel blockquote,
+  .bg-image-arrow-panel blockquote,
+  .bg-image-panel table th,
+  .bg-image-arrow-panel table th,
+  .bg-image-panel table td,
+  .bg-image-arrow-panel table td,
+  .bg-image-panel .lead,
+  .bg-image-arrow-panel .lead {
+    color: #fff;
+  }
 
-  /* line 314, ../scss/_styles.scss */
+  /* line 327, ../scss/_styles.scss */
   .bg-image-arrow-panel {
     position: relative;
   }
 
-  /* line 319, ../scss/_styles.scss */
+  /* line 332, ../scss/_styles.scss */
   .bg-image-arrow-panel:after {
     border-top-color: #018ad2;
   }
 }
-/*$h1-font-size: rem-calc(44) !default;
-$h2-font-size: rem-calc(37) !default;
-$h3-font-size: rem-calc(27) !default;
-$h4-font-size: rem-calc(23) !default;
-$h5-font-size: rem-calc(18) !default;
-$h6-font-size: 1rem !default;*/
-/* line 346, ../scss/_styles.scss */
-.cup-header {
-  color: #fff;
-  background-color: #f4811f;
+@media only screen and (max-width: 40em) {
+  /* line 351, ../scss/_styles.scss */
+  .cup-header-panel {
+    padding: 0;
+  }
+
+  /* line 355, ../scss/_styles.scss */
+  .cup-header-left > h3 {
+    background-color: #f4811f;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+  }
+
+  /* line 363, ../scss/_styles.scss */
+  .cup-header-right img {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 369, ../scss/_styles.scss */
+  .cup-header-panel {
+    padding: 0;
+  }
+
+  /* line 373, ../scss/_styles.scss */
+  .cup-header-left {
+    float: left;
+    width: calc(100% - 321px);
+  }
+
+  /* line 378, ../scss/_styles.scss */
+  .cup-header-left > h3 {
+    background-color: #f4811f;
+    padding: 0 20px;
+    line-height: 70px;
+    text-align: center;
+    color: #fff;
+    margin: 20px 35px 20px 0.9375rem;
+    position: relative;
+  }
+
+  /* line 388, ../scss/_styles.scss */
+  .cup-header-left > h3:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: -70px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 35px solid transparent;
+    border-left: 35px solid #f4811f;
+  }
+
+  /* line 400, ../scss/_styles.scss */
+  .cup-header-left > p {
+    text-align: center;
+    color: #fff;
+    margin: 20px 35px 20px 0.9375rem;
+  }
+
+  /* line 406, ../scss/_styles.scss */
+  .cup-header-right {
+    height: 250px;
+    float: right;
+    width: 321px;
+    position: relative;
+  }
+
+  /* line 413, ../scss/_styles.scss */
+  .cup-header-right img {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 420, ../scss/_styles.scss */
+  .cup-header-row {
+    position: relative;
+  }
+
+  /* line 424, ../scss/_styles.scss */
+  .cup-header-left {
+    width: calc(100% - 450px);
+  }
+
+  /* line 428, ../scss/_styles.scss */
+  .cup-header-admin {
+    text-align: center;
+    margin: 20px 35px 0 0.9375rem;
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 450px - 35px - 0.9375rem);
+  }
+
+  /* line 436, ../scss/_styles.scss */
+  .cup-header-left hr {
+    border-color: #fff;
+  }
+
+  /* line 440, ../scss/_styles.scss */
+  .cup-header-admin img {
+    height: 70px;
+    width: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  /* line 446, ../scss/_styles.scss */
+  .cup-header-admin p {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  /* line 451, ../scss/_styles.scss */
+  .cup-header-admin p strong {
+    margin: 0 10px;
+  }
+
+  /* line 455, ../scss/_styles.scss */
+  .cup-header-admin p span {
+    font-size: 1rem;
+  }
+
+  /* line 459, ../scss/_styles.scss */
+  .cup-header-right {
+    height: 350px;
+    width: 450px;
+  }
+
+  /* line 464, ../scss/_styles.scss */
+  .cup-header-right p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 15px;
+    margin: 0;
+  }
 }

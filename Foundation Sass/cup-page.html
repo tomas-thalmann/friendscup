@@ -23,16 +23,15 @@
             
             <section class="top-bar-section">
                 <ul class="right">
-                    <li><a href="#">Menu Item</a></li>
-                    <li class="active"><a href="#">Active Item</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="cup-page.html">Cup Page</a></li>
                     <li class="has-dropdown">
-                        <a href="#">Dropdown</a>
+                        <a href="#">Infos und Tests</a>
                         <ul class="dropdown">
-                            <li><a href="#">Erstes Teil</a></li>
-                            <li><label>Header</label></li>
-                            <li><a href="#">Element unter Header</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Element unter Divider</a></li>
+                            <li><a href="all-elements.html">Foundation UI</a></li>
+                            <li><label>Tests</label></li>
+                            <li><a href="fonttest.html">Fonts</a></li>
+                            <li><a href="paneltest.html">Panels</a></li>
                         </ul>
                     </li>
                     <li class="divider show-for-small-only"></li>
@@ -54,24 +53,42 @@
     <!-- END - Navigation -->
 
     <!-- BEGIN - Content -->
-    <div class="bg-image-panel">
-        <div class="row">
-            <div class="medium-6 columns">
-                <h3 class="cup-header">Super Geiler Wintercup</h3>
-                <p class="cup-description">
-                    Marie, I said Cheetos, not Fritos <br />
-                    I must have said Cheetos like ten times, <br />
-                    you need me to write it down for you? <br />
-                    Ch Ch Ch Sound!
+    <div class="bg-image-panel cup-header-panel">
+        <div class="row cup-header-row">
+            <div class="cup-header-left">
+                <h3>Super Geiler Wintercup</h3>
+                <p class="show-for-medium-up">
+                    Cup Description<br />
+                    Cup Description<br />
+                    Cup Description
                 </p>
-                <hr>
-                <p class="cup-admin">
-                    <img src="img/saul.png" /> <strong>Saul</strong> [Cup Admin]
-                </p>
+                <div class="cup-header-admin show-for-large-up">
+                    <hr class="show-for-large-up">
+                    <p>
+                        <img src="img/saul.png" />
+                        <strong>Saul</strong>
+                        <span>(Cup Admin)</span>
+                    </p>
+                </div>
             </div>
-            <div class="medium-6 columns">
+            <div class="cup-header-right">
+                <img src="img/cup-image.png" />
+                <p class="show-for-large-up">Motivationsspruch Zicke Zacke...</p>
             </div>
         </div>
+    </div>
+    
+    <div class="row">
+        <p class="panel">
+            <strong class="show-for-small">You are on a small screen.</strong>
+            <strong class="show-for-medium">You are on a medium screen.</strong>
+            <strong class="show-for-medium-up">You are on a medium, large or xlarge screen.</strong>
+            <strong class="show-for-medium-down">You are on a medium or small screen.</strong>
+            <strong class="show-for-large">You are on a large screen.</strong>
+            <strong class="show-for-large-up">You are on a large or xlarge screen.</strong>
+            <strong class="show-for-large-down">You are on a large, medium or small screen.</strong>
+            <strong class="show-for-xlarge">You are on a xlarge screen.</strong>
+        </p>
     </div>
     <!-- END - Content -->
 
