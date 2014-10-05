@@ -265,6 +265,7 @@ http://compass-style.org/
     .bg-light-panel {
         background: $fc-primary-bg;
         padding: $panel-padding;
+        margin: 0 0 20px 0;
     }
 
     // BG Light Arrow Panel
@@ -272,6 +273,7 @@ http://compass-style.org/
     .bg-light-arrow-panel {
         @extend .bg-light-panel;
         position: relative;
+        margin: 0;
     }
 
     .bg-light-arrow-panel:after {
@@ -295,6 +297,7 @@ http://compass-style.org/
         @extend .bg-light-panel;
         background: #fff;
         position: relative;
+        margin: 0;
     }
 
     .bg-white-arrow-panel:after {
@@ -327,6 +330,7 @@ http://compass-style.org/
     .bg-image-arrow-panel {
         @extend .bg-image-panel;
         position: relative;
+        margin: 0;
     }
 
     .bg-image-arrow-panel:after {
