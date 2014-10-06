@@ -9322,6 +9322,11 @@ http://compass-style.org/
   }
 
   /* line 359, ../scss/_styles.scss */
+  .cup-header-left {
+    padding: 0;
+  }
+
+  /* line 363, ../scss/_styles.scss */
   .cup-header-left > h3 {
     background-color: #f4811f;
     padding: 20px;
@@ -9330,35 +9335,34 @@ http://compass-style.org/
     margin: 0;
   }
 
-  /* line 367, ../scss/_styles.scss */
+  /* line 371, ../scss/_styles.scss */
+  .cup-header-right {
+    padding: 0;
+  }
+
+  /* line 375, ../scss/_styles.scss */
   .cup-header-right img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 373, ../scss/_styles.scss */
+  /* line 381, ../scss/_styles.scss */
   .cup-header-panel {
     padding: 0;
   }
 
-  /* line 377, ../scss/_styles.scss */
-  .cup-header-left {
-    float: left;
-    width: calc(100% - 321px);
-  }
-
-  /* line 382, ../scss/_styles.scss */
+  /* line 385, ../scss/_styles.scss */
   .cup-header-left > h3 {
     background-color: #f4811f;
     padding: 0 20px;
     line-height: 70px;
     text-align: center;
     color: #fff;
-    margin: 20px 35px 20px 0.9375rem;
+    margin: 20px 35px 20px 0;
     position: relative;
   }
 
-  /* line 392, ../scss/_styles.scss */
+  /* line 395, ../scss/_styles.scss */
   .cup-header-left > h3:after {
     content: " ";
     display: block;
@@ -9371,53 +9375,36 @@ http://compass-style.org/
     border-left: 35px solid #f4811f;
   }
 
-  /* line 404, ../scss/_styles.scss */
+  /* line 407, ../scss/_styles.scss */
   .cup-header-left > p {
     text-align: center;
     color: #fff;
-    margin: 20px 35px 20px 0.9375rem;
+    margin: 20px 35px 20px 0;
   }
 
-  /* line 410, ../scss/_styles.scss */
+  /* line 413, ../scss/_styles.scss */
   .cup-header-right {
-    height: 250px;
-    float: right;
-    width: 321px;
-    position: relative;
+    padding: 0;
   }
 
   /* line 417, ../scss/_styles.scss */
   .cup-header-right img {
-    height: 100%;
     width: 100%;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 424, ../scss/_styles.scss */
-  .cup-header-row {
-    position: relative;
+  /* line 423, ../scss/_styles.scss */
+  .cup-header-admin {
+    text-align: center;
+    margin: 20px 35px 20px 0;
   }
 
   /* line 428, ../scss/_styles.scss */
-  .cup-header-left {
-    width: calc(100% - 450px);
-  }
-
-  /* line 432, ../scss/_styles.scss */
-  .cup-header-admin {
-    text-align: center;
-    margin: 20px 35px 0 0.9375rem;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 450px - 35px - 0.9375rem);
-  }
-
-  /* line 440, ../scss/_styles.scss */
   .cup-header-left hr {
     border-color: #fff;
   }
 
-  /* line 444, ../scss/_styles.scss */
+  /* line 432, ../scss/_styles.scss */
   .cup-header-admin img {
     height: 70px;
     width: 70px;
@@ -9428,29 +9415,23 @@ http://compass-style.org/
     border-radius: 50%;
   }
 
-  /* line 450, ../scss/_styles.scss */
+  /* line 438, ../scss/_styles.scss */
   .cup-header-admin p {
     color: #fff;
     font-size: 1.3rem;
   }
 
-  /* line 455, ../scss/_styles.scss */
+  /* line 443, ../scss/_styles.scss */
   .cup-header-admin p strong {
     margin: 0 10px;
   }
 
-  /* line 459, ../scss/_styles.scss */
+  /* line 447, ../scss/_styles.scss */
   .cup-header-admin p span {
     font-size: 1rem;
   }
 
-  /* line 463, ../scss/_styles.scss */
-  .cup-header-right {
-    height: 350px;
-    width: 450px;
-  }
-
-  /* line 468, ../scss/_styles.scss */
+  /* line 451, ../scss/_styles.scss */
   .cup-header-right p {
     position: absolute;
     bottom: 0;

@@ -356,12 +356,20 @@ http://compass-style.org/
         padding: 0;
     }
     
+    .cup-header-left {
+        padding: 0;
+    }
+    
     .cup-header-left > h3 {
         background-color: $fc-orange;
         padding: 20px;
         text-align: center;
         color: #fff;
         margin: 0;
+    }
+    
+    .cup-header-right {
+        padding: 0;
     }
     
     .cup-header-right img {
@@ -373,11 +381,6 @@ http://compass-style.org/
     .cup-header-panel {
         padding: 0;
     }
-    
-    .cup-header-left {
-        float: left;
-        width: calc(100% - 321px);
-    }
 
     .cup-header-left > h3 {
         background-color: $fc-orange;
@@ -385,7 +388,7 @@ http://compass-style.org/
         line-height: 70px;
         text-align: center;
         color: #fff;
-        margin: 20px 35px 20px ($column-gutter / 2);
+        margin: 20px 35px 20px 0;
         position: relative;
     }
 
@@ -404,39 +407,24 @@ http://compass-style.org/
     .cup-header-left > p {
         text-align: center;
         color: #fff;
-        margin: 20px 35px 20px ($column-gutter / 2);
+        margin: 20px 35px 20px 0;
     }
 
     .cup-header-right {
-        height: 250px;
-        float: right;
-        width: 321px;
-        position: relative;
+        padding: 0;
     }
 
     .cup-header-right img {
-        height: 100%;
         width: 100%;
     }
 }
 
 @media #{$large-up} {
-    .cup-header-row {
-        position: relative;
-    }
-    
-    .cup-header-left {
-        width: calc(100% - 450px);
-    }
-    
     .cup-header-admin {
         text-align: center;
-        margin: 20px 35px 0 ($column-gutter / 2);
-        position: absolute;
-        bottom: 0;
-        width: calc(100% - 450px - 35px - #{$column-gutter / 2});
+        margin: 20px 35px 20px 0;
     }
-
+    
     .cup-header-left hr {
         border-color: #fff;
     }
@@ -458,11 +446,6 @@ http://compass-style.org/
 
     .cup-header-admin p span {
         font-size: 1rem;
-    }
-    
-    .cup-header-right {
-        height: 350px;
-        width: 450px;
     }
     
     .cup-header-right p {
