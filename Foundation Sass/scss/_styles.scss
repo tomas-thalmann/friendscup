@@ -1,19 +1,8 @@
 @import "compass";
 @import "colors"; // import Standard Colors
 
-/*
-------- Compass Beispiel -------
-
-h1 {
-    border: 1px solid #555;
-    @include border-radius(4px);
-}
-
-http://compass-style.org/
-*/
-
 // ----------------------------------
-// Top Bar Left Section
+// Top Bar Left Section (Logo + Name)
 // ----------------------------------
 
 // Site Name
@@ -23,6 +12,14 @@ http://compass-style.org/
     font-family: 'lobster_two', Arial, sans-serif;
     font-style: italic;
     padding-left: $topbar-link-padding + 105px;
+}
+
+// Hide Name if width is to small for full view
+
+@media only screen and (max-width: 25em) {
+    .top-bar .name h1 a {
+        color: #fff;
+    }
 }
 
 // Logo Image

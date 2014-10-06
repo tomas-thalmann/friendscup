@@ -8931,17 +8931,7 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/*
-------- Compass Beispiel -------
-
-h1 {
-    border: 1px solid #555;
-    @include border-radius(4px);
-}
-
-http://compass-style.org/
-*/
-/* line 21, ../scss/_styles.scss */
+/* line 10, ../scss/_styles.scss */
 .top-bar .name h1 a {
   color: #333;
   font-family: 'lobster_two', Arial, sans-serif;
@@ -8949,7 +8939,13 @@ http://compass-style.org/
   padding-left: 128.33333px;
 }
 
-/* line 30, ../scss/_styles.scss */
+@media only screen and (max-width: 25em) {
+  /* line 20, ../scss/_styles.scss */
+  .top-bar .name h1 a {
+    color: #fff;
+  }
+}
+/* line 27, ../scss/_styles.scss */
 .top-bar .name h1 a:before {
   content: " ";
   position: absolute;
@@ -8963,30 +8959,30 @@ http://compass-style.org/
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 50, ../scss/_styles.scss */
+  /* line 47, ../scss/_styles.scss */
   .top-bar-section ul li > a {
     color: #333;
   }
 
-  /* line 56, ../scss/_styles.scss */
+  /* line 53, ../scss/_styles.scss */
   .top-bar-section ul li.active > a {
     background: #018ad2;
     color: #fff;
   }
 
-  /* line 63, ../scss/_styles.scss */
+  /* line 60, ../scss/_styles.scss */
   .top-bar-section ul li.active:hover > a {
     background: #018ad2;
     color: #fff;
   }
 
-  /* line 70, ../scss/_styles.scss */
+  /* line 67, ../scss/_styles.scss */
   .top-bar-section li:not(.has-form).has-user > a:not(.button) {
     padding-left: 83.33333px;
     line-height: 50px;
   }
 
-  /* line 76, ../scss/_styles.scss */
+  /* line 73, ../scss/_styles.scss */
   .top-bar-section > ul > li.has-user > a > img {
     height: 50px;
     width: 50px;
@@ -9000,7 +8996,7 @@ http://compass-style.org/
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 89, ../scss/_styles.scss */
+  /* line 86, ../scss/_styles.scss */
   .top-bar-section > ul > li:not(.login-button-not-mobile) > a {
     height: 70px;
     -webkit-box-sizing: border-box;
@@ -9013,12 +9009,12 @@ http://compass-style.org/
     transition: border-bottom 0.2s ease, color 0.2s ease;
   }
 
-  /* line 97, ../scss/_styles.scss */
+  /* line 94, ../scss/_styles.scss */
   .top-bar-section > ul > li:not(.login-button-not-mobile):hover > a {
     border-bottom: solid 5px #10325c;
   }
 
-  /* line 103, ../scss/_styles.scss */
+  /* line 100, ../scss/_styles.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     height: 70px;
     -webkit-box-sizing: border-box;
@@ -9027,17 +9023,17 @@ http://compass-style.org/
     border-bottom: solid 5px #10325c;
   }
 
-  /* line 111, ../scss/_styles.scss */
+  /* line 108, ../scss/_styles.scss */
   .top-bar-section li:not(.has-form).has-user a:not(.button) {
     padding-right: 23.33333px !important;
   }
 
-  /* line 116, ../scss/_styles.scss */
+  /* line 113, ../scss/_styles.scss */
   .top-bar-section .has-user > a:after {
     display: none;
   }
 
-  /* line 121, ../scss/_styles.scss */
+  /* line 118, ../scss/_styles.scss */
   .top-bar-section > ul > li.has-user > a > img {
     height: 50px;
     width: 50px;
@@ -9050,13 +9046,13 @@ http://compass-style.org/
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 137, ../scss/_styles.scss */
+  /* line 134, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover > a:after {
     border-left-color: #018ad2;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 146, ../scss/_styles.scss */
+  /* line 143, ../scss/_styles.scss */
   .top-bar-section .has-dropdown > a:after {
     -webkit-transition: border-top-color 0.2s ease;
     -moz-transition: border-top-color 0.2s ease;
@@ -9064,30 +9060,30 @@ http://compass-style.org/
     transition: border-top-color 0.2s ease;
   }
 
-  /* line 150, ../scss/_styles.scss */
+  /* line 147, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover > a:after {
     border-top-color: #018ad2;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 163, ../scss/_styles.scss */
+  /* line 160, ../scss/_styles.scss */
   .top-bar-section .dropdown li a {
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  /* line 170, ../scss/_styles.scss */
+  /* line 167, ../scss/_styles.scss */
   .top-bar-section .divider {
     border-top-color: #eee;
   }
 
-  /* line 176, ../scss/_styles.scss */
+  /* line 173, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     background: #eee;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 185, ../scss/_styles.scss */
+  /* line 182, ../scss/_styles.scss */
   .top-bar-section .dropdown {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -9097,13 +9093,13 @@ http://compass-style.org/
     transition: opacity 0.2s ease;
   }
 
-  /* line 190, ../scss/_styles.scss */
+  /* line 187, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover .dropdown {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 
-  /* line 196, ../scss/_styles.scss */
+  /* line 193, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
     line-height: 50px;
     background: #10325c;
@@ -9114,25 +9110,25 @@ http://compass-style.org/
     transition: background 0.2s ease;
   }
 
-  /* line 203, ../scss/_styles.scss */
+  /* line 200, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     background: #133b6d;
     color: #fff;
   }
 
-  /* line 210, ../scss/_styles.scss */
+  /* line 207, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     text-align: right;
     padding: 8px 23.33333px 8px;
   }
 }
-/* line 222, ../scss/_styles.scss */
+/* line 219, ../scss/_styles.scss */
 .login-button-mobile {
   width: 100%;
   margin: 0;
 }
 
-/* line 229, ../scss/_styles.scss */
+/* line 226, ../scss/_styles.scss */
 .top-bar-section li.login-button-not-mobile:not(.has-form) a:not(.button) {
   background-color: #f4811f;
   color: #fff;
@@ -9148,7 +9144,7 @@ http://compass-style.org/
   transition: background-position 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 241, ../scss/_styles.scss */
+/* line 238, ../scss/_styles.scss */
 .top-bar-section li.login-button-not-mobile:not(.has-form):hover a:not(.button) {
   background-position: 150% 50%;
   padding-left: 43.33333px;
@@ -9156,26 +9152,26 @@ http://compass-style.org/
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 252, ../scss/_styles.scss */
+  /* line 249, ../scss/_styles.scss */
   #login-modal {
     width: 31.25rem;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 265, ../scss/_styles.scss */
+  /* line 262, ../scss/_styles.scss */
   .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
     background: #e8edf5;
     padding: 1.25rem;
     margin: 0 0 20px 0;
   }
 
-  /* line 273, ../scss/_styles.scss */
+  /* line 270, ../scss/_styles.scss */
   .bg-light-arrow-panel {
     position: relative;
     margin: 0;
   }
 
-  /* line 279, ../scss/_styles.scss */
+  /* line 276, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     content: " ";
     display: block;
@@ -9191,24 +9187,24 @@ http://compass-style.org/
     z-index: 10;
   }
 
-  /* line 296, ../scss/_styles.scss */
+  /* line 293, ../scss/_styles.scss */
   .bg-white-arrow-panel {
     background: #fff;
     position: relative;
     margin: 0;
   }
 
-  /* line 303, ../scss/_styles.scss */
+  /* line 300, ../scss/_styles.scss */
   .bg-white-arrow-panel:after {
     border-top-color: #fff;
   }
 
-  /* line 310, ../scss/_styles.scss */
+  /* line 307, ../scss/_styles.scss */
   .bg-image-panel, .bg-image-arrow-panel {
     background-image: url("../img/bg-image-panel.png");
     background-size: cover;
   }
-  /* line 323, ../scss/_styles.scss */
+  /* line 320, ../scss/_styles.scss */
   .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
   .bg-image-panel p,
   .bg-image-arrow-panel p,
@@ -9227,32 +9223,32 @@ http://compass-style.org/
     color: #fff;
   }
 
-  /* line 330, ../scss/_styles.scss */
+  /* line 327, ../scss/_styles.scss */
   .bg-image-arrow-panel {
     position: relative;
     margin: 0;
   }
 
-  /* line 336, ../scss/_styles.scss */
+  /* line 333, ../scss/_styles.scss */
   .bg-image-arrow-panel:after {
     border-top-color: #018ad2;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 265, ../scss/_styles.scss */
+  /* line 262, ../scss/_styles.scss */
   .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
     background: #e8edf5;
     padding: 1.25rem;
     margin: 0 0 20px 0;
   }
 
-  /* line 273, ../scss/_styles.scss */
+  /* line 270, ../scss/_styles.scss */
   .bg-light-arrow-panel {
     position: relative;
     margin: 0;
   }
 
-  /* line 279, ../scss/_styles.scss */
+  /* line 276, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     content: " ";
     display: block;
@@ -9268,24 +9264,24 @@ http://compass-style.org/
     z-index: 10;
   }
 
-  /* line 296, ../scss/_styles.scss */
+  /* line 293, ../scss/_styles.scss */
   .bg-white-arrow-panel {
     background: #fff;
     position: relative;
     margin: 0;
   }
 
-  /* line 303, ../scss/_styles.scss */
+  /* line 300, ../scss/_styles.scss */
   .bg-white-arrow-panel:after {
     border-top-color: #fff;
   }
 
-  /* line 310, ../scss/_styles.scss */
+  /* line 307, ../scss/_styles.scss */
   .bg-image-panel, .bg-image-arrow-panel {
     background-image: url("../img/bg-image-panel.png");
     background-size: cover;
   }
-  /* line 323, ../scss/_styles.scss */
+  /* line 320, ../scss/_styles.scss */
   .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
   .bg-image-panel p,
   .bg-image-arrow-panel p,
@@ -9304,29 +9300,29 @@ http://compass-style.org/
     color: #fff;
   }
 
-  /* line 330, ../scss/_styles.scss */
+  /* line 327, ../scss/_styles.scss */
   .bg-image-arrow-panel {
     position: relative;
     margin: 0;
   }
 
-  /* line 336, ../scss/_styles.scss */
+  /* line 333, ../scss/_styles.scss */
   .bg-image-arrow-panel:after {
     border-top-color: #018ad2;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 355, ../scss/_styles.scss */
+  /* line 352, ../scss/_styles.scss */
   .cup-header-panel {
     padding: 0;
   }
 
-  /* line 359, ../scss/_styles.scss */
+  /* line 356, ../scss/_styles.scss */
   .cup-header-left {
     padding: 0;
   }
 
-  /* line 363, ../scss/_styles.scss */
+  /* line 360, ../scss/_styles.scss */
   .cup-header-left > h3 {
     background-color: #f4811f;
     padding: 20px;
@@ -9335,23 +9331,23 @@ http://compass-style.org/
     margin: 0;
   }
 
-  /* line 371, ../scss/_styles.scss */
+  /* line 368, ../scss/_styles.scss */
   .cup-header-right {
     padding: 0;
   }
 
-  /* line 375, ../scss/_styles.scss */
+  /* line 372, ../scss/_styles.scss */
   .cup-header-right img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 381, ../scss/_styles.scss */
+  /* line 378, ../scss/_styles.scss */
   .cup-header-panel {
     padding: 0;
   }
 
-  /* line 385, ../scss/_styles.scss */
+  /* line 382, ../scss/_styles.scss */
   .cup-header-left > h3 {
     background-color: #f4811f;
     padding: 0 20px;
@@ -9362,7 +9358,7 @@ http://compass-style.org/
     position: relative;
   }
 
-  /* line 395, ../scss/_styles.scss */
+  /* line 392, ../scss/_styles.scss */
   .cup-header-left > h3:after {
     content: " ";
     display: block;
@@ -9375,36 +9371,36 @@ http://compass-style.org/
     border-left: 35px solid #f4811f;
   }
 
-  /* line 407, ../scss/_styles.scss */
+  /* line 404, ../scss/_styles.scss */
   .cup-header-left > p {
     text-align: center;
     color: #fff;
     margin: 20px 35px 20px 0;
   }
 
-  /* line 413, ../scss/_styles.scss */
+  /* line 410, ../scss/_styles.scss */
   .cup-header-right {
     padding: 0;
   }
 
-  /* line 417, ../scss/_styles.scss */
+  /* line 414, ../scss/_styles.scss */
   .cup-header-right img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 423, ../scss/_styles.scss */
+  /* line 420, ../scss/_styles.scss */
   .cup-header-admin {
     text-align: center;
     margin: 20px 35px 20px 0;
   }
 
-  /* line 428, ../scss/_styles.scss */
+  /* line 425, ../scss/_styles.scss */
   .cup-header-left hr {
     border-color: #fff;
   }
 
-  /* line 432, ../scss/_styles.scss */
+  /* line 429, ../scss/_styles.scss */
   .cup-header-admin img {
     height: 70px;
     width: 70px;
@@ -9415,23 +9411,23 @@ http://compass-style.org/
     border-radius: 50%;
   }
 
-  /* line 438, ../scss/_styles.scss */
+  /* line 435, ../scss/_styles.scss */
   .cup-header-admin p {
     color: #fff;
     font-size: 1.3rem;
   }
 
-  /* line 443, ../scss/_styles.scss */
+  /* line 440, ../scss/_styles.scss */
   .cup-header-admin p strong {
     margin: 0 10px;
   }
 
-  /* line 447, ../scss/_styles.scss */
+  /* line 444, ../scss/_styles.scss */
   .cup-header-admin p span {
     font-size: 1rem;
   }
 
-  /* line 451, ../scss/_styles.scss */
+  /* line 448, ../scss/_styles.scss */
   .cup-header-right p {
     position: absolute;
     bottom: 0;
