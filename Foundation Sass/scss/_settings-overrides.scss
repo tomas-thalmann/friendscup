@@ -12,11 +12,11 @@ $success-color: #43AC6A;
 $warning-color: #f08a24;
 $info-color: #a0d3e8;
 
-$body-font-family: 'raleway', Arial, sans-serif;
-
 // We use these to control various global styles
 $body-font-color: #333;
-$body-font-family: 'raleway', Arial, sans-serif;
+$body-font-family: 'Lato', Arial, sans-serif;
+//$body-font-family: 'Raleway', Arial, sans-serif;
+//$body-font-family: 'Open Sans', Arial, sans-serif;
 
 // ----------------------------------
 // Top Bar
@@ -30,9 +30,9 @@ $topbar-title-font-size: 160%;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: #999;
-$topbar-link-color-hover: $fc-primary;
-$topbar-link-color-active: $fc-primary;
-$topbar-link-color-active-hover: $fc-primary;
+$topbar-link-color-hover: $fc-primary-dark;
+$topbar-link-color-active: $fc-primary-dark;
+$topbar-link-color-active-hover: $fc-primary-dark;
 $topbar-link-bg-color-hover: #fff;
 $topbar-link-bg-hover: #fff;
 $topbar-link-bg-active: #fff;

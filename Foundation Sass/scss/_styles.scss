@@ -9,8 +9,9 @@
 
 .top-bar .name h1 a {
     color: #333;
-    font-family: 'lobster_two', Arial, sans-serif;
+    font-family: 'Lobster Two', cursive;
     font-style: italic;
+    font-weight: bold;
     padding-left: $topbar-link-padding + 105px;
 }
 
@@ -145,7 +146,7 @@
     }
     
     .top-bar-section .has-dropdown:hover > a:after {
-        border-top-color: $fc-primary;
+        border-top-color: $fc-primary-dark;
     }
 }
 
@@ -342,6 +343,68 @@
 
 @media #{$medium-up} {
     @include custom-panels(40px);
+}
+
+.panel-extra-padding {
+    padding: ($panel-padding * 3) $panel-padding;
+    margin: 0;
+}
+
+// ----------------------------------
+// Big Button
+// ----------------------------------
+
+.big-button {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    background-color: $fc-primary;
+    @include transition(background-color 0.3s);
+    
+    img {
+        position: absolute;
+        height: 250px;
+        width: auto;
+        top: -25px;
+        right: -25px;
+        opacity: 0.1;
+        @include transition(right 0.3s);
+    }
+    
+    h1 {
+        color: #fff;
+        line-height: 200px;
+        padding: 0 30px;
+        @include transition(line-height 0.3s);
+    }
+    
+    p {
+        color: #fff;
+        position: absolute;
+        top: 150px;
+        padding: 0 30px;
+        opacity: 0;
+        @include transition(opacity 0.3s, top 0.3s);
+    }
+}
+
+.big-button:hover {
+    cursor: pointer;
+    background-color: scale-color($fc-primary, $lightness: 10%);;
+    
+    img {
+        right: -50px;
+    }
+    
+    h1 {
+        line-height: 140px;
+    }
+    
+    p {
+        opacity: 1;
+        top: 105px;
+    }
 }
 
 // ----------------------------------
