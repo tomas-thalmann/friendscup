@@ -356,6 +356,7 @@
 
 .big-button {
     position: relative;
+    display: block;
     height: 200px;
     width: 100%;
     overflow: hidden;
@@ -390,7 +391,6 @@
 }
 
 .big-button:hover {
-    cursor: pointer;
     background-color: scale-color($fc-primary, $lightness: 10%);;
     
     img {

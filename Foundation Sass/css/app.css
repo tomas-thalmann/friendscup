@@ -9161,7 +9161,7 @@ th.hide-for-touch {
 @media only screen and (max-width: 40em) {
   /* line 263, ../scss/_styles.scss */
   .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
-    background: #f1f3f7;
+    background: #e8edf5;
     padding: 1.25rem;
     margin: 0 0 20px 0;
   }
@@ -9182,7 +9182,7 @@ th.hide-for-touch {
     width: 0;
     height: 0;
     border: 20px solid transparent;
-    border-top: 20px solid #f1f3f7;
+    border-top: 20px solid #e8edf5;
     margin-left: -20px;
     margin-bottom: -40px;
     z-index: 10;
@@ -9238,7 +9238,7 @@ th.hide-for-touch {
 @media only screen and (min-width: 40.063em) {
   /* line 263, ../scss/_styles.scss */
   .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
-    background: #f1f3f7;
+    background: #e8edf5;
     padding: 1.25rem;
     margin: 0 0 20px 0;
   }
@@ -9259,7 +9259,7 @@ th.hide-for-touch {
     width: 0;
     height: 0;
     border: 40px solid transparent;
-    border-top: 40px solid #f1f3f7;
+    border-top: 40px solid #e8edf5;
     margin-left: -40px;
     margin-bottom: -80px;
     z-index: 10;
@@ -9321,6 +9321,7 @@ th.hide-for-touch {
 /* line 357, ../scss/_styles.scss */
 .big-button {
   position: relative;
+  display: block;
   height: 200px;
   width: 100%;
   overflow: hidden;
@@ -9330,7 +9331,7 @@ th.hide-for-touch {
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s;
 }
-/* line 365, ../scss/_styles.scss */
+/* line 366, ../scss/_styles.scss */
 .big-button img {
   position: absolute;
   height: 250px;
@@ -9343,7 +9344,7 @@ th.hide-for-touch {
   -o-transition: right 0.3s;
   transition: right 0.3s;
 }
-/* line 375, ../scss/_styles.scss */
+/* line 376, ../scss/_styles.scss */
 .big-button h1 {
   color: #fff;
   line-height: 200px;
@@ -9353,7 +9354,7 @@ th.hide-for-touch {
   -o-transition: line-height 0.3s;
   transition: line-height 0.3s;
 }
-/* line 382, ../scss/_styles.scss */
+/* line 383, ../scss/_styles.scss */
 .big-button p {
   color: #fff;
   position: absolute;
@@ -9366,9 +9367,8 @@ th.hide-for-touch {
   transition: opacity 0.3s, top 0.3s;
 }
 
-/* line 392, ../scss/_styles.scss */
+/* line 393, ../scss/_styles.scss */
 .big-button:hover {
-  cursor: pointer;
   background-color: #019ef0;
 }
 /* line 396, ../scss/_styles.scss */
