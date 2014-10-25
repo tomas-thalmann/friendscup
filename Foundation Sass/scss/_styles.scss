@@ -256,93 +256,90 @@
 // Custom Panels
 // ----------------------------------
 
-@mixin custom-panels($arrow-size) {
-    
-    // BG Light Panel
+// BG Light Panel
 
-    .bg-light-panel {
-        background: $fc-primary-bg;
-        padding: $panel-padding;
-        margin: 0 0 20px 0;
+.bg-light-panel {
+    background: $fc-primary-bg;
+    padding: $panel-padding;
+    margin: 0 0 20px 0;
+}
+
+// BG Light Arrow Panel
+
+.bg-light-arrow-panel {
+    @extend .bg-light-panel;
+    position: relative;
+    margin: 0;
+}
+
+.bg-light-arrow-panel:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    z-index: 10;
+    @media #{$small-only} {
+        border: 20px solid transparent;
+        border-top: 20px solid $fc-primary-bg;
+        margin-left: -20px;
+        margin-bottom: -(20px * 2);
     }
-
-    // BG Light Arrow Panel
-
-    .bg-light-arrow-panel {
-        @extend .bg-light-panel;
-        position: relative;
-        margin: 0;
-    }
-
-    .bg-light-arrow-panel:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        width: 0;
-        height: 0;
-        border: $arrow-size solid transparent;
-        border-top: $arrow-size solid $fc-primary-bg;
-        margin-left: -$arrow-size;
-        margin-bottom: -($arrow-size * 2);
-        z-index: 10;
-    }
-
-    // BG White Arror Panel
-
-    .bg-white-arrow-panel {
-        @extend .bg-light-panel;
-        background: #fff;
-        position: relative;
-        margin: 0;
-    }
-
-    .bg-white-arrow-panel:after {
-        @extend .bg-light-arrow-panel:after;
-        border-top-color: #fff;
-    }
-
-    // BG Image Panel
-
-    .bg-image-panel {
-        @extend .bg-light-panel;
-        background-image: url('../img/bg-image-panel.png');
-        background-size: cover;
-        
-        // colorize all sorts of text to white
-        h1,h2,h3,h4,h5,h6,
-        p,
-        ul li,
-        ol li,
-        blockquote,
-        table th,
-        table td,
-        .lead {
-            color: #fff;
-        }
-    }
-
-    // BG Image Arrow Panel
-
-    .bg-image-arrow-panel {
-        @extend .bg-image-panel;
-        position: relative;
-        margin: 0;
-    }
-
-    .bg-image-arrow-panel:after {
-        @extend .bg-light-arrow-panel:after;
-        border-top-color: $fc-primary;
+    @media #{$medium-up} {
+        border: 40px solid transparent;
+        border-top: 40px solid $fc-primary-bg;
+        margin-left: -40px;
+        margin-bottom: -(40px * 2);
     }
 }
 
-@media #{$small-only} {
-    @include custom-panels(20px);
+// BG White Arror Panel
+
+.bg-white-arrow-panel {
+    @extend .bg-light-panel;
+    background: #fff;
+    position: relative;
+    margin: 0;
 }
 
-@media #{$medium-up} {
-    @include custom-panels(40px);
+.bg-white-arrow-panel:after {
+    @extend .bg-light-arrow-panel:after;
+    border-top-color: #fff;
+}
+
+// BG Image Panel
+
+.bg-image-panel {
+    @extend .bg-light-panel;
+    background-image: url('../img/bg-image-panel.png');
+    background-size: cover;
+
+    // colorize all sorts of text to white
+    h1,h2,h3,h4,h5,h6,
+    p,
+    ul li,
+    ol li,
+    blockquote,
+    table th,
+    table td,
+    .lead {
+        color: #fff;
+    }
+}
+
+// BG Image Arrow Panel
+
+.bg-image-arrow-panel {
+    @extend .bg-image-panel;
+    position: relative;
+    margin: 0;
+}
+
+.bg-image-arrow-panel:after {
+    @extend .bg-light-arrow-panel:after;
+    border-top-color: $fc-primary;
 }
 
 .panel-extra-padding {
@@ -354,170 +351,77 @@
 // Big Button
 // ----------------------------------
 
-.big-button {
-    position: relative;
-    display: block;
-    height: 200px;
-    width: 100%;
-    overflow: hidden;
-    background-color: $fc-primary;
-    @include transition(background-color 0.3s);
-    
-    img {
-        position: absolute;
-        height: 250px;
-        width: auto;
-        top: -25px;
-        right: -25px;
-        opacity: 0.1;
-        @include transition(right 0.3s);
+@mixin generate-big-button($height, $media-query) {
+    .big-button {
+        position: relative;
+        display: block;
+        height: $height;
+        width: 100%;
+        overflow: hidden;
+        background-color: $fc-primary;
+        @include transition(background-color 0.3s);
+
+        img {
+            position: absolute;
+            height: $height + ($height / 4);
+            width: auto;
+            top: -($height / 8);
+            right: -($height / 8);
+            opacity: 0.1;
+            @include transition(right 0.3s);
+        }
+
+        h1 {
+            color: #fff;
+            line-height: $height;
+            padding: 0 30px;
+            margin: 0;
+            @include transition(line-height 0.3s);
+        }
+
+        @if $media-query == 'medium-up' {
+            p {
+                color: #fff;
+                position: absolute;
+                top: 150px;
+                padding: 0 30px;
+                opacity: 0;
+                @include transition(opacity 0.3s, top 0.3s);
+            }
+        } @else if $media-query == 'small-only' {
+            p {
+                opacity: 0;
+            }
+        }
     }
-    
-    h1 {
-        color: #fff;
-        line-height: 200px;
-        padding: 0 30px;
-        @include transition(line-height 0.3s);
-    }
-    
-    p {
-        color: #fff;
-        position: absolute;
-        top: 150px;
-        padding: 0 30px;
-        opacity: 0;
-        @include transition(opacity 0.3s, top 0.3s);
+
+    .big-button:hover {
+        background-color: scale-color($fc-primary, $lightness: 10%);;
+
+        @if $media-query == 'medium-up' {
+            img {
+                right: -($height / 4);
+            }
+
+            h1 {
+                line-height: 140px;
+            }
+            
+            p {
+                opacity: 1;
+                top: 105px;
+                transition-delay: 0.06s;
+            }
+        }
     }
 }
-
-.big-button:hover {
-    background-color: scale-color($fc-primary, $lightness: 10%);;
-    
-    img {
-        right: -50px;
-    }
-    
-    h1 {
-        line-height: 140px;
-    }
-    
-    p {
-        opacity: 1;
-        top: 105px;
-    }
-}
-
-// ----------------------------------
-// Cup Page Header
-// ----------------------------------
 
 @media #{$small-only} {
-    .cup-header-panel {
-        padding: 0;
-    }
-    
-    .cup-header-left {
-        padding: 0;
-    }
-    
-    .cup-header-left > h3 {
-        background-color: $fc-orange;
-        padding: 20px;
-        text-align: center;
-        color: #fff;
-        margin: 0;
-    }
-    
-    .cup-header-right {
-        padding: 0;
-    }
-    
-    .cup-header-right img {
-        width: 100%;
-    }
+    @include generate-big-button(100px, 'small-only');
 }
 
 @media #{$medium-up} {
-    .cup-header-panel {
-        padding: 0;
-    }
-
-    .cup-header-left > h3 {
-        background-color: $fc-orange;
-        padding: 0 20px;
-        line-height: 70px;
-        text-align: center;
-        color: #fff;
-        margin: 20px 35px 20px 0;
-        position: relative;
-    }
-
-    .cup-header-left > h3:after {
-        content: " ";
-        display: block;
-        position: absolute;
-        right: -70px;
-        top: 0;
-        width: 0;
-        height: 0;
-        border: 35px solid transparent;
-        border-left: 35px solid $fc-orange;
-    }
-
-    .cup-header-left > p {
-        text-align: center;
-        color: #fff;
-        margin: 20px 35px 20px 0;
-    }
-
-    .cup-header-right {
-        padding: 0;
-    }
-
-    .cup-header-right img {
-        width: 100%;
-    }
-}
-
-@media #{$large-up} {
-    .cup-header-admin {
-        text-align: center;
-        margin: 20px 35px 20px 0;
-    }
-    
-    .cup-header-left hr {
-        border-color: #fff;
-    }
-    
-    .cup-header-admin img {
-        height: 70px;
-        width: 70px;
-        @include border-radius(50%);
-    }
-
-    .cup-header-admin p {
-        color: #fff;
-        font-size: 1.3rem;
-    }
-
-    .cup-header-admin p strong {
-        margin: 0 10px;
-    }
-
-    .cup-header-admin p span {
-        font-size: 1rem;
-    }
-    
-    .cup-header-right p {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0,0,0,0.7);
-        color: #fff;
-        padding: 15px;
-        margin: 0;
-    }
+    @include generate-big-button(200px, 'medium-up');
 }
 
 
