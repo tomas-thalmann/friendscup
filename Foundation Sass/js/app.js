@@ -3,7 +3,7 @@
 // $(document).foundation();
 
 // ---------------------------
-// Foundation Options
+// Foundation
 // ---------------------------
 
 $(document).foundation({
@@ -31,6 +31,28 @@ $(document).foundation({
 });
 
 // ---------------------------
-// Modal
+// Fittext
 // ---------------------------
 
+$( document ).ready(function() {
+    if (matchMedia) {
+        var mq = window.matchMedia(Foundation.media_queries['medium']);
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+    }
+
+    function WidthChange(mq) {
+        if (mq.matches) {
+            
+            // ----- MEDIUM UP -----
+            $(".big-button h1").fitText(0.7, { minFontSize: '32px', maxFontSize: '44px' }); // Standard Foundation h1: 44px
+            
+        }
+        else {
+            
+            // ----- SMALL -----
+            $(".big-button h1").fitText(0.7, { minFontSize: '22px', maxFontSize: '34px' }); // Standard Foundation h1 at small: 34px
+            
+        }
+    }
+});
