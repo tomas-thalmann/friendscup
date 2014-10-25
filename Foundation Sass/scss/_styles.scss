@@ -8,7 +8,7 @@
 // Site Name
 
 .top-bar .name h1 a {
-    color: #333;
+    color: $fc-primary-dark;
     font-family: 'Lobster Two', cursive;
     font-style: italic;
     font-weight: bold;
@@ -19,7 +19,7 @@
 
 @media only screen and (max-width: 25em) {
     .top-bar .name h1 a {
-        color: #fff;
+        font-size: rem-calc(17);
     }
 }
 
@@ -30,11 +30,13 @@
     position: absolute;
     display: block;
     height: 50px;
-    width: 130px;
+    width: 100%; // just for enough width
     margin: 10px 0 10px -105px;
-    background-image: url('../img/logo.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: {
+        image: url('../img/logo.png');
+        repeat: no-repeat;
+    };
+    @include background-size(contain);
 }
 
 // ----------------------------------
@@ -227,10 +229,12 @@
 .top-bar-section li.login-button-not-mobile:not(.has-form) a:not(.button) {
     background-color: $fc-orange;
     color: #fff;
-    background-image: url('../img/user.png');
-    background-size: 40px;
-    background-position: 90% 50%;
-    background-repeat: no-repeat;
+    background: {
+        image: url('../img/user.png');
+        repeat: no-repeat;
+        position: 90% 50%;
+    };
+    @include background-size(40px);
     padding-left: $topbar-link-padding;
     padding-right: $topbar-link-padding + 40px; // 50px -> icon size
     @include transition(background-position 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.2s cubic-bezier(0.645, 0.045, 0.355, 1));
@@ -314,13 +318,14 @@
 .bg-image-panel {
     @extend .bg-light-panel;
     background-image: url('../img/bg-image-panel.png');
-    background-size: cover;
+    @include background-size(cover);
 
     // colorize all sorts of text to white
     h1,h2,h3,h4,h5,h6,
     p,
     ul li,
     ol li,
+    dl, dt, dd,
     blockquote,
     table th,
     table td,
@@ -365,9 +370,10 @@
             position: absolute;
             height: $height + ($height / 4);
             width: auto;
+            max-width: none; // image sizes are often higher than container
             top: -($height / 8);
             right: -($height / 8);
-            opacity: 0.1;
+            @include opacity(0.1);
             @include transition(right 0.3s);
         }
 
@@ -376,6 +382,7 @@
             line-height: $height;
             padding: 0 30px;
             margin: 0;
+            white-space: nowrap;
             @include transition(line-height 0.3s);
         }
 
@@ -385,12 +392,12 @@
                 position: absolute;
                 top: 150px;
                 padding: 0 30px;
-                opacity: 0;
+                @include opacity(0);
                 @include transition(opacity 0.3s, top 0.3s);
             }
         } @else if $media-query == 'small-only' {
             p {
-                opacity: 0;
+                @include opacity(0);
             }
         }
     }
@@ -408,9 +415,9 @@
             }
             
             p {
-                opacity: 1;
+                @include opacity(1);
                 top: 105px;
-                transition-delay: 0.06s;
+                @include transition-delay(0.06s);
             }
         }
     }

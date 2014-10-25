@@ -1,0 +1,6 @@
+#################
+## Foundation
+#################
+
+.sass-cache
+.sass-cache/*

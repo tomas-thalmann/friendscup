@@ -7257,7 +7257,7 @@ meta.foundation-mq-topbar {
 /* line 192, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 .top-bar .name h1 {
   line-height: 70px;
-  font-size: 160%;
+  font-size: 1.6rem;
   margin: 0;
 }
 /* line 196, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -8933,7 +8933,7 @@ th.hide-for-touch {
 }
 /* line 10, ../scss/_styles.scss */
 .top-bar .name h1 a {
-  color: #333;
+  color: #10325c;
   font-family: 'Lobster Two', cursive;
   font-style: italic;
   font-weight: bold;
@@ -8943,7 +8943,7 @@ th.hide-for-touch {
 @media only screen and (max-width: 25em) {
   /* line 21, ../scss/_styles.scss */
   .top-bar .name h1 a {
-    color: #fff;
+    font-size: 1.0625rem;
   }
 }
 /* line 28, ../scss/_styles.scss */
@@ -8952,38 +8952,41 @@ th.hide-for-touch {
   position: absolute;
   display: block;
   height: 50px;
-  width: 130px;
+  width: 100%;
   margin: 10px 0 10px -105px;
   background-image: url("../img/logo.png");
-  background-size: contain;
   background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 48, ../scss/_styles.scss */
+  /* line 50, ../scss/_styles.scss */
   .top-bar-section ul li > a {
     color: #333;
   }
 
-  /* line 54, ../scss/_styles.scss */
+  /* line 56, ../scss/_styles.scss */
   .top-bar-section ul li.active > a {
     background: #018ad2;
     color: #fff;
   }
 
-  /* line 61, ../scss/_styles.scss */
+  /* line 63, ../scss/_styles.scss */
   .top-bar-section ul li.active:hover > a {
     background: #018ad2;
     color: #fff;
   }
 
-  /* line 68, ../scss/_styles.scss */
+  /* line 70, ../scss/_styles.scss */
   .top-bar-section li:not(.has-form).has-user > a:not(.button) {
     padding-left: 83.33333px;
     line-height: 50px;
   }
 
-  /* line 74, ../scss/_styles.scss */
+  /* line 76, ../scss/_styles.scss */
   .top-bar-section > ul > li.has-user > a > img {
     height: 50px;
     width: 50px;
@@ -8997,7 +9000,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 87, ../scss/_styles.scss */
+  /* line 89, ../scss/_styles.scss */
   .top-bar-section > ul > li:not(.login-button-not-mobile) > a {
     height: 70px;
     -webkit-box-sizing: border-box;
@@ -9010,12 +9013,12 @@ th.hide-for-touch {
     transition: border-bottom 0.2s ease, color 0.2s ease;
   }
 
-  /* line 95, ../scss/_styles.scss */
+  /* line 97, ../scss/_styles.scss */
   .top-bar-section > ul > li:not(.login-button-not-mobile):hover > a {
     border-bottom: solid 5px #10325c;
   }
 
-  /* line 101, ../scss/_styles.scss */
+  /* line 103, ../scss/_styles.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     height: 70px;
     -webkit-box-sizing: border-box;
@@ -9024,17 +9027,17 @@ th.hide-for-touch {
     border-bottom: solid 5px #10325c;
   }
 
-  /* line 109, ../scss/_styles.scss */
+  /* line 111, ../scss/_styles.scss */
   .top-bar-section li:not(.has-form).has-user a:not(.button) {
     padding-right: 23.33333px !important;
   }
 
-  /* line 114, ../scss/_styles.scss */
+  /* line 116, ../scss/_styles.scss */
   .top-bar-section .has-user > a:after {
     display: none;
   }
 
-  /* line 119, ../scss/_styles.scss */
+  /* line 121, ../scss/_styles.scss */
   .top-bar-section > ul > li.has-user > a > img {
     height: 50px;
     width: 50px;
@@ -9047,13 +9050,13 @@ th.hide-for-touch {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 135, ../scss/_styles.scss */
+  /* line 137, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover > a:after {
     border-left-color: #018ad2;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 144, ../scss/_styles.scss */
+  /* line 146, ../scss/_styles.scss */
   .top-bar-section .has-dropdown > a:after {
     -webkit-transition: border-top-color 0.2s ease;
     -moz-transition: border-top-color 0.2s ease;
@@ -9061,30 +9064,30 @@ th.hide-for-touch {
     transition: border-top-color 0.2s ease;
   }
 
-  /* line 148, ../scss/_styles.scss */
+  /* line 150, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover > a:after {
     border-top-color: #10325c;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 161, ../scss/_styles.scss */
+  /* line 163, ../scss/_styles.scss */
   .top-bar-section .dropdown li a {
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  /* line 168, ../scss/_styles.scss */
+  /* line 170, ../scss/_styles.scss */
   .top-bar-section .divider {
     border-top-color: #eee;
   }
 
-  /* line 174, ../scss/_styles.scss */
+  /* line 176, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     background: #eee;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 183, ../scss/_styles.scss */
+  /* line 185, ../scss/_styles.scss */
   .top-bar-section .dropdown {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -9094,13 +9097,13 @@ th.hide-for-touch {
     transition: opacity 0.2s ease;
   }
 
-  /* line 188, ../scss/_styles.scss */
+  /* line 190, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover .dropdown {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 
-  /* line 194, ../scss/_styles.scss */
+  /* line 196, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
     line-height: 50px;
     background: #10325c;
@@ -9111,32 +9114,35 @@ th.hide-for-touch {
     transition: background 0.2s ease;
   }
 
-  /* line 201, ../scss/_styles.scss */
+  /* line 203, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     background: #133b6d;
     color: #fff;
   }
 
-  /* line 208, ../scss/_styles.scss */
+  /* line 210, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     text-align: right;
     padding: 8px 23.33333px 8px;
   }
 }
-/* line 220, ../scss/_styles.scss */
+/* line 222, ../scss/_styles.scss */
 .login-button-mobile {
   width: 100%;
   margin: 0;
 }
 
-/* line 227, ../scss/_styles.scss */
+/* line 229, ../scss/_styles.scss */
 .top-bar-section li.login-button-not-mobile:not(.has-form) a:not(.button) {
   background-color: #f4811f;
   color: #fff;
   background-image: url("../img/user.png");
-  background-size: 40px;
-  background-position: 90% 50%;
   background-repeat: no-repeat;
+  background-position: 90% 50%;
+  -webkit-background-size: 40px;
+  -moz-background-size: 40px;
+  -o-background-size: 40px;
+  background-size: 40px;
   padding-left: 23.33333px;
   padding-right: 63.33333px;
   -webkit-transition: background-position 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -9145,7 +9151,7 @@ th.hide-for-touch {
   transition: background-position 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 239, ../scss/_styles.scss */
+/* line 243, ../scss/_styles.scss */
 .top-bar-section li.login-button-not-mobile:not(.has-form):hover a:not(.button) {
   background-position: 150% 50%;
   padding-left: 43.33333px;
@@ -9153,25 +9159,25 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 250, ../scss/_styles.scss */
+  /* line 254, ../scss/_styles.scss */
   #login-modal {
     width: 31.25rem;
   }
 }
-/* line 261, ../scss/_styles.scss */
+/* line 265, ../scss/_styles.scss */
 .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
   background: #e8edf5;
   padding: 1.25rem;
   margin: 0 0 20px 0;
 }
 
-/* line 269, ../scss/_styles.scss */
+/* line 273, ../scss/_styles.scss */
 .bg-light-arrow-panel {
   position: relative;
   margin: 0;
 }
 
-/* line 275, ../scss/_styles.scss */
+/* line 279, ../scss/_styles.scss */
 .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
   content: " ";
   display: block;
@@ -9183,7 +9189,7 @@ th.hide-for-touch {
   z-index: 10;
 }
 @media only screen and (max-width: 40em) {
-  /* line 275, ../scss/_styles.scss */
+  /* line 279, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     border: 20px solid transparent;
     border-top: 20px solid #e8edf5;
@@ -9192,7 +9198,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 275, ../scss/_styles.scss */
+  /* line 279, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     border: 40px solid transparent;
     border-top: 40px solid #e8edf5;
@@ -9201,24 +9207,27 @@ th.hide-for-touch {
   }
 }
 
-/* line 300, ../scss/_styles.scss */
+/* line 304, ../scss/_styles.scss */
 .bg-white-arrow-panel {
   background: #fff;
   position: relative;
   margin: 0;
 }
 
-/* line 307, ../scss/_styles.scss */
+/* line 311, ../scss/_styles.scss */
 .bg-white-arrow-panel:after {
   border-top-color: #fff;
 }
 
-/* line 314, ../scss/_styles.scss */
+/* line 318, ../scss/_styles.scss */
 .bg-image-panel, .bg-image-arrow-panel {
   background-image: url("../img/bg-image-panel.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
-/* line 327, ../scss/_styles.scss */
+/* line 332, ../scss/_styles.scss */
 .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
 .bg-image-panel p,
 .bg-image-arrow-panel p,
@@ -9226,6 +9235,8 @@ th.hide-for-touch {
 .bg-image-arrow-panel ul li,
 .bg-image-panel ol li,
 .bg-image-arrow-panel ol li,
+.bg-image-panel dl,
+.bg-image-arrow-panel dl, .bg-image-panel dt, .bg-image-arrow-panel dt, .bg-image-panel dd, .bg-image-arrow-panel dd,
 .bg-image-panel blockquote,
 .bg-image-arrow-panel blockquote,
 .bg-image-panel table th,
@@ -9237,25 +9248,25 @@ th.hide-for-touch {
   color: #fff;
 }
 
-/* line 334, ../scss/_styles.scss */
+/* line 339, ../scss/_styles.scss */
 .bg-image-arrow-panel {
   position: relative;
   margin: 0;
 }
 
-/* line 340, ../scss/_styles.scss */
+/* line 345, ../scss/_styles.scss */
 .bg-image-arrow-panel:after {
   border-top-color: #018ad2;
 }
 
-/* line 345, ../scss/_styles.scss */
+/* line 350, ../scss/_styles.scss */
 .panel-extra-padding {
   padding: 3.75rem 1.25rem;
   margin: 0;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 355, ../scss/_styles.scss */
+  /* line 360, ../scss/_styles.scss */
   .big-button {
     position: relative;
     display: block;
@@ -9268,42 +9279,46 @@ th.hide-for-touch {
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
-  /* line 364, ../scss/_styles.scss */
+  /* line 369, ../scss/_styles.scss */
   .big-button img {
     position: absolute;
     height: 125px;
     width: auto;
+    max-width: none;
     top: -12.5px;
     right: -12.5px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
     -webkit-transition: right 0.3s;
     -moz-transition: right 0.3s;
     -o-transition: right 0.3s;
     transition: right 0.3s;
   }
-  /* line 374, ../scss/_styles.scss */
+  /* line 380, ../scss/_styles.scss */
   .big-button h1 {
     color: #fff;
     line-height: 100px;
     padding: 0 30px;
     margin: 0;
+    white-space: nowrap;
     -webkit-transition: line-height 0.3s;
     -moz-transition: line-height 0.3s;
     -o-transition: line-height 0.3s;
     transition: line-height 0.3s;
   }
-  /* line 392, ../scss/_styles.scss */
+  /* line 399, ../scss/_styles.scss */
   .big-button p {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
-  /* line 398, ../scss/_styles.scss */
+  /* line 405, ../scss/_styles.scss */
   .big-button:hover {
     background-color: #019ef0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 355, ../scss/_styles.scss */
+  /* line 360, ../scss/_styles.scss */
   .big-button {
     position: relative;
     display: block;
@@ -9316,36 +9331,40 @@ th.hide-for-touch {
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
-  /* line 364, ../scss/_styles.scss */
+  /* line 369, ../scss/_styles.scss */
   .big-button img {
     position: absolute;
     height: 250px;
     width: auto;
+    max-width: none;
     top: -25px;
     right: -25px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
     -webkit-transition: right 0.3s;
     -moz-transition: right 0.3s;
     -o-transition: right 0.3s;
     transition: right 0.3s;
   }
-  /* line 374, ../scss/_styles.scss */
+  /* line 380, ../scss/_styles.scss */
   .big-button h1 {
     color: #fff;
     line-height: 200px;
     padding: 0 30px;
     margin: 0;
+    white-space: nowrap;
     -webkit-transition: line-height 0.3s;
     -moz-transition: line-height 0.3s;
     -o-transition: line-height 0.3s;
     transition: line-height 0.3s;
   }
-  /* line 383, ../scss/_styles.scss */
+  /* line 390, ../scss/_styles.scss */
   .big-button p {
     color: #fff;
     position: absolute;
     top: 150px;
     padding: 0 30px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity 0.3s, top 0.3s;
     -moz-transition: opacity 0.3s, top 0.3s;
@@ -9353,22 +9372,26 @@ th.hide-for-touch {
     transition: opacity 0.3s, top 0.3s;
   }
 
-  /* line 398, ../scss/_styles.scss */
+  /* line 405, ../scss/_styles.scss */
   .big-button:hover {
     background-color: #019ef0;
   }
-  /* line 402, ../scss/_styles.scss */
+  /* line 409, ../scss/_styles.scss */
   .big-button:hover img {
     right: -50px;
   }
-  /* line 406, ../scss/_styles.scss */
+  /* line 413, ../scss/_styles.scss */
   .big-button:hover h1 {
     line-height: 140px;
   }
-  /* line 410, ../scss/_styles.scss */
+  /* line 417, ../scss/_styles.scss */
   .big-button:hover p {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
     top: 105px;
+    -webkit-transition-delay: 0.06s;
+    -moz-transition-delay: 0.06s;
+    -o-transition-delay: 0.06s;
     transition-delay: 0.06s;
   }
 }
