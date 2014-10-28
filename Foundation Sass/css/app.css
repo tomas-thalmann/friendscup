@@ -61,10 +61,10 @@ body {
 /* line 391, ../bower_components/foundation/scss/foundation/components/_global.scss */
 body {
   background: white;
-  color: #333333;
+  color: #222222;
   padding: 0;
   margin: 0;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 150%;
@@ -5288,10 +5288,10 @@ ul.pagination li {
 .panel {
   border-style: none;
   border-width: 1px;
-  border-color: #d8d8d8;
+  border-color: #c3d0e5;
   margin-bottom: 1.25rem;
   padding: 1.25rem;
-  background: #f2f2f2;
+  background: #e8edf5;
 }
 /* line 52, ../bower_components/foundation/scss/foundation/components/_panels.scss */
 .panel > :first-child {
@@ -7157,7 +7157,7 @@ blockquote p {
 }
 /* line 105, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
 meta.foundation-mq-topbar {
-  font-family: "/only screen and (min-width:40.063em)/";
+  font-family: "/only screen and (min-width:760px)/";
   width: 40.063em;
 }
 
@@ -7614,7 +7614,7 @@ meta.foundation-mq-topbar {
   display: block;
 }
 
-@media only screen and (min-width: 40.063em) {
+@media only screen and (min-width: 760px) {
   /* line 441, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
   .top-bar {
     background: white;
@@ -8931,7 +8931,7 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 10, ../scss/_styles.scss */
+/* line 11, ../scss/_styles.scss */
 .top-bar .name h1 a {
   color: #10325c;
   font-family: 'Lobster Two', cursive;
@@ -8941,12 +8941,12 @@ th.hide-for-touch {
 }
 
 @media only screen and (max-width: 25em) {
-  /* line 21, ../scss/_styles.scss */
+  /* line 22, ../scss/_styles.scss */
   .top-bar .name h1 a {
     font-size: 1.0625rem;
   }
 }
-/* line 28, ../scss/_styles.scss */
+/* line 29, ../scss/_styles.scss */
 .top-bar .name h1 a:before {
   content: " ";
   position: absolute;
@@ -8963,30 +8963,30 @@ th.hide-for-touch {
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 50, ../scss/_styles.scss */
+  /* line 51, ../scss/_styles.scss */
   .top-bar-section ul li > a {
     color: #333;
   }
 
-  /* line 56, ../scss/_styles.scss */
+  /* line 57, ../scss/_styles.scss */
   .top-bar-section ul li.active > a {
     background: #018ad2;
     color: #fff;
   }
 
-  /* line 63, ../scss/_styles.scss */
+  /* line 64, ../scss/_styles.scss */
   .top-bar-section ul li.active:hover > a {
     background: #018ad2;
     color: #fff;
   }
 
-  /* line 70, ../scss/_styles.scss */
+  /* line 71, ../scss/_styles.scss */
   .top-bar-section li:not(.has-form).has-user > a:not(.button) {
     padding-left: 83.33333px;
     line-height: 50px;
   }
 
-  /* line 76, ../scss/_styles.scss */
+  /* line 77, ../scss/_styles.scss */
   .top-bar-section > ul > li.has-user > a > img {
     height: 50px;
     width: 50px;
@@ -9000,7 +9000,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 89, ../scss/_styles.scss */
+  /* line 90, ../scss/_styles.scss */
   .top-bar-section > ul > li:not(.login-button-not-mobile) > a {
     height: 70px;
     -webkit-box-sizing: border-box;
@@ -9013,12 +9013,12 @@ th.hide-for-touch {
     transition: border-bottom 0.2s ease, color 0.2s ease;
   }
 
-  /* line 97, ../scss/_styles.scss */
+  /* line 98, ../scss/_styles.scss */
   .top-bar-section > ul > li:not(.login-button-not-mobile):hover > a {
     border-bottom: solid 5px #10325c;
   }
 
-  /* line 103, ../scss/_styles.scss */
+  /* line 104, ../scss/_styles.scss */
   .top-bar-section li.active:not(.has-form) a:not(.button) {
     height: 70px;
     -webkit-box-sizing: border-box;
@@ -9027,17 +9027,17 @@ th.hide-for-touch {
     border-bottom: solid 5px #10325c;
   }
 
-  /* line 111, ../scss/_styles.scss */
+  /* line 112, ../scss/_styles.scss */
   .top-bar-section li:not(.has-form).has-user a:not(.button) {
     padding-right: 23.33333px !important;
   }
 
-  /* line 116, ../scss/_styles.scss */
+  /* line 117, ../scss/_styles.scss */
   .top-bar-section .has-user > a:after {
     display: none;
   }
 
-  /* line 121, ../scss/_styles.scss */
+  /* line 122, ../scss/_styles.scss */
   .top-bar-section > ul > li.has-user > a > img {
     height: 50px;
     width: 50px;
@@ -9050,13 +9050,13 @@ th.hide-for-touch {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 137, ../scss/_styles.scss */
+  /* line 138, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover > a:after {
     border-left-color: #018ad2;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 146, ../scss/_styles.scss */
+  /* line 147, ../scss/_styles.scss */
   .top-bar-section .has-dropdown > a:after {
     -webkit-transition: border-top-color 0.2s ease;
     -moz-transition: border-top-color 0.2s ease;
@@ -9064,30 +9064,30 @@ th.hide-for-touch {
     transition: border-top-color 0.2s ease;
   }
 
-  /* line 150, ../scss/_styles.scss */
+  /* line 151, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover > a:after {
     border-top-color: #10325c;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 163, ../scss/_styles.scss */
+  /* line 164, ../scss/_styles.scss */
   .top-bar-section .dropdown li a {
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  /* line 170, ../scss/_styles.scss */
+  /* line 171, ../scss/_styles.scss */
   .top-bar-section .divider {
     border-top-color: #eee;
   }
 
-  /* line 176, ../scss/_styles.scss */
+  /* line 177, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     background: #eee;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 185, ../scss/_styles.scss */
+  /* line 186, ../scss/_styles.scss */
   .top-bar-section .dropdown {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
@@ -9097,13 +9097,13 @@ th.hide-for-touch {
     transition: opacity 0.2s ease;
   }
 
-  /* line 190, ../scss/_styles.scss */
+  /* line 191, ../scss/_styles.scss */
   .top-bar-section .has-dropdown:hover .dropdown {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
 
-  /* line 196, ../scss/_styles.scss */
+  /* line 197, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
     line-height: 50px;
     background: #10325c;
@@ -9114,25 +9114,25 @@ th.hide-for-touch {
     transition: background 0.2s ease;
   }
 
-  /* line 203, ../scss/_styles.scss */
+  /* line 204, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
     background: #133b6d;
     color: #fff;
   }
 
-  /* line 210, ../scss/_styles.scss */
+  /* line 211, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     text-align: right;
     padding: 8px 23.33333px 8px;
   }
 }
-/* line 222, ../scss/_styles.scss */
+/* line 223, ../scss/_styles.scss */
 .login-button-mobile {
   width: 100%;
   margin: 0;
 }
 
-/* line 229, ../scss/_styles.scss */
+/* line 230, ../scss/_styles.scss */
 .top-bar-section li.login-button-not-mobile:not(.has-form) a:not(.button) {
   background-color: #f4811f;
   color: #fff;
@@ -9151,7 +9151,7 @@ th.hide-for-touch {
   transition: background-position 0.2s cubic-bezier(0.645, 0.045, 0.355, 1), padding 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-/* line 243, ../scss/_styles.scss */
+/* line 244, ../scss/_styles.scss */
 .top-bar-section li.login-button-not-mobile:not(.has-form):hover a:not(.button) {
   background-position: 150% 50%;
   padding-left: 43.33333px;
@@ -9159,25 +9159,25 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 40.063em) {
-  /* line 254, ../scss/_styles.scss */
+  /* line 255, ../scss/_styles.scss */
   #login-modal {
     width: 31.25rem;
   }
 }
-/* line 265, ../scss/_styles.scss */
+/* line 266, ../scss/_styles.scss */
 .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
   background: #e8edf5;
   padding: 1.25rem;
   margin: 0 0 20px 0;
 }
 
-/* line 273, ../scss/_styles.scss */
+/* line 274, ../scss/_styles.scss */
 .bg-light-arrow-panel {
   position: relative;
   margin: 0;
 }
 
-/* line 279, ../scss/_styles.scss */
+/* line 280, ../scss/_styles.scss */
 .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
   content: " ";
   display: block;
@@ -9189,7 +9189,7 @@ th.hide-for-touch {
   z-index: 10;
 }
 @media only screen and (max-width: 40em) {
-  /* line 279, ../scss/_styles.scss */
+  /* line 280, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     border: 20px solid transparent;
     border-top: 20px solid #e8edf5;
@@ -9198,7 +9198,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 279, ../scss/_styles.scss */
+  /* line 280, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
     border: 40px solid transparent;
     border-top: 40px solid #e8edf5;
@@ -9207,19 +9207,19 @@ th.hide-for-touch {
   }
 }
 
-/* line 304, ../scss/_styles.scss */
+/* line 305, ../scss/_styles.scss */
 .bg-white-arrow-panel {
   background: #fff;
   position: relative;
   margin: 0;
 }
 
-/* line 311, ../scss/_styles.scss */
+/* line 312, ../scss/_styles.scss */
 .bg-white-arrow-panel:after {
   border-top-color: #fff;
 }
 
-/* line 318, ../scss/_styles.scss */
+/* line 319, ../scss/_styles.scss */
 .bg-image-panel, .bg-image-arrow-panel {
   background-image: url("../img/bg-image-panel.png");
   -webkit-background-size: cover;
@@ -9227,7 +9227,7 @@ th.hide-for-touch {
   -o-background-size: cover;
   background-size: cover;
 }
-/* line 332, ../scss/_styles.scss */
+/* line 333, ../scss/_styles.scss */
 .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
 .bg-image-panel p,
 .bg-image-arrow-panel p,
@@ -9248,25 +9248,25 @@ th.hide-for-touch {
   color: #fff;
 }
 
-/* line 339, ../scss/_styles.scss */
+/* line 340, ../scss/_styles.scss */
 .bg-image-arrow-panel {
   position: relative;
   margin: 0;
 }
 
-/* line 345, ../scss/_styles.scss */
+/* line 346, ../scss/_styles.scss */
 .bg-image-arrow-panel:after {
   border-top-color: #018ad2;
 }
 
-/* line 350, ../scss/_styles.scss */
+/* line 351, ../scss/_styles.scss */
 .panel-extra-padding {
   padding: 3.75rem 1.25rem;
   margin: 0;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 360, ../scss/_styles.scss */
+  /* line 361, ../scss/_styles.scss */
   .big-button {
     position: relative;
     display: block;
@@ -9279,7 +9279,7 @@ th.hide-for-touch {
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
-  /* line 369, ../scss/_styles.scss */
+  /* line 370, ../scss/_styles.scss */
   .big-button img {
     position: absolute;
     height: 125px;
@@ -9294,7 +9294,7 @@ th.hide-for-touch {
     -o-transition: right 0.3s;
     transition: right 0.3s;
   }
-  /* line 380, ../scss/_styles.scss */
+  /* line 381, ../scss/_styles.scss */
   .big-button h1 {
     color: #fff;
     line-height: 100px;
@@ -9306,19 +9306,19 @@ th.hide-for-touch {
     -o-transition: line-height 0.3s;
     transition: line-height 0.3s;
   }
-  /* line 399, ../scss/_styles.scss */
+  /* line 400, ../scss/_styles.scss */
   .big-button p {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
 
-  /* line 405, ../scss/_styles.scss */
+  /* line 406, ../scss/_styles.scss */
   .big-button:hover {
     background-color: #019ef0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 360, ../scss/_styles.scss */
+  /* line 361, ../scss/_styles.scss */
   .big-button {
     position: relative;
     display: block;
@@ -9331,7 +9331,7 @@ th.hide-for-touch {
     -o-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
-  /* line 369, ../scss/_styles.scss */
+  /* line 370, ../scss/_styles.scss */
   .big-button img {
     position: absolute;
     height: 250px;
@@ -9346,7 +9346,7 @@ th.hide-for-touch {
     -o-transition: right 0.3s;
     transition: right 0.3s;
   }
-  /* line 380, ../scss/_styles.scss */
+  /* line 381, ../scss/_styles.scss */
   .big-button h1 {
     color: #fff;
     line-height: 200px;
@@ -9358,7 +9358,7 @@ th.hide-for-touch {
     -o-transition: line-height 0.3s;
     transition: line-height 0.3s;
   }
-  /* line 390, ../scss/_styles.scss */
+  /* line 391, ../scss/_styles.scss */
   .big-button p {
     color: #fff;
     position: absolute;
@@ -9372,19 +9372,19 @@ th.hide-for-touch {
     transition: opacity 0.3s, top 0.3s;
   }
 
-  /* line 405, ../scss/_styles.scss */
+  /* line 406, ../scss/_styles.scss */
   .big-button:hover {
     background-color: #019ef0;
   }
-  /* line 409, ../scss/_styles.scss */
+  /* line 410, ../scss/_styles.scss */
   .big-button:hover img {
     right: -50px;
   }
-  /* line 413, ../scss/_styles.scss */
+  /* line 414, ../scss/_styles.scss */
   .big-button:hover h1 {
     line-height: 140px;
   }
-  /* line 417, ../scss/_styles.scss */
+  /* line 418, ../scss/_styles.scss */
   .big-button:hover p {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
@@ -9396,17 +9396,17 @@ th.hide-for-touch {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 9, ../scss/_cup-page.scss */
+  /* line 10, ../scss/_cup-page.scss */
   .cup-header-panel {
     padding: 0;
   }
 
-  /* line 13, ../scss/_cup-page.scss */
+  /* line 14, ../scss/_cup-page.scss */
   .cup-header-left {
     padding: 0;
   }
 
-  /* line 17, ../scss/_cup-page.scss */
+  /* line 18, ../scss/_cup-page.scss */
   .cup-header-left > h3 {
     background-color: #f4811f;
     padding: 20px;
@@ -9415,23 +9415,23 @@ th.hide-for-touch {
     margin: 0;
   }
 
-  /* line 25, ../scss/_cup-page.scss */
+  /* line 26, ../scss/_cup-page.scss */
   .cup-header-right {
     padding: 0;
   }
 
-  /* line 29, ../scss/_cup-page.scss */
+  /* line 30, ../scss/_cup-page.scss */
   .cup-header-right img {
     width: 100%;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 35, ../scss/_cup-page.scss */
+  /* line 36, ../scss/_cup-page.scss */
   .cup-header-panel {
     padding: 0;
   }
 
-  /* line 39, ../scss/_cup-page.scss */
+  /* line 40, ../scss/_cup-page.scss */
   .cup-header-left > h3 {
     background-color: #f4811f;
     padding: 0 20px;
@@ -9440,9 +9440,10 @@ th.hide-for-touch {
     color: #fff;
     margin: 20px 35px 20px 0;
     position: relative;
+    white-space: nowrap;
   }
 
-  /* line 49, ../scss/_cup-page.scss */
+  /* line 51, ../scss/_cup-page.scss */
   .cup-header-left > h3:after {
     content: " ";
     display: block;
@@ -9455,63 +9456,24 @@ th.hide-for-touch {
     border-left: 35px solid #f4811f;
   }
 
-  /* line 61, ../scss/_cup-page.scss */
+  /* line 63, ../scss/_cup-page.scss */
   .cup-header-left > p {
     text-align: center;
     color: #fff;
     margin: 20px 35px 20px 0;
   }
 
-  /* line 67, ../scss/_cup-page.scss */
+  /* line 69, ../scss/_cup-page.scss */
   .cup-header-right {
     padding: 0;
   }
 
-  /* line 71, ../scss/_cup-page.scss */
+  /* line 73, ../scss/_cup-page.scss */
   .cup-header-right img {
     width: 100%;
   }
-}
-@media only screen and (min-width: 64.063em) {
+
   /* line 77, ../scss/_cup-page.scss */
-  .cup-header-admin {
-    text-align: center;
-    margin: 20px 35px 20px 0;
-  }
-
-  /* line 82, ../scss/_cup-page.scss */
-  .cup-header-left hr {
-    border-color: #fff;
-  }
-
-  /* line 86, ../scss/_cup-page.scss */
-  .cup-header-admin img {
-    height: 70px;
-    width: 70px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border-radius: 50%;
-  }
-
-  /* line 92, ../scss/_cup-page.scss */
-  .cup-header-admin p {
-    color: #fff;
-    font-size: 1.3rem;
-  }
-
-  /* line 97, ../scss/_cup-page.scss */
-  .cup-header-admin p strong {
-    margin: 0 10px;
-  }
-
-  /* line 101, ../scss/_cup-page.scss */
-  .cup-header-admin p span {
-    font-size: 1rem;
-  }
-
-  /* line 105, ../scss/_cup-page.scss */
   .cup-header-right p {
     position: absolute;
     bottom: 0;
@@ -9522,4 +9484,92 @@ th.hide-for-touch {
     padding: 15px;
     margin: 0;
   }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 90, ../scss/_cup-page.scss */
+  .cup-header-admin {
+    text-align: center;
+    margin: 20px 35px 20px 0;
+  }
+
+  /* line 95, ../scss/_cup-page.scss */
+  .cup-header-left hr {
+    border-color: #fff;
+  }
+
+  /* line 99, ../scss/_cup-page.scss */
+  .cup-header-admin img {
+    height: 70px;
+    width: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  /* line 105, ../scss/_cup-page.scss */
+  .cup-header-admin p {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+
+  /* line 110, ../scss/_cup-page.scss */
+  .cup-header-admin p strong {
+    margin: 0 10px;
+  }
+
+  /* line 114, ../scss/_cup-page.scss */
+  .cup-header-admin p span {
+    font-size: 1rem;
+  }
+}
+/* line 123, ../scss/_cup-page.scss */
+.panel .section-header {
+  font-weight: bold;
+}
+
+/* line 131, ../scss/_cup-page.scss */
+.challenges {
+  position: relative;
+}
+/* line 134, ../scss/_cup-page.scss */
+.challenges .ch-left {
+  width: 170px;
+}
+/* line 137, ../scss/_cup-page.scss */
+.challenges .ch-left .ch-left-color-holder {
+  background-color: #018ad2;
+  height: 220px;
+  position: relative;
+}
+/* line 142, ../scss/_cup-page.scss */
+.challenges .ch-left .ch-left-color-holder > p {
+  color: #fff;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/* line 149, ../scss/_cup-page.scss */
+.challenges .ch-left .ch-left-color-holder > img {
+  height: 170px;
+  width: 170px;
+}
+/* line 155, ../scss/_cup-page.scss */
+.challenges .ch-left .ch-left-color-holder:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 70px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #018ad2;
+}
+/* line 167, ../scss/_cup-page.scss */
+.challenges .ch-left > p {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
 }

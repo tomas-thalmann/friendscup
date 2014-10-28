@@ -46,6 +46,7 @@ $( document ).ready(function() {
             
             // ----- MEDIUM UP -----
             $(".big-button h1").fitText(0.7, { minFontSize: '32px', maxFontSize: '44px' }); // Standard Foundation h1: 44px
+            $(".cup-header-left h3").fitText(1, { minFontSize: '10px', maxFontSize: '27px' }); // Standard Foundation h1: 44px
             
         }
         else {
