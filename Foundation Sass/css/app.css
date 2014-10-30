@@ -9529,34 +9529,128 @@ th.hide-for-touch {
   font-weight: bold;
 }
 
-/* line 131, ../scss/_cup-page.scss */
+/* line 207, ../scss/_cup-page.scss */
 .challenges {
   position: relative;
 }
-/* line 134, ../scss/_cup-page.scss */
-.challenges .ch-left {
+/* line 132, ../scss/_cup-page.scss */
+.challenges .ch-active {
   width: 170px;
+  margin: 0 auto;
 }
-/* line 137, ../scss/_cup-page.scss */
-.challenges .ch-left .ch-left-color-holder {
-  background-color: #018ad2;
-  height: 220px;
+/* line 147, ../scss/_cup-page.scss */
+.challenges .ch-active .ch-active-color-holder {
+  background-color: #f4811f;
+  height: 215px;
   position: relative;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
-/* line 142, ../scss/_cup-page.scss */
-.challenges .ch-left .ch-left-color-holder > p {
+/* line 153, ../scss/_cup-page.scss */
+.challenges .ch-active .ch-active-color-holder > p.ch-name {
   color: #fff;
   margin: 0;
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 149, ../scss/_cup-page.scss */
-.challenges .ch-left .ch-left-color-holder > img {
+/* line 160, ../scss/_cup-page.scss */
+.challenges .ch-active .ch-active-color-holder > img {
   height: 170px;
   width: 170px;
 }
-/* line 155, ../scss/_cup-page.scss */
-.challenges .ch-left .ch-left-color-holder:after {
+/* line 165, ../scss/_cup-page.scss */
+.challenges .ch-active .ch-active-color-holder > p.ch-winner {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/* line 178, ../scss/_cup-page.scss */
+.challenges .ch-active .ch-active-color-holder:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 70px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #f4811f;
+  -webkit-transition: border-top 0.2s ease;
+  -moz-transition: border-top 0.2s ease;
+  -o-transition: border-top 0.2s ease;
+  transition: border-top 0.2s ease;
+}
+/* line 191, ../scss/_cup-page.scss */
+.challenges .ch-active > p {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 197, ../scss/_cup-page.scss */
+.challenges .ch-active > a:hover .ch-active-color-holder {
+  background-color: #f69a4c;
+}
+/* line 201, ../scss/_cup-page.scss */
+.challenges .ch-active > a:hover .ch-active-color-holder:after {
+  border-top: 15px solid #f69a4c;
+}
+/* line 212, ../scss/_cup-page.scss */
+.challenges .ch-left-container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: 5.3125rem;
+}
+/* line 132, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left {
+  width: 170px;
+  float: left;
+  margin-right: 1.875rem;
+}
+/* line 147, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left .ch-left-color-holder {
+  background-color: #018ad2;
+  height: 215px;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+/* line 153, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left .ch-left-color-holder > p.ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/* line 160, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left .ch-left-color-holder > img {
+  height: 170px;
+  width: 170px;
+}
+/* line 165, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left .ch-left-color-holder > p.ch-winner {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/* line 178, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left .ch-left-color-holder:after {
   content: " ";
   display: block;
   position: absolute;
@@ -9566,10 +9660,111 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #018ad2;
+  -webkit-transition: border-top 0.2s ease;
+  -moz-transition: border-top 0.2s ease;
+  -o-transition: border-top 0.2s ease;
+  transition: border-top 0.2s ease;
 }
-/* line 167, ../scss/_cup-page.scss */
-.challenges .ch-left > p {
+/* line 191, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left > p {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
+}
+/* line 197, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left > a:hover .ch-left-color-holder {
+  background-color: #11acfe;
+}
+/* line 201, ../scss/_cup-page.scss */
+.challenges .ch-left-container .ch-left > a:hover .ch-left-color-holder:after {
+  border-top: 15px solid #11acfe;
+}
+/* line 221, ../scss/_cup-page.scss */
+.challenges .ch-right-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 5.3125rem;
+}
+/* line 132, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right {
+  width: 170px;
+  float: left;
+  margin-left: 1.875rem;
+}
+/* line 147, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right .ch-right-color-holder {
+  background-color: #333333;
+  height: 215px;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease;
+  -moz-transition: background-color 0.2s ease;
+  -o-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+/* line 153, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right .ch-right-color-holder > p.ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/* line 160, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right .ch-right-color-holder > img {
+  height: 170px;
+  width: 170px;
+}
+/* line 165, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right .ch-right-color-holder > p.ch-winner {
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin: 0;
+  padding: 0 10px;
+  line-height: 30px;
+}
+/* line 178, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right .ch-right-color-holder:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  bottom: -30px;
+  left: 70px;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top: 15px solid #333333;
+  -webkit-transition: border-top 0.2s ease;
+  -moz-transition: border-top 0.2s ease;
+  -o-transition: border-top 0.2s ease;
+  transition: border-top 0.2s ease;
+}
+/* line 191, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right > p {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
+}
+/* line 197, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right > a:hover .ch-right-color-holder {
+  background-color: #5c5c5c;
+}
+/* line 201, ../scss/_cup-page.scss */
+.challenges .ch-right-container .ch-right > a:hover .ch-right-color-holder:after {
+  border-top: 15px solid #5c5c5c;
+}
+
+/* line 231, ../scss/_cup-page.scss */
+.challenges:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 200px;
+  right: 0;
+  left: 0;
+  height: 15px;
+  background-color: #ccc;
 }

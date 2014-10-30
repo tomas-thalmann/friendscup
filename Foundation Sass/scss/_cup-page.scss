@@ -128,31 +128,54 @@
 // Challenges
 // ----------------------------------
 
-.challenges {
-    position: relative;
-    
-    .ch-left {
+@mixin generate-ch-element($pos, $color) { // $pos -> left, right, active
+    .ch-#{$pos} {
         width: 170px;
         
-        .ch-left-color-holder {
-            background-color: $fc-primary;
-            height: 220px;
+        @if $pos == 'left' {
+            float: left;
+            margin-right: ($column-gutter);
+        }
+        @else if $pos == 'right' {
+            float: left;
+            margin-left: ($column-gutter);
+        }
+        @else if $pos == 'active' {
+            margin: 0 auto;
+        }
+
+        .ch-#{$pos}-color-holder {
+            background-color: $color;
+            height: 215px;
             position: relative;
-            
-            > p {
+            @include transition(background-color 0.2s ease);
+
+            > p.ch-name {
                 color: #fff;
                 margin: 0;
                 padding: 0 10px;
                 line-height: 30px;
             }
-            
+
             > img {
                 height: 170px;
                 width: 170px;
             }
+            
+            > p.ch-winner {
+                position: absolute;
+                bottom: 15px;
+                left: 0;
+                right: 0;
+                color: #fff;
+                background-color: rgba(0,0,0,0.7);
+                margin: 0;
+                padding: 0 10px;
+                line-height: 30px;
+            }
         }
-        
-        .ch-left-color-holder:after {
+
+        .ch-#{$pos}-color-holder:after {
             content: " ";
             display: block;
             position: absolute;
@@ -161,16 +184,68 @@
             width: 0;
             height: 0;
             border: 15px solid transparent;
-            border-top: 15px solid $fc-primary;
+            border-top: 15px solid $color;
+            @include transition(border-top 0.2s ease);
         }
-        
+
         > p {
             font-weight: bold;
             text-align: center;
             padding-top: 20px;
         }
+        
+        > a:hover .ch-#{$pos}-color-holder {
+            background-color: scale-color($color, $lightness: 20%);
+        }
+        
+        > a:hover .ch-#{$pos}-color-holder:after {
+            border-top: 15px solid scale-color($color, $lightness: 20%);
+        }
     }
 }
+
+.challenges {
+    position: relative;
+    
+    @include generate-ch-element('active', $fc-orange);
+    
+    .ch-left-container {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        margin-right: rem-calc(85);
+        
+        @include generate-ch-element('left', $fc-primary);
+    }
+    
+    .ch-right-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: rem-calc(85);
+        
+        @include generate-ch-element('right', #333);
+    }
+}
+
+.challenges:before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 200px;
+    right: 0;
+    left: 0;
+    height: 15px;
+    background-color: #ccc;
+}
+
+
+
+
+
+
+
+
 
 
 
