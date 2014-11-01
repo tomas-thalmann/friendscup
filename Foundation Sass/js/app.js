@@ -57,3 +57,67 @@ $( document ).ready(function() {
         }
     }
 });
+
+// ---------------------------
+// Expanding
+// ---------------------------
+
+$.fn.clicktoggle = function(a, b) {
+    return this.each(function() {
+        var clicked = false;
+        $(this).click(function() {
+            if (clicked) {
+                clicked = false;
+                return b.apply(this, arguments);
+            }
+            clicked = true;
+            return a.apply(this, arguments);
+        });
+    });
+};
+
+$( document ).ready(function() {
+    $(".ch-expanded").hide();
+    $(".black-overlay").hide();
+    
+    $(".section-header-expand").clicktoggle(function() {
+        $(".ch-compressed").fadeOut(200);
+        $(".black-overlay").fadeIn(400);
+        $(".cp-section").delay(200).queue(function(){
+            $(this).addClass("cp-section-expanded").dequeue();
+        });
+        $(".ch-expanded").delay(400).fadeIn(200);
+    },function() {
+        $(".ch-expanded").fadeOut(200);
+        $(".black-overlay").fadeOut(400);
+        $(".cp-section").delay(200).queue(function(){
+            $(this).removeClass("cp-section-expanded").dequeue();
+        });
+        $(".ch-compressed").delay(400).fadeIn(200);
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

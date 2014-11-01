@@ -15,7 +15,7 @@
         padding: 0;
     }
     
-    .cup-header-left > h3 {
+    .cup-header-left .flex-center > h3 {
         background-color: $fc-orange;
         padding: 20px;
         text-align: center;
@@ -36,8 +36,23 @@
     .cup-header-panel {
         padding: 0;
     }
+    
+    .cup-header-panel > .row {
+        display: flex;
+        align-items: stretch;
+    }
+    
+    .cup-header-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flex-center {
+        width: 100%;
+    }
 
-    .cup-header-left > h3 {
+    .cup-header-left .flex-center > h3 {
         background-color: $fc-orange;
         padding: 0 20px;
         line-height: 70px;
@@ -48,7 +63,7 @@
         white-space: nowrap;
     }
 
-    .cup-header-left > h3:after {
+    .cup-header-left .flex-center > h3:after {
         content: " ";
         display: block;
         position: absolute;
@@ -60,7 +75,7 @@
         border-left: 35px solid $fc-orange;
     }
 
-    .cup-header-left > p {
+    .cup-header-left .flex-center > p {
         text-align: center;
         color: #fff;
         margin: 20px 35px 20px 0;
@@ -120,7 +135,7 @@
 // Section Header
 // ----------------------------------
 
-.panel .section-header {
+.section-header {
     font-weight: bold;
 }
 
@@ -131,18 +146,6 @@
 @mixin generate-ch-element($pos, $color) { // $pos -> left, right, active
     .ch-#{$pos} {
         width: 170px;
-        
-        @if $pos == 'left' {
-            float: left;
-            margin-right: ($column-gutter);
-        }
-        @else if $pos == 'right' {
-            float: left;
-            margin-left: ($column-gutter);
-        }
-        @else if $pos == 'active' {
-            margin: 0 auto;
-        }
 
         .ch-#{$pos}-color-holder {
             background-color: $color;
@@ -187,8 +190,8 @@
             border-top: 15px solid $color;
             @include transition(border-top 0.2s ease);
         }
-
-        > p {
+        
+        > a > p.ch-date {
             font-weight: bold;
             text-align: center;
             padding-top: 20px;
@@ -204,10 +207,14 @@
     }
 }
 
-.challenges {
+.ch-compressed {
     position: relative;
     
     @include generate-ch-element('active', $fc-orange);
+    
+    .ch-active {
+        margin: 0 auto;
+    }
     
     .ch-left-container {
         position: absolute;
@@ -215,7 +222,12 @@
         right: 50%;
         margin-right: rem-calc(85);
         
-        @include generate-ch-element('left', $fc-primary);
+        @include generate-ch-element('finished', $fc-primary);
+        
+        .ch-finished {
+            float: right;
+            margin-right: $column-gutter;
+        }
     }
     
     .ch-right-container {
@@ -224,11 +236,43 @@
         left: 50%;
         margin-left: rem-calc(85);
         
-        @include generate-ch-element('right', #333);
+        @include generate-ch-element('queued', #333);
+        
+        .ch-queued {
+            float: left;
+            margin-left: $column-gutter;
+        }
     }
 }
 
-.challenges:before {
+.ch-expanded {
+    position: relative;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+    @include generate-ch-element('active', $fc-orange);
+    @include generate-ch-element('finished', $fc-primary);
+    @include generate-ch-element('queued', #333);
+    
+    .ch-active,
+    .ch-finished,
+    .ch-queued {
+        display: inline-block;
+        margin: 0 ($column-gutter / 2);
+    }
+    
+    > div:first-child {
+        margin-left: $column-gutter;
+    }
+    
+    > div:last-child {
+        margin-right: $column-gutter;
+    }
+}
+
+.ch-compressed:before,
+.ch-expanded:before {
     content: " ";
     display: block;
     position: absolute;
@@ -237,6 +281,27 @@
     left: 0;
     height: 15px;
     background-color: #ccc;
+}
+
+.cp-section {
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.cp-section-expanded {
+    max-width: none;
+}
+
+.black-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    @include opacity(0.6);
+    z-index: 90;
 }
 
 
