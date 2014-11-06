@@ -12,9 +12,6 @@
 </head>
 
 <body>
-    
-    <div class='black-overlay'></div>
-    
     <!-- BEGIN - Navigation -->
     <div class="contain-to-grid">
         <nav class="top-bar" data-topbar>
@@ -84,9 +81,9 @@
         </div>
     </div>
     
-    <div class="row cp-section">
+    <div class="row ch-section">
         <div class="panel">
-            <h3 class="section-header">Aktuelle Aktivitäten <a href="#" class="section-header-expand right"><i class="fa fa-arrows-alt"></i></a></h3>
+            <h3 class="section-header">Aktuelle Aktivitäten <a class="modal-open right"><i class="fa fa-arrows-alt"></i></a></h3>
         </div>
         
         <div class="ch-compressed">
@@ -143,82 +140,88 @@
             </div>
         </div>
         
-        <div class="ch-expanded">
-            <div class="ch-finished">
-                <a href="#">
-                    <div class="ch-finished-color-holder">
-                        <p class="ch-name">Free Skiing<span class="right"><i class="fa fa-check-circle"></i></span></p>
-                        <img src="img/challenges/ch-1.png" />
-                        <p class="ch-winner">Saul<span class="right"><i class="fa fa-trophy"></i></span></p>
-                    </div>
-                    <p class="ch-date">23.11.2014</p>
-                </a>
+        <div class="section-modal">
+            <div class="panel">
+                <h3 class="section-header">Aktuelle Aktivitäten <a class="right" rel="modal:close"><i class="fa fa-times"></i></a></h3>
             </div>
-            <div class="ch-finished">
-                <a href="#">
-                    <div class="ch-finished-color-holder">
-                        <p class="ch-name">Free Skiing<span class="right"><i class="fa fa-check-circle"></i></span></p>
-                        <img src="img/challenges/ch-1.png" />
-                        <p class="ch-winner">Saul<span class="right"><i class="fa fa-trophy"></i></span></p>
-                    </div>
-                    <p class="ch-date">23.11.2014</p>
-                </a>
-            </div>
-            <div class="ch-finished">
-                <a href="#">
-                    <div class="ch-finished-color-holder">
-                        <p class="ch-name">Free Skiing<span class="right"><i class="fa fa-check-circle"></i></span></p>
-                        <img src="img/challenges/ch-1.png" />
-                        <p class="ch-winner">Saul<span class="right"><i class="fa fa-trophy"></i></span></p>
-                    </div>
-                    <p class="ch-date">23.11.2014</p>
-                </a>
-            </div>
-            <div class="ch-finished">
-                <a href="#">
-                    <div class="ch-finished-color-holder">
-                        <p class="ch-name">Snowboarden<span class="right"><i class="fa fa-check-circle"></i></span></p>
-                        <img src="img/challenges/ch-2.png" />
-                        <p class="ch-winner">Hank<span class="right"><i class="fa fa-trophy"></i></span></p>
-                    </div>
-                    <p class="ch-date">3.12.2014</p>
-                </a>
-            </div>
-            <div class="ch-active">
-                <a href="#">
-                    <div class="ch-active-color-holder">
-                        <p class="ch-name">Langlaufen<span class="right"><i class="fa fa-clock-o"></i></span></p>
-                        <img src="img/challenges/ch-3.png" />
-                    </div>
-                    <p class="ch-date">23.11.2014</p>
-                </a>
-            </div>
-            <div class="ch-queued">
-                <a href="#">
-                    <div class="ch-queued-color-holder">
-                        <p class="ch-name">Eishockey<span class="right"><i class="fa fa-circle"></i></span></p>
-                        <img src="img/challenges/ch-4.png" />
-                    </div>
-                    <p class="ch-date">23.11.2014</p>
-                </a>
-            </div>
-            <div class="ch-queued">
-                <a href="#">
-                    <div class="ch-queued-color-holder">
-                        <p class="ch-name">Eishockey<span class="right"><i class="fa fa-circle"></i></span></p>
-                        <img src="img/challenges/ch-4.png" />
-                    </div>
-                    <p class="ch-date">23.11.2014</p>
-                </a>
-            </div>
-            <div class="ch-queued">
-                <a href="#">
-                    <div class="ch-queued-color-holder">
-                        <p class="ch-name">Schlittenfahren<span class="right"><i class="fa fa-circle-o"></i></span></p>
-                        <img src="img/challenges/ch-5.png" />
-                    </div>
-                    <p class="ch-date">3.12.2014</p>
-                </a>
+
+            <div class="ch-expanded">
+                <div class="ch-finished">
+                    <a href="#">
+                        <div class="ch-finished-color-holder">
+                            <p class="ch-name">Free Skiing<span class="right"><i class="fa fa-check-circle"></i></span></p>
+                            <img src="img/challenges/ch-1.png" />
+                            <p class="ch-winner">Saul<span class="right"><i class="fa fa-trophy"></i></span></p>
+                        </div>
+                        <p class="ch-date">23.11.2014</p>
+                    </a>
+                </div>
+                <div class="ch-finished">
+                    <a href="#">
+                        <div class="ch-finished-color-holder">
+                            <p class="ch-name">Free Skiing<span class="right"><i class="fa fa-check-circle"></i></span></p>
+                            <img src="img/challenges/ch-1.png" />
+                            <p class="ch-winner">Saul<span class="right"><i class="fa fa-trophy"></i></span></p>
+                        </div>
+                        <p class="ch-date">23.11.2014</p>
+                    </a>
+                </div>
+                <div class="ch-finished">
+                    <a href="#">
+                        <div class="ch-finished-color-holder">
+                            <p class="ch-name">Free Skiing<span class="right"><i class="fa fa-check-circle"></i></span></p>
+                            <img src="img/challenges/ch-1.png" />
+                            <p class="ch-winner">Saul<span class="right"><i class="fa fa-trophy"></i></span></p>
+                        </div>
+                        <p class="ch-date">23.11.2014</p>
+                    </a>
+                </div>
+                <div class="ch-finished">
+                    <a href="#">
+                        <div class="ch-finished-color-holder">
+                            <p class="ch-name">Snowboarden<span class="right"><i class="fa fa-check-circle"></i></span></p>
+                            <img src="img/challenges/ch-2.png" />
+                            <p class="ch-winner">Hank<span class="right"><i class="fa fa-trophy"></i></span></p>
+                        </div>
+                        <p class="ch-date">3.12.2014</p>
+                    </a>
+                </div>
+                <div class="ch-active">
+                    <a href="#">
+                        <div class="ch-active-color-holder">
+                            <p class="ch-name">Langlaufen<span class="right"><i class="fa fa-clock-o"></i></span></p>
+                            <img src="img/challenges/ch-3.png" />
+                        </div>
+                        <p class="ch-date">23.11.2014</p>
+                    </a>
+                </div>
+                <div class="ch-queued">
+                    <a href="#">
+                        <div class="ch-queued-color-holder">
+                            <p class="ch-name">Eishockey<span class="right"><i class="fa fa-circle"></i></span></p>
+                            <img src="img/challenges/ch-4.png" />
+                        </div>
+                        <p class="ch-date">23.11.2014</p>
+                    </a>
+                </div>
+                <div class="ch-queued">
+                    <a href="#">
+                        <div class="ch-queued-color-holder">
+                            <p class="ch-name">Eishockey<span class="right"><i class="fa fa-circle"></i></span></p>
+                            <img src="img/challenges/ch-4.png" />
+                        </div>
+                        <p class="ch-date">23.11.2014</p>
+                    </a>
+                </div>
+                <div class="ch-queued">
+                    <a href="#">
+                        <div class="ch-queued-color-holder">
+                            <p class="ch-name">Schlittenfahren<span class="right"><i class="fa fa-circle-o"></i></span></p>
+                            <img src="img/challenges/ch-5.png" />
+                        </div>
+                        <p class="ch-date">3.12.2014</p>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -227,6 +230,8 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/fittext.js"></script>
+    <script src="js/enquire.js"></script>
+    <script src="js/jquery.modal.js"></script>
     <script src="js/app.js"></script>
 </body>
 

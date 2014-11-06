@@ -143,8 +143,9 @@
 // Challenges
 // ----------------------------------
 
-@mixin generate-ch-element($pos, $color) { // $pos -> left, right, active
+@mixin generate-ch-element($pos, $color) { // $pos -> active, finished, queued
     .ch-#{$pos} {
+        position: relative;
         width: 170px;
 
         .ch-#{$pos}-color-holder {
@@ -205,10 +206,22 @@
             border-top: 15px solid scale-color($color, $lightness: 20%);
         }
     }
+    
+    .ch-#{$pos}:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 200px;
+        left: -$column-gutter;
+        right: -$column-gutter;
+        height: 15px;
+        background-color: #ccc;
+    }
 }
 
 .ch-compressed {
     position: relative;
+    overflow: hidden;
     
     @include generate-ch-element('active', $fc-orange);
     
@@ -271,38 +284,23 @@
     }
 }
 
-.ch-compressed:before,
-.ch-expanded:before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 200px;
-    right: 0;
-    left: 0;
-    height: 15px;
-    background-color: #ccc;
-}
+// ----------------------------------
+// Custom Modal
+// ----------------------------------
 
-.cp-section {
-    position: relative;
-    z-index: 100;
-    background-color: #fff;
-}
-
-.cp-section-expanded {
+.section-modal {
+    display: none;
     max-width: none;
+    width: 100%;
+    background: #fff;
+    padding: 0;
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-.black-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #000;
-    @include opacity(0.6);
-    z-index: 90;
-}
 
 
 
