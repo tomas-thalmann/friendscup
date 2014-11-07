@@ -1,11 +1,10 @@
-// Foundation JavaScript
-// Documentation can be found at: http://foundation.zurb.com/docs
-// $(document).foundation();
+// Author: Sebastian Thaler
+// Email: sebi.thaler@gmail.com
 
 /*global $, jQuery, enquire, Foundation*/
 
 // ---------------------------
-// Foundation
+// Foundation Configuration
 // ---------------------------
 
 $(document).foundation({
@@ -21,14 +20,39 @@ $(document).foundation({
 });
 
 // ---------------------------
-// Other Custom
+// jQuery document ready
 // ---------------------------
 
 $(document).ready(function () {
     "use strict";
+    
+    // ---------------------------
+    // Bugfixes
+    // ---------------------------
+    
+    // fix: form dropdown not clickable on mobile devices (needclick -> fastclick.js class)
+    $('select').addClass('needsclick');
+    
+    // ---------------------------
+    // Detail View - Modal
+    // ---------------------------
+    
+    $('.modal-open').click(function () {
+        $('#' + $(this).data('sectionmodalid')).css('top', $(this).closest('.cup-section').offset().top);
+        $('#' + $(this).data('sectionmodalid')).modal();
+    });
+    
+    // ---------------------------
+    // Media Queries
+    // ---------------------------
+    
     enquire.register(Foundation.media_queries.medium, {
         match: function () {
-            // ----- Fittext -----
+            
+            // ---------------------------
+            // Fittext
+            // ---------------------------
+            
             // Standard Foundation h1: 44px
             $(".big-button h1").fitText(0.7, { minFontSize: '32px', maxFontSize: '44px' });
             // Standard Foundation h3: 27px
@@ -37,26 +61,16 @@ $(document).ready(function () {
     });
     enquire.register(Foundation.media_queries.small, {
         match: function () {
-            // ----- Fittext -----
+            
+            // ---------------------------
+            // Fittext
+            // ---------------------------
+            
             // Standard Foundation h1 at small: 34px
             $(".big-button h1").fitText(0.7, { minFontSize: '22px', maxFontSize: '34px' });
         }
     });
 });
-
-$('.ch-section .modal-open').click(function () {
-    "use strict";
-    $('.ch-section .section-modal').css('top', $('.ch-section').offset().top);
-    $('.ch-section .section-modal').modal();
-});
-
-
-
-
-
-
-
-
 
 
 

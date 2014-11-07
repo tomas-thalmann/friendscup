@@ -17,7 +17,7 @@
     
     .cup-header-left .flex-center > h3 {
         background-color: $fc-orange;
-        padding: 20px;
+        padding: rem-calc(20);
         text-align: center;
         color: #fff;
         margin: 0;
@@ -54,11 +54,11 @@
 
     .cup-header-left .flex-center > h3 {
         background-color: $fc-orange;
-        padding: 0 20px;
-        line-height: 70px;
+        padding: 0 rem-calc(20);
+        line-height: rem-calc(70);
         text-align: center;
         color: #fff;
-        margin: 20px 35px 20px 0;
+        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
         position: relative;
         white-space: nowrap;
     }
@@ -67,18 +67,18 @@
         content: " ";
         display: block;
         position: absolute;
-        right: -70px;
+        right: rem-calc(-70);
         top: 0;
         width: 0;
         height: 0;
-        border: 35px solid transparent;
-        border-left: 35px solid $fc-orange;
+        border: rem-calc(35) solid transparent;
+        border-left: rem-calc(35) solid $fc-orange;
     }
 
     .cup-header-left .flex-center > p {
         text-align: center;
         color: #fff;
-        margin: 20px 35px 20px 0;
+        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
     }
 
     .cup-header-right {
@@ -96,7 +96,7 @@
         width: 100%;
         background-color: rgba(0,0,0,0.7);
         color: #fff;
-        padding: 15px;
+        padding: rem-calc(15);
         margin: 0;
     }
 }
@@ -104,7 +104,7 @@
 @media #{$large-up} {
     .cup-header-admin {
         text-align: center;
-        margin: 20px 35px 20px 0;
+        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
     }
     
     .cup-header-left hr {
@@ -112,8 +112,8 @@
     }
     
     .cup-header-admin img {
-        height: 70px;
-        width: 70px;
+        height: rem-calc(70);
+        width: rem-calc(70);
         @include border-radius(50%);
     }
 
@@ -123,11 +123,23 @@
     }
 
     .cup-header-admin p strong {
-        margin: 0 10px;
+        margin: 0 rem-calc(10);
     }
 
     .cup-header-admin p span {
         font-size: 1rem;
+    }
+}
+
+// ----------------------------------
+// Cup Section
+// ----------------------------------
+
+@media #{$small-only} {
+    .cup-section {
+        width: 90%;
+        margin: 0 5% $column-gutter 5%;
+        background-color: $fc-primary-bg;
     }
 }
 
@@ -137,6 +149,35 @@
 
 .section-header {
     font-weight: bold;
+    border-bottom: 1px solid #bbb;
+    padding: 0 0 rem-calc(5) 0;
+    margin: rem-calc(20) 0 rem-calc(40) 0;
+}
+
+.section-modal .section-header {
+    margin: rem-calc(20) ($column-gutter / 2) rem-calc(40) ($column-gutter / 2);
+}
+
+// ----------------------------------
+// Cup Section Modal
+// ----------------------------------
+
+@media #{$small-up} {
+    .section-modal {
+        display: none;
+        max-width: none;
+        width: 100%;
+        background-color: $fc-primary-bg;
+        padding: 0;
+        @include box-shadow(0 0 rem-calc(10) rgba(0,0,0,0.4));
+    }
+}
+
+@media #{$medium-up} {
+    .section-modal {
+        background-color: #fff;
+        padding: 0 rem-calc(20);
+    }
 }
 
 // ----------------------------------
@@ -276,29 +317,20 @@
     }
     
     > div:first-child {
-        margin-left: $column-gutter;
+        margin-left: $column-gutter / 2;
+    }
+    
+    > div:first-child:before {
+        left: 0;
     }
     
     > div:last-child {
-        margin-right: $column-gutter;
+        margin-right: $column-gutter / 2;
     }
-}
-
-// ----------------------------------
-// Custom Modal
-// ----------------------------------
-
-.section-modal {
-    display: none;
-    max-width: none;
-    width: 100%;
-    background: #fff;
-    padding: 0;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -o-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    -ms-box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    
+    > div:last-child:before {
+        right: 0;
+    }
 }
 
 

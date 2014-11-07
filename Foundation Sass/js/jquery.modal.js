@@ -149,9 +149,10 @@
       this.$elm.css({
         position: 'absolute',
         //top: "50%",
-        left: "50%",
+        left: "0",
+        right: "0",
         //marginTop: - (this.$elm.outerHeight() / 2),
-        marginLeft: - (this.$elm.outerWidth() / 2),
+        //marginLeft: - (this.$elm.outerWidth() / 2),
         zIndex: this.options.zIndex + 1
       });
     },
@@ -186,7 +187,7 @@
 
   $.modal.defaults = {
     overlay: "#000",
-    opacity: 0.5,
+    opacity: 0.4,
     zIndex: 1005,
     escapeClose: true,
     clickClose: true,
