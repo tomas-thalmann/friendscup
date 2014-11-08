@@ -17,7 +17,7 @@
     
     .cup-header-left .flex-center > h3 {
         background-color: $fc-orange;
-        padding: rem-calc(20);
+        padding: 20px;
         text-align: center;
         color: #fff;
         margin: 0;
@@ -54,11 +54,11 @@
 
     .cup-header-left .flex-center > h3 {
         background-color: $fc-orange;
-        padding: 0 rem-calc(20);
-        line-height: rem-calc(70);
+        padding: 0 20px;
+        line-height: 70px;
         text-align: center;
         color: #fff;
-        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
+        margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
         position: relative;
         white-space: nowrap;
     }
@@ -67,18 +67,29 @@
         content: " ";
         display: block;
         position: absolute;
-        right: rem-calc(-70);
+        right: -70px;
         top: 0;
         width: 0;
-        height: 0;
-        border: rem-calc(35) solid transparent;
-        border-left: rem-calc(35) solid $fc-orange;
+        border: 35px solid transparent;
+        border-left: 35px solid $fc-orange;
+    }
+    
+    // fix gap on higher zoom/fontsize
+    .cup-header-left .flex-center > h3:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        right: -69px;
+        top: 0;
+        width: 0;
+        border: 35px solid transparent;
+        border-left: 35px solid $fc-orange;
     }
 
     .cup-header-left .flex-center > p {
         text-align: center;
         color: #fff;
-        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
+        margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
     }
 
     .cup-header-right {
@@ -104,7 +115,7 @@
 @media #{$large-up} {
     .cup-header-admin {
         text-align: center;
-        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
+        margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
     }
     
     .cup-header-left hr {
@@ -112,8 +123,8 @@
     }
     
     .cup-header-admin img {
-        height: rem-calc(70);
-        width: rem-calc(70);
+        height: 70px;
+        width: 70px;
         @include border-radius(50%);
     }
 
@@ -200,6 +211,14 @@
                 margin: 0;
                 padding: 0 10px;
                 line-height: 30px;
+                position: relative;
+            }
+            
+            > p.ch-name > span.ch-icon {
+                position: absolute;
+                right: 0;
+                padding: 0 10px 0 20px;
+                @include background-image(linear-gradient(left, rgba(0,0,0,0) 0%,$color 15px,$color 100%));
             }
 
             > img {
@@ -224,7 +243,7 @@
             content: " ";
             display: block;
             position: absolute;
-            bottom: -30px;
+            bottom: -29px; // (instead of 30) fixes problem on higher zoom
             left: 70px;
             width: 0;
             height: 0;
