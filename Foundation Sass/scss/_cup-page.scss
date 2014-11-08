@@ -64,7 +64,7 @@
     }
 
     .cup-header-left .flex-center > h3:after {
-        content: " ";
+        content: "";
         display: block;
         position: absolute;
         right: -70px;
@@ -76,7 +76,7 @@
     
     // fix gap on higher zoom/fontsize
     .cup-header-left .flex-center > h3:before {
-        content: " ";
+        content: "";
         display: block;
         position: absolute;
         right: -69px;
@@ -204,29 +204,38 @@
             background-color: $color;
             height: 215px;
             position: relative;
-            @include transition(background-color 0.2s ease);
 
-            > p.ch-name {
+            p.ch-name {
                 color: #fff;
                 margin: 0;
-                padding: 0 10px;
+                padding: 0 30px 0 10px; // 30px -> width of icon
                 line-height: 30px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
                 position: relative;
             }
             
-            > p.ch-name > span.ch-icon {
+            p.ch-name > span.ch-icon {
                 position: absolute;
                 right: 0;
-                padding: 0 10px 0 20px;
-                @include background-image(linear-gradient(left, rgba(0,0,0,0) 0%,$color 15px,$color 100%));
-            }
-
-            > img {
-                height: 170px;
-                width: 170px;
+                width: 30px;
+                text-align: center;
             }
             
-            > p.ch-winner {
+            div.ch-image {
+                height: 170px;
+                width: 170px;
+                overflow: hidden;
+            }
+
+            div.ch-image > img {
+                height: inherit;
+                width: inherit;
+                @include transition(transform 0.2s ease);
+            }
+            
+            p.ch-winner {
                 position: absolute;
                 bottom: 15px;
                 left: 0;
@@ -240,7 +249,7 @@
         }
 
         .ch-#{$pos}-color-holder:after {
-            content: " ";
+            content: "";
             display: block;
             position: absolute;
             bottom: -29px; // (instead of 30) fixes problem on higher zoom
@@ -249,26 +258,21 @@
             height: 0;
             border: 15px solid transparent;
             border-top: 15px solid $color;
-            @include transition(border-top 0.2s ease);
         }
         
-        > a > p.ch-date {
+        p.ch-date {
             font-weight: bold;
             text-align: center;
             padding-top: 20px;
         }
         
-        > a:hover .ch-#{$pos}-color-holder {
-            background-color: scale-color($color, $lightness: 20%);
-        }
-        
-        > a:hover .ch-#{$pos}-color-holder:after {
-            border-top: 15px solid scale-color($color, $lightness: 20%);
+        > a:hover .ch-#{$pos}-color-holder div.ch-image > img {
+            @include transform(scale(1.1));
         }
     }
     
     .ch-#{$pos}:before {
-        content: " ";
+        content: "";
         display: block;
         position: absolute;
         top: 200px;
@@ -319,7 +323,6 @@
 }
 
 .ch-expanded {
-    position: relative;
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;

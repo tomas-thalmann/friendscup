@@ -9463,7 +9463,7 @@ th.hide-for-touch {
 
   /* line 66, ../scss/_cup-page.scss */
   .cup-header-left .flex-center > h3:after {
-    content: " ";
+    content: "";
     display: block;
     position: absolute;
     right: -70px;
@@ -9475,7 +9475,7 @@ th.hide-for-touch {
 
   /* line 78, ../scss/_cup-page.scss */
   .cup-header-left .flex-center > h3:before {
-    content: " ";
+    content: "";
     display: block;
     position: absolute;
     right: -69px;
@@ -9594,7 +9594,7 @@ th.hide-for-touch {
     padding: 0 1.25rem;
   }
 }
-/* line 282, ../scss/_cup-page.scss */
+/* line 286, ../scss/_cup-page.scss */
 .ch-compressed {
   position: relative;
   overflow: hidden;
@@ -9609,37 +9609,42 @@ th.hide-for-touch {
   background-color: #f4811f;
   height: 215px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
 }
-/* line 209, ../scss/_cup-page.scss */
-.ch-compressed .ch-active .ch-active-color-holder > p.ch-name {
+/* line 208, ../scss/_cup-page.scss */
+.ch-compressed .ch-active .ch-active-color-holder p.ch-name {
   color: #fff;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position: relative;
 }
-/* line 217, ../scss/_cup-page.scss */
-.ch-compressed .ch-active .ch-active-color-holder > p.ch-name > span.ch-icon {
+/* line 219, ../scss/_cup-page.scss */
+.ch-compressed .ch-active .ch-active-color-holder p.ch-name > span.ch-icon {
   position: absolute;
   right: 0;
-  padding: 0 10px 0 20px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(15px, #f4811f), color-stop(100%, #f4811f));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
+  width: 30px;
+  text-align: center;
 }
-/* line 224, ../scss/_cup-page.scss */
-.ch-compressed .ch-active .ch-active-color-holder > img {
+/* line 226, ../scss/_cup-page.scss */
+.ch-compressed .ch-active .ch-active-color-holder div.ch-image {
   height: 170px;
   width: 170px;
+  overflow: hidden;
 }
-/* line 229, ../scss/_cup-page.scss */
-.ch-compressed .ch-active .ch-active-color-holder > p.ch-winner {
+/* line 232, ../scss/_cup-page.scss */
+.ch-compressed .ch-active .ch-active-color-holder div.ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 238, ../scss/_cup-page.scss */
+.ch-compressed .ch-active .ch-active-color-holder p.ch-winner {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -9650,9 +9655,9 @@ th.hide-for-touch {
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 242, ../scss/_cup-page.scss */
+/* line 251, ../scss/_cup-page.scss */
 .ch-compressed .ch-active .ch-active-color-holder:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: -29px;
@@ -9661,28 +9666,24 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #f4811f;
-  -webkit-transition: border-top 0.2s ease;
-  -moz-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
 }
-/* line 255, ../scss/_cup-page.scss */
-.ch-compressed .ch-active > a > p.ch-date {
+/* line 263, ../scss/_cup-page.scss */
+.ch-compressed .ch-active p.ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-/* line 261, ../scss/_cup-page.scss */
-.ch-compressed .ch-active > a:hover .ch-active-color-holder {
-  background-color: #f69a4c;
+/* line 269, ../scss/_cup-page.scss */
+.ch-compressed .ch-active > a:hover .ch-active-color-holder div.ch-image > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 265, ../scss/_cup-page.scss */
-.ch-compressed .ch-active > a:hover .ch-active-color-holder:after {
-  border-top: 15px solid #f69a4c;
-}
-/* line 270, ../scss/_cup-page.scss */
+/* line 274, ../scss/_cup-page.scss */
 .ch-compressed .ch-active:before {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   top: 200px;
@@ -9691,11 +9692,11 @@ th.hide-for-touch {
   height: 15px;
   background-color: #ccc;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 292, ../scss/_cup-page.scss */
 .ch-compressed .ch-active {
   margin: 0 auto;
 }
-/* line 292, ../scss/_cup-page.scss */
+/* line 296, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container {
   position: absolute;
   top: 0;
@@ -9712,37 +9713,42 @@ th.hide-for-touch {
   background-color: #018ad2;
   height: 215px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
 }
-/* line 209, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder > p.ch-name {
+/* line 208, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder p.ch-name {
   color: #fff;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position: relative;
 }
-/* line 217, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder > p.ch-name > span.ch-icon {
+/* line 219, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder p.ch-name > span.ch-icon {
   position: absolute;
   right: 0;
-  padding: 0 10px 0 20px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(15px, #018ad2), color-stop(100%, #018ad2));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
+  width: 30px;
+  text-align: center;
 }
-/* line 224, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder > img {
+/* line 226, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder div.ch-image {
   height: 170px;
   width: 170px;
+  overflow: hidden;
 }
-/* line 229, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder > p.ch-winner {
+/* line 232, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder div.ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 238, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder p.ch-winner {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -9753,9 +9759,9 @@ th.hide-for-touch {
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 242, ../scss/_cup-page.scss */
+/* line 251, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished .ch-finished-color-holder:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: -29px;
@@ -9764,28 +9770,24 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #018ad2;
-  -webkit-transition: border-top 0.2s ease;
-  -moz-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
 }
-/* line 255, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished > a > p.ch-date {
+/* line 263, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished p.ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-/* line 261, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished > a:hover .ch-finished-color-holder {
-  background-color: #11acfe;
+/* line 269, ../scss/_cup-page.scss */
+.ch-compressed .ch-left-container .ch-finished > a:hover .ch-finished-color-holder div.ch-image > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 265, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished > a:hover .ch-finished-color-holder:after {
-  border-top: 15px solid #11acfe;
-}
-/* line 270, ../scss/_cup-page.scss */
+/* line 274, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished:before {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   top: 200px;
@@ -9794,12 +9796,12 @@ th.hide-for-touch {
   height: 15px;
   background-color: #ccc;
 }
-/* line 300, ../scss/_cup-page.scss */
+/* line 304, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished {
   float: right;
   margin-right: 1.875rem;
 }
-/* line 306, ../scss/_cup-page.scss */
+/* line 310, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container {
   position: absolute;
   top: 0;
@@ -9816,37 +9818,42 @@ th.hide-for-touch {
   background-color: #333333;
   height: 215px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
 }
-/* line 209, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder > p.ch-name {
+/* line 208, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder p.ch-name {
   color: #fff;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position: relative;
 }
-/* line 217, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder > p.ch-name > span.ch-icon {
+/* line 219, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder p.ch-name > span.ch-icon {
   position: absolute;
   right: 0;
-  padding: 0 10px 0 20px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(15px, #333333), color-stop(100%, #333333));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
+  width: 30px;
+  text-align: center;
 }
-/* line 224, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder > img {
+/* line 226, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder div.ch-image {
   height: 170px;
   width: 170px;
+  overflow: hidden;
 }
-/* line 229, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder > p.ch-winner {
+/* line 232, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder div.ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 238, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder p.ch-winner {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -9857,9 +9864,9 @@ th.hide-for-touch {
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 242, ../scss/_cup-page.scss */
+/* line 251, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued .ch-queued-color-holder:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: -29px;
@@ -9868,28 +9875,24 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #333333;
-  -webkit-transition: border-top 0.2s ease;
-  -moz-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
 }
-/* line 255, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued > a > p.ch-date {
+/* line 263, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued p.ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-/* line 261, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued > a:hover .ch-queued-color-holder {
-  background-color: #5c5c5c;
+/* line 269, ../scss/_cup-page.scss */
+.ch-compressed .ch-right-container .ch-queued > a:hover .ch-queued-color-holder div.ch-image > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 265, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued > a:hover .ch-queued-color-holder:after {
-  border-top: 15px solid #5c5c5c;
-}
-/* line 270, ../scss/_cup-page.scss */
+/* line 274, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued:before {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   top: 200px;
@@ -9898,15 +9901,14 @@ th.hide-for-touch {
   height: 15px;
   background-color: #ccc;
 }
-/* line 314, ../scss/_cup-page.scss */
+/* line 318, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 321, ../scss/_cup-page.scss */
+/* line 325, ../scss/_cup-page.scss */
 .ch-expanded {
-  position: relative;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
@@ -9921,37 +9923,42 @@ th.hide-for-touch {
   background-color: #f4811f;
   height: 215px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
 }
-/* line 209, ../scss/_cup-page.scss */
-.ch-expanded .ch-active .ch-active-color-holder > p.ch-name {
+/* line 208, ../scss/_cup-page.scss */
+.ch-expanded .ch-active .ch-active-color-holder p.ch-name {
   color: #fff;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position: relative;
 }
-/* line 217, ../scss/_cup-page.scss */
-.ch-expanded .ch-active .ch-active-color-holder > p.ch-name > span.ch-icon {
+/* line 219, ../scss/_cup-page.scss */
+.ch-expanded .ch-active .ch-active-color-holder p.ch-name > span.ch-icon {
   position: absolute;
   right: 0;
-  padding: 0 10px 0 20px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(15px, #f4811f), color-stop(100%, #f4811f));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #f4811f 15px, #f4811f 100%);
+  width: 30px;
+  text-align: center;
 }
-/* line 224, ../scss/_cup-page.scss */
-.ch-expanded .ch-active .ch-active-color-holder > img {
+/* line 226, ../scss/_cup-page.scss */
+.ch-expanded .ch-active .ch-active-color-holder div.ch-image {
   height: 170px;
   width: 170px;
+  overflow: hidden;
 }
-/* line 229, ../scss/_cup-page.scss */
-.ch-expanded .ch-active .ch-active-color-holder > p.ch-winner {
+/* line 232, ../scss/_cup-page.scss */
+.ch-expanded .ch-active .ch-active-color-holder div.ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 238, ../scss/_cup-page.scss */
+.ch-expanded .ch-active .ch-active-color-holder p.ch-winner {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -9962,9 +9969,9 @@ th.hide-for-touch {
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 242, ../scss/_cup-page.scss */
+/* line 251, ../scss/_cup-page.scss */
 .ch-expanded .ch-active .ch-active-color-holder:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: -29px;
@@ -9973,28 +9980,24 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #f4811f;
-  -webkit-transition: border-top 0.2s ease;
-  -moz-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
 }
-/* line 255, ../scss/_cup-page.scss */
-.ch-expanded .ch-active > a > p.ch-date {
+/* line 263, ../scss/_cup-page.scss */
+.ch-expanded .ch-active p.ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-/* line 261, ../scss/_cup-page.scss */
-.ch-expanded .ch-active > a:hover .ch-active-color-holder {
-  background-color: #f69a4c;
+/* line 269, ../scss/_cup-page.scss */
+.ch-expanded .ch-active > a:hover .ch-active-color-holder div.ch-image > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 265, ../scss/_cup-page.scss */
-.ch-expanded .ch-active > a:hover .ch-active-color-holder:after {
-  border-top: 15px solid #f69a4c;
-}
-/* line 270, ../scss/_cup-page.scss */
+/* line 274, ../scss/_cup-page.scss */
 .ch-expanded .ch-active:before {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   top: 200px;
@@ -10013,37 +10016,42 @@ th.hide-for-touch {
   background-color: #018ad2;
   height: 215px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
 }
-/* line 209, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished .ch-finished-color-holder > p.ch-name {
+/* line 208, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished .ch-finished-color-holder p.ch-name {
   color: #fff;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position: relative;
 }
-/* line 217, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished .ch-finished-color-holder > p.ch-name > span.ch-icon {
+/* line 219, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished .ch-finished-color-holder p.ch-name > span.ch-icon {
   position: absolute;
   right: 0;
-  padding: 0 10px 0 20px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(15px, #018ad2), color-stop(100%, #018ad2));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #018ad2 15px, #018ad2 100%);
+  width: 30px;
+  text-align: center;
 }
-/* line 224, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished .ch-finished-color-holder > img {
+/* line 226, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished .ch-finished-color-holder div.ch-image {
   height: 170px;
   width: 170px;
+  overflow: hidden;
 }
-/* line 229, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished .ch-finished-color-holder > p.ch-winner {
+/* line 232, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished .ch-finished-color-holder div.ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 238, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished .ch-finished-color-holder p.ch-winner {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -10054,9 +10062,9 @@ th.hide-for-touch {
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 242, ../scss/_cup-page.scss */
+/* line 251, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished .ch-finished-color-holder:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: -29px;
@@ -10065,28 +10073,24 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #018ad2;
-  -webkit-transition: border-top 0.2s ease;
-  -moz-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
 }
-/* line 255, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished > a > p.ch-date {
+/* line 263, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished p.ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-/* line 261, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished > a:hover .ch-finished-color-holder {
-  background-color: #11acfe;
+/* line 269, ../scss/_cup-page.scss */
+.ch-expanded .ch-finished > a:hover .ch-finished-color-holder div.ch-image > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 265, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished > a:hover .ch-finished-color-holder:after {
-  border-top: 15px solid #11acfe;
-}
-/* line 270, ../scss/_cup-page.scss */
+/* line 274, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished:before {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   top: 200px;
@@ -10105,37 +10109,42 @@ th.hide-for-touch {
   background-color: #333333;
   height: 215px;
   position: relative;
-  -webkit-transition: background-color 0.2s ease;
-  -moz-transition: background-color 0.2s ease;
-  -o-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
 }
-/* line 209, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued .ch-queued-color-holder > p.ch-name {
+/* line 208, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued .ch-queued-color-holder p.ch-name {
   color: #fff;
   margin: 0;
-  padding: 0 10px;
+  padding: 0 30px 0 10px;
   line-height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   position: relative;
 }
-/* line 217, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued .ch-queued-color-holder > p.ch-name > span.ch-icon {
+/* line 219, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued .ch-queued-color-holder p.ch-name > span.ch-icon {
   position: absolute;
   right: 0;
-  padding: 0 10px 0 20px;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(15px, #333333), color-stop(100%, #333333));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, #333333 15px, #333333 100%);
+  width: 30px;
+  text-align: center;
 }
-/* line 224, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued .ch-queued-color-holder > img {
+/* line 226, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued .ch-queued-color-holder div.ch-image {
   height: 170px;
   width: 170px;
+  overflow: hidden;
 }
-/* line 229, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued .ch-queued-color-holder > p.ch-winner {
+/* line 232, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued .ch-queued-color-holder div.ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  -moz-transition: -moz-transform 0.2s ease;
+  -o-transition: -o-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 238, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued .ch-queued-color-holder p.ch-winner {
   position: absolute;
   bottom: 15px;
   left: 0;
@@ -10146,9 +10155,9 @@ th.hide-for-touch {
   padding: 0 10px;
   line-height: 30px;
 }
-/* line 242, ../scss/_cup-page.scss */
+/* line 251, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued .ch-queued-color-holder:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: -29px;
@@ -10157,28 +10166,24 @@ th.hide-for-touch {
   height: 0;
   border: 15px solid transparent;
   border-top: 15px solid #333333;
-  -webkit-transition: border-top 0.2s ease;
-  -moz-transition: border-top 0.2s ease;
-  -o-transition: border-top 0.2s ease;
-  transition: border-top 0.2s ease;
 }
-/* line 255, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued > a > p.ch-date {
+/* line 263, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued p.ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 20px;
 }
-/* line 261, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued > a:hover .ch-queued-color-holder {
-  background-color: #5c5c5c;
+/* line 269, ../scss/_cup-page.scss */
+.ch-expanded .ch-queued > a:hover .ch-queued-color-holder div.ch-image > img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-/* line 265, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued > a:hover .ch-queued-color-holder:after {
-  border-top: 15px solid #5c5c5c;
-}
-/* line 270, ../scss/_cup-page.scss */
+/* line 274, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued:before {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   top: 200px;
@@ -10187,26 +10192,26 @@ th.hide-for-touch {
   height: 15px;
   background-color: #ccc;
 }
-/* line 333, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-expanded .ch-active,
 .ch-expanded .ch-finished,
 .ch-expanded .ch-queued {
   display: inline-block;
   margin: 0 0.9375rem;
 }
-/* line 338, ../scss/_cup-page.scss */
+/* line 341, ../scss/_cup-page.scss */
 .ch-expanded > div:first-child {
   margin-left: 0.9375rem;
 }
-/* line 342, ../scss/_cup-page.scss */
+/* line 345, ../scss/_cup-page.scss */
 .ch-expanded > div:first-child:before {
   left: 0;
 }
-/* line 346, ../scss/_cup-page.scss */
+/* line 349, ../scss/_cup-page.scss */
 .ch-expanded > div:last-child {
   margin-right: 0.9375rem;
 }
-/* line 350, ../scss/_cup-page.scss */
+/* line 353, ../scss/_cup-page.scss */
 .ch-expanded > div:last-child:before {
   right: 0;
 }
