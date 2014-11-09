@@ -150,7 +150,14 @@
     .cup-section {
         width: 90%;
         margin: 0 5% $column-gutter 5%;
+        padding: 0 0 rem-calc(20) 0;
         background-color: $fc-primary-bg;
+    }
+}
+
+@media #{$medium-up} {
+    .cup-section {
+        margin: 0 auto $column-gutter auto;
     }
 }
 
@@ -166,7 +173,7 @@
 }
 
 .section-modal .section-header {
-    margin: rem-calc(20) ($column-gutter / 2) rem-calc(40) ($column-gutter / 2);
+    margin: 0 ($column-gutter / 2) rem-calc(40) ($column-gutter / 2);
 }
 
 // ----------------------------------
@@ -179,7 +186,7 @@
         max-width: none;
         width: 100%;
         background-color: $fc-primary-bg;
-        padding: 0;
+        padding: rem-calc(20) 0;
         @include box-shadow(0 0 rem-calc(10) rgba(0,0,0,0.4));
     }
 }
@@ -187,7 +194,7 @@
 @media #{$medium-up} {
     .section-modal {
         background-color: #fff;
-        padding: 0 rem-calc(20);
+        padding: rem-calc(20);
     }
 }
 
@@ -199,87 +206,94 @@
     .ch-#{$pos} {
         position: relative;
         width: 170px;
-
-        .ch-#{$pos}-color-holder {
-            background-color: $color;
-            height: 215px;
-            position: relative;
-
-            p.ch-name {
-                color: #fff;
-                margin: 0;
-                padding: 0 30px 0 10px; // 30px -> width of icon
-                line-height: 30px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
+        
+        a {
+            .ch-#{$pos}-color-holder {
+                background-color: $color;
+                height: 215px;
                 position: relative;
-            }
-            
-            p.ch-name > span.ch-icon {
-                position: absolute;
-                right: 0;
-                width: 30px;
-                text-align: center;
-            }
-            
-            div.ch-image {
-                height: 170px;
-                width: 170px;
-                overflow: hidden;
-            }
+                
+                .ch-icon {
+                    position: absolute;
+                    right: 0;
+                    width: 30px;
+                    text-align: center;
+                }
 
-            div.ch-image > img {
-                height: inherit;
-                width: inherit;
-                @include transition(transform 0.2s ease);
+                .ch-name {
+                    color: #fff;
+                    margin: 0;
+                    padding: 0 30px 0 10px; // 30px -> width of icon
+                    line-height: 30px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    position: relative;
+                }
+
+                .ch-image {
+                    height: 170px;
+                    width: 170px;
+                    overflow: hidden;
+                    
+                    > img {
+                        height: inherit;
+                        width: inherit;
+                        @include transition(transform 0.2s ease);
+                    }
+                }
+
+                .ch-winner {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 0;
+                    right: 0;
+                    color: #fff;
+                    background-color: rgba(0,0,0,0.7);
+                    margin: 0;
+                    padding: 0 30px 0 10px;
+                    line-height: 30px;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -29px; // (instead of 30) fixes problem on higher zoom
+                    left: 70px;
+                    width: 0;
+                    height: 0;
+                    border: 15px solid transparent;
+                    border-top: 15px solid $color;
+                }
             }
             
-            p.ch-winner {
-                position: absolute;
-                bottom: 15px;
-                left: 0;
-                right: 0;
-                color: #fff;
-                background-color: rgba(0,0,0,0.7);
-                margin: 0;
-                padding: 0 10px;
-                line-height: 30px;
+            .ch-date {
+                font-weight: bold;
+                text-align: center;
+                padding-top: 20px;
+            }
+            
+            &:hover {
+                .ch-#{$pos}-color-holder .ch-image > img {
+                    @include transform(scale(1.1));
+                }
             }
         }
-
-        .ch-#{$pos}-color-holder:after {
+        
+        &:before {
             content: "";
             display: block;
             position: absolute;
-            bottom: -29px; // (instead of 30) fixes problem on higher zoom
-            left: 70px;
-            width: 0;
-            height: 0;
-            border: 15px solid transparent;
-            border-top: 15px solid $color;
+            top: 200px;
+            left: -$column-gutter;
+            right: -$column-gutter;
+            height: 15px;
+            background-color: #ccc;
         }
-        
-        p.ch-date {
-            font-weight: bold;
-            text-align: center;
-            padding-top: 20px;
-        }
-        
-        > a:hover .ch-#{$pos}-color-holder div.ch-image > img {
-            @include transform(scale(1.1));
-        }
-    }
-    
-    .ch-#{$pos}:before {
-        content: "";
-        display: block;
-        position: absolute;
-        top: 200px;
-        left: -$column-gutter;
-        right: -$column-gutter;
-        height: 15px;
-        background-color: #ccc;
     }
 }
 
@@ -340,24 +354,238 @@
     
     > div:first-child {
         margin-left: $column-gutter / 2;
-    }
-    
-    > div:first-child:before {
-        left: 0;
+        
+        &:before {
+            left: 0;
+        }
     }
     
     > div:last-child {
         margin-right: $column-gutter / 2;
-    }
-    
-    > div:last-child:before {
-        right: 0;
+        
+        &:before {
+            right: 0;
+        }
     }
 }
 
+// ----------------------------------
+// Ranking
+// ----------------------------------
 
+@mixin generate-rk-element($pos) { // $pos -> first, second, third, no-podium
+    .rk-#{$pos} {
+        width: 170px;
+        @media #{$large-up} {
+            width: 200px
+        }
+        position: relative;
 
+        .rk-info-holder {
+            position: relative;
+            
+            @if $pos == 'first' {
+                padding-top: 0;
+            }
+            @else if $pos == 'second' {
+                padding-top: 20px;
+            }
+            @else if $pos == 'third' {
+                padding-top: 40px;
+            }
+            @else if $pos == 'no-podium' {
+                padding-top: 85px;
+            }
+            
+            a {
+                display: block;
+                margin: 0 auto;
+                width: 80px;
+                
+                .rk-image {
+                    height: 80px;
+                    width: 80px;
+                    @include border-radius(50%);
+                    overflow: hidden;
+                    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); // fix problem with transition + border-radius
+                    
+                    > img {
+                        height: inherit;
+                        width: inherit;
+                        @include transition(transform 0.2s ease);
+                    }
+                }
+                
+                &:hover {
+                    .rk-image > img {
+                        @include transform(scale(1.1));
+                    }
+                }
+            }
 
+            .rk-name {
+                text-align: center;
+                font-weight: bold;
+                font-size: 1.2rem;
+                line-height: 40px;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .rk-points {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                line-height: 40px;
+                background-color: #333;
+                color: #fff;
+                position: relative;
+                
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: -29px; // (instead of 30) fixes problem on higher zoom
+                    left: 70px;
+                    @media #{$large-up} {
+                        left: 85px;
+                    }
+                    width: 0;
+                    height: 0;
+                    border: 15px solid transparent;
+                    border-top: 15px solid #333;
+                }
+            }
+
+            .rk-placement {
+                text-align: center;
+                font-weight: bold;
+                
+                @if $pos == 'first' {
+                    background-color: $fc-orange;
+                    color: #fff;
+                    padding: 15px 0 0 0;
+                    line-height: 85px;
+                    font-size: 2rem;
+                }
+                @else if $pos == 'second' {
+                    background-color: $fc-primary;
+                    color: #fff;
+                    padding: 15px 0 0 0;
+                    line-height: 65px;
+                    font-size: 2rem;
+                }
+                @else if $pos == 'third' {
+                    background-color: $fc-primary;
+                    color: #fff;
+                    padding: 15px 0 0 0;
+                    line-height: 45px;
+                    font-size: 2rem;
+                }
+                @else if $pos == 'no-podium' {
+                    position: absolute;
+                    width: 100%;
+                    bottom: -45px;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: -$column-gutter;
+            right: -$column-gutter;
+            height: 15px;
+            background-color: #ccc;
+        }
+    }
+}
+
+.rk-compressed {
+    position: relative;
+    overflow: hidden;
+    
+    @include generate-rk-element('first');
+    
+    .rk-first {
+        margin: 0 auto;
+    }
+    
+    .rk-left-container {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        margin-right: rem-calc(85);
+        @media #{$large-up} {
+            margin-right: rem-calc(100);
+        }
+        
+        @include generate-rk-element('second');
+        
+        .rk-second {
+            float: right;
+            margin-right: $column-gutter;
+        }
+    }
+    
+    .rk-right-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: rem-calc(85);
+        @media #{$large-up} {
+            margin-left: rem-calc(100);
+        }
+        
+        @include generate-rk-element('third');
+        
+        .rk-third {
+            float: left;
+            margin-left: $column-gutter;
+        }
+    }
+}
+
+.rk-expanded {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    padding-bottom: 45px;
+    
+    @include generate-rk-element('first');
+    @include generate-rk-element('second');
+    @include generate-rk-element('third');
+    @include generate-rk-element('no-podium');
+    
+    .rk-first,
+    .rk-second,
+    .rk-third,
+    .rk-no-podium {
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0 ($column-gutter / 2);
+    }
+    
+    > div:first-child {
+        margin-left: $column-gutter / 2;
+        
+        &:before {
+            left: 0;
+        }
+    }
+    
+    > div:last-child {
+        margin-right: $column-gutter / 2;
+        
+        &:before {
+            right: 0;
+        }
+    }
+}
 
 
 
