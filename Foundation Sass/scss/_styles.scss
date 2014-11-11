@@ -3,6 +3,28 @@
 @import "foundation/components/global"; // import Standard Variables
 
 // ----------------------------------
+// Basic Styles
+// ----------------------------------
+
+.hide-for-mobile-nav-only {
+    @media #{$mobile-nav-only} {
+        display: none !important;
+    }
+    @media #{$mobile-nav-up} {
+        display: inherit !important;
+    }
+}
+
+.show-for-mobile-nav-only {
+    @media #{$mobile-nav-only} {
+        display: inherit !important;
+    }
+    @media #{$mobile-nav-up} {
+        display: none !important;
+    }
+}
+
+// ----------------------------------
 // Top Bar Left Section (Logo + Name)
 // ----------------------------------
 
@@ -44,7 +66,7 @@
 // Top Bar Nav
 // ----------------------------------
 
-@media #{$small-only} {
+@media #{$mobile-nav-only} {
     
     // basic mobile style
     
@@ -83,7 +105,7 @@
     }
 }
 
-@media #{$medium-up} {
+@media #{$mobile-nav-up} {
     
     // hover overlay
     
@@ -131,7 +153,7 @@
 // Top Bar Nav Item having Dropdown
 // ----------------------------------
 
-@media #{$small-only} {
+@media #{$mobile-nav-only} {
     
     // dropdown triangle
     
@@ -140,7 +162,7 @@
     }
 }
 
-@media #{$medium-up} {
+@media #{$mobile-nav-up} {
     
     // dropdown triangle
     
@@ -157,7 +179,7 @@
 // Top Bar Dropdown Items
 // ----------------------------------
 
-@media #{$small-only} {
+@media #{$mobile-nav-only} {
     
     // dropdown items
     
@@ -179,7 +201,7 @@
     }
 }
 
-@media #{$medium-up} {
+@media #{$mobile-nav-up} {
     
     // fade in on hover
     
@@ -431,13 +453,6 @@
 @media #{$medium-up} {
     @include generate-big-button(200px, 'medium-up');
 }
-
-
-
-
-
-
-
 
 
 

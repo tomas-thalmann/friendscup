@@ -23,3 +23,12 @@ javascripts_dir = "js"
 # preferred_syntax = :sass
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
+
+require 'autoprefixer-rails'
+
+on_stylesheet_saved do |file|
+  css = File.read(file)
+  File.open(file, 'w') do |io|
+    io << AutoprefixerRails.process(css)
+  end
+end

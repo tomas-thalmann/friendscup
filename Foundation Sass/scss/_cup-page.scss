@@ -168,8 +168,17 @@
 .section-header {
     font-weight: bold;
     border-bottom: 1px solid #bbb;
-    padding: 0 0 rem-calc(5) 0;
+    padding: 0 0 rem-calc(3) 0;
     margin: rem-calc(20) 0 rem-calc(40) 0;
+    
+    a {
+        color: $body-font-color;
+        @include transition(color 0.2s ease);
+        
+        &:hover {
+            color: $fc-primary;
+        }
+    }
 }
 
 .section-modal .section-header {
@@ -202,29 +211,34 @@
 // Challenges
 // ----------------------------------
 
+$ch-element-width: rem-calc(170);
+$ch-line-height: rem-calc(30);
+$ch-arrow-size: rem-calc(15);
+$ch-grey-line-height: rem-calc(15);
+
 @mixin generate-ch-element($pos, $color) { // $pos -> active, finished, queued
     .ch-#{$pos} {
         position: relative;
-        width: 170px;
+        width: $ch-element-width;
         
         a {
             .ch-#{$pos}-color-holder {
                 background-color: $color;
-                height: 215px;
+                height: $ch-element-width + $ch-line-height + $ch-grey-line-height;
                 position: relative;
                 
                 .ch-icon {
                     position: absolute;
                     right: 0;
-                    width: 30px;
+                    width: $ch-line-height;
                     text-align: center;
                 }
 
                 .ch-name {
                     color: #fff;
                     margin: 0;
-                    padding: 0 30px 0 10px; // 30px -> width of icon
-                    line-height: 30px;
+                    padding: 0 $ch-line-height 0 rem-calc(10);
+                    line-height: $ch-line-height;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
@@ -232,8 +246,8 @@
                 }
 
                 .ch-image {
-                    height: 170px;
-                    width: 170px;
+                    height: $ch-element-width;
+                    width: $ch-element-width;
                     overflow: hidden;
                     
                     > img {
@@ -245,14 +259,14 @@
 
                 .ch-winner {
                     position: absolute;
-                    bottom: 15px;
+                    bottom: $ch-grey-line-height;
                     left: 0;
                     right: 0;
                     color: #fff;
-                    background-color: rgba(0,0,0,0.7);
+                    background-color: #333;
                     margin: 0;
-                    padding: 0 30px 0 10px;
-                    line-height: 30px;
+                    padding: 0 $ch-line-height 0 rem-calc(10);
+                    line-height: $ch-line-height;
                     overflow: hidden;
                     white-space: nowrap;
                     text-overflow: ellipsis;
@@ -262,19 +276,20 @@
                     content: "";
                     display: block;
                     position: absolute;
-                    bottom: -29px; // (instead of 30) fixes problem on higher zoom
-                    left: 70px;
+                    bottom: -($ch-arrow-size * 2) + rem-calc(2); // reduce shift with 2px -> fixes problem on higher zoom
+                    left: ($ch-element-width / 2) - $ch-arrow-size;
                     width: 0;
                     height: 0;
-                    border: 15px solid transparent;
-                    border-top: 15px solid $color;
+                    border: $ch-arrow-size solid transparent;
+                    border-top: $ch-arrow-size solid $color;
                 }
             }
             
             .ch-date {
                 font-weight: bold;
                 text-align: center;
-                padding-top: 20px;
+                padding-top: rem-calc(20);
+                color: $body-font-color;
             }
             
             &:hover {
@@ -288,10 +303,10 @@
             content: "";
             display: block;
             position: absolute;
-            top: 200px;
+            top: $ch-element-width + $ch-line-height;
             left: -$column-gutter;
             right: -$column-gutter;
-            height: 15px;
+            height: $ch-grey-line-height;
             background-color: #ccc;
         }
     }
@@ -311,12 +326,12 @@
         position: absolute;
         top: 0;
         right: 50%;
-        margin-right: rem-calc(85);
+        margin-right: $ch-element-width / 2;
         
         @include generate-ch-element('finished', $fc-primary);
         
         .ch-finished {
-            float: right;
+            float: left;
             margin-right: $column-gutter;
         }
     }
@@ -325,7 +340,7 @@
         position: absolute;
         top: 0;
         left: 50%;
-        margin-left: rem-calc(85);
+        margin-left: $ch-element-width / 2;
         
         @include generate-ch-element('queued', #333);
         
@@ -373,11 +388,21 @@
 // Ranking
 // ----------------------------------
 
+$rk-element-width: rem-calc(170);
+$rk-element-width-increase: rem-calc(30);
+$rk-user-size: rem-calc(80);
+$rk-line-height: rem-calc(40);
+$rk-arrow-size: rem-calc(15);
+$rk-grey-line-height: rem-calc(15);
+$rk-podium-height-base: rem-calc(45);
+$rk-podium-height-increase: rem-calc(20);
+$rk-no-podium-shift-down: rem-calc(45);
+
 @mixin generate-rk-element($pos) { // $pos -> first, second, third, no-podium
     .rk-#{$pos} {
-        width: 170px;
+        width: $rk-element-width;
         @media #{$large-up} {
-            width: 200px
+            width: $rk-element-width + $rk-element-width-increase;
         }
         position: relative;
 
@@ -388,23 +413,23 @@
                 padding-top: 0;
             }
             @else if $pos == 'second' {
-                padding-top: 20px;
+                padding-top: $rk-podium-height-increase;
             }
             @else if $pos == 'third' {
-                padding-top: 40px;
+                padding-top: $rk-podium-height-increase * 2;
             }
             @else if $pos == 'no-podium' {
-                padding-top: 85px;
+                padding-top: ($rk-podium-height-increase * 2) + $rk-podium-height-base;
             }
             
             a {
                 display: block;
                 margin: 0 auto;
-                width: 80px;
                 
                 .rk-image {
-                    height: 80px;
-                    width: 80px;
+                    height: $rk-user-size;
+                    width: $rk-user-size;
+                    margin: 0 auto;
                     @include border-radius(50%);
                     overflow: hidden;
                     -webkit-mask-image: -webkit-radial-gradient(circle, white, black); // fix problem with transition + border-radius
@@ -416,45 +441,51 @@
                     }
                 }
                 
+                .rk-name {
+                    text-align: center;
+                    color: $body-font-color;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    line-height: $rk-line-height;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    @include transition(color 0.2s ease);
+                }
+                
                 &:hover {
                     .rk-image > img {
                         @include transform(scale(1.1));
                     }
+                    
+                    .rk-name {
+                        color: $fc-primary;
+                    }
                 }
-            }
-
-            .rk-name {
-                text-align: center;
-                font-weight: bold;
-                font-size: 1.2rem;
-                line-height: 40px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
             }
 
             .rk-points {
                 text-align: center;
                 padding: 0;
                 margin: 0;
-                line-height: 40px;
+                line-height: $rk-line-height;
                 background-color: #333;
                 color: #fff;
                 position: relative;
-                
+            
                 &:after {
                     content: "";
                     display: block;
                     position: absolute;
-                    bottom: -29px; // (instead of 30) fixes problem on higher zoom
-                    left: 70px;
+                    bottom: -($rk-arrow-size * 2) + rem-calc(2); // reduce shift with 2px -> fixes problem on higher zoom
+                    left: ($rk-element-width / 2) - $rk-arrow-size;
                     @media #{$large-up} {
-                        left: 85px;
+                        left: (($rk-element-width + $rk-element-width-increase) / 2) - $rk-arrow-size;
                     }
                     width: 0;
                     height: 0;
-                    border: 15px solid transparent;
-                    border-top: 15px solid #333;
+                    border: $rk-arrow-size solid transparent;
+                    border-top: $rk-arrow-size solid #333;
                 }
             }
 
@@ -464,29 +495,38 @@
                 
                 @if $pos == 'first' {
                     background-color: $fc-orange;
-                    color: #fff;
-                    padding: 15px 0 0 0;
-                    line-height: 85px;
+                    color: transparent;
+                    background: {
+                        image: url(../img/trophy.png);
+                        repeat: no-repeat;
+                        position: center;
+                    };
+                    @include background-size(
+                        ($rk-podium-height-base + ($rk-podium-height-increase * 2))
+                        ($rk-podium-height-base + ($rk-podium-height-increase * 2))
+                        );
+                    padding: $rk-arrow-size 0 0 0;
+                    line-height: $rk-podium-height-base + ($rk-podium-height-increase * 2);
                     font-size: 2rem;
                 }
                 @else if $pos == 'second' {
                     background-color: $fc-primary;
                     color: #fff;
-                    padding: 15px 0 0 0;
-                    line-height: 65px;
+                    padding: $rk-arrow-size 0 0 0;
+                    line-height: $rk-podium-height-base + $rk-podium-height-increase;
                     font-size: 2rem;
                 }
                 @else if $pos == 'third' {
                     background-color: $fc-primary;
                     color: #fff;
-                    padding: 15px 0 0 0;
-                    line-height: 45px;
+                    padding: $rk-arrow-size 0 0 0;
+                    line-height: $rk-podium-height-base;
                     font-size: 2rem;
                 }
                 @else if $pos == 'no-podium' {
                     position: absolute;
                     width: 100%;
-                    bottom: -45px;
+                    bottom: -$rk-no-podium-shift-down;
                     font-size: 1.2rem;
                 }
             }
@@ -499,7 +539,7 @@
             bottom: 0;
             left: -$column-gutter;
             right: -$column-gutter;
-            height: 15px;
+            height: $rk-grey-line-height;
             background-color: #ccc;
         }
     }
@@ -519,9 +559,9 @@
         position: absolute;
         top: 0;
         right: 50%;
-        margin-right: rem-calc(85);
+        margin-right: $rk-element-width / 2;
         @media #{$large-up} {
-            margin-right: rem-calc(100);
+            margin-right: ($rk-element-width + $rk-element-width-increase) / 2;
         }
         
         @include generate-rk-element('second');
@@ -536,9 +576,9 @@
         position: absolute;
         top: 0;
         left: 50%;
-        margin-left: rem-calc(85);
+        margin-left: $rk-element-width / 2;
         @media #{$large-up} {
-            margin-left: rem-calc(100);
+            margin-left: ($rk-element-width + $rk-element-width-increase) / 2;
         }
         
         @include generate-rk-element('third');
@@ -554,7 +594,7 @@
     overflow-x: auto;
     overflow-y: hidden;
     white-space: nowrap;
-    padding-bottom: 45px;
+    padding-bottom: $rk-no-podium-shift-down;
     
     @include generate-rk-element('first');
     @include generate-rk-element('second');
@@ -586,7 +626,6 @@
         }
     }
 }
-
 
 
 

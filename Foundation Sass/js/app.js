@@ -34,9 +34,10 @@ $(document).ready(function () {
     $('select').addClass('needsclick');
     
     // ---------------------------
-    // Detail View - Modal
+    // Cup Page - Detail View Modal
     // ---------------------------
     
+    // fire event to open the expended view
     $('.modal-open').click(function () {
         $('#' + $(this).data('sectionmodalid')).css('top', $(this).closest('.cup-section').offset().top);
         $('#' + $(this).data('sectionmodalid')).modal();
@@ -57,6 +58,23 @@ $(document).ready(function () {
             $(".big-button h1").fitText(0.7, { minFontSize: '32px', maxFontSize: '44px' });
             // Standard Foundation h3: 27px
             $(".cup-header-left h3").fitText(1, { minFontSize: '10px', maxFontSize: '27px' });
+            
+            // ---------------------------
+            // Cup Page - Detail View Modal
+            // ---------------------------
+            
+            if (!Modernizr.touch) {
+                // enable mousewheel scrolling
+                $('.section-modal [class*=expanded]').mousewheel(function (event, delta) {
+                    this.scrollLeft -= (delta * 50);
+                    event.preventDefault();
+                });
+
+                // enable dragscrolling
+                $('.section-modal [class*=expanded]').kinetic({
+                    cursor: 'auto'
+                });
+            }
         }
     });
     enquire.register(Foundation.media_queries.small, {
