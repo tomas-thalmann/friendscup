@@ -1,0 +1,4 @@
+/Foundation\ Sass/bower_components/*
+/Foundation\ Sass/.sass-cache/*
+*.DS_Store
+/Foundation Sass/css/*
