@@ -133,6 +133,19 @@
             }
         }
     }
+    
+    // callback for touch based devices
+    .cup-header-right.touch {
+        div {
+            bottom: 0;
+            @include opacity(1);
+
+            p {
+                top: 0;
+                @include opacity(1);
+            }
+        }
+    }
 }
 
 @media #{$large-up} {

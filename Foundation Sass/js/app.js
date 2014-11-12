@@ -1,7 +1,7 @@
 // Author: Sebastian Thaler
 // Email: sebi.thaler@gmail.com
 
-/*global $, jQuery, enquire, Foundation*/
+/*global $, jQuery, enquire, Foundation, Modernizr*/
 
 // ---------------------------
 // Foundation Configuration
@@ -33,15 +33,36 @@ $(document).ready(function () {
     // fix: form dropdown not clickable on mobile devices (needclick -> fastclick.js class)
     $('select').addClass('needsclick');
     
-    // ---------------------------
+    // ----------------------------------
+    // Callback for touch based devices
+    // ----------------------------------
+    
+    if (Modernizr.touch) {
+        $('.cup-header-right').addClass('touch');
+    }
+    
+    // ------------------------------
     // Cup Page - Detail View Modal
-    // ---------------------------
+    // ------------------------------
     
     // fire event to open the expended view
     $('.modal-open').click(function () {
         $('#' + $(this).data('sectionmodalid')).css('top', $(this).closest('.cup-section').offset().top);
         $('#' + $(this).data('sectionmodalid')).modal();
     });
+    
+    if (!Modernizr.touch) {
+        // enable mousewheel scrolling
+        $('.section-modal [class*=expanded]').mousewheel(function (event, delta) {
+            this.scrollLeft -= (delta * 50);
+            event.preventDefault();
+        });
+
+        // enable dragscrolling
+        $('.section-modal [class*=expanded]').kinetic({
+            cursor: 'auto'
+        });
+    }
     
     // ---------------------------
     // Media Queries
@@ -58,23 +79,6 @@ $(document).ready(function () {
             $(".big-button h1").fitText(0.7, { minFontSize: '32px', maxFontSize: '44px' });
             // Standard Foundation h3: 27px
             $(".cup-header-left h3").fitText(1, { minFontSize: '10px', maxFontSize: '27px' });
-            
-            // ---------------------------
-            // Cup Page - Detail View Modal
-            // ---------------------------
-            
-            if (!Modernizr.touch) {
-                // enable mousewheel scrolling
-                $('.section-modal [class*=expanded]').mousewheel(function (event, delta) {
-                    this.scrollLeft -= (delta * 50);
-                    event.preventDefault();
-                });
-
-                // enable dragscrolling
-                $('.section-modal [class*=expanded]').kinetic({
-                    cursor: 'auto'
-                });
-            }
         }
     });
     enquire.register(Foundation.media_queries.small, {

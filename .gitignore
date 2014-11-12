@@ -1,2 +1,1 @@
-/Foundation\ Sass/.sass-cache/*
-*.DS_Store
+Foundation\ Sass/.sass-cache/**/*.scssc
