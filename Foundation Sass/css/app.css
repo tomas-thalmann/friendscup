@@ -9269,6 +9269,17 @@ th.hide-for-touch {
   .big-button:hover {
     background-color: #019ef0;
   }
+
+  /* line 450, ../scss/_styles.scss */
+  .big-button.touch h1 {
+    line-height: 140px;
+  }
+  /* line 454, ../scss/_styles.scss */
+  .big-button.touch p {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    top: 105px;
+  }
 }
 @media only screen and (min-width: 40.063em) {
   /* line 383, ../scss/_styles.scss */
@@ -9336,6 +9347,17 @@ th.hide-for-touch {
     top: 105px;
     -webkit-transition-delay: 0.06s;
     transition-delay: 0.06s;
+  }
+
+  /* line 450, ../scss/_styles.scss */
+  .big-button.touch h1 {
+    line-height: 140px;
+  }
+  /* line 454, ../scss/_styles.scss */
+  .big-button.touch p {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+    opacity: 1;
+    top: 105px;
   }
 }
 @media only screen and (max-width: 40em) {

@@ -39,6 +39,7 @@ $(document).ready(function () {
     
     if (Modernizr.touch) {
         $('.cup-header-right').addClass('touch');
+        $('.big-button').addClass('touch');
     }
     
     // ------------------------------

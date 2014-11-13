@@ -444,6 +444,18 @@
             }
         }
     }
+    
+    // callback for touch based devices
+    .big-button.touch {
+        h1 {
+            line-height: 140px;
+        }
+
+        p {
+            @include opacity(1);
+            top: 105px;
+        }
+    }
 }
 
 @media #{$small-only} {
