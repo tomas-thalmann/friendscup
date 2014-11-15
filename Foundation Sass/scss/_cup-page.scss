@@ -1,6 +1,5 @@
 @import "compass";
 @import "colors"; // import Standard Colors
-@import "foundation/components/global"; // import Standard Variables
 
 // ----------------------------------
 // Cup Header
@@ -388,8 +387,8 @@ $ch-grey-line-height: rem-calc(15);
 }
 
 .ch-expanded {
+    overflow: hidden;
     overflow-x: auto;
-    overflow-y: hidden;
     white-space: nowrap;
     
     @include generate-ch-element('active', $fc-orange);
@@ -627,8 +626,8 @@ $rk-no-podium-shift-down: rem-calc(45);
 }
 
 .rk-expanded {
+    overflow: hidden;
     overflow-x: auto;
-    overflow-y: hidden;
     white-space: nowrap;
     padding-bottom: $rk-no-podium-shift-down;
     
@@ -663,7 +662,146 @@ $rk-no-podium-shift-down: rem-calc(45);
     }
 }
 
+// ----------------------------------
+// Results
+// ----------------------------------
 
+.cr-expended {
+    position: relative;
+    
+    .table-fixed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 70px;
+        background-color: $fc-primary-bg;
+        border-spacing: 1px;
+        z-index: 10; // overlapping 'scrolling th' starting at z-index: 1
+        
+        thead {
+            tr {
+                th {
+                    text-align: center;
+                    background-color: #f5f5f5;
+                    padding: 0;
+
+                    div {
+                        line-height: 40px;
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+        
+        tbody {
+            tr {
+                td {
+                    position: relative;
+                    line-height: 70px;
+                    padding: 0;
+                    margin: 0;
+                    text-align: center;
+                    background-color: #f5f5f5;
+                    
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                    }
+                    
+                    &:before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 25px;
+                        right: -20px;
+                        width: 0;
+                        height: 0;
+                        border: 10px solid transparent;
+                        border-left: 10px solid $fc-primary-bg;
+                    }
+                    
+                    &:after {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 25px;
+                        right: -19px;
+                        width: 0;
+                        height: 0;
+                        border: 10px solid transparent;
+                        border-left: 10px solid #f5f5f5;
+                    }
+                }
+            }
+        }
+    }
+    
+    .scroll-container {
+        overflow: hidden;
+        overflow-x: auto;
+        
+        .table-scroll {
+            margin-left: 70px;
+            width: auto;
+            border-spacing: 0 1px;
+
+            thead {
+                tr {
+                    th {
+                        width: 120px;
+                        min-width: 120px;
+                        max-width: 120px;
+                        padding: 0;
+                        
+                        div {
+                            line-height: 40px;
+                            padding: 0 30px 0 10px;
+                            border-right: 1px solid $fc-primary-bg;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            position: relative;
+                            
+                            .cr-icon {
+                                position: absolute;
+                                right: 0;
+                                width: 30px;
+                                text-align: center;
+                            }
+                            
+                            &:hover {
+                                cursor: pointer;
+                                background-color: $fc-primary-bg;
+                            }
+                        }
+                    }
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        line-height: 70px;
+                        padding: 0;
+                        margin: 0;
+                        text-align: center;
+                        background-color: #fff;
+                    }
+
+                    td:first-child {
+                        text-align: left;
+                        padding-left: 20px;
+                    }
+                    
+                    &.active td {
+                        color: $fc-primary;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 

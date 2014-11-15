@@ -1,6 +1,5 @@
 @import "compass";
 @import "colors"; // import Standard Colors
-@import "foundation/components/global"; // import Standard Variables
 
 // ----------------------------------
 // Basic Styles
@@ -465,11 +464,6 @@
 @media #{$medium-up} {
     @include generate-big-button(200px, 'medium-up');
 }
-
-
-
-
-
 
 
 

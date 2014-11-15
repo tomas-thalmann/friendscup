@@ -83,7 +83,7 @@
     
     <div class="row cup-section">
         <div class="small-12 columns">
-            <h3 class="section-header">Aktuelle Aktivitäten <a class="modal-open right" data-sectionmodalid="modal-challenges"><i class="fa fa-arrows-alt"></i></a></h3>
+            <h3 class="section-header">Spieleübersicht <a class="modal-open right" data-sectionmodalid="modal-challenges"><i class="fa fa-arrows-alt"></i></a></h3>
 
             <div class="ch-compressed">
                 <div class="ch-left-container">
@@ -111,7 +111,7 @@
                 <div class="ch-active">
                     <a href="#">
                         <div class="ch-active-color-holder">
-                            <div class="ch-name">Langlaufen<span class="ch-icon"><i class="fa fa-clock-o"></i></span></div>
+                            <div class="ch-name">Langlaufen<span class="ch-icon"><i class="fa fa-play-circle"></i></span></div>
                             <div class="ch-image"><img src="img/challenges/ch-3.png" /></div>
                         </div>
                         <div class="ch-date">23.11.2014</div>
@@ -186,14 +186,16 @@
     
     <div class="row cup-section">
         <div class="small-12 columns">
-            <h3 class="section-header">Detailwertung <a class="modal-open right" data-sectionmodalid="modal-ranking"><i class="fa fa-arrows-alt"></i></a></h3>
+            <h3 class="section-header">Detailwertung <a class="modal-open right" data-sectionmodalid="modal-results"><i class="fa fa-arrows-alt"></i></a></h3>
+            
+            <h4 class="subheader">Expand to see the table!</h4>
         </div>
     </div>
     <!-- END - Content -->
     
     <!-- BEGIN - Modals -->
     <div id="modal-challenges" class="section-modal">
-        <h3 class="section-header">Aktuelle Aktivitäten <a class="right" rel="modal:close"><i class="fa fa-times"></i></a></h3>
+        <h3 class="section-header">Spieleübersicht <a class="right" rel="modal:close"><i class="fa fa-times"></i></a></h3>
 
         <div class="ch-expanded">
             <div class="ch-finished">
@@ -239,7 +241,7 @@
             <div class="ch-active">
                 <a href="#">
                     <div class="ch-active-color-holder">
-                        <div class="ch-name">Langlaufen<span class="ch-icon"><i class="fa fa-clock-o"></i></span></div>
+                        <div class="ch-name">Langlaufen<span class="ch-icon"><i class="fa fa-play-circle"></i></span></div>
                         <div class="ch-image"><img src="img/challenges/ch-3.png" /></div>
                     </div>
                     <div class="ch-date">23.11.2014</div>
@@ -257,10 +259,10 @@
             <div class="ch-queued">
                 <a href="#">
                     <div class="ch-queued-color-holder">
-                        <div class="ch-name">Eishockey<span class="ch-icon"><i class="fa fa-circle"></i></span></div>
-                        <div class="ch-image"><img src="img/challenges/ch-4.png" /></div>
+                        <div class="ch-name">Schlittenfahren<span class="ch-icon"><i class="fa fa-circle-o"></i></span></div>
+                        <div class="ch-image"><img src="img/challenges/ch-5.png" /></div>
                     </div>
-                    <div class="ch-date">23.11.2014</div>
+                    <div class="ch-date">3.12.2014</div>
                 </a>
             </div>
             <div class="ch-queued">
@@ -358,6 +360,97 @@
                     <div class="rk-points">129 Punkte</div>
                     <div class="rk-placement">8</div>
                 </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal-results" class="section-modal">
+        <h3 class="section-header">Detailwertung <a class="right" rel="modal:close"><i class="fa fa-times"></i></a></h3>
+        
+        <div class="cr-expended">
+            <table class="table-fixed">
+                <thead>
+                    <tr>
+                        <th><div><i class="fa fa-th-list"></i></div></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="img/user/jesse.png" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/user/hank.png" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/user/saul.png" /></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/user/gustavo.png" /></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="scroll-container">
+                <table class="table-scroll">
+                    <thead>
+                        <tr>
+                            <th><div>User</div></th>
+                            <th><div>Gesamt<span class="cr-icon"><i class="fa fa-sort-asc"></i></span></div></th>
+                            <th><div>Snowboarden<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                            <th><div>Langlaufen<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                            <th><div>Eishockey<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                            <th><div>Schlittenfahren<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                            <th><div>Free Skiing<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                            <th><div>Eishockey<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                            <th><div>Langlaufen<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1. Jesse</td>
+                            <td>225</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                        </tr>
+                        <tr class="active">
+                            <td>2. Hank</td>
+                            <td>225</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                        </tr>
+                        <tr>
+                            <td>3. Saul</td>
+                            <td>225</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                        </tr>
+                        <tr>
+                            <td>4. Gustavo</td>
+                            <td>225</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                            <td>25 (1)</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>

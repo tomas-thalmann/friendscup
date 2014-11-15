@@ -1,5 +1,4 @@
 @import "colors"; // import Standard Colors
-@import "foundation/components/global"; // import Standard Variables
 
 // ----------------------------------
 // Basic Styles
@@ -22,6 +21,8 @@ $body-font-family: 'Lato', Arial, sans-serif;
 // ----------------------------------
 // Custom Media Queries
 // ----------------------------------
+
+$screen: "only screen";
 
 // Top Bar Breakpoint for mobile menu -> 760px
 $mobile-nav-only: "#{$screen} and (max-width:47.5em)";
@@ -71,13 +72,6 @@ $topbar-divider-border-top: solid 1px scale-color($fc-primary-dark, $lightness: 
 $topbar-media-query: $mobile-nav-up;
 
 // ----------------------------------
-// Grid
-// ----------------------------------
-
-//$row-width: rem-calc(1440); // max-width large screens
-//$row-width: 80%;
-
-// ----------------------------------
 // Panel
 // ----------------------------------
 
@@ -102,7 +96,21 @@ $reveal-radius: 0;
 // We use these to control the modal border
 $reveal-border-width: 0;
 
+// ----------------------------------
+// Tables
+// ----------------------------------
 
+// These control the background color for the table and even rows
+$table-bg: $fc-primary-bg;
+$table-even-row-bg: transparent;
+
+// These control the table cell border style
+$table-border-style: solid;
+$table-border-size: 0px;
+$table-border-color: #ddd;
+
+// These control the table head styles
+$table-head-bg: #f5f5f5;
 
 
 
