@@ -6138,7 +6138,7 @@ table {
 /* line 69, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table caption {
   background: transparent;
-  color: #222222;
+  color: #333333;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -6150,9 +6150,9 @@ table thead {
 table thead tr th,
 table thead tr td {
   padding: 0.5rem 0.625rem 0.625rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #222222;
+  color: #333333;
 }
 /* line 92, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tfoot {
@@ -6162,16 +6162,16 @@ table tfoot {
 table tfoot tr th,
 table tfoot tr td {
   padding: 0.5rem 0.625rem 0.625rem;
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: bold;
-  color: #222222;
+  color: #333333;
 }
 /* line 108, ../bower_components/foundation/scss/foundation/components/_tables.scss */
 table tr th,
 table tr td {
   padding: 0.5625rem 0.625rem;
-  font-size: 0.875rem;
-  color: #222222;
+  font-size: 1rem;
+  color: #333333;
   text-align: left;
 }
 /* line 117, ../bower_components/foundation/scss/foundation/components/_tables.scss */
@@ -11083,47 +11083,45 @@ th.hide-for-touch {
 }
 
 /* line 668, ../scss/_cup-page.scss */
-.cr-expended {
+.cr-expanded, .cr-compressed {
   position: relative;
 }
 /* line 671, ../scss/_cup-page.scss */
-.cr-expended .table-fixed {
+.cr-expanded .table-fixed, .cr-compressed .table-fixed {
   position: absolute;
   top: 0;
   left: 0;
   width: 70px;
-  background-color: #e8edf5;
-  border-spacing: 1px;
+  border-spacing: 2px;
   z-index: 10;
 }
-/* line 682, ../scss/_cup-page.scss */
-.cr-expended .table-fixed thead tr th {
+/* line 681, ../scss/_cup-page.scss */
+.cr-expanded .table-fixed thead tr th, .cr-compressed .table-fixed thead tr th {
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
   padding: 0;
 }
-/* line 687, ../scss/_cup-page.scss */
-.cr-expended .table-fixed thead tr th div {
+/* line 686, ../scss/_cup-page.scss */
+.cr-expanded .table-fixed thead tr th div, .cr-compressed .table-fixed thead tr th div {
   line-height: 40px;
-  background-color: #f5f5f5;
 }
-/* line 697, ../scss/_cup-page.scss */
-.cr-expended .table-fixed tbody tr td {
+/* line 695, ../scss/_cup-page.scss */
+.cr-expanded .table-fixed tbody tr td, .cr-compressed .table-fixed tbody tr td {
   position: relative;
   line-height: 70px;
   padding: 0;
   margin: 0;
   text-align: center;
-  background-color: #f5f5f5;
+  background-color: #f3f3f3;
 }
-/* line 705, ../scss/_cup-page.scss */
-.cr-expended .table-fixed tbody tr td img {
+/* line 703, ../scss/_cup-page.scss */
+.cr-expanded .table-fixed tbody tr td img, .cr-compressed .table-fixed tbody tr td img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
-/* line 711, ../scss/_cup-page.scss */
-.cr-expended .table-fixed tbody tr td:before {
+/* line 709, ../scss/_cup-page.scss */
+.cr-expanded .table-fixed tbody tr td:before, .cr-compressed .table-fixed tbody tr td:before {
   content: "";
   display: block;
   position: absolute;
@@ -11134,38 +11132,38 @@ th.hide-for-touch {
   border: 10px solid transparent;
   border-left: 10px solid #e8edf5;
 }
-/* line 723, ../scss/_cup-page.scss */
-.cr-expended .table-fixed tbody tr td:after {
+/* line 721, ../scss/_cup-page.scss */
+.cr-expanded .table-fixed tbody tr td:after, .cr-compressed .table-fixed tbody tr td:after {
   content: "";
   display: block;
   position: absolute;
   top: 25px;
-  right: -19px;
+  right: -18px;
   width: 0;
   height: 0;
   border: 10px solid transparent;
-  border-left: 10px solid #f5f5f5;
+  border-left: 10px solid #f3f3f3;
 }
-/* line 739, ../scss/_cup-page.scss */
-.cr-expended .scroll-container {
+/* line 737, ../scss/_cup-page.scss */
+.cr-expanded .scroll-container, .cr-compressed .scroll-container {
   overflow: hidden;
   overflow-x: auto;
 }
-/* line 743, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll {
-  margin-left: 70px;
+/* line 741, ../scss/_cup-page.scss */
+.cr-expanded .scroll-container .table-scroll, .cr-compressed .scroll-container .table-scroll {
+  padding-left: 70px;
   width: auto;
-  border-spacing: 0 1px;
+  border-spacing: 0 2px;
 }
-/* line 750, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll thead tr th {
-  width: 120px;
-  min-width: 120px;
-  max-width: 120px;
+/* line 748, ../scss/_cup-page.scss */
+.cr-expanded .scroll-container .table-scroll thead tr th, .cr-compressed .scroll-container .table-scroll thead tr th {
+  width: 170px;
+  min-width: 170px;
+  max-width: 170px;
   padding: 0;
 }
-/* line 756, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll thead tr th div {
+/* line 754, ../scss/_cup-page.scss */
+.cr-expanded .scroll-container .table-scroll thead tr th div, .cr-compressed .scroll-container .table-scroll thead tr th div {
   line-height: 40px;
   padding: 0 30px 0 10px;
   border-right: 1px solid #e8edf5;
@@ -11173,39 +11171,67 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
   position: relative;
+  background-color: #f3f3f3;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 /* line 765, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll thead tr th div .cr-icon {
+.cr-expanded .scroll-container .table-scroll thead tr th div .cr-icon, .cr-compressed .scroll-container .table-scroll thead tr th div .cr-icon {
   position: absolute;
   right: 0;
   width: 30px;
   text-align: center;
 }
 /* line 772, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll thead tr th div:hover {
+.cr-expanded .scroll-container .table-scroll thead tr th div:hover, .cr-compressed .scroll-container .table-scroll thead tr th div:hover {
   cursor: pointer;
   background-color: #e8edf5;
 }
 /* line 778, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll thead tr th:first-child div {
+.cr-expanded .scroll-container .table-scroll thead tr th:first-child div, .cr-compressed .scroll-container .table-scroll thead tr th:first-child div {
   padding-left: 20px;
 }
 /* line 787, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll tbody tr td {
+.cr-expanded .scroll-container .table-scroll tbody tr td, .cr-compressed .scroll-container .table-scroll tbody tr td {
   line-height: 70px;
   padding: 0;
   margin: 0;
   text-align: center;
   background-color: #fff;
 }
-/* line 795, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll tbody tr td:first-child {
+/* line 794, ../scss/_cup-page.scss */
+.cr-expanded .scroll-container .table-scroll tbody tr td:first-child, .cr-compressed .scroll-container .table-scroll tbody tr td:first-child {
   text-align: left;
   padding-left: 20px;
 }
 /* line 800, ../scss/_cup-page.scss */
-.cr-expended .scroll-container .table-scroll tbody tr.active td {
+.cr-expanded .scroll-container .table-scroll tbody tr.active td, .cr-compressed .scroll-container .table-scroll tbody tr.active td {
   color: #018ad2;
+}
+
+/* line 813, ../scss/_cup-page.scss */
+.cr-compressed .scroll-container .table-scroll {
+  width: 100%;
+}
+/* line 818, ../scss/_cup-page.scss */
+.cr-compressed .scroll-container .table-scroll thead tr th {
+  width: auto;
+  min-width: auto;
+  max-width: auto;
+  text-align: center;
+}
+/* line 824, ../scss/_cup-page.scss */
+.cr-compressed .scroll-container .table-scroll thead tr th div {
+  padding: 0 10px;
+}
+/* line 827, ../scss/_cup-page.scss */
+.cr-compressed .scroll-container .table-scroll thead tr th div:hover {
+  cursor: auto;
+  background-color: #f3f3f3;
+}
+/* line 833, ../scss/_cup-page.scss */
+.cr-compressed .scroll-container .table-scroll thead tr th:first-child div {
+  text-align: left;
 }
 
 /* line 8, ../scss/_challenge-detail.scss */

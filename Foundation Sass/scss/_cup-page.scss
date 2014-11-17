@@ -665,7 +665,7 @@ $rk-no-podium-shift-down: rem-calc(45);
 // Results
 // ----------------------------------
 
-.cr-expended {
+.cr-expanded {
     position: relative;
     
     .table-fixed {
@@ -673,20 +673,18 @@ $rk-no-podium-shift-down: rem-calc(45);
         top: 0;
         left: 0;
         width: 70px;
-        background-color: $fc-primary-bg;
-        border-spacing: 1px;
+        border-spacing: 2px;
         z-index: 10; // overlapping 'scrolling th' starting at z-index: 1
         
         thead {
             tr {
                 th {
                     text-align: center;
-                    background-color: #f5f5f5;
+                    background-color: #f3f3f3;
                     padding: 0;
 
                     div {
                         line-height: 40px;
-                        background-color: #f5f5f5;
                     }
                 }
             }
@@ -700,7 +698,7 @@ $rk-no-podium-shift-down: rem-calc(45);
                     padding: 0;
                     margin: 0;
                     text-align: center;
-                    background-color: #f5f5f5;
+                    background-color: #f3f3f3;
                     
                     img {
                         height: 50px;
@@ -725,11 +723,11 @@ $rk-no-podium-shift-down: rem-calc(45);
                         display: block;
                         position: absolute;
                         top: 25px;
-                        right: -19px;
+                        right: -18px;
                         width: 0;
                         height: 0;
                         border: 10px solid transparent;
-                        border-left: 10px solid #f5f5f5;
+                        border-left: 10px solid #f3f3f3;
                     }
                 }
             }
@@ -741,16 +739,16 @@ $rk-no-podium-shift-down: rem-calc(45);
         overflow-x: auto;
         
         .table-scroll {
-            margin-left: 70px;
+            padding-left: 70px;
             width: auto;
-            border-spacing: 0 1px;
+            border-spacing: 0 2px;
 
             thead {
                 tr {
                     th {
-                        width: 120px;
-                        min-width: 120px;
-                        max-width: 120px;
+                        width: 170px;
+                        min-width: 170px;
+                        max-width: 170px;
                         padding: 0;
                         
                         div {
@@ -761,6 +759,8 @@ $rk-no-podium-shift-down: rem-calc(45);
                             white-space: nowrap;
                             text-overflow: ellipsis;
                             position: relative;
+                            background-color: #f3f3f3;
+                            @include transition(background-color 0.2s ease);
                             
                             .cr-icon {
                                 position: absolute;
@@ -790,15 +790,49 @@ $rk-no-podium-shift-down: rem-calc(45);
                         margin: 0;
                         text-align: center;
                         background-color: #fff;
-                    }
-
-                    td:first-child {
-                        text-align: left;
-                        padding-left: 20px;
+                        
+                        &:first-child {
+                            text-align: left;
+                            padding-left: 20px;
+                        }
                     }
                     
                     &.active td {
                         color: $fc-primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.cr-compressed {
+    @extend .cr-expanded;
+    
+    .scroll-container {
+        .table-scroll {
+            width: 100%;
+            
+            thead {
+                tr {
+                    th {
+                        width: auto;
+                        min-width: auto;
+                        max-width: auto;
+                        text-align: center;
+                        
+                        div {
+                            padding: 0 10px;
+                            
+                            &:hover {
+                                cursor: auto;
+                                background-color: #f3f3f3;
+                            }
+                        }
+                        
+                        &:first-child div {
+                            text-align: left;
+                        }
                     }
                 }
             }
