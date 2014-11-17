@@ -9361,63 +9361,6 @@ th.hide-for-touch {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 473, ../scss/_styles.scss */
-  .table-wrapper {
-    position: relative;
-    margin-bottom: 20px;
-    overflow: hidden;
-  }
-  /* line 478, ../scss/_styles.scss */
-  .table-wrapper .scrollable {
-    margin-left: 35%;
-    overflow: scroll;
-    overflow-y: hidden;
-  }
-  /* line 483, ../scss/_styles.scss */
-  .table-wrapper .scrollable table {
-    width: auto;
-  }
-  /* line 488, ../scss/_styles.scss */
-  .table-wrapper .pinned {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 35%;
-    overflow: hidden;
-    overflow-x: scroll;
-  }
-  /* line 496, ../scss/_styles.scss */
-  .table-wrapper .pinned table {
-    width: 100%;
-  }
-  /* line 500, ../scss/_styles.scss */
-  .table-wrapper .pinned table th,
-  .table-wrapper .pinned table td {
-    white-space: nowrap;
-  }
-  /* line 505, ../scss/_styles.scss */
-  .table-wrapper .pinned td:last-child {
-    border-bottom: 0;
-  }
-
-  /* line 511, ../scss/_styles.scss */
-  table.responsive {
-    margin-bottom: 0;
-  }
-  /* line 515, ../scss/_styles.scss */
-  table.responsive th,
-  table.responsive td {
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  /* line 523, ../scss/_styles.scss */
-  table.responsive th:first-child,
-  table.responsive td:first-child, table.responsive.pinned td {
-    display: none;
-  }
-}
-@media only screen and (max-width: 40em) {
   /* line 9, ../scss/_cup-page.scss */
   .cup-header-panel {
     padding: 0;
@@ -9661,7 +9604,7 @@ th.hide-for-touch {
 
 /* line 219, ../scss/_cup-page.scss */
 .section-modal .section-header {
-  margin: 0 0.9375rem 2.5rem 0.9375rem;
+  margin: 0 0 2.5rem 0;
 }
 
 @media only screen {
@@ -9671,7 +9614,7 @@ th.hide-for-touch {
     max-width: none;
     width: 100%;
     background-color: #e8edf5;
-    padding: 1.25rem 0;
+    padding: 1.25rem;
     box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
   }
 }
@@ -9679,33 +9622,32 @@ th.hide-for-touch {
   /* line 239, ../scss/_cup-page.scss */
   .section-modal {
     background-color: #fff;
-    padding: 1.25rem;
   }
 }
-/* line 350, ../scss/_cup-page.scss */
+/* line 349, ../scss/_cup-page.scss */
 .ch-compressed {
   position: relative;
   overflow: hidden;
 }
-/* line 255, ../scss/_cup-page.scss */
+/* line 254, ../scss/_cup-page.scss */
 .ch-compressed .ch-active {
   position: relative;
   width: 10.625rem;
 }
-/* line 260, ../scss/_cup-page.scss */
+/* line 259, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder {
   background-color: #f4811f;
   height: 13.4375rem;
   position: relative;
 }
-/* line 265, ../scss/_cup-page.scss */
+/* line 264, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder .ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 272, ../scss/_cup-page.scss */
+/* line 271, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder .ch-name {
   color: #fff;
   margin: 0;
@@ -9716,20 +9658,20 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 283, ../scss/_cup-page.scss */
+/* line 282, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder .ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 287, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder .ch-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 295, ../scss/_cup-page.scss */
+/* line 294, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder .ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -9744,7 +9686,7 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 310, ../scss/_cup-page.scss */
+/* line 309, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-active-color-holder:after {
   content: "";
   display: block;
@@ -9756,20 +9698,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #f4811f;
 }
-/* line 323, ../scss/_cup-page.scss */
+/* line 322, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 330, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a:hover .ch-active-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 337, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-compressed .ch-active:before {
   content: "";
   display: block;
@@ -9780,36 +9722,36 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 356, ../scss/_cup-page.scss */
+/* line 355, ../scss/_cup-page.scss */
 .ch-compressed .ch-active {
   margin: 0 auto;
 }
-/* line 360, ../scss/_cup-page.scss */
+/* line 359, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container {
   position: absolute;
   top: 0;
   right: 50%;
   margin-right: 5.3125rem;
 }
-/* line 255, ../scss/_cup-page.scss */
+/* line 254, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished {
   position: relative;
   width: 10.625rem;
 }
-/* line 260, ../scss/_cup-page.scss */
+/* line 259, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder {
   background-color: #018ad2;
   height: 13.4375rem;
   position: relative;
 }
-/* line 265, ../scss/_cup-page.scss */
+/* line 264, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 272, ../scss/_cup-page.scss */
+/* line 271, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-name {
   color: #fff;
   margin: 0;
@@ -9820,20 +9762,20 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 283, ../scss/_cup-page.scss */
+/* line 282, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 287, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 295, ../scss/_cup-page.scss */
+/* line 294, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -9848,7 +9790,7 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 310, ../scss/_cup-page.scss */
+/* line 309, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder:after {
   content: "";
   display: block;
@@ -9860,20 +9802,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #018ad2;
 }
-/* line 323, ../scss/_cup-page.scss */
+/* line 322, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 330, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a:hover .ch-finished-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 337, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished:before {
   content: "";
   display: block;
@@ -9884,37 +9826,37 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 368, ../scss/_cup-page.scss */
+/* line 367, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished {
   float: left;
   margin-right: 1.875rem;
 }
-/* line 374, ../scss/_cup-page.scss */
+/* line 373, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: 5.3125rem;
 }
-/* line 255, ../scss/_cup-page.scss */
+/* line 254, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued {
   position: relative;
   width: 10.625rem;
 }
-/* line 260, ../scss/_cup-page.scss */
+/* line 259, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder {
   background-color: #333333;
   height: 13.4375rem;
   position: relative;
 }
-/* line 265, ../scss/_cup-page.scss */
+/* line 264, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 272, ../scss/_cup-page.scss */
+/* line 271, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-name {
   color: #fff;
   margin: 0;
@@ -9925,20 +9867,20 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 283, ../scss/_cup-page.scss */
+/* line 282, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 287, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 295, ../scss/_cup-page.scss */
+/* line 294, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -9953,7 +9895,7 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 310, ../scss/_cup-page.scss */
+/* line 309, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder:after {
   content: "";
   display: block;
@@ -9965,20 +9907,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #333333;
 }
-/* line 323, ../scss/_cup-page.scss */
+/* line 322, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 330, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a:hover .ch-queued-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 337, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued:before {
   content: "";
   display: block;
@@ -9989,37 +9931,37 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 382, ../scss/_cup-page.scss */
+/* line 381, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 389, ../scss/_cup-page.scss */
+/* line 388, ../scss/_cup-page.scss */
 .ch-expanded {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
 }
-/* line 255, ../scss/_cup-page.scss */
+/* line 254, ../scss/_cup-page.scss */
 .ch-expanded .ch-active {
   position: relative;
   width: 10.625rem;
 }
-/* line 260, ../scss/_cup-page.scss */
+/* line 259, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder {
   background-color: #f4811f;
   height: 13.4375rem;
   position: relative;
 }
-/* line 265, ../scss/_cup-page.scss */
+/* line 264, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder .ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 272, ../scss/_cup-page.scss */
+/* line 271, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder .ch-name {
   color: #fff;
   margin: 0;
@@ -10030,20 +9972,20 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 283, ../scss/_cup-page.scss */
+/* line 282, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder .ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 287, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder .ch-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 295, ../scss/_cup-page.scss */
+/* line 294, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder .ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10058,7 +10000,7 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 310, ../scss/_cup-page.scss */
+/* line 309, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-active-color-holder:after {
   content: "";
   display: block;
@@ -10070,20 +10012,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #f4811f;
 }
-/* line 323, ../scss/_cup-page.scss */
+/* line 322, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 330, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a:hover .ch-active-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 337, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-expanded .ch-active:before {
   content: "";
   display: block;
@@ -10094,25 +10036,25 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 255, ../scss/_cup-page.scss */
+/* line 254, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished {
   position: relative;
   width: 10.625rem;
 }
-/* line 260, ../scss/_cup-page.scss */
+/* line 259, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder {
   background-color: #018ad2;
   height: 13.4375rem;
   position: relative;
 }
-/* line 265, ../scss/_cup-page.scss */
+/* line 264, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder .ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 272, ../scss/_cup-page.scss */
+/* line 271, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder .ch-name {
   color: #fff;
   margin: 0;
@@ -10123,20 +10065,20 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 283, ../scss/_cup-page.scss */
+/* line 282, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder .ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 287, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder .ch-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 295, ../scss/_cup-page.scss */
+/* line 294, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder .ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10151,7 +10093,7 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 310, ../scss/_cup-page.scss */
+/* line 309, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-finished-color-holder:after {
   content: "";
   display: block;
@@ -10163,20 +10105,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #018ad2;
 }
-/* line 323, ../scss/_cup-page.scss */
+/* line 322, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 330, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a:hover .ch-finished-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 337, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished:before {
   content: "";
   display: block;
@@ -10187,25 +10129,25 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 255, ../scss/_cup-page.scss */
+/* line 254, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued {
   position: relative;
   width: 10.625rem;
 }
-/* line 260, ../scss/_cup-page.scss */
+/* line 259, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder {
   background-color: #333333;
   height: 13.4375rem;
   position: relative;
 }
-/* line 265, ../scss/_cup-page.scss */
+/* line 264, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder .ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 272, ../scss/_cup-page.scss */
+/* line 271, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder .ch-name {
   color: #fff;
   margin: 0;
@@ -10216,20 +10158,20 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 283, ../scss/_cup-page.scss */
+/* line 282, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder .ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 288, ../scss/_cup-page.scss */
+/* line 287, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder .ch-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 295, ../scss/_cup-page.scss */
+/* line 294, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder .ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10244,7 +10186,7 @@ th.hide-for-touch {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 310, ../scss/_cup-page.scss */
+/* line 309, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-queued-color-holder:after {
   content: "";
   display: block;
@@ -10256,20 +10198,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #333333;
 }
-/* line 323, ../scss/_cup-page.scss */
+/* line 322, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 330, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a:hover .ch-queued-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 337, ../scss/_cup-page.scss */
+/* line 336, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued:before {
   content: "";
   display: block;
@@ -10280,57 +10222,57 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 400, ../scss/_cup-page.scss */
+/* line 399, ../scss/_cup-page.scss */
 .ch-expanded .ch-active,
 .ch-expanded .ch-finished,
 .ch-expanded .ch-queued {
   display: inline-block;
   margin: 0 0.9375rem;
 }
-/* line 405, ../scss/_cup-page.scss */
+/* line 404, ../scss/_cup-page.scss */
 .ch-expanded > div:first-child {
-  margin-left: 0.9375rem;
+  margin-left: 0;
 }
-/* line 408, ../scss/_cup-page.scss */
+/* line 407, ../scss/_cup-page.scss */
 .ch-expanded > div:first-child:before {
   left: 0;
 }
-/* line 413, ../scss/_cup-page.scss */
+/* line 412, ../scss/_cup-page.scss */
 .ch-expanded > div:last-child {
-  margin-right: 0.9375rem;
+  margin-right: 0;
 }
-/* line 416, ../scss/_cup-page.scss */
+/* line 415, ../scss/_cup-page.scss */
 .ch-expanded > div:last-child:before {
   right: 0;
 }
 
-/* line 583, ../scss/_cup-page.scss */
+/* line 582, ../scss/_cup-page.scss */
 .rk-compressed {
   position: relative;
   overflow: hidden;
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-compressed .rk-first {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-compressed .rk-first {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder {
   position: relative;
   padding-top: 0;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10340,14 +10282,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10360,17 +10302,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10380,7 +10322,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10393,12 +10335,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-compressed .rk-first .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10412,7 +10354,7 @@ th.hide-for-touch {
   line-height: 5.3125rem;
   font-size: 2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-compressed .rk-first:before {
   content: "";
   display: block;
@@ -10423,11 +10365,11 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 589, ../scss/_cup-page.scss */
+/* line 588, ../scss/_cup-page.scss */
 .rk-compressed .rk-first {
   margin: 0 auto;
 }
-/* line 593, ../scss/_cup-page.scss */
+/* line 592, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container {
   position: absolute;
   top: 0;
@@ -10435,33 +10377,33 @@ th.hide-for-touch {
   margin-right: 5.3125rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 593, ../scss/_cup-page.scss */
+  /* line 592, ../scss/_cup-page.scss */
   .rk-compressed .rk-left-container {
     margin-right: 6.25rem;
   }
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-compressed .rk-left-container .rk-second {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder {
   position: relative;
   padding-top: 1.25rem;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10471,14 +10413,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10491,17 +10433,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10511,7 +10453,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10524,12 +10466,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10539,7 +10481,7 @@ th.hide-for-touch {
   line-height: 4.0625rem;
   font-size: 2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second:before {
   content: "";
   display: block;
@@ -10550,12 +10492,12 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 604, ../scss/_cup-page.scss */
+/* line 603, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second {
   float: right;
   margin-right: 1.875rem;
 }
-/* line 610, ../scss/_cup-page.scss */
+/* line 609, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container {
   position: absolute;
   top: 0;
@@ -10563,33 +10505,33 @@ th.hide-for-touch {
   margin-left: 5.3125rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 610, ../scss/_cup-page.scss */
+  /* line 609, ../scss/_cup-page.scss */
   .rk-compressed .rk-right-container {
     margin-left: 6.25rem;
   }
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-compressed .rk-right-container .rk-third {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder {
   position: relative;
   padding-top: 2.5rem;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10599,14 +10541,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10619,17 +10561,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10639,7 +10581,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10652,12 +10594,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10667,7 +10609,7 @@ th.hide-for-touch {
   line-height: 2.8125rem;
   font-size: 2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third:before {
   content: "";
   display: block;
@@ -10678,41 +10620,41 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 621, ../scss/_cup-page.scss */
+/* line 620, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 628, ../scss/_cup-page.scss */
+/* line 627, ../scss/_cup-page.scss */
 .rk-expanded {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 2.8125rem;
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-expanded .rk-first {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-expanded .rk-first {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder {
   position: relative;
   padding-top: 0;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10722,14 +10664,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10742,17 +10684,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10762,7 +10704,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10775,12 +10717,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-expanded .rk-first .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10794,7 +10736,7 @@ th.hide-for-touch {
   line-height: 5.3125rem;
   font-size: 2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-expanded .rk-first:before {
   content: "";
   display: block;
@@ -10805,28 +10747,28 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-expanded .rk-second {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-expanded .rk-second {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder {
   position: relative;
   padding-top: 1.25rem;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10836,14 +10778,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10856,17 +10798,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10876,7 +10818,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10889,12 +10831,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-expanded .rk-second .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10904,7 +10846,7 @@ th.hide-for-touch {
   line-height: 4.0625rem;
   font-size: 2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-expanded .rk-second:before {
   content: "";
   display: block;
@@ -10915,28 +10857,28 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-expanded .rk-third {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-expanded .rk-third {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder {
   position: relative;
   padding-top: 2.5rem;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10946,14 +10888,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10966,17 +10908,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10986,7 +10928,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10999,12 +10941,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-expanded .rk-third .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11014,7 +10956,7 @@ th.hide-for-touch {
   line-height: 2.8125rem;
   font-size: 2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-expanded .rk-third:before {
   content: "";
   display: block;
@@ -11025,28 +10967,28 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 437, ../scss/_cup-page.scss */
+/* line 436, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 437, ../scss/_cup-page.scss */
+  /* line 436, ../scss/_cup-page.scss */
   .rk-expanded .rk-no-podium {
     width: 12.5rem;
   }
 }
-/* line 444, ../scss/_cup-page.scss */
+/* line 443, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder {
   position: relative;
   padding-top: 5.3125rem;
 }
-/* line 460, ../scss/_cup-page.scss */
+/* line 459, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 464, ../scss/_cup-page.scss */
+/* line 463, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -11056,14 +10998,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 471, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 479, ../scss/_cup-page.scss */
+/* line 478, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -11076,17 +11018,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 492, ../scss/_cup-page.scss */
+/* line 491, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 496, ../scss/_cup-page.scss */
+/* line 495, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 502, ../scss/_cup-page.scss */
+/* line 501, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -11096,7 +11038,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 511, ../scss/_cup-page.scss */
+/* line 510, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -11109,12 +11051,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 511, ../scss/_cup-page.scss */
+  /* line 510, ../scss/_cup-page.scss */
   .rk-expanded .rk-no-podium .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 527, ../scss/_cup-page.scss */
+/* line 526, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11123,7 +11065,7 @@ th.hide-for-touch {
   bottom: -2.8125rem;
   font-size: 1.2rem;
 }
-/* line 570, ../scss/_cup-page.scss */
+/* line 569, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium:before {
   content: "";
   display: block;
@@ -11134,7 +11076,7 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 642, ../scss/_cup-page.scss */
+/* line 641, ../scss/_cup-page.scss */
 .rk-expanded .rk-first,
 .rk-expanded .rk-second,
 .rk-expanded .rk-third,
@@ -11143,28 +11085,28 @@ th.hide-for-touch {
   vertical-align: bottom;
   margin: 0 0.9375rem;
 }
-/* line 648, ../scss/_cup-page.scss */
+/* line 647, ../scss/_cup-page.scss */
 .rk-expanded > div:first-child {
-  margin-left: 0.9375rem;
+  margin-left: 0;
 }
-/* line 651, ../scss/_cup-page.scss */
+/* line 650, ../scss/_cup-page.scss */
 .rk-expanded > div:first-child:before {
   left: 0;
 }
-/* line 656, ../scss/_cup-page.scss */
+/* line 655, ../scss/_cup-page.scss */
 .rk-expanded > div:last-child {
-  margin-right: 0.9375rem;
+  margin-right: 0;
 }
-/* line 659, ../scss/_cup-page.scss */
+/* line 658, ../scss/_cup-page.scss */
 .rk-expanded > div:last-child:before {
   right: 0;
 }
 
-/* line 669, ../scss/_cup-page.scss */
+/* line 668, ../scss/_cup-page.scss */
 .cr-expended {
   position: relative;
 }
-/* line 672, ../scss/_cup-page.scss */
+/* line 671, ../scss/_cup-page.scss */
 .cr-expended .table-fixed {
   position: absolute;
   top: 0;
@@ -11174,18 +11116,18 @@ th.hide-for-touch {
   border-spacing: 1px;
   z-index: 10;
 }
-/* line 683, ../scss/_cup-page.scss */
+/* line 682, ../scss/_cup-page.scss */
 .cr-expended .table-fixed thead tr th {
   text-align: center;
   background-color: #f5f5f5;
   padding: 0;
 }
-/* line 688, ../scss/_cup-page.scss */
+/* line 687, ../scss/_cup-page.scss */
 .cr-expended .table-fixed thead tr th div {
   line-height: 40px;
   background-color: #f5f5f5;
 }
-/* line 698, ../scss/_cup-page.scss */
+/* line 697, ../scss/_cup-page.scss */
 .cr-expended .table-fixed tbody tr td {
   position: relative;
   line-height: 70px;
@@ -11194,13 +11136,13 @@ th.hide-for-touch {
   text-align: center;
   background-color: #f5f5f5;
 }
-/* line 706, ../scss/_cup-page.scss */
+/* line 705, ../scss/_cup-page.scss */
 .cr-expended .table-fixed tbody tr td img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
-/* line 712, ../scss/_cup-page.scss */
+/* line 711, ../scss/_cup-page.scss */
 .cr-expended .table-fixed tbody tr td:before {
   content: "";
   display: block;
@@ -11212,7 +11154,7 @@ th.hide-for-touch {
   border: 10px solid transparent;
   border-left: 10px solid #e8edf5;
 }
-/* line 724, ../scss/_cup-page.scss */
+/* line 723, ../scss/_cup-page.scss */
 .cr-expended .table-fixed tbody tr td:after {
   content: "";
   display: block;
@@ -11224,25 +11166,25 @@ th.hide-for-touch {
   border: 10px solid transparent;
   border-left: 10px solid #f5f5f5;
 }
-/* line 740, ../scss/_cup-page.scss */
+/* line 739, ../scss/_cup-page.scss */
 .cr-expended .scroll-container {
   overflow: hidden;
   overflow-x: auto;
 }
-/* line 744, ../scss/_cup-page.scss */
+/* line 743, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll {
   margin-left: 70px;
   width: auto;
   border-spacing: 0 1px;
 }
-/* line 751, ../scss/_cup-page.scss */
+/* line 750, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll thead tr th {
   width: 120px;
   min-width: 120px;
   max-width: 120px;
   padding: 0;
 }
-/* line 757, ../scss/_cup-page.scss */
+/* line 756, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll thead tr th div {
   line-height: 40px;
   padding: 0 30px 0 10px;
@@ -11252,19 +11194,23 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 766, ../scss/_cup-page.scss */
+/* line 765, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll thead tr th div .cr-icon {
   position: absolute;
   right: 0;
   width: 30px;
   text-align: center;
 }
-/* line 773, ../scss/_cup-page.scss */
+/* line 772, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll thead tr th div:hover {
   cursor: pointer;
   background-color: #e8edf5;
 }
-/* line 784, ../scss/_cup-page.scss */
+/* line 778, ../scss/_cup-page.scss */
+.cr-expended .scroll-container .table-scroll thead tr th:first-child div {
+  padding-left: 20px;
+}
+/* line 787, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll tbody tr td {
   line-height: 70px;
   padding: 0;
@@ -11272,12 +11218,12 @@ th.hide-for-touch {
   text-align: center;
   background-color: #fff;
 }
-/* line 792, ../scss/_cup-page.scss */
+/* line 795, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll tbody tr td:first-child {
   text-align: left;
   padding-left: 20px;
 }
-/* line 797, ../scss/_cup-page.scss */
+/* line 800, ../scss/_cup-page.scss */
 .cr-expended .scroll-container .table-scroll tbody tr.active td {
   color: #018ad2;
 }

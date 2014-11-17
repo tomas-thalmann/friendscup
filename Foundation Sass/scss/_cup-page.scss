@@ -217,7 +217,7 @@
 }
 
 .section-modal .section-header {
-    margin: 0 ($column-gutter / 2) rem-calc(40) ($column-gutter / 2);
+    margin: 0 0 rem-calc(40) 0;
 }
 
 // ----------------------------------
@@ -230,7 +230,7 @@
         max-width: none;
         width: 100%;
         background-color: $fc-primary-bg;
-        padding: rem-calc(20) 0;
+        padding: rem-calc(20);
         @include box-shadow(0 0 rem-calc(10) rgba(0,0,0,0.4));
     }
 }
@@ -238,7 +238,6 @@
 @media #{$medium-up} {
     .section-modal {
         background-color: #fff;
-        padding: rem-calc(20);
     }
 }
 
@@ -403,7 +402,7 @@ $ch-grey-line-height: rem-calc(15);
     }
     
     > div:first-child {
-        margin-left: $column-gutter / 2;
+        margin-left: 0;
         
         &:before {
             left: 0;
@@ -411,7 +410,7 @@ $ch-grey-line-height: rem-calc(15);
     }
     
     > div:last-child {
-        margin-right: $column-gutter / 2;
+        margin-right: 0;
         
         &:before {
             right: 0;
@@ -646,7 +645,7 @@ $rk-no-podium-shift-down: rem-calc(45);
     }
     
     > div:first-child {
-        margin-left: $column-gutter / 2;
+        margin-left: 0;
         
         &:before {
             left: 0;
@@ -654,7 +653,7 @@ $rk-no-podium-shift-down: rem-calc(45);
     }
     
     > div:last-child {
-        margin-right: $column-gutter / 2;
+        margin-right: 0;
         
         &:before {
             right: 0;
@@ -774,6 +773,10 @@ $rk-no-podium-shift-down: rem-calc(45);
                                 cursor: pointer;
                                 background-color: $fc-primary-bg;
                             }
+                        }
+                        
+                        &:first-child div {
+                            padding-left: 20px;
                         }
                     }
                 }
