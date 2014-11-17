@@ -48,7 +48,7 @@
 // Logo Image
 
 .top-bar .name h1 a:before {
-    content: " ";
+    content: "";
     position: absolute;
     display: block;
     height: 50px;
@@ -282,6 +282,9 @@
 // Custom Panels
 // ----------------------------------
 
+$panel-arrow-size-small: rem-calc(20);
+$panel-arrow-size-medium-up: rem-calc(40);
+
 // BG Light Panel
 
 .bg-light-panel {
@@ -296,28 +299,28 @@
     @extend .bg-light-panel;
     position: relative;
     margin: 0;
-}
-
-.bg-light-arrow-panel:after {
-    content: " ";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 0;
-    z-index: 10;
-    @media #{$small-only} {
-        border: 20px solid transparent;
-        border-top: 20px solid $fc-primary-bg;
-        margin-left: -20px;
-        margin-bottom: -(20px * 2);
-    }
-    @media #{$medium-up} {
-        border: 40px solid transparent;
-        border-top: 40px solid $fc-primary-bg;
-        margin-left: -40px;
-        margin-bottom: -(40px * 2);
+    
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 0;
+        z-index: 10;
+        @media #{$small-only} {
+            border: $panel-arrow-size-small solid transparent;
+            border-top: $panel-arrow-size-small solid $fc-primary-bg;
+            margin-left: -$panel-arrow-size-small;
+            margin-bottom: -($panel-arrow-size-small * 2);
+        }
+        @media #{$medium-up} {
+            border: $panel-arrow-size-medium-up solid transparent;
+            border-top: $panel-arrow-size-medium-up solid $fc-primary-bg;
+            margin-left: -$panel-arrow-size-medium-up;
+            margin-bottom: -($panel-arrow-size-medium-up * 2);
+        }
     }
 }
 
@@ -362,15 +365,18 @@
     @extend .bg-image-panel;
     position: relative;
     margin: 0;
+    
+    &:after {
+        @extend .bg-light-arrow-panel:after;
+        border-top-color: $fc-primary;
+    }
 }
 
-.bg-image-arrow-panel:after {
-    @extend .bg-light-arrow-panel:after;
-    border-top-color: $fc-primary;
-}
+// use only when there is a row with one or more culomns in it
+// -> a culomn has some padding-left and some padding-right
 
 .panel-extra-padding {
-    padding: ($panel-padding * 3) $panel-padding;
+    padding: ($panel-padding * 3) 0;
     margin: 0;
 }
 
@@ -402,7 +408,7 @@
         h1 {
             color: #fff;
             line-height: $height;
-            padding: 0 30px;
+            padding: 0 rem-calc(30);
             margin: 0;
             white-space: nowrap;
             @include transition(line-height 0.3s);
@@ -412,8 +418,8 @@
             p {
                 color: #fff;
                 position: absolute;
-                top: 150px;
-                padding: 0 30px;
+                top: rem-calc(150);
+                padding: 0 rem-calc(30);
                 @include opacity(0);
                 @include transition(opacity 0.3s, top 0.3s);
             }
@@ -422,47 +428,47 @@
                 @include opacity(0);
             }
         }
-    }
-
-    .big-button:hover {
-        background-color: scale-color($fc-primary, $lightness: 10%);;
-
+        
         @if $media-query == 'medium-up' {
-            img {
-                right: -($height / 4);
-            }
+            &:hover {
+                background-color: scale-color($fc-primary, $lightness: 10%);;
 
-            h1 {
-                line-height: 140px;
+                img {
+                    right: -($height / 4);
+                }
+
+                h1 {
+                    line-height: rem-calc(140);
+                }
+
+                p {
+                    @include opacity(1);
+                    top: rem-calc(105);
+                    @include transition-delay(0.06s);
+                }
             }
             
-            p {
-                @include opacity(1);
-                top: 105px;
-                @include transition-delay(0.06s);
-            }
-        }
-    }
-    
-    // callback for touch based devices
-    .big-button.touch {
-        h1 {
-            line-height: 140px;
-        }
+            // callback for touch based devices
+            &.touch {
+                h1 {
+                    line-height: rem-calc(140);
+                }
 
-        p {
-            @include opacity(1);
-            top: 105px;
+                p {
+                    @include opacity(1);
+                    top: rem-calc(105);
+                }
+            }
         }
     }
 }
 
 @media #{$small-only} {
-    @include generate-big-button(100px, 'small-only');
+    @include generate-big-button(rem-calc(100), 'small-only');
 }
 
 @media #{$medium-up} {
-    @include generate-big-button(200px, 'medium-up');
+    @include generate-big-button(rem-calc(200), 'medium-up');
 }
 
 

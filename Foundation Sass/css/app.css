@@ -8936,7 +8936,7 @@ th.hide-for-touch {
 }
 /* line 50, ../scss/_styles.scss */
 .top-bar .name h1 a:before {
-  content: " ";
+  content: "";
   position: absolute;
   display: block;
   height: 50px;
@@ -9126,22 +9126,21 @@ th.hide-for-touch {
     width: 31.25rem;
   }
 }
-/* line 287, ../scss/_styles.scss */
+/* line 290, ../scss/_styles.scss */
 .bg-light-panel, .bg-light-arrow-panel, .bg-white-arrow-panel, .bg-image-panel, .bg-image-arrow-panel {
   background: #e8edf5;
   padding: 1.25rem;
   margin: 0 0 20px 0;
 }
 
-/* line 295, ../scss/_styles.scss */
+/* line 298, ../scss/_styles.scss */
 .bg-light-arrow-panel {
   position: relative;
   margin: 0;
 }
-
-/* line 301, ../scss/_styles.scss */
+/* line 303, ../scss/_styles.scss */
 .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
-  content: " ";
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -9151,42 +9150,42 @@ th.hide-for-touch {
   z-index: 10;
 }
 @media only screen and (max-width: 40em) {
-  /* line 301, ../scss/_styles.scss */
+  /* line 303, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
-    border: 20px solid transparent;
-    border-top: 20px solid #e8edf5;
-    margin-left: -20px;
-    margin-bottom: -40px;
+    border: 1.25rem solid transparent;
+    border-top: 1.25rem solid #e8edf5;
+    margin-left: -1.25rem;
+    margin-bottom: -2.5rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 301, ../scss/_styles.scss */
+  /* line 303, ../scss/_styles.scss */
   .bg-light-arrow-panel:after, .bg-white-arrow-panel:after, .bg-image-arrow-panel:after {
-    border: 40px solid transparent;
-    border-top: 40px solid #e8edf5;
-    margin-left: -40px;
-    margin-bottom: -80px;
+    border: 2.5rem solid transparent;
+    border-top: 2.5rem solid #e8edf5;
+    margin-left: -2.5rem;
+    margin-bottom: -5rem;
   }
 }
 
-/* line 326, ../scss/_styles.scss */
+/* line 329, ../scss/_styles.scss */
 .bg-white-arrow-panel {
   background: #fff;
   position: relative;
   margin: 0;
 }
 
-/* line 333, ../scss/_styles.scss */
+/* line 336, ../scss/_styles.scss */
 .bg-white-arrow-panel:after {
   border-top-color: #fff;
 }
 
-/* line 340, ../scss/_styles.scss */
+/* line 343, ../scss/_styles.scss */
 .bg-image-panel, .bg-image-arrow-panel {
   background-image: url("../img/bg-image-panel.png");
   background-size: cover;
 }
-/* line 354, ../scss/_styles.scss */
+/* line 357, ../scss/_styles.scss */
 .bg-image-panel h1, .bg-image-arrow-panel h1, .bg-image-panel h2, .bg-image-arrow-panel h2, .bg-image-panel h3, .bg-image-arrow-panel h3, .bg-image-panel h4, .bg-image-arrow-panel h4, .bg-image-panel h5, .bg-image-arrow-panel h5, .bg-image-panel h6, .bg-image-arrow-panel h6,
 .bg-image-panel p,
 .bg-image-arrow-panel p,
@@ -9207,157 +9206,138 @@ th.hide-for-touch {
   color: #fff;
 }
 
-/* line 361, ../scss/_styles.scss */
+/* line 364, ../scss/_styles.scss */
 .bg-image-arrow-panel {
   position: relative;
   margin: 0;
 }
-
-/* line 367, ../scss/_styles.scss */
+/* line 369, ../scss/_styles.scss */
 .bg-image-arrow-panel:after {
   border-top-color: #018ad2;
 }
 
-/* line 372, ../scss/_styles.scss */
+/* line 378, ../scss/_styles.scss */
 .panel-extra-padding {
-  padding: 3.75rem 1.25rem;
+  padding: 3.75rem 0;
   margin: 0;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 382, ../scss/_styles.scss */
+  /* line 388, ../scss/_styles.scss */
   .big-button {
     position: relative;
     display: block;
-    height: 100px;
+    height: 6.25rem;
     width: 100%;
     overflow: hidden;
     background-color: #018ad2;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
-  /* line 391, ../scss/_styles.scss */
+  /* line 397, ../scss/_styles.scss */
   .big-button img {
     position: absolute;
-    height: 125px;
+    height: 7.8125rem;
     width: auto;
     max-width: none;
-    top: -12.5px;
-    right: -12.5px;
+    top: -0.78125rem;
+    right: -0.78125rem;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
     -webkit-transition: right 0.3s;
     transition: right 0.3s;
   }
-  /* line 402, ../scss/_styles.scss */
+  /* line 408, ../scss/_styles.scss */
   .big-button h1 {
     color: #fff;
-    line-height: 100px;
-    padding: 0 30px;
+    line-height: 6.25rem;
+    padding: 0 1.875rem;
     margin: 0;
     white-space: nowrap;
     -webkit-transition: line-height 0.3s;
     transition: line-height 0.3s;
   }
-  /* line 421, ../scss/_styles.scss */
+  /* line 427, ../scss/_styles.scss */
   .big-button p {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
   }
-
-  /* line 427, ../scss/_styles.scss */
-  .big-button:hover {
-    background-color: #019ef0;
-  }
-
-  /* line 449, ../scss/_styles.scss */
-  .big-button.touch h1 {
-    line-height: 140px;
-  }
-  /* line 453, ../scss/_styles.scss */
-  .big-button.touch p {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-    top: 105px;
-  }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 382, ../scss/_styles.scss */
+  /* line 388, ../scss/_styles.scss */
   .big-button {
     position: relative;
     display: block;
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
     overflow: hidden;
     background-color: #018ad2;
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
   }
-  /* line 391, ../scss/_styles.scss */
+  /* line 397, ../scss/_styles.scss */
   .big-button img {
     position: absolute;
-    height: 250px;
+    height: 15.625rem;
     width: auto;
     max-width: none;
-    top: -25px;
-    right: -25px;
+    top: -1.5625rem;
+    right: -1.5625rem;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10);
     opacity: 0.1;
     -webkit-transition: right 0.3s;
     transition: right 0.3s;
   }
-  /* line 402, ../scss/_styles.scss */
+  /* line 408, ../scss/_styles.scss */
   .big-button h1 {
     color: #fff;
-    line-height: 200px;
-    padding: 0 30px;
+    line-height: 12.5rem;
+    padding: 0 1.875rem;
     margin: 0;
     white-space: nowrap;
     -webkit-transition: line-height 0.3s;
     transition: line-height 0.3s;
   }
-  /* line 412, ../scss/_styles.scss */
+  /* line 418, ../scss/_styles.scss */
   .big-button p {
     color: #fff;
     position: absolute;
-    top: 150px;
-    padding: 0 30px;
+    top: 9.375rem;
+    padding: 0 1.875rem;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
     -webkit-transition: opacity 0.3s, top 0.3s;
     transition: opacity 0.3s, top 0.3s;
   }
-
-  /* line 427, ../scss/_styles.scss */
+  /* line 433, ../scss/_styles.scss */
   .big-button:hover {
     background-color: #019ef0;
   }
-  /* line 431, ../scss/_styles.scss */
+  /* line 436, ../scss/_styles.scss */
   .big-button:hover img {
-    right: -50px;
+    right: -3.125rem;
   }
-  /* line 435, ../scss/_styles.scss */
+  /* line 440, ../scss/_styles.scss */
   .big-button:hover h1 {
-    line-height: 140px;
+    line-height: 8.75rem;
   }
-  /* line 439, ../scss/_styles.scss */
+  /* line 444, ../scss/_styles.scss */
   .big-button:hover p {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
-    top: 105px;
+    top: 6.5625rem;
     -webkit-transition-delay: 0.06s;
     transition-delay: 0.06s;
   }
-
-  /* line 449, ../scss/_styles.scss */
-  .big-button.touch h1 {
-    line-height: 140px;
-  }
   /* line 453, ../scss/_styles.scss */
+  .big-button.touch h1 {
+    line-height: 8.75rem;
+  }
+  /* line 457, ../scss/_styles.scss */
   .big-button.touch p {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
-    top: 105px;
+    top: 6.5625rem;
   }
 }
 @media only screen and (max-width: 40em) {

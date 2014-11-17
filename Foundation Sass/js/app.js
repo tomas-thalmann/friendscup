@@ -90,7 +90,7 @@ $(document).ready(function () {
             // ---------------------------
             
             // Standard Foundation h1 at small: 34px
-            $(".big-button h1").fitText(0.7, { minFontSize: '22px', maxFontSize: '34px' });
+            $(".big-button h1").fitText(0.7, { maxFontSize: '34px' });
         }
     });
 });
