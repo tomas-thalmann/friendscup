@@ -64,8 +64,8 @@
                         isaoi gias gisig ssi g saii<br />
                         isdag oaiosi gsdaoig osaois ogia gsi
                     </p>
-                    <div class="cup-header-admin show-for-large-up">
-                        <hr class="show-for-large-up">
+                    <div class="cup-header-admin">
+                        <hr>
                         <p>
                             <img src="img/user/saul.png" />
                             <strong>Saul</strong>
@@ -188,71 +188,48 @@
         <div class="small-12 columns">
             <h3 class="section-header">Detailwertung <a class="modal-open right" data-sectionmodalid="modal-results"><i class="fa fa-arrows-alt"></i></a></h3>
             
-            <div class="cr-compressed">
-                <table class="table-fixed">
+            <div class="rt-compressed">
+                <table class="table-sort" id="rt-compressed">
                     <thead>
                         <tr>
-                            <th><div><i class="fa fa-user"></i></div></th>
+                            <th class="no-sort"></th>
+                            <th class="sort-default"><div>Gesamt</div></th>
+                            <th class="show-for-medium-up"><div>Free Skiing</div></th>
+                            <th class="show-for-medium-up"><div>Langlaufen</div></th>
+                            <th class="show-for-large-up"><div>Eishockey</div></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td><img src="img/user/jesse.png" /></td>
+                            <td><img src="img/user/jesse.png" />1. Jesse</td>
+                            <td>1299</td>
+                            <td data-sort="25" class="show-for-medium-up">25 (1)</td>
+                            <td data-sort="25" class="show-for-medium-up">25 (1)</td>
+                            <td data-sort="25" class="show-for-large-up">25 (1)</td>
                         </tr>
                         <tr>
-                            <td><img src="img/user/hank.png" /></td>
+                            <td><img src="img/user/hank.png" />2. Hank</td>
+                            <td>897</td>
+                            <td data-sort="20" class="show-for-medium-up">20 (2)</td>
+                            <td data-sort="20" class="show-for-medium-up">20 (2)</td>
+                            <td data-sort="20" class="show-for-large-up">20 (2)</td>
+                        </tr>
+                        <tr class="current-user">
+                            <td><img src="img/user/saul.png" />3. Saul extra long testname</td>
+                            <td>687</td>
+                            <td data-sort="15" class="show-for-medium-up">15 (3)</td>
+                            <td data-sort="15" class="show-for-medium-up">15 (3)</td>
+                            <td data-sort="15" class="show-for-large-up">15 (3)</td>
                         </tr>
                         <tr>
-                            <td><img src="img/user/saul.png" /></td>
-                        </tr>
-                        <tr>
-                            <td><img src="img/user/gustavo.png" /></td>
+                            <td><img src="img/user/gustavo.png" />4. Gustavo</td>
+                            <td>564</td>
+                            <td data-sort="10" class="show-for-medium-up">10 (4)</td>
+                            <td data-sort="10" class="show-for-medium-up">10 (4)</td>
+                            <td data-sort="10" class="show-for-large-up">10 (4)</td>
                         </tr>
                     </tbody>
                 </table>
-                <div class="scroll-container">
-                    <table class="table-scroll">
-                        <thead>
-                            <tr>
-                                <th><div>User</div></th>
-                                <th><div>Gesamt</div></th>
-                                <th class="show-for-medium-up"><div title="Snowboarden">(1) Snowboarden</div></th>
-                                <th class="show-for-medium-up"><div title="Langlaufen">(2) Langlaufen</div></th>
-                                <th class="show-for-large-up"><div title="Eishockey">(3) Eishockey</div></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1. Jesse</td>
-                                <td>225</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-large-up">25 (1)</td>
-                            </tr>
-                            <tr class="active">
-                                <td>2. Hank</td>
-                                <td>225</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-large-up">25 (1)</td>
-                            </tr>
-                            <tr>
-                                <td>3. Saul</td>
-                                <td>225</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-large-up">25 (1)</td>
-                            </tr>
-                            <tr>
-                                <td>4. Gustavo</td>
-                                <td>225</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-medium-up">25 (1)</td>
-                                <td class="show-for-large-up">25 (1)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
             </div>
         </div>
     </div>
@@ -432,91 +409,53 @@
     <div id="modal-results" class="section-modal">
         <h3 class="section-header">Detailwertung <a class="right" rel="modal:close"><i class="fa fa-times"></i></a></h3>
         
-        <div class="cr-expanded">
-            <table class="table-fixed">
+        <div class="rt-expanded">
+            <table class="table-sort" id="rt-expanded">
                 <thead>
                     <tr>
-                        <th><div><i class="fa fa-user"></i></div></th>
+                        <th class="no-sort"></th>
+                        <th class="sort-default"><div>Gesamt</div></th>
+                        <th><div>Free Skiing</div></th>
+                        <th><div>Langlaufen</div></th>
+                        <th><div>Eishockey</div></th>
+                        <th><div>Schlittenfahren</div></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="img/user/jesse.png" /></td>
+                        <td><img src="img/user/jesse.png" />1. Jesse</td>
+                        <td>1299</td>
+                        <td data-sort="25">25 (1)</td>
+                        <td data-sort="25">25 (1)</td>
+                        <td data-sort="25">25 (1)</td>
+                        <td data-sort="25">25 (1)</td>
                     </tr>
                     <tr>
-                        <td><img src="img/user/hank.png" /></td>
+                        <td><img src="img/user/hank.png" />2. Hank</td>
+                        <td>897</td>
+                        <td data-sort="20">20 (2)</td>
+                        <td data-sort="20">20 (2)</td>
+                        <td data-sort="20">20 (2)</td>
+                        <td data-sort="20">20 (2)</td>
+                    </tr>
+                    <tr class="current-user">
+                        <td><img src="img/user/saul.png" />3. Saul</td>
+                        <td>687</td>
+                        <td data-sort="15">15 (3)</td>
+                        <td data-sort="15">15 (3)</td>
+                        <td data-sort="15">15 (3)</td>
+                        <td data-sort="15">15 (3)</td>
                     </tr>
                     <tr>
-                        <td><img src="img/user/saul.png" /></td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/user/gustavo.png" /></td>
+                        <td><img src="img/user/gustavo.png" />4. Gustavo</td>
+                        <td>564</td>
+                        <td data-sort="10">10 (4)</td>
+                        <td data-sort="10">10 (4)</td>
+                        <td data-sort="10">10 (4)</td>
+                        <td data-sort="10">10 (4)</td>
                     </tr>
                 </tbody>
             </table>
-            <div class="scroll-container">
-                <table class="table-scroll">
-                    <thead>
-                        <tr>
-                            <th><div>User</div></th>
-                            <th><div>Gesamt<span class="cr-icon"><i class="fa fa-sort-asc"></i></span></div></th>
-                            <th><div title="Snowboarden">(1) Snowboarden<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                            <th><div title="Langlaufen">(2) Langlaufen<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                            <th><div title="Eishockey">(3) Eishockey<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                            <th><div title="Schlittenfahren">(4) Schlittenfahren<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                            <th><div title="Free Skiing">(5) Free Skiing<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                            <th><div title="Eishockey">(6) Eishockey<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                            <th><div title="Langlaufen">(7) Langlaufen<span class="cr-icon"><i class="fa fa-sort"></i></span></div></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1. Jesse</td>
-                            <td>225</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                        </tr>
-                        <tr class="active">
-                            <td>2. Hank</td>
-                            <td>225</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                        </tr>
-                        <tr>
-                            <td>3. Saul</td>
-                            <td>225</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                        </tr>
-                        <tr>
-                            <td>4. Gustavo</td>
-                            <td>225</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                            <td>25 (1)</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
     </div>
     <!-- END - Modals -->
@@ -524,11 +463,11 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script src="js/fittext.js"></script>
     <script src="js/enquire.js"></script>
     <script src="js/jquery.modal.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.kinetic.js"></script>
+    <script src="js/tablesort.js"></script>
     <script src="js/app.js"></script>
 </body>
 

@@ -29,6 +29,10 @@
     .cup-header-right img {
         width: 100%;
     }
+    
+    .cup-header-admin {
+        display: none;
+    }
 }
 
 @media #{$medium-up} {
@@ -133,6 +137,10 @@
         }
     }
     
+    .cup-header-admin {
+        display: none;
+    }
+    
     // callback for touch based devices
     .cup-header-right.touch {
         div {
@@ -147,8 +155,9 @@
     }
 }
 
-@media #{$large-up} {
+@media only screen and (min-width: 56.250em) { /* min-width 900px */
     .cup-header-admin {
+        display: block; // override 'display: none'
         text-align: center;
         margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
     }
@@ -242,7 +251,7 @@
 }
 
 // ----------------------------------
-// Challenges
+// Challenges (ch -> challenges)
 // ----------------------------------
 
 $ch-element-width: rem-calc(170);
@@ -419,7 +428,7 @@ $ch-grey-line-height: rem-calc(15);
 }
 
 // ----------------------------------
-// Ranking
+// Ranking (rk -> ranking)
 // ----------------------------------
 
 $rk-element-width: rem-calc(170);
@@ -662,177 +671,152 @@ $rk-no-podium-shift-down: rem-calc(45);
 }
 
 // ----------------------------------
-// Results
+// Results (rt -> results table)
 // ----------------------------------
 
-.cr-expanded {
-    position: relative;
-    
-    .table-fixed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 70px;
-        border-spacing: 2px;
-        z-index: 10; // overlapping 'scrolling th' starting at z-index: 1
+$rt-hover-bg: #f5f5f5;
+$rt-border-color: #ddd;
+$rt-mobile-bg: $fc-primary-bg;
+$rt-mobile-border-color: #aaa;
+
+@mixin generate-rt-element($type) { // $type -> compressed or expanded
+    table {
+        border-collapse: collapse;
+        
+        @if $type == 'compressed' {
+            width: 100%;
+        }
+        @else if $type == 'expanded' {
+            width: auto;
+        }
         
         thead {
             tr {
                 th {
-                    text-align: center;
-                    background-color: #f3f3f3;
                     padding: 0;
-
+                    border-right: 1px solid $rt-border-color;
+                    
+                    @if $type == 'expanded' {
+                        width: rem-calc(170);
+                        min-width: rem-calc(170);
+                        max-width: rem-calc(170);
+                    }
+                    
+                    &:first-child {
+                        width: rem-calc(200);
+                        min-width: rem-calc(200);
+                        max-width: rem-calc(200);
+                    }
+                    
                     div {
-                        line-height: 40px;
+                        padding: $table-head-padding;
+                        @include user-select(none);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
                     }
                 }
             }
         }
         
         tbody {
+            border-top: 1px solid $rt-border-color;
+            
             tr {
+                border-bottom: 1px solid $rt-border-color;
+                @include transition(background-color 0.2s ease);
+                
+                &:hover {
+                    background-color: $rt-hover-bg;
+                }
+                
+                &.current-user {
+                    td {
+                        color: $fc-primary;
+                        
+                        &:first-child {
+                            // border-collapse cut off the half of the border
+                            border-left: 5px solid $fc-primary;
+                        }
+                    }
+                }
+                
                 td {
-                    position: relative;
-                    line-height: 70px;
-                    padding: 0;
-                    margin: 0;
                     text-align: center;
-                    background-color: #f3f3f3;
-                    
-                    img {
-                        height: 50px;
-                        width: 50px;
-                        border-radius: 50%;
-                    }
-                    
-                    &:before {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 25px;
-                        right: -20px;
-                        width: 0;
-                        height: 0;
-                        border: 10px solid transparent;
-                        border-left: 10px solid $fc-primary-bg;
-                    }
-                    
-                    &:after {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        top: 25px;
-                        right: -18px;
-                        width: 0;
-                        height: 0;
-                        border: 10px solid transparent;
-                        border-left: 10px solid #f3f3f3;
+                    border-right: 1px solid $rt-border-color;
+
+                    &:first-child {
+                        text-align: left;
+                        border-left: 5px solid transparent;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        // fix problem with larger content on mobile devices
+                        // problem source -> table-layout: auto
+                        max-width: 0;
+                        
+                        img {
+                            height: rem-calc(50);
+                            width: rem-calc(50);
+                            @include border-radius(50%);
+                            margin-right: rem-calc(10);
+                        }
                     }
                 }
             }
         }
     }
     
-    .scroll-container {
-        overflow: hidden;
-        overflow-x: auto;
-        
-        .table-scroll {
-            padding-left: 70px;
-            width: auto;
-            border-spacing: 0 2px;
+    @media #{$small-only} {
+        // adjust colors for mobile sections
+        table {
+            background-color: $rt-mobile-bg;
 
             thead {
                 tr {
                     th {
-                        width: 170px;
-                        min-width: 170px;
-                        max-width: 170px;
-                        padding: 0;
-                        
-                        div {
-                            line-height: 40px;
-                            padding: 0 30px 0 10px;
-                            border-right: 1px solid $fc-primary-bg;
-                            overflow: hidden;
-                            white-space: nowrap;
-                            text-overflow: ellipsis;
-                            position: relative;
-                            background-color: #f3f3f3;
-                            @include transition(background-color 0.2s ease);
-                            
-                            .cr-icon {
-                                position: absolute;
-                                right: 0;
-                                width: 30px;
-                                text-align: center;
-                            }
-                            
-                            &:hover {
-                                cursor: pointer;
-                                background-color: $fc-primary-bg;
-                            }
-                        }
-                        
-                        &:first-child div {
-                            padding-left: 20px;
-                        }
+                        background-color: $rt-mobile-bg;
+                        border-right: 1px solid $rt-mobile-border-color;
                     }
                 }
             }
 
             tbody {
+                border-top: 1px solid $rt-mobile-border-color;
+
                 tr {
+                    border-bottom: 1px solid $rt-mobile-border-color;
+
                     td {
-                        line-height: 70px;
-                        padding: 0;
-                        margin: 0;
-                        text-align: center;
-                        background-color: #fff;
-                        
-                        &:first-child {
-                            text-align: left;
-                            padding-left: 20px;
-                        }
-                    }
-                    
-                    &.active td {
-                        color: $fc-primary;
+                        border-right: 1px solid $rt-mobile-border-color;
                     }
                 }
             }
         }
-    }
-}
-
-.cr-compressed {
-    @extend .cr-expanded;
-    
-    .scroll-container {
-        .table-scroll {
-            width: 100%;
-            
-            thead {
-                tr {
-                    th {
-                        width: auto;
-                        min-width: auto;
-                        max-width: auto;
-                        text-align: center;
-                        
-                        div {
-                            padding: 0 10px;
+        
+        // fix: user column too small on mobile device (name cut off)
+        @if $type == 'compressed' {
+            table {
+                // column width is set by the widest unbreakable content in the cells
+                table-layout: auto;
+                
+                thead {
+                    tr {
+                        th {
+                            // let user column take max space
+                            &:first-child {
+                                width: 100%;
+                                min-width: 0;
+                                max-width: 100%;
+                            }
                             
-                            &:hover {
-                                cursor: auto;
-                                background-color: #f3f3f3;
+                            // only take the space needed for the content
+                            &:nth-child(2) {
+                                width: 1px;
+                                min-width: 0;
+                                max-width: 100%;
                             }
                         }
-                        
-                        &:first-child div {
-                            text-align: left;
-                        }
                     }
                 }
             }
@@ -840,8 +824,72 @@ $rk-no-podium-shift-down: rem-calc(45);
     }
 }
 
+.rt-compressed {
+    overflow: hidden;
+    overflow-x: auto;
+    
+    @include generate-rt-element('compressed');
+}
 
+.rt-expanded {
+    overflow: hidden;
+    overflow-x: auto;
+    
+    @include generate-rt-element('expanded');
+}
 
+.table-sort {
+    th.sort-header {
+        cursor: pointer;
+        @include transition(background-color 0.2s ease);
+        
+        div {
+            padding-right: rem-calc(30);
+            position: relative;
+            
+            &:after {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                font-variant: normal;
+                font-size: inherit;
+                line-height: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: '\f0dc';
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                width: rem-calc(30);
+                padding: $table-head-padding;
+                text-align: center;
+                color: #aaa;
+                @include transition(color 0.2s ease);
+            }
+        }
+        
+        &:hover {
+            background-color: $rt-hover-bg;
+            
+            div:after {
+                color: #333;
+            }
+        }
+    }
+    
+    th.sort-up div:after {
+        content: '\f0de';
+        color: #333;
+    }
+    
+    th.sort-down div:after {
+        content: '\f0dd';
+        color: #333;
+    }
+}
 
 
 

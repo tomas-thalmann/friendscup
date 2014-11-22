@@ -101,7 +101,7 @@ $reveal-border-width: 0;
 // ----------------------------------
 
 // These control the background color for the table and even rows
-$table-bg: $fc-primary-bg;
+$table-bg: #fff;
 $table-even-row-bg: transparent;
 
 // These control the table cell border style
@@ -110,7 +110,7 @@ $table-border-size: 0px;
 $table-border-color: #ddd;
 
 // These control the table head styles
-$table-head-bg: #f5f5f5;
+$table-head-bg: #fff;
 $table-head-font-size: rem-calc(16);
 $table-head-font-color: #333;
 

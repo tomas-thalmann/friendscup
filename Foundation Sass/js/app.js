@@ -1,7 +1,7 @@
 // Author: Sebastian Thaler
 // Email: sebi.thaler@gmail.com
 
-/*global $, jQuery, enquire, Foundation, Modernizr*/
+/*global $, jQuery, enquire, Foundation, Modernizr, Tablesort*/
 
 // ---------------------------
 // Foundation Configuration
@@ -65,6 +65,14 @@ $(document).ready(function () {
         });
     }
     
+    // ----------------------------------
+    // Responsive & Sorting Table
+    // ----------------------------------
+    
+    var tableResultsCompressed = new Tablesort(document.getElementById('rt-compressed'));
+    
+    var tableResultsExpanded = new Tablesort(document.getElementById('rt-expanded'));
+    
     // ---------------------------
     // Media Queries
     // ---------------------------
@@ -72,25 +80,19 @@ $(document).ready(function () {
     enquire.register(Foundation.media_queries.medium, {
         match: function () {
             
-            // ---------------------------
-            // Fittext
-            // ---------------------------
+            // ----------------------------------------
+            // Do something for media query medium up
+            // ----------------------------------------
             
-            // Standard Foundation h1: 44px
-            $(".big-button h1").fitText(0.7, { minFontSize: '32px', maxFontSize: '44px' });
-            // Standard Foundation h3: 27px
-            $(".cup-header-left h3").fitText(1, { minFontSize: '10px', maxFontSize: '27px' });
         }
     });
     enquire.register(Foundation.media_queries.small, {
         match: function () {
             
-            // ---------------------------
-            // Fittext
-            // ---------------------------
+            // ------------------------------------
+            // Do something for media query small
+            // ------------------------------------
             
-            // Standard Foundation h1 at small: 34px
-            $(".big-button h1").fitText(0.7, { maxFontSize: '34px' });
         }
     });
 });
