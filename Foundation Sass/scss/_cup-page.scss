@@ -239,7 +239,7 @@
         max-width: none;
         width: 100%;
         background-color: $fc-primary-bg;
-        padding: rem-calc(20);
+        padding: rem-calc(20) rem-calc(20) 0 rem-calc(20);
         @include box-shadow(0 0 rem-calc(10) rgba(0,0,0,0.4));
     }
 }
@@ -399,6 +399,8 @@ $ch-grey-line-height: rem-calc(15);
     overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
+    // fix wrong scrollbar on mobile devices
+    padding-bottom: rem-calc(20);
     
     @include generate-ch-element('active', $fc-orange);
     @include generate-ch-element('finished', $fc-primary);
@@ -541,7 +543,7 @@ $rk-no-podium-shift-down: rem-calc(45);
                 
                 @if $pos == 'first' {
                     background-color: $fc-orange;
-                    color: transparent;
+                    color: $fc-orange;
                     background: {
                         image: url(../img/trophy.png);
                         repeat: no-repeat;
@@ -551,7 +553,8 @@ $rk-no-podium-shift-down: rem-calc(45);
                         ($rk-podium-height-base + ($rk-podium-height-increase * 2))
                         ($rk-podium-height-base + ($rk-podium-height-increase * 2))
                         );
-                    padding: $rk-arrow-size 0 0 0;
+                    // place the '1' exactly in the middle of the trophy
+                    padding: ($rk-arrow-size / 2) 0 ($rk-arrow-size / 2) 0;
                     line-height: $rk-podium-height-base + ($rk-podium-height-increase * 2);
                     font-size: 2rem;
                 }
@@ -640,7 +643,8 @@ $rk-no-podium-shift-down: rem-calc(45);
     overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
-    padding-bottom: $rk-no-podium-shift-down;
+    // '+ rem-calc(20)' -> fix wrong scrollbar on mobile devices
+    padding-bottom: $rk-no-podium-shift-down + rem-calc(20);
     
     @include generate-rk-element('first');
     @include generate-rk-element('second');
@@ -866,6 +870,8 @@ $rt-mobile-border-color: #aaa;
 .rt-expanded {
     overflow: hidden;
     overflow-x: auto;
+    // fix wrong scrollbar on mobile devices
+    padding-bottom: rem-calc(20);
     
     @include generate-rt-element('expanded');
 }
