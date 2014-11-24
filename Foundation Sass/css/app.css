@@ -9340,216 +9340,6 @@ th.hide-for-touch {
     top: 6.5625rem;
   }
 }
-/* line 8, ../scss/_footable.scss */
-.footable {
-  border-collapse: separate;
-  border-spacing: 0;
-  border: 3px solid #018ad2;
-  background: white;
-}
-/* line 15, ../scss/_footable.scss */
-.footable > tbody img {
-  vertical-align: middle;
-}
-/* line 19, ../scss/_footable.scss */
-.footable > tbody > tr:hover:not(.footable-row-detail) {
-  background: #e8edf5;
-}
-/* line 22, ../scss/_footable.scss */
-.footable > tbody > tr:last-child > td {
-  border-bottom: none;
-}
-/* line 25, ../scss/_footable.scss */
-.footable > tbody > tr > td {
-  border-top: 1px solid #e8edf5;
-  padding: 10px;
-  text-align: left;
-  border-left: none;
-}
-/* line 30, ../scss/_footable.scss */
-.footable > tbody > tr > td.footable-row-detail-cell {
-  border-left: none;
-}
-/* line 33, ../scss/_footable.scss */
-.footable > tbody > tr > td.footable-first-column {
-  border-left: none;
-  white-space: nowrap;
-}
-/* line 37, ../scss/_footable.scss */
-.footable > tbody > tr > td.footable-first-column .user-img {
-  height: 50px;
-  width: 50px;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-/* line 44, ../scss/_footable.scss */
-.footable > tbody > tr > td:nth-child(2) {
-  text-align: right;
-}
-/* line 51, ../scss/_footable.scss */
-.footable > thead > tr > th {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-  padding: 10px;
-  text-align: left;
-  background-color: #018ad2;
-  border: 1px solid #018ad2;
-  color: #fff;
-  border-top: none;
-  border-left: none;
-  font-weight: normal;
-}
-/* line 61, ../scss/_footable.scss */
-.footable > thead > tr > th.footable-first-column {
-  border-left: none;
-}
-/* line 64, ../scss/_footable.scss */
-.footable > thead > tr > th.footable-sortable:hover {
-  cursor: pointer;
-}
-/* line 67, ../scss/_footable.scss */
-.footable > thead > tr > th.footable-sorted > span.footable-sort-indicator:before {
-  content: "\f0de";
-}
-/* line 70, ../scss/_footable.scss */
-.footable > thead > tr > th.footable-sorted-desc > span.footable-sort-indicator:before {
-  content: "\f0dd";
-}
-/* line 73, ../scss/_footable.scss */
-.footable > thead > tr > th > span.footable-sort-indicator {
-  display: inline-block;
-  font-family: FontAwesome;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  padding-left: 5px;
-}
-/* line 82, ../scss/_footable.scss */
-.footable > thead > tr > th > span.footable-sort-indicator:before {
-  content: "\f0dc";
-}
-/* line 86, ../scss/_footable.scss */
-.footable > thead > tr > th:nth-child(2) {
-  text-align: right;
-}
-/* line 90, ../scss/_footable.scss */
-.footable > thead > tr > td {
-  background-color: #018ad2;
-  border: 1px solid #018ad2;
-  color: #fff;
-  border-top: none;
-  border-left: none;
-  font-weight: normal;
-}
-/* line 97, ../scss/_footable.scss */
-.footable > thead > tr > td.footable-first-column {
-  border-left: none;
-}
-/* line 103, ../scss/_footable.scss */
-.footable > tfoot > tr > th {
-  background-color: #018ad2;
-  border: 1px solid #018ad2;
-  color: #fff;
-  border-top: none;
-  border-left: none;
-  padding: 5px;
-}
-/* line 111, ../scss/_footable.scss */
-.footable > tfoot > tr > td {
-  background-color: #018ad2;
-  border: 1px solid #018ad2;
-  color: #fff;
-  border-top: none;
-  border-left: none;
-  padding: 5px;
-}
-/* line 123, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr.footable-row-detail {
-  background: #eeeeee;
-}
-/* line 126, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr.footable-detail-show > td {
-  border-bottom: none;
-}
-/* line 128, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr.footable-detail-show > td > span.footable-toggle:before {
-  content: "\f078";
-}
-/* line 132, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr:hover:not(.footable-row-detail) {
-  cursor: pointer;
-}
-/* line 136, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr > td.footable-cell-detail {
-  background: #eeeeee;
-  border-top: none;
-}
-/* line 140, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr > td.footable-row-detail-cell {
-  background: #fff;
-}
-/* line 143, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr > td > span.footable-toggle {
-  display: inline-block;
-  font-family: FontAwesome;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  width: 20px;
-  font-size: 14px;
-  color: #888888;
-}
-/* line 154, ../scss/_footable.scss */
-.footable.breakpoint > tbody > tr > td > span.footable-toggle:before {
-  content: "\f054";
-}
-/* line 160, ../scss/_footable.scss */
-.footable.breakpoint.toggle-medium > tbody > tr > td > span.footable-toggle {
-  font-size: 18px;
-}
-/* line 163, ../scss/_footable.scss */
-.footable.breakpoint.toggle-large > tbody > tr > td > span.footable-toggle {
-  font-size: 24px;
-}
-
-/* line 168, ../scss/_footable.scss */
-.footable-row-detail-inner {
-  display: table;
-}
-
-/* line 171, ../scss/_footable.scss */
-.footable-row-detail-row {
-  display: table-row;
-  line-height: 1.5em;
-}
-
-/* line 175, ../scss/_footable.scss */
-.footable-row-detail-group {
-  display: block;
-  line-height: 2em;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-/* line 181, ../scss/_footable.scss */
-.footable-row-detail-name {
-  display: table-cell;
-  font-weight: bold;
-  padding-right: 0.5em;
-}
-
-/* line 186, ../scss/_footable.scss */
-.footable-row-detail-value {
-  display: table-cell;
-}
-
 @media only screen and (max-width: 40em) {
   /* line 9, ../scss/_cup-page.scss */
   .cup-header-panel {
@@ -9826,7 +9616,7 @@ th.hide-for-touch {
     background-color: #fff;
   }
 }
-/* line 358, ../scss/_cup-page.scss */
+/* line 359, ../scss/_cup-page.scss */
 .ch-compressed {
   position: relative;
   overflow: hidden;
@@ -9900,20 +9690,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #f4811f;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 332, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 339, ../scss/_cup-page.scss */
+/* line 340, ../scss/_cup-page.scss */
 .ch-compressed .ch-active a:hover .ch-active-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 345, ../scss/_cup-page.scss */
+/* line 346, ../scss/_cup-page.scss */
 .ch-compressed .ch-active:before {
   content: "";
   display: block;
@@ -9924,11 +9714,11 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 364, ../scss/_cup-page.scss */
+/* line 365, ../scss/_cup-page.scss */
 .ch-compressed .ch-active {
   margin: 0 auto;
 }
-/* line 368, ../scss/_cup-page.scss */
+/* line 369, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container {
   position: absolute;
   top: 0;
@@ -10004,20 +9794,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #018ad2;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 332, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 339, ../scss/_cup-page.scss */
+/* line 340, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished a:hover .ch-finished-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 345, ../scss/_cup-page.scss */
+/* line 346, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished:before {
   content: "";
   display: block;
@@ -10028,12 +9818,12 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 376, ../scss/_cup-page.scss */
+/* line 377, ../scss/_cup-page.scss */
 .ch-compressed .ch-left-container .ch-finished {
   float: left;
   margin-right: 1.875rem;
 }
-/* line 382, ../scss/_cup-page.scss */
+/* line 383, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container {
   position: absolute;
   top: 0;
@@ -10109,20 +9899,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 332, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 339, ../scss/_cup-page.scss */
+/* line 340, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued a:hover .ch-queued-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 345, ../scss/_cup-page.scss */
+/* line 346, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued:before {
   content: "";
   display: block;
@@ -10133,13 +9923,13 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 390, ../scss/_cup-page.scss */
+/* line 391, ../scss/_cup-page.scss */
 .ch-compressed .ch-right-container .ch-queued {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 397, ../scss/_cup-page.scss */
+/* line 398, ../scss/_cup-page.scss */
 .ch-expanded {
   overflow: hidden;
   overflow-x: auto;
@@ -10214,20 +10004,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #f4811f;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 332, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 339, ../scss/_cup-page.scss */
+/* line 340, ../scss/_cup-page.scss */
 .ch-expanded .ch-active a:hover .ch-active-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 345, ../scss/_cup-page.scss */
+/* line 346, ../scss/_cup-page.scss */
 .ch-expanded .ch-active:before {
   content: "";
   display: block;
@@ -10307,20 +10097,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #018ad2;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 332, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 339, ../scss/_cup-page.scss */
+/* line 340, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished a:hover .ch-finished-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 345, ../scss/_cup-page.scss */
+/* line 346, ../scss/_cup-page.scss */
 .ch-expanded .ch-finished:before {
   content: "";
   display: block;
@@ -10400,20 +10190,20 @@ th.hide-for-touch {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #333333;
 }
-/* line 331, ../scss/_cup-page.scss */
+/* line 332, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a .ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #333333;
 }
-/* line 339, ../scss/_cup-page.scss */
+/* line 340, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued a:hover .ch-queued-color-holder .ch-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 345, ../scss/_cup-page.scss */
+/* line 346, ../scss/_cup-page.scss */
 .ch-expanded .ch-queued:before {
   content: "";
   display: block;
@@ -10424,57 +10214,57 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 408, ../scss/_cup-page.scss */
+/* line 409, ../scss/_cup-page.scss */
 .ch-expanded .ch-active,
 .ch-expanded .ch-finished,
 .ch-expanded .ch-queued {
   display: inline-block;
   margin: 0 0.9375rem;
 }
-/* line 413, ../scss/_cup-page.scss */
+/* line 414, ../scss/_cup-page.scss */
 .ch-expanded > div:first-child {
   margin-left: 0;
 }
-/* line 416, ../scss/_cup-page.scss */
+/* line 417, ../scss/_cup-page.scss */
 .ch-expanded > div:first-child:before {
   left: 0;
 }
-/* line 421, ../scss/_cup-page.scss */
+/* line 422, ../scss/_cup-page.scss */
 .ch-expanded > div:last-child {
   margin-right: 0;
 }
-/* line 424, ../scss/_cup-page.scss */
+/* line 425, ../scss/_cup-page.scss */
 .ch-expanded > div:last-child:before {
   right: 0;
 }
 
-/* line 591, ../scss/_cup-page.scss */
+/* line 594, ../scss/_cup-page.scss */
 .rk-compressed {
   position: relative;
   overflow: hidden;
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-compressed .rk-first {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-compressed .rk-first {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder {
   position: relative;
   padding-top: 0;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10484,14 +10274,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10504,17 +10294,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10524,7 +10314,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10537,12 +10327,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-compressed .rk-first .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-compressed .rk-first .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10556,7 +10346,7 @@ th.hide-for-touch {
   line-height: 5.3125rem;
   font-size: 2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-compressed .rk-first:before {
   content: "";
   display: block;
@@ -10567,11 +10357,11 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 597, ../scss/_cup-page.scss */
+/* line 600, ../scss/_cup-page.scss */
 .rk-compressed .rk-first {
   margin: 0 auto;
 }
-/* line 601, ../scss/_cup-page.scss */
+/* line 604, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container {
   position: absolute;
   top: 0;
@@ -10579,33 +10369,33 @@ th.hide-for-touch {
   margin-right: 5.3125rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 601, ../scss/_cup-page.scss */
+  /* line 604, ../scss/_cup-page.scss */
   .rk-compressed .rk-left-container {
     margin-right: 6.25rem;
   }
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-compressed .rk-left-container .rk-second {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder {
   position: relative;
   padding-top: 1.25rem;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10615,14 +10405,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10635,17 +10425,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10655,7 +10445,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10668,12 +10458,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10683,7 +10473,7 @@ th.hide-for-touch {
   line-height: 4.0625rem;
   font-size: 2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second:before {
   content: "";
   display: block;
@@ -10694,12 +10484,12 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 612, ../scss/_cup-page.scss */
+/* line 615, ../scss/_cup-page.scss */
 .rk-compressed .rk-left-container .rk-second {
   float: right;
   margin-right: 1.875rem;
 }
-/* line 618, ../scss/_cup-page.scss */
+/* line 621, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container {
   position: absolute;
   top: 0;
@@ -10707,33 +10497,33 @@ th.hide-for-touch {
   margin-left: 5.3125rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 618, ../scss/_cup-page.scss */
+  /* line 621, ../scss/_cup-page.scss */
   .rk-compressed .rk-right-container {
     margin-left: 6.25rem;
   }
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-compressed .rk-right-container .rk-third {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder {
   position: relative;
   padding-top: 2.5rem;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10743,14 +10533,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10763,17 +10553,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10783,7 +10573,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10796,12 +10586,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10811,7 +10601,7 @@ th.hide-for-touch {
   line-height: 2.8125rem;
   font-size: 2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third:before {
   content: "";
   display: block;
@@ -10822,41 +10612,41 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 629, ../scss/_cup-page.scss */
+/* line 632, ../scss/_cup-page.scss */
 .rk-compressed .rk-right-container .rk-third {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 636, ../scss/_cup-page.scss */
+/* line 639, ../scss/_cup-page.scss */
 .rk-expanded {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 2.8125rem;
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-expanded .rk-first {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-expanded .rk-first {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder {
   position: relative;
   padding-top: 0;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10866,14 +10656,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -10886,17 +10676,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -10906,7 +10696,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -10919,12 +10709,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-expanded .rk-first .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-expanded .rk-first .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10938,7 +10728,7 @@ th.hide-for-touch {
   line-height: 5.3125rem;
   font-size: 2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-expanded .rk-first:before {
   content: "";
   display: block;
@@ -10949,28 +10739,28 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-expanded .rk-second {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-expanded .rk-second {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder {
   position: relative;
   padding-top: 1.25rem;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -10980,14 +10770,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -11000,17 +10790,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -11020,7 +10810,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -11033,12 +10823,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-expanded .rk-second .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-expanded .rk-second .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11048,7 +10838,7 @@ th.hide-for-touch {
   line-height: 4.0625rem;
   font-size: 2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-expanded .rk-second:before {
   content: "";
   display: block;
@@ -11059,28 +10849,28 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-expanded .rk-third {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-expanded .rk-third {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder {
   position: relative;
   padding-top: 2.5rem;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -11090,14 +10880,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -11110,17 +10900,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -11130,7 +10920,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -11143,12 +10933,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-expanded .rk-third .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-expanded .rk-third .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11158,7 +10948,7 @@ th.hide-for-touch {
   line-height: 2.8125rem;
   font-size: 2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-expanded .rk-third:before {
   content: "";
   display: block;
@@ -11169,28 +10959,28 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 445, ../scss/_cup-page.scss */
+/* line 446, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 445, ../scss/_cup-page.scss */
+  /* line 446, ../scss/_cup-page.scss */
   .rk-expanded .rk-no-podium {
     width: 12.5rem;
   }
 }
-/* line 452, ../scss/_cup-page.scss */
+/* line 453, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder {
   position: relative;
   padding-top: 5.3125rem;
 }
-/* line 468, ../scss/_cup-page.scss */
+/* line 469, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 472, ../scss/_cup-page.scss */
+/* line 473, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a .rk-image {
   height: 5rem;
   width: 5rem;
@@ -11200,14 +10990,14 @@ th.hide-for-touch {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 480, ../scss/_cup-page.scss */
+/* line 482, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a .rk-image > img {
   height: inherit;
   width: inherit;
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 487, ../scss/_cup-page.scss */
+/* line 489, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a .rk-name {
   text-align: center;
   color: #333333;
@@ -11220,17 +11010,17 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 500, ../scss/_cup-page.scss */
+/* line 502, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a:hover .rk-image > img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 504, ../scss/_cup-page.scss */
+/* line 506, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder a:hover .rk-name {
   color: #018ad2;
 }
-/* line 510, ../scss/_cup-page.scss */
+/* line 512, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder .rk-points {
   text-align: center;
   padding: 0;
@@ -11240,7 +11030,7 @@ th.hide-for-touch {
   color: #fff;
   position: relative;
 }
-/* line 519, ../scss/_cup-page.scss */
+/* line 521, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder .rk-points:after {
   content: "";
   display: block;
@@ -11253,12 +11043,12 @@ th.hide-for-touch {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 519, ../scss/_cup-page.scss */
+  /* line 521, ../scss/_cup-page.scss */
   .rk-expanded .rk-no-podium .rk-info-holder .rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 535, ../scss/_cup-page.scss */
+/* line 538, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium .rk-info-holder .rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11267,7 +11057,7 @@ th.hide-for-touch {
   bottom: -2.8125rem;
   font-size: 1.2rem;
 }
-/* line 578, ../scss/_cup-page.scss */
+/* line 581, ../scss/_cup-page.scss */
 .rk-expanded .rk-no-podium:before {
   content: "";
   display: block;
@@ -11278,7 +11068,7 @@ th.hide-for-touch {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 650, ../scss/_cup-page.scss */
+/* line 653, ../scss/_cup-page.scss */
 .rk-expanded .rk-first,
 .rk-expanded .rk-second,
 .rk-expanded .rk-third,
@@ -11287,45 +11077,45 @@ th.hide-for-touch {
   vertical-align: bottom;
   margin: 0 0.9375rem;
 }
-/* line 656, ../scss/_cup-page.scss */
+/* line 659, ../scss/_cup-page.scss */
 .rk-expanded > div:first-child {
   margin-left: 0;
 }
-/* line 659, ../scss/_cup-page.scss */
+/* line 662, ../scss/_cup-page.scss */
 .rk-expanded > div:first-child:before {
   left: 0;
 }
-/* line 664, ../scss/_cup-page.scss */
+/* line 667, ../scss/_cup-page.scss */
 .rk-expanded > div:last-child {
   margin-right: 0;
 }
-/* line 667, ../scss/_cup-page.scss */
+/* line 670, ../scss/_cup-page.scss */
 .rk-expanded > div:last-child:before {
   right: 0;
 }
 
-/* line 827, ../scss/_cup-page.scss */
+/* line 859, ../scss/_cup-page.scss */
 .rt-compressed {
   overflow: hidden;
   overflow-x: auto;
 }
-/* line 683, ../scss/_cup-page.scss */
+/* line 686, ../scss/_cup-page.scss */
 .rt-compressed table {
   border-collapse: collapse;
   width: 100%;
 }
-/* line 695, ../scss/_cup-page.scss */
+/* line 698, ../scss/_cup-page.scss */
 .rt-compressed table thead tr th {
   padding: 0;
   border-right: 1px solid #dddddd;
 }
-/* line 705, ../scss/_cup-page.scss */
+/* line 708, ../scss/_cup-page.scss */
 .rt-compressed table thead tr th:first-child {
   width: 12.5rem;
   min-width: 12.5rem;
   max-width: 12.5rem;
 }
-/* line 711, ../scss/_cup-page.scss */
+/* line 714, ../scss/_cup-page.scss */
 .rt-compressed table thead tr th div {
   padding: 0.5rem 0.625rem 0.625rem;
   -webkit-user-select: none;
@@ -11336,83 +11126,115 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 722, ../scss/_cup-page.scss */
+/* line 725, ../scss/_cup-page.scss */
 .rt-compressed table tbody {
   border-top: 1px solid #dddddd;
 }
-/* line 725, ../scss/_cup-page.scss */
+/* line 728, ../scss/_cup-page.scss */
 .rt-compressed table tbody tr {
   border-bottom: 1px solid #dddddd;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-/* line 729, ../scss/_cup-page.scss */
+/* line 732, ../scss/_cup-page.scss */
 .rt-compressed table tbody tr:hover {
   background-color: whitesmoke;
 }
-/* line 734, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr.current-user td {
-  color: #018ad2;
-}
-/* line 737, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr.current-user td:first-child {
-  border-left: 5px solid #018ad2;
-}
-/* line 744, ../scss/_cup-page.scss */
+/* line 736, ../scss/_cup-page.scss */
 .rt-compressed table tbody tr td {
   text-align: center;
   border-right: 1px solid #dddddd;
+  padding: 0;
+}
+/* line 741, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr td a {
+  display: block;
+  text-align: center;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 /* line 748, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr td a:hover {
+  color: #018ad2;
+}
+/* line 753, ../scss/_cup-page.scss */
 .rt-compressed table tbody tr td:first-child {
+  padding: 0;
+  max-width: 0;
+}
+/* line 759, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr td:first-child a {
+  display: block;
   text-align: left;
-  border-left: 5px solid transparent;
+  border-left: 3px solid transparent;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 0;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
-/* line 758, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td:first-child img {
+/* line 770, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr td:first-child a img {
   height: 3.125rem;
   width: 3.125rem;
+  margin-right: 0.625rem;
   -o-border-radius: 50%;
   border-radius: 50%;
-  margin-right: 0.625rem;
+}
+/* line 777, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr td:first-child a:hover {
+  color: #018ad2;
+  background-color: #eee;
+}
+/* line 786, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr.current-user td {
+  color: #018ad2;
+}
+/* line 789, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr.current-user td a {
+  color: #018ad2;
+}
+/* line 793, ../scss/_cup-page.scss */
+.rt-compressed table tbody tr.current-user td:first-child a {
+  border-left: 3px solid #018ad2;
 }
 @media only screen and (max-width: 40em) {
-  /* line 772, ../scss/_cup-page.scss */
+  /* line 804, ../scss/_cup-page.scss */
   .rt-compressed table {
     background-color: #e8edf5;
   }
-  /* line 777, ../scss/_cup-page.scss */
+  /* line 809, ../scss/_cup-page.scss */
   .rt-compressed table thead tr th {
     background-color: #e8edf5;
     border-right: 1px solid #aaaaaa;
   }
-  /* line 784, ../scss/_cup-page.scss */
+  /* line 816, ../scss/_cup-page.scss */
   .rt-compressed table tbody {
     border-top: 1px solid #aaaaaa;
   }
-  /* line 787, ../scss/_cup-page.scss */
+  /* line 819, ../scss/_cup-page.scss */
   .rt-compressed table tbody tr {
     border-bottom: 1px solid #aaaaaa;
   }
-  /* line 790, ../scss/_cup-page.scss */
+  /* line 822, ../scss/_cup-page.scss */
   .rt-compressed table tbody tr td {
     border-right: 1px solid #aaaaaa;
   }
-  /* line 799, ../scss/_cup-page.scss */
+  /* line 831, ../scss/_cup-page.scss */
   .rt-compressed table {
     table-layout: auto;
   }
-  /* line 807, ../scss/_cup-page.scss */
+  /* line 839, ../scss/_cup-page.scss */
   .rt-compressed table thead tr th:first-child {
     width: 100%;
     min-width: 0;
     max-width: 100%;
   }
-  /* line 814, ../scss/_cup-page.scss */
+  /* line 846, ../scss/_cup-page.scss */
   .rt-compressed table thead tr th:nth-child(2) {
     width: 1px;
     min-width: 0;
@@ -11420,17 +11242,17 @@ th.hide-for-touch {
   }
 }
 
-/* line 834, ../scss/_cup-page.scss */
+/* line 866, ../scss/_cup-page.scss */
 .rt-expanded {
   overflow: hidden;
   overflow-x: auto;
 }
-/* line 683, ../scss/_cup-page.scss */
+/* line 686, ../scss/_cup-page.scss */
 .rt-expanded table {
   border-collapse: collapse;
   width: auto;
 }
-/* line 695, ../scss/_cup-page.scss */
+/* line 698, ../scss/_cup-page.scss */
 .rt-expanded table thead tr th {
   padding: 0;
   border-right: 1px solid #dddddd;
@@ -11438,13 +11260,13 @@ th.hide-for-touch {
   min-width: 10.625rem;
   max-width: 10.625rem;
 }
-/* line 705, ../scss/_cup-page.scss */
+/* line 708, ../scss/_cup-page.scss */
 .rt-expanded table thead tr th:first-child {
   width: 12.5rem;
   min-width: 12.5rem;
   max-width: 12.5rem;
 }
-/* line 711, ../scss/_cup-page.scss */
+/* line 714, ../scss/_cup-page.scss */
 .rt-expanded table thead tr th div {
   padding: 0.5rem 0.625rem 0.625rem;
   -webkit-user-select: none;
@@ -11455,86 +11277,118 @@ th.hide-for-touch {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 722, ../scss/_cup-page.scss */
+/* line 725, ../scss/_cup-page.scss */
 .rt-expanded table tbody {
   border-top: 1px solid #dddddd;
 }
-/* line 725, ../scss/_cup-page.scss */
+/* line 728, ../scss/_cup-page.scss */
 .rt-expanded table tbody tr {
   border-bottom: 1px solid #dddddd;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-/* line 729, ../scss/_cup-page.scss */
+/* line 732, ../scss/_cup-page.scss */
 .rt-expanded table tbody tr:hover {
   background-color: whitesmoke;
 }
-/* line 734, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr.current-user td {
-  color: #018ad2;
-}
-/* line 737, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr.current-user td:first-child {
-  border-left: 5px solid #018ad2;
-}
-/* line 744, ../scss/_cup-page.scss */
+/* line 736, ../scss/_cup-page.scss */
 .rt-expanded table tbody tr td {
   text-align: center;
   border-right: 1px solid #dddddd;
+  padding: 0;
+}
+/* line 741, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr td a {
+  display: block;
+  text-align: center;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 /* line 748, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr td a:hover {
+  color: #018ad2;
+}
+/* line 753, ../scss/_cup-page.scss */
 .rt-expanded table tbody tr td:first-child {
+  padding: 0;
+  max-width: 0;
+}
+/* line 759, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr td:first-child a {
+  display: block;
   text-align: left;
-  border-left: 5px solid transparent;
+  border-left: 3px solid transparent;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 0;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
 }
-/* line 758, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td:first-child img {
+/* line 770, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr td:first-child a img {
   height: 3.125rem;
   width: 3.125rem;
+  margin-right: 0.625rem;
   -o-border-radius: 50%;
   border-radius: 50%;
-  margin-right: 0.625rem;
+}
+/* line 777, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr td:first-child a:hover {
+  color: #018ad2;
+  background-color: #eee;
+}
+/* line 786, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr.current-user td {
+  color: #018ad2;
+}
+/* line 789, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr.current-user td a {
+  color: #018ad2;
+}
+/* line 793, ../scss/_cup-page.scss */
+.rt-expanded table tbody tr.current-user td:first-child a {
+  border-left: 3px solid #018ad2;
 }
 @media only screen and (max-width: 40em) {
-  /* line 772, ../scss/_cup-page.scss */
+  /* line 804, ../scss/_cup-page.scss */
   .rt-expanded table {
     background-color: #e8edf5;
   }
-  /* line 777, ../scss/_cup-page.scss */
+  /* line 809, ../scss/_cup-page.scss */
   .rt-expanded table thead tr th {
     background-color: #e8edf5;
     border-right: 1px solid #aaaaaa;
   }
-  /* line 784, ../scss/_cup-page.scss */
+  /* line 816, ../scss/_cup-page.scss */
   .rt-expanded table tbody {
     border-top: 1px solid #aaaaaa;
   }
-  /* line 787, ../scss/_cup-page.scss */
+  /* line 819, ../scss/_cup-page.scss */
   .rt-expanded table tbody tr {
     border-bottom: 1px solid #aaaaaa;
   }
-  /* line 790, ../scss/_cup-page.scss */
+  /* line 822, ../scss/_cup-page.scss */
   .rt-expanded table tbody tr td {
     border-right: 1px solid #aaaaaa;
   }
 }
 
-/* line 842, ../scss/_cup-page.scss */
+/* line 874, ../scss/_cup-page.scss */
 .table-sort th.sort-header {
   cursor: pointer;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-/* line 846, ../scss/_cup-page.scss */
+/* line 878, ../scss/_cup-page.scss */
 .table-sort th.sort-header div {
   padding-right: 1.875rem;
   position: relative;
 }
-/* line 850, ../scss/_cup-page.scss */
+/* line 882, ../scss/_cup-page.scss */
 .table-sort th.sort-header div:after {
   font-family: FontAwesome;
   font-weight: normal;
@@ -11558,20 +11412,20 @@ th.hide-for-touch {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 874, ../scss/_cup-page.scss */
+/* line 906, ../scss/_cup-page.scss */
 .table-sort th.sort-header:hover {
   background-color: whitesmoke;
 }
-/* line 877, ../scss/_cup-page.scss */
+/* line 909, ../scss/_cup-page.scss */
 .table-sort th.sort-header:hover div:after {
   color: #333;
 }
-/* line 883, ../scss/_cup-page.scss */
+/* line 915, ../scss/_cup-page.scss */
 .table-sort th.sort-up div:after {
   content: '\f0de';
   color: #333;
 }
-/* line 888, ../scss/_cup-page.scss */
+/* line 920, ../scss/_cup-page.scss */
 .table-sort th.sort-down div:after {
   content: '\f0dd';
   color: #333;

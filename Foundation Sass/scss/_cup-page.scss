@@ -319,7 +319,8 @@ $ch-grey-line-height: rem-calc(15);
                     content: "";
                     display: block;
                     position: absolute;
-                    bottom: -($ch-arrow-size * 2) + rem-calc(2); // reduce shift with 2px -> fixes problem on higher zoom
+                    // reduce shift with 2px -> fixes problem on higher zoom
+                    bottom: -($ch-arrow-size * 2) + rem-calc(2);
                     left: ($ch-element-width / 2) - $ch-arrow-size;
                     width: 0;
                     height: 0;
@@ -475,7 +476,8 @@ $rk-no-podium-shift-down: rem-calc(45);
                     margin: 0 auto;
                     @include border-radius(50%);
                     overflow: hidden;
-                    -webkit-mask-image: -webkit-radial-gradient(circle, white, black); // fix problem with transition + border-radius
+                    // fix problem with transition + border-radius
+                    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
                     
                     > img {
                         height: inherit;
@@ -520,7 +522,8 @@ $rk-no-podium-shift-down: rem-calc(45);
                     content: "";
                     display: block;
                     position: absolute;
-                    bottom: -($rk-arrow-size * 2) + rem-calc(2); // reduce shift with 2px -> fixes problem on higher zoom
+                    // reduce shift with 2px -> fixes problem on higher zoom
+                    bottom: -($rk-arrow-size * 2) + rem-calc(2);
                     left: ($rk-element-width / 2) - $rk-arrow-size;
                     @media #{$large-up} {
                         left: (($rk-element-width + $rk-element-width-increase) / 2) - $rk-arrow-size;
@@ -730,36 +733,65 @@ $rt-mobile-border-color: #aaa;
                     background-color: $rt-hover-bg;
                 }
                 
-                &.current-user {
-                    td {
-                        color: $fc-primary;
-                        
-                        &:first-child {
-                            // border-collapse cut off the half of the border
-                            border-left: 5px solid $fc-primary;
-                        }
-                    }
-                }
-                
                 td {
                     text-align: center;
                     border-right: 1px solid $rt-border-color;
+                    padding: 0;
+                    
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: $table-row-padding;
+                        color: $body-font-color;
+                        @include transition(color 0.2s ease);
+                        
+                        &:hover {
+                            color: $fc-primary;
+                        }
+                    }
 
                     &:first-child {
-                        text-align: left;
-                        border-left: 5px solid transparent;
-                        overflow: hidden;
-                        text-overflow: ellipsis;
-                        white-space: nowrap;
+                        padding: 0;
                         // fix problem with larger content on mobile devices
                         // problem source -> table-layout: auto
                         max-width: 0;
                         
-                        img {
-                            height: rem-calc(50);
-                            width: rem-calc(50);
-                            @include border-radius(50%);
-                            margin-right: rem-calc(10);
+                        a {
+                            display: block;
+                            text-align: left;
+                            border-left: 3px solid transparent;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            padding: $table-row-padding;
+                            color: $body-font-color;
+                            @include transition(color 0.2s ease, background-color 0.2s ease);
+                            
+                            img {
+                                height: rem-calc(50);
+                                width: rem-calc(50);
+                                margin-right: rem-calc(10);
+                                @include border-radius(50%);
+                            }
+                            
+                            &:hover {
+                                color: $fc-primary;
+                                background-color: #eee;
+                            }
+                        }
+                    }
+                }
+                
+                &.current-user {
+                    td {
+                        color: $fc-primary;
+                        
+                        a {
+                            color: $fc-primary;
+                        }
+                        
+                        &:first-child a {
+                            border-left: 3px solid $fc-primary;
                         }
                     }
                 }
