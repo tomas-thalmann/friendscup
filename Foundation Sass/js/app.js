@@ -37,6 +37,7 @@ $(document).ready(function () {
     // Callback for touch based devices
     // ----------------------------------
     
+    // if it's a touch device
     if (Modernizr.touch) {
         $('.cup-header-right').addClass('touch');
         $('.big-button').addClass('touch');
@@ -52,49 +53,70 @@ $(document).ready(function () {
         $('#' + $(this).data('sectionmodalid')).modal();
     });
     
+    // if it's not a touch device
     if (!Modernizr.touch) {
-        // enable mousewheel scrolling
-        $('.section-modal [class*=expanded]').mousewheel(function (event, delta) {
-            this.scrollLeft -= (delta * 50);
-            event.preventDefault();
-        });
-
-        // enable dragscrolling
-        $('.section-modal [class*=expanded]').kinetic({
-            cursor: 'auto'
-        });
+        if ($('.section-modal [class*=expanded]').length) {
+            // check if the 'mousewheel'-plugin is loaded
+            if (jQuery().mousewheel) {
+                // enable mousewheel scrolling
+                $('.section-modal [class*=expanded]').mousewheel(function (event, delta) {
+                    this.scrollLeft -= (delta * 50);
+                    event.preventDefault();
+                });
+            }
+            
+            // check if the 'mousewheel'-plugin is loaded
+            if (jQuery().kinetic) {
+                // enable dragscrolling
+                $('.section-modal [class*=expanded]').kinetic({
+                    cursor: 'auto'
+                });
+            }
+        }
     }
     
     // ----------------------------------
     // Responsive & Sorting Table
     // ----------------------------------
     
-    var tableResultsCompressed = new Tablesort(document.getElementById('rt-compressed'));
-    
-    var tableResultsExpanded = new Tablesort(document.getElementById('rt-expanded'));
+    // check if tablesort.js is loaded
+    if (typeof Tablesort !== 'undefined' && $.isFunction(Tablesort)) {
+        var tableResultsCompressed, tableResultsExpanded;
+        
+        if ($('#rt-compressed').length) {
+            tableResultsCompressed = new Tablesort(document.getElementById('rt-compressed'));
+        }
+
+        if ($('#rt-expanded').length) {
+            tableResultsExpanded = new Tablesort(document.getElementById('rt-expanded'));
+        }
+    }
     
     // ---------------------------
     // Media Queries
     // ---------------------------
     
-    enquire.register(Foundation.media_queries.medium, {
-        match: function () {
-            
-            // ----------------------------------------
-            // Do something for media query medium up
-            // ----------------------------------------
-            
-        }
-    });
-    enquire.register(Foundation.media_queries.small, {
-        match: function () {
-            
-            // ------------------------------------
-            // Do something for media query small
-            // ------------------------------------
-            
-        }
-    });
+    // check if enquire.js is loaded
+    if (typeof enquire !== 'undefined' && $.isFunction(enquire.register)) {
+        enquire.register(Foundation.media_queries.medium, {
+            match: function () {
+
+                // ----------------------------------------
+                // Do something for media query medium up
+                // ----------------------------------------
+
+            }
+        });
+        enquire.register(Foundation.media_queries.small, {
+            match: function () {
+
+                // ------------------------------------
+                // Do something for media query small
+                // ------------------------------------
+
+            }
+        });
+    }
 });
 
 
