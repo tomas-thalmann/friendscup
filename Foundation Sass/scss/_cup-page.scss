@@ -14,7 +14,7 @@
         padding: 0;
     }
     
-    .cup-header-left .flex-center > h3 {
+    .cup-header-left .flex-center > .cup-name > h3 {
         background-color: $fc-orange;
         padding: 20px;
         text-align: center;
@@ -54,19 +54,16 @@
     .flex-center {
         width: 100%;
     }
-
-    .cup-header-left .flex-center > h3 {
+    
+    .cup-header-left .flex-center > .cup-name {
         background-color: $fc-orange;
         padding: 0 20px;
         line-height: 70px;
-        text-align: center;
-        color: #fff;
         margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
         position: relative;
-        white-space: nowrap;
     }
-
-    .cup-header-left .flex-center > h3:after {
+    
+    .cup-header-left .flex-center > .cup-name:after {
         content: "";
         display: block;
         position: absolute;
@@ -78,7 +75,7 @@
     }
     
     // fix gap on higher zoom/fontsize
-    .cup-header-left .flex-center > h3:before {
+    .cup-header-left .flex-center > .cup-name:before {
         content: "";
         display: block;
         position: absolute;
@@ -87,6 +84,16 @@
         width: 0;
         border: 35px solid transparent;
         border-left: 35px solid $fc-orange;
+    }
+    
+    .cup-header-left .flex-center > .cup-name > h3 {
+        padding: 0;
+        line-height: 70px;
+        text-align: center;
+        color: #fff;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .cup-header-left .flex-center > p {
@@ -210,15 +217,14 @@
 // ----------------------------------
 
 .section-header {
-    font-weight: bold;
-    border-bottom: 1px solid #bbb;
-    padding: 0 0 rem-calc(3) 0;
-    margin: rem-calc(20) 0 rem-calc(40) 0;
-    
-    a {
+    h3 {
+        font-weight: bold;
+        border-bottom: 1px solid #bbb;
+        padding: 0 0 rem-calc(3) 0;
+        margin: rem-calc(20) 0 rem-calc(40) 0;
         color: $body-font-color;
         @include transition(color 0.2s ease);
-        
+
         &:hover {
             color: $fc-primary;
         }
