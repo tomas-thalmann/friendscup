@@ -5,47 +5,103 @@
 // Challenge Header
 // ----------------------------------
 
-.challenge-header-container {
-    position: relative;
-    
-    .bg-image-panel {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 70px;
-        padding: 0;
-    }
-    
-    .challenge-header-left {
+@media #{$small-only} {
+    .chd-header-panel-blue {
+        margin: 0;
         
-    }
-    
-    .challenge-header-right {
-        .progress-infobox {
-            height: 70px;
-            margin: 0 0 ($column-gutter / 2) 0;
-            line-height: 70px;
-            color: #fff;
-            
-            a {
-                color: #fff;
+        .row {
+            .columns {
+                .chd-progress {
+                    .chd-progress-circle {
+                        
+                    }
+                    
+                    .fa {
+                        
+                    }
+                    
+                    a {
+                        
+                    }
+                }
                 
-                &:hover {
-                    color: $fc-primary-bg;
+                .chd-img-div {
+                    img {
+                        
+                    }
                 }
             }
         }
+    }
+    
+    .chd-header-panel-info {
+        .row {
+            .columns {
+                .chd-name {
+                    
+                }
+                
+                .chd-categories {
+                    .label {
+                        
+                    }
+                }
+                
+                .chd-show-details {
+                    
+                }
+            }
+        }
+    }
+}
+
+@media #{$medium-up} {
+        .chd-header-panel-blue {
+        margin: 0;
         
-        .progress {
-            background-color: $fc-primary-dark;
-            border: none;
-            height: 10px;
-            margin: 30px 0;
+        .row {
+            .columns {
+                .chd-progress {
+                    .chd-progress-circle {
+                        
+                    }
+                    
+                    .fa {
+                        
+                    }
+                    
+                    a {
+                        
+                    }
+                }
+                
+                .chd-img-div {
+                    img {
+                        width: 250px;
+                        height: 250px;
+                    }
+                }
+            }
         }
     }
     
-    .bottom-line {
-        margin: 0 ($column-gutter / 2);
+    .chd-header-panel-info {
+        .row {
+            .columns {
+                .chd-name {
+                    
+                }
+                
+                .chd-categories {
+                    .label {
+                        
+                    }
+                }
+                
+                .chd-show-details {
+                    
+                }
+            }
+        }
     }
 }

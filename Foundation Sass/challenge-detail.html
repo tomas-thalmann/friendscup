@@ -24,7 +24,6 @@
                 <ul class="right">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="cup-page.html">Cup Page</a></li>
-                    <li class="active"><a href="challenge-detail.html">Challenge Detail</a></li>
                     <li class="has-dropdown">
                         <a href="#">Infos und Tests</a>
                         <ul class="dropdown">
@@ -54,27 +53,44 @@
     <!-- END - Navigation -->
 
     <!-- BEGIN - Content -->
-    <div class="challenge-header-container">
-        <div class="bg-image-panel"></div>
+    <div class="bg-image-panel chd-header-panel-blue">
         <div class="row">
-            <div class="medium-4 columns challenge-header-left">
-                <img src="img/challenges/sledge-big.png" />
-            </div>
-            <div class="medium-8 columns challenge-header-right">
-                <div class="progress-infobox">
-                    <div class="row">
-                        <div class="columns medium-1"><i class="fa fa-cog"></i></div>
-                        <div class="columns medium-7">
-                            <div class="progress">
-                                <span class="meter" style="width: 60%"></span>
-                            </div>
-                        </div>
-                        <div class="columns medium-4 text-right"><a href="#">weiter konfigurieren <i class="fa fa-arrow-circle-right"></i></a></div>
-                    </div>
+            <div class="columns small-12">
+                <div class="chd-progress">
+                    <span class="chd-progress-circle">3</span>
+                    Wertung bestimmen...
+                    <i class="fa fa-chevron-right"></i>
+                    <a href="#">zu den Einstellungen...</a>
                 </div>
-                <h1>Schlittenfahren</h1>
+                <div class="chd-img-div">
+                    <img src="img/challenges/climbing-big.png" />
+                </div>
             </div>
-            <hr class="bottom-line">
+        </div>
+    </div>
+    <div class="bg-light-panel chd-header-panel-info">
+        <div class="row">
+            <div class="columns small-12">
+                <h1 class="chd-name"><strong>Sportklettern</strong></h1>
+                <div class="chd-categories">
+                    Kategorien:
+                    <span class="label">Bergsport</span>
+                    <span class="label">Adrenalin</span>
+                    <span class="label">Vertikale</span>
+                </div>
+                <a href="#" class="chd-show-details">mehr Details...</a>
+                <hr>
+                <!-- Magellan not configured yet! -->
+                <div data-magellan-expedition="fixed">
+                    <dl class="sub-nav">
+                        <dd data-magellan-arrival="bla"><a href="#bla">Ergebnisse</a></dd>
+                        <dd data-magellan-arrival="bla"><a href="#bla">Beschreibung</a></dd>
+                        <dd data-magellan-arrival="bla"><a href="#bla">Fotos</a></dd>
+                        <dd data-magellan-arrival="bla"><a href="#bla">Kommentare</a></dd>
+                        <dd data-magellan-arrival="bla"><a href="#bla">Auszeichnungen</a></dd>
+                    </dl>
+                </div>
+            </div>
         </div>
     </div>
     <!-- END - Content -->

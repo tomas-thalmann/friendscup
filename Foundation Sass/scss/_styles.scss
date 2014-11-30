@@ -278,9 +278,12 @@
     }
 }
 
-// ----------------------------------
+// ------------------------------------------------------------
 // Custom Panels
-// ----------------------------------
+// -------------
+// use only when there is a row with one or more culomns in it
+// -> a culomn has some padding-left and some padding-right
+// ------------------------------------------------------------
 
 $panel-arrow-size-small: rem-calc(20);
 $panel-arrow-size-medium-up: rem-calc(40);
@@ -289,7 +292,7 @@ $panel-arrow-size-medium-up: rem-calc(40);
 
 .bg-light-panel {
     background: $fc-primary-bg;
-    padding: $panel-padding;
+    padding: $panel-padding 0;
     margin: 0 0 20px 0;
 }
 
@@ -346,8 +349,10 @@ $panel-arrow-size-medium-up: rem-calc(40);
     @include background-size(cover);
 
     // colorize all sorts of text to white
+    color: #fff;
     h1,h2,h3,h4,h5,h6,
     p,
+    a,
     ul li,
     ol li,
     dl, dt, dd,
@@ -371,9 +376,6 @@ $panel-arrow-size-medium-up: rem-calc(40);
         border-top-color: $fc-primary;
     }
 }
-
-// use only when there is a row with one or more culomns in it
-// -> a culomn has some padding-left and some padding-right
 
 .panel-extra-padding {
     padding: ($panel-padding * 3) 0;
