@@ -362,6 +362,10 @@ $panel-arrow-size-medium-up: rem-calc(40);
     .lead {
         color: #fff;
     }
+    
+    a:hover {
+        color: $fc-primary-bg;
+    }
 }
 
 // BG Image Arrow Panel

@@ -8,20 +8,35 @@
 @media #{$small-only} {
     .chd-header-panel-blue {
         margin: 0;
+        padding: 0;
         
         .row {
             .columns {
+                padding: 0;
+                
                 .chd-progress {
+                    margin: ($column-gutter / 2);
+                    
                     .chd-progress-circle {
-                        
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: #fff;
+                        color: $fc-primary;
+                        text-align: center;
+                        margin: 0 10px 0 0;
+                        font-weight: bold;
                     }
                     
                     .fa {
-                        
+                        display: none;
                     }
                     
                     a {
-                        
+                        @include button($bg:$alert-color,$full-width:true);
+                        margin: ($column-gutter / 2) 0 0 0;
                     }
                 }
                 
@@ -36,19 +51,56 @@
     
     .chd-header-panel-info {
         .row {
-            .columns {
+            .columns {                
                 .chd-name {
-                    
+                    line-height: 70px;
+                    white-space: nowrap;
                 }
                 
                 .chd-categories {
+                    line-height: 40px;
+                    
                     .label {
                         
+                    }
+                    
+                    .label:first-child {
+                        margin-left: 10px;
                     }
                 }
                 
                 .chd-show-details {
                     
+                }
+                
+                .chd-magellan {
+                    background-color: transparent;
+                    
+                    &.fixed {
+                        background-color: $fc-primary-bg;
+                        border-bottom: 4px solid scale-color($fc-primary-bg, $lightness: -10%);
+                        padding-top: 5px !important;
+                        padding-left: ($column-gutter / 2) !important;
+                    }
+                    
+                    dl.sub-nav {
+                        padding: 0;
+                        margin: 0;
+                        
+                        dd {
+                            margin: 0;
+                            
+                            a {
+                                
+                            }
+                            
+                            &.active {
+                                a {
+                                    
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -56,18 +108,32 @@
 }
 
 @media #{$medium-up} {
-        .chd-header-panel-blue {
+    .chd-header-panel-blue {
         margin: 0;
         
         .row {
             .columns {
+                position: relative;
+                
                 .chd-progress {
+                    margin-top: $column-gutter / 2;
+                    margin-left: ($column-gutter / 2) + rem-calc(250);
+                    
                     .chd-progress-circle {
-                        
+                        display: inline-block;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        line-height: 30px;
+                        background-color: #fff;
+                        color: $fc-primary;
+                        text-align: center;
+                        margin: 0 10px 0 0;
+                        font-weight: bold;
                     }
                     
                     .fa {
-                        
+                        padding: 0 10px;
                     }
                     
                     a {
@@ -76,6 +142,10 @@
                 }
                 
                 .chd-img-div {
+                    position: absolute;
+                    top: 0;
+                    left: $column-gutter / 2;
+                    
                     img {
                         width: 250px;
                         height: 250px;
@@ -86,22 +156,210 @@
     }
     
     .chd-header-panel-info {
+        padding-bottom: 0;
+        border-bottom: 4px solid scale-color($fc-primary-bg, $lightness: -10%);
+        
         .row {
             .columns {
                 .chd-name {
-                    
+                    padding-left: $column-gutter + rem-calc(250);
+                    line-height: 70px;
+                    white-space: nowrap;
                 }
                 
                 .chd-categories {
+                    padding-left: $column-gutter + rem-calc(250);
+                    line-height: 40px;
+                    
                     .label {
                         
+                    }
+                    
+                    .label:first-child {
+                        margin-left: 10px;
                     }
                 }
                 
                 .chd-show-details {
+                    padding-left: $column-gutter + rem-calc(250);
+                }
+                
+                .chd-magellan {
+                    margin-top: 50px;
+                    background-color: transparent;
                     
+                    &.fixed {
+                        margin-top: 0;
+                        background-color: $fc-primary-bg;
+                        border-bottom: 4px solid scale-color($fc-primary-bg, $lightness: -10%);
+                        
+                        dl.sub-nav {
+                            max-width: $row-width;
+                            margin: 0 auto -4px auto;
+                            padding-left: $column-gutter / 2;
+                        }
+                    }
+                    
+                    dl.sub-nav {
+                        padding: 0;
+                        margin: 0;
+                        line-height: 30px;
+                        margin-bottom: -4px;
+                        
+                        dd {
+                            border-bottom: 4px solid transparent;
+                            margin-left: 0;
+                            margin-right: 1rem;
+                            
+                            a {
+                                padding: 0 10px
+                            }
+                            
+                            &.active, &:hover {
+                                border-bottom: 4px solid $fc-primary;
+                                
+                                a {
+                                    border-radius: 0;
+                                    background-color: inherit;
+                                    color: $fc-primary;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
+
+// ----------------------------------
+// Challenge Header Modal
+// ----------------------------------
+
+#chd-details-modal {
+    padding: $reveal-modal-padding;
+    padding-top: 0;
+    
+    @media #{$small-only} {
+        min-height: 0;
+    }
+    
+    @media #{$medium-up} {
+        width: rem-calc(500);
+    }
+    
+    .blue-square-icon {
+        display: inline-block;
+        text-align: center;
+        background-color: $fc-primary;
+        color: #fff;
+        margin-right: $reveal-modal-padding;
+        cursor: pointer;
+        
+        @media #{$small-only} {
+            width: rem-calc(60);
+            height: rem-calc(60);
+            line-height: rem-calc(60);
+            font-size: 1.8rem;
+        }
+
+        @media #{$medium-up} {
+            width: rem-calc(80);
+            height: rem-calc(80);
+            line-height: rem-calc(80);
+            font-size: 2rem;
+        }
+    }
+
+    h3 {
+        font-weight: bold;
+        border-bottom: 1px solid #bbb;
+        padding: rem-calc(20 0 3 0);
+    }
+
+    .feedback {
+        position: relative;
+
+        .players {
+            color: #888;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .average {
+            color: #888;
+            font-weight: bold;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .stars {
+            padding-top: rem-calc(40);
+            text-align: center;
+
+            i {
+                color: $fc-orange;
+                
+                @media #{$small-only} {
+                    font-size: 2.2rem;
+                    padding: rem-calc(6);
+                }
+
+                @media #{$medium-up} {
+                    font-size: 2.5rem;
+                    padding: rem-calc(8);
+                }
+
+                &:hover {
+                    cursor: pointer;
+                    color: scale-color( $fc-orange, $lightness: -20%);
+                }
+            }
+        }
+    }
+}
+
+// ------------------------------------------
+// Custom Dropdown for the Blue Square Icons
+// ------------------------------------------
+
+$fc-dropdown-bg-color: #333;
+$fc-dropdown-arrow-size: rem-calc(8);
+
+.fc-dropdown {
+    min-width: 0;
+    max-width: none;
+    width: auto;
+    background-color: $fc-dropdown-bg-color;
+    color: #fff;
+    border: none;
+    padding: rem-calc(10 20);
+    margin-top: $fc-dropdown-arrow-size;
+    
+    &:before {
+        // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+        top: -($fc-dropdown-arrow-size * 2) + rem-calc(2);
+        left: rem-calc(10);
+        border: $fc-dropdown-arrow-size solid transparent;
+        border-bottom: $fc-dropdown-arrow-size solid $fc-dropdown-bg-color;
+    }
+    
+    &:after {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

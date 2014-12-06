@@ -74,7 +74,7 @@
         border-left: 35px solid $fc-orange;
     }
     
-    // fix gap on higher zoom/fontsize
+    // fix gap on higher zoom/system-font-size
     .cup-header-left .flex-center > .cup-name:before {
         content: "";
         display: block;
@@ -220,8 +220,8 @@
     h3 {
         font-weight: bold;
         border-bottom: 1px solid #bbb;
-        padding: 0 0 rem-calc(3) 0;
-        margin: rem-calc(20) 0 rem-calc(40) 0;
+        padding: rem-calc(0 0 3 0);
+        margin: rem-calc(20 0 40 0);
         color: $body-font-color;
         @include transition(color 0.2s ease);
 
@@ -232,7 +232,7 @@
 }
 
 .section-modal .section-header {
-    margin: 0 0 rem-calc(40) 0;
+    margin: rem-calc(0 0 40 0);
 }
 
 // ----------------------------------
@@ -245,7 +245,7 @@
         max-width: none;
         width: 100%;
         background-color: $fc-primary-bg;
-        padding: rem-calc(20) rem-calc(20) 0 rem-calc(20);
+        padding: rem-calc(20 20 0 20);
         @include box-shadow(0 0 rem-calc(10) rgba(0,0,0,0.4));
     }
 }
@@ -325,7 +325,7 @@ $ch-grey-line-height: rem-calc(15);
                     content: "";
                     display: block;
                     position: absolute;
-                    // reduce shift with 2px -> fixes problem on higher zoom
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
                     bottom: -($ch-arrow-size * 2) + rem-calc(2);
                     left: ($ch-element-width / 2) - $ch-arrow-size;
                     width: 0;
@@ -530,7 +530,7 @@ $rk-no-podium-shift-down: rem-calc(45);
                     content: "";
                     display: block;
                     position: absolute;
-                    // reduce shift with 2px -> fixes problem on higher zoom
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
                     bottom: -($rk-arrow-size * 2) + rem-calc(2);
                     left: ($rk-element-width / 2) - $rk-arrow-size;
                     @media #{$large-up} {
