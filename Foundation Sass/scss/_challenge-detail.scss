@@ -50,6 +50,8 @@
     }
     
     .chd-header-panel-info {
+        border-bottom: 4px solid scale-color($fc-primary-bg, $lightness: -10%);
+        
         .row {
             .columns {                
                 .chd-name {

@@ -411,7 +411,7 @@ $panel-arrow-size-medium-up: rem-calc(40);
             @include transition(right 0.3s);
         }
 
-        h1 {
+        h2 {
             color: #fff;
             line-height: $height;
             padding: 0 rem-calc(30);
@@ -443,7 +443,7 @@ $panel-arrow-size-medium-up: rem-calc(40);
                     right: -($height / 4);
                 }
 
-                h1 {
+                h2 {
                     line-height: rem-calc(140);
                 }
 
@@ -456,7 +456,7 @@ $panel-arrow-size-medium-up: rem-calc(40);
             
             // callback for touch based devices
             &.touch {
-                h1 {
+                h2 {
                     line-height: rem-calc(140);
                 }
 

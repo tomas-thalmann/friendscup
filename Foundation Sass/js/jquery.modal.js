@@ -193,7 +193,7 @@
     clickClose: true,
     closeText: '',
     closeClass: '',
-    modalClass: "section-modal",
+    modalClass: "fccs-modal",
     spinnerHtml: null,
     showSpinner: false,
     showClose: false,

@@ -1,0 +1,751 @@
+@import "compass";
+@import "colors"; // import Standard Colors
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+
+@media #{$small-only} {
+    .fc-content-section {
+        width: 90%;
+        margin: 0 5% $column-gutter 5%;
+        padding: rem-calc(20 0);
+        background-color: $fc-primary-bg;
+    }
+}
+
+@media #{$medium-up} {
+    .fc-content-section {
+        margin: 0 auto $column-gutter auto;
+        padding: rem-calc(20 0 0 0);
+    }
+}
+
+// ----------------------------------
+// Content Section Header
+// ----------------------------------
+
+.fccs-header {
+    h3 {
+        font-weight: bold;
+        border-bottom: 1px solid #bbb;
+        padding: rem-calc(0 0 3 0);
+        margin: rem-calc(0 0 40 0);
+        color: $body-font-color;
+        @include transition(color 0.2s ease);
+
+        &:hover {
+            color: $fc-primary;
+        }
+    }
+}
+
+// ---------------------------------------------------------
+// Content Section Modal
+// (If class name is changing -> app.js & jquery.modal.js)
+// ---------------------------------------------------------
+
+@media #{$small-up} {
+    .fccs-modal {
+        display: none;
+        max-width: none;
+        width: 100%;
+        background-color: $fc-primary-bg;
+        padding: rem-calc(20 20 0 20);
+        @include box-shadow(0 0 rem-calc(10) rgba(0,0,0,0.4));
+    }
+}
+
+@media #{$medium-up} {
+    .fccs-modal {
+        background-color: #fff;
+    }
+}
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+// Type: Challenge List
+// Abbreviation: ch
+// ----------------------------------
+
+$ch-element-width: rem-calc(170);
+$ch-line-height: rem-calc(30);
+$ch-arrow-size: rem-calc(15);
+$ch-grey-line-height: rem-calc(15);
+
+@mixin generate-ch-element($pos, $color) { // $pos -> active, finished, queued
+    .fccs-ch-#{$pos} {
+        position: relative;
+        width: $ch-element-width;
+        
+        a {
+            .fccs-ch-#{$pos}-color-holder {
+                background-color: $color;
+                height: $ch-element-width + $ch-line-height + $ch-grey-line-height;
+                position: relative;
+                
+                .fccs-ch-icon {
+                    position: absolute;
+                    right: 0;
+                    width: $ch-line-height;
+                    text-align: center;
+                }
+
+                .fccs-ch-name {
+                    color: #fff;
+                    margin: 0;
+                    padding: 0 $ch-line-height 0 rem-calc(10);
+                    line-height: $ch-line-height;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    position: relative;
+                }
+
+                .fccs-ch-image {
+                    height: $ch-element-width;
+                    width: $ch-element-width;
+                    overflow: hidden;
+                    
+                    > img {
+                        height: inherit;
+                        width: inherit;
+                        @include transition(transform 0.2s ease);
+                    }
+                }
+
+                .fccs-ch-winner {
+                    position: absolute;
+                    bottom: $ch-grey-line-height;
+                    left: 0;
+                    right: 0;
+                    color: #fff;
+                    background-color: #333;
+                    margin: 0;
+                    padding: 0 $ch-line-height 0 rem-calc(10);
+                    line-height: $ch-line-height;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                    bottom: -($ch-arrow-size * 2) + rem-calc(2);
+                    left: ($ch-element-width / 2) - $ch-arrow-size;
+                    width: 0;
+                    height: 0;
+                    border: $ch-arrow-size solid transparent;
+                    border-top: $ch-arrow-size solid $color;
+                }
+            }
+            
+            .fccs-ch-date {
+                font-weight: bold;
+                text-align: center;
+                padding-top: rem-calc(20);
+                color: $body-font-color;
+            }
+            
+            &:hover {
+                .fccs-ch-#{$pos}-color-holder .fccs-ch-image > img {
+                    @include transform(scale(1.1));
+                }
+            }
+        }
+        
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            top: $ch-element-width + $ch-line-height;
+            left: -$column-gutter;
+            right: -$column-gutter;
+            height: $ch-grey-line-height;
+            background-color: #ccc;
+        }
+    }
+}
+
+.fccs-ch-compressed {
+    position: relative;
+    overflow: hidden;
+    
+    @include generate-ch-element('active', $fc-orange);
+    
+    .fccs-ch-active {
+        margin: 0 auto;
+    }
+    
+    .fccs-ch-left-container {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        margin-right: $ch-element-width / 2;
+        
+        @include generate-ch-element('finished', $fc-primary);
+        
+        .fccs-ch-finished {
+            float: left;
+            margin-right: $column-gutter;
+        }
+    }
+    
+    .fccs-ch-right-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: $ch-element-width / 2;
+        
+        @include generate-ch-element('queued', #333);
+        
+        .fccs-ch-queued {
+            float: left;
+            margin-left: $column-gutter;
+        }
+    }
+}
+
+.fccs-ch-expanded {
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    // fix wrong scrollbar on mobile devices
+    padding-bottom: rem-calc(20);
+    
+    @include generate-ch-element('active', $fc-orange);
+    @include generate-ch-element('finished', $fc-primary);
+    @include generate-ch-element('queued', #333);
+    
+    .fccs-ch-active,
+    .fccs-ch-finished,
+    .fccs-ch-queued {
+        display: inline-block;
+        margin: 0 ($column-gutter / 2);
+    }
+    
+    > div:first-child {
+        margin-left: 0;
+        
+        &:before {
+            left: 0;
+        }
+    }
+    
+    > div:last-child {
+        margin-right: 0;
+        
+        &:before {
+            right: 0;
+        }
+    }
+}
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+// Type: Ranking
+// Abbreviation: rk
+// ----------------------------------
+
+$rk-element-width: rem-calc(170);
+$rk-element-width-increase: rem-calc(30);
+$rk-user-size: rem-calc(80);
+$rk-line-height: rem-calc(40);
+$rk-arrow-size: rem-calc(15);
+$rk-grey-line-height: rem-calc(15);
+$rk-podium-height-base: rem-calc(45);
+$rk-podium-height-increase: rem-calc(20);
+$rk-no-podium-shift-down: rem-calc(45);
+
+@mixin generate-rk-element($pos) { // $pos -> first, second, third, no-podium
+    .fccs-rk-#{$pos} {
+        width: $rk-element-width;
+        @media #{$large-up} {
+            width: $rk-element-width + $rk-element-width-increase;
+        }
+        position: relative;
+
+        .fccs-rk-info-holder {
+            position: relative;
+            
+            @if $pos == 'first' {
+                padding-top: 0;
+            }
+            @else if $pos == 'second' {
+                padding-top: $rk-podium-height-increase;
+            }
+            @else if $pos == 'third' {
+                padding-top: $rk-podium-height-increase * 2;
+            }
+            @else if $pos == 'no-podium' {
+                padding-top: ($rk-podium-height-increase * 2) + $rk-podium-height-base;
+            }
+            
+            a {
+                display: block;
+                margin: 0 auto;
+                
+                .fccs-rk-image {
+                    height: $rk-user-size;
+                    width: $rk-user-size;
+                    margin: 0 auto;
+                    @include border-radius(50%);
+                    overflow: hidden;
+                    // fix problem with transition + border-radius
+                    -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+                    
+                    > img {
+                        height: inherit;
+                        width: inherit;
+                        @include transition(transform 0.2s ease);
+                    }
+                }
+                
+                .fccs-rk-name {
+                    text-align: center;
+                    color: $body-font-color;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    line-height: $rk-line-height;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    @include transition(color 0.2s ease);
+                }
+                
+                &:hover {
+                    .fccs-rk-image > img {
+                        @include transform(scale(1.1));
+                    }
+                    
+                    .fccs-rk-name {
+                        color: $fc-primary;
+                    }
+                }
+            }
+
+            .fccs-rk-points {
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                line-height: $rk-line-height;
+                background-color: #333;
+                color: #fff;
+                position: relative;
+            
+                &:after {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                    bottom: -($rk-arrow-size * 2) + rem-calc(2);
+                    left: ($rk-element-width / 2) - $rk-arrow-size;
+                    @media #{$large-up} {
+                        left: (($rk-element-width + $rk-element-width-increase) / 2) - $rk-arrow-size;
+                    }
+                    width: 0;
+                    height: 0;
+                    border: $rk-arrow-size solid transparent;
+                    border-top: $rk-arrow-size solid #333;
+                }
+            }
+
+            .fccs-rk-placement {
+                text-align: center;
+                font-weight: bold;
+                
+                @if $pos == 'first' {
+                    background-color: $fc-orange;
+                    color: $fc-orange;
+                    background: {
+                        image: url(../img/trophy.png);
+                        repeat: no-repeat;
+                        position: center;
+                    };
+                    @include background-size(
+                        ($rk-podium-height-base + ($rk-podium-height-increase * 2))
+                        ($rk-podium-height-base + ($rk-podium-height-increase * 2))
+                        );
+                    // place the '1' exactly in the middle of the trophy
+                    padding: ($rk-arrow-size / 2) 0 ($rk-arrow-size / 2) 0;
+                    line-height: $rk-podium-height-base + ($rk-podium-height-increase * 2);
+                    font-size: 2rem;
+                }
+                @else if $pos == 'second' {
+                    background-color: $fc-primary;
+                    color: #fff;
+                    padding: $rk-arrow-size 0 0 0;
+                    line-height: $rk-podium-height-base + $rk-podium-height-increase;
+                    font-size: 2rem;
+                }
+                @else if $pos == 'third' {
+                    background-color: $fc-primary;
+                    color: #fff;
+                    padding: $rk-arrow-size 0 0 0;
+                    line-height: $rk-podium-height-base;
+                    font-size: 2rem;
+                }
+                @else if $pos == 'no-podium' {
+                    position: absolute;
+                    width: 100%;
+                    bottom: -$rk-no-podium-shift-down;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+        
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: -$column-gutter;
+            right: -$column-gutter;
+            height: $rk-grey-line-height;
+            background-color: #ccc;
+        }
+    }
+}
+
+.fccs-rk-compressed {
+    position: relative;
+    overflow: hidden;
+    
+    @include generate-rk-element('first');
+    
+    .fccs-rk-first {
+        margin: 0 auto;
+    }
+    
+    .fccs-rk-left-container {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        margin-right: $rk-element-width / 2;
+        @media #{$large-up} {
+            margin-right: ($rk-element-width + $rk-element-width-increase) / 2;
+        }
+        
+        @include generate-rk-element('second');
+        
+        .fccs-rk-second {
+            float: right;
+            margin-right: $column-gutter;
+        }
+    }
+    
+    .fccs-rk-right-container {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: $rk-element-width / 2;
+        @media #{$large-up} {
+            margin-left: ($rk-element-width + $rk-element-width-increase) / 2;
+        }
+        
+        @include generate-rk-element('third');
+        
+        .fccs-rk-third {
+            float: left;
+            margin-left: $column-gutter;
+        }
+    }
+}
+
+.fccs-rk-expanded {
+    overflow: hidden;
+    overflow-x: auto;
+    white-space: nowrap;
+    // '+ rem-calc(20)' -> fix wrong scrollbar on mobile devices
+    padding-bottom: $rk-no-podium-shift-down + rem-calc(20);
+    
+    @include generate-rk-element('first');
+    @include generate-rk-element('second');
+    @include generate-rk-element('third');
+    @include generate-rk-element('no-podium');
+    
+    .fccs-rk-first,
+    .fccs-rk-second,
+    .fccs-rk-third,
+    .fccs-rk-no-podium {
+        display: inline-block;
+        vertical-align: bottom;
+        margin: 0 ($column-gutter / 2);
+    }
+    
+    > div:first-child {
+        margin-left: 0;
+        
+        &:before {
+            left: 0;
+        }
+    }
+    
+    > div:last-child {
+        margin-right: 0;
+        
+        &:before {
+            right: 0;
+        }
+    }
+}
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+// Type: Results Table
+// Abbreviation: rt
+// ----------------------------------
+
+$rt-hover-bg: #f5f5f5;
+$rt-border-color: #ddd;
+$rt-mobile-bg: $fc-primary-bg;
+$rt-mobile-border-color: #aaa;
+
+@mixin generate-rt-element($type) { // $type -> compressed or expanded
+    table {
+        border-collapse: collapse;
+        
+        @if $type == 'compressed' {
+            width: 100%;
+        }
+        @else if $type == 'expanded' {
+            width: auto;
+        }
+        
+        thead {
+            tr {
+                th {
+                    padding: 0;
+                    border-right: 1px solid $rt-border-color;
+                    
+                    @if $type == 'expanded' {
+                        width: rem-calc(170);
+                        min-width: rem-calc(170);
+                        max-width: rem-calc(170);
+                    }
+                    
+                    &:first-child {
+                        width: rem-calc(200);
+                        min-width: rem-calc(200);
+                        max-width: rem-calc(200);
+                    }
+                    
+                    div {
+                        padding: $table-head-padding;
+                        @include user-select(none);
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+        
+        tbody {
+            border-top: 1px solid $rt-border-color;
+            
+            tr {
+                border-bottom: 1px solid $rt-border-color;
+                @include transition(background-color 0.2s ease);
+                
+                &:hover {
+                    background-color: $rt-hover-bg;
+                }
+                
+                td {
+                    text-align: center;
+                    border-right: 1px solid $rt-border-color;
+                    padding: 0;
+                    
+                    a {
+                        display: block;
+                        text-align: center;
+                        padding: $table-row-padding;
+                        color: $body-font-color;
+                        @include transition(color 0.2s ease);
+                        
+                        &:hover {
+                            color: $fc-primary;
+                        }
+                    }
+
+                    &:first-child {
+                        padding: 0;
+                        // fix problem with larger content on mobile devices
+                        // problem source -> table-layout: auto
+                        max-width: 0;
+                        
+                        a {
+                            display: block;
+                            text-align: left;
+                            border-left: 3px solid transparent;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            white-space: nowrap;
+                            padding: $table-row-padding;
+                            color: $body-font-color;
+                            @include transition(color 0.2s ease, background-color 0.2s ease);
+                            
+                            img {
+                                height: rem-calc(50);
+                                width: rem-calc(50);
+                                margin-right: rem-calc(10);
+                                @include border-radius(50%);
+                            }
+                            
+                            &:hover {
+                                color: $fc-primary;
+                                background-color: #eee;
+                            }
+                        }
+                    }
+                }
+                
+                &.current-user {
+                    td {
+                        color: $fc-primary;
+                        
+                        a {
+                            color: $fc-primary;
+                        }
+                        
+                        &:first-child a {
+                            border-left: 3px solid $fc-primary;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media #{$small-only} {
+        // adjust colors for mobile sections
+        table {
+            background-color: $rt-mobile-bg;
+
+            thead {
+                tr {
+                    th {
+                        background-color: $rt-mobile-bg;
+                        border-right: 1px solid $rt-mobile-border-color;
+                    }
+                }
+            }
+
+            tbody {
+                border-top: 1px solid $rt-mobile-border-color;
+
+                tr {
+                    border-bottom: 1px solid $rt-mobile-border-color;
+
+                    td {
+                        border-right: 1px solid $rt-mobile-border-color;
+                    }
+                }
+            }
+        }
+        
+        // fix: user column too small on mobile device (name cut off)
+        @if $type == 'compressed' {
+            table {
+                // column width is set by the widest unbreakable content in the cells
+                table-layout: auto;
+                
+                thead {
+                    tr {
+                        th {
+                            // let user column take max space
+                            &:first-child {
+                                width: 100%;
+                                min-width: 0;
+                                max-width: 100%;
+                            }
+                            
+                            // only take the space needed for the content
+                            &:nth-child(2) {
+                                width: 1px;
+                                min-width: 0;
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.fccs-rt-compressed {
+    overflow: hidden;
+    overflow-x: auto;
+    
+    @include generate-rt-element('compressed');
+}
+
+.fccs-rt-expanded {
+    overflow: hidden;
+    overflow-x: auto;
+    // fix wrong scrollbar on mobile devices
+    padding-bottom: rem-calc(20);
+    
+    @include generate-rt-element('expanded');
+}
+
+.table-sort {
+    th.sort-header {
+        cursor: pointer;
+        @include transition(background-color 0.2s ease);
+        
+        div {
+            padding-right: rem-calc(30);
+            position: relative;
+            
+            &:after {
+                font-family: FontAwesome;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                font-variant: normal;
+                font-size: inherit;
+                line-height: inherit;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+                content: '\f0dc';
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: block;
+                width: rem-calc(30);
+                padding: $table-head-padding;
+                text-align: center;
+                color: #aaa;
+                @include transition(color 0.2s ease);
+            }
+        }
+        
+        &:hover {
+            background-color: $rt-hover-bg;
+            
+            div:after {
+                color: #333;
+            }
+        }
+    }
+    
+    th.sort-up div:after {
+        content: '\f0de';
+        color: #333;
+    }
+    
+    th.sort-down div:after {
+        content: '\f0dd';
+        color: #333;
+    }
+}

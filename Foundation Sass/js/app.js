@@ -1,5 +1,9 @@
+// *************************************
+//
 // Author: Sebastian Thaler
 // Email: sebi.thaler@gmail.com
+//
+// *************************************
 
 /*global $, jQuery, enquire, Foundation, Modernizr, Tablesort*/
 
@@ -49,17 +53,17 @@ $(document).ready(function () {
     
     // fire event to open the expended view
     $('.modal-open').click(function () {
-        $('#' + $(this).data('sectionmodalid')).css('top', $(this).closest('.cup-section').offset().top);
+        $('#' + $(this).data('sectionmodalid')).css('top', $(this).closest('.fc-content-section').offset().top);
         $('#' + $(this).data('sectionmodalid')).modal();
     });
     
     // if it's not a touch device
     if (!Modernizr.touch) {
-        if ($('.section-modal [class*=expanded]').length) {
+        if ($('.fccs-modal [class*=expanded]').length) {
             // check if the 'mousewheel'-plugin is loaded
             if (jQuery().mousewheel) {
                 // enable mousewheel scrolling
-                $('.section-modal [class*=expanded]').mousewheel(function (event, delta) {
+                $('.fccs-modal [class*=expanded]').mousewheel(function (event, delta) {
                     this.scrollLeft -= (delta * 50);
                     event.preventDefault();
                 });
@@ -68,7 +72,7 @@ $(document).ready(function () {
             // check if the 'mousewheel'-plugin is loaded
             if (jQuery().kinetic) {
                 // enable dragscrolling
-                $('.section-modal [class*=expanded]').kinetic({
+                $('.fccs-modal [class*=expanded]').kinetic({
                     cursor: 'auto'
                 });
             }
@@ -76,20 +80,21 @@ $(document).ready(function () {
     }
     
     // ----------------------------------
-    // Responsive & Sorting Table
+    // Table Sort
     // ----------------------------------
     
     // check if tablesort.js is loaded
     if (typeof Tablesort !== 'undefined' && $.isFunction(Tablesort)) {
-        var tableResultsCompressed, tableResultsExpanded;
+        // array for tablesort elements
+        var tableSortList = [];
         
-        if ($('#rt-compressed').length) {
-            tableResultsCompressed = new Tablesort(document.getElementById('rt-compressed'));
-        }
-
-        if ($('#rt-expanded').length) {
-            tableResultsExpanded = new Tablesort(document.getElementById('rt-expanded'));
-        }
+        // match all elements to sort
+        $('.table-sort').each(function (index) {
+            // add an unique ID to the current element
+            $(this).attr('id', 'tablesort' + index);
+            // set Tablesort on this element and save it in the array 'tableSortList'
+            tableSortList[tableSortList.length] = new Tablesort(document.getElementById('tablesort' + index));
+        });
     }
     
     // ---------------------------

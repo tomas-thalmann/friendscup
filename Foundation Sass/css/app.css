@@ -9255,7 +9255,7 @@ th.hide-for-touch {
     transition: right 0.3s;
   }
   /* line 414, ../scss/_styles.scss */
-  .big-button h1 {
+  .big-button h2 {
     color: #fff;
     line-height: 6.25rem;
     padding: 0 1.875rem;
@@ -9296,7 +9296,7 @@ th.hide-for-touch {
     transition: right 0.3s;
   }
   /* line 414, ../scss/_styles.scss */
-  .big-button h1 {
+  .big-button h2 {
     color: #fff;
     line-height: 12.5rem;
     padding: 0 1.875rem;
@@ -9325,7 +9325,7 @@ th.hide-for-touch {
     right: -3.125rem;
   }
   /* line 446, ../scss/_styles.scss */
-  .big-button:hover h1 {
+  .big-button:hover h2 {
     line-height: 8.75rem;
   }
   /* line 450, ../scss/_styles.scss */
@@ -9337,7 +9337,7 @@ th.hide-for-touch {
     transition-delay: 0.06s;
   }
   /* line 459, ../scss/_styles.scss */
-  .big-button.touch h1 {
+  .big-button.touch h2 {
     line-height: 8.75rem;
   }
   /* line 463, ../scss/_styles.scss */
@@ -9347,6 +9347,1871 @@ th.hide-for-touch {
     top: 6.5625rem;
   }
 }
+@media only screen and (max-width: 40em) {
+  /* line 9, ../scss/_fc-content-sections.scss */
+  .fc-content-section {
+    width: 90%;
+    margin: 0 5% 1.875rem 5%;
+    padding: 1.25rem 0;
+    background-color: #e8edf5;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 18, ../scss/_fc-content-sections.scss */
+  .fc-content-section {
+    margin: 0 auto 1.875rem auto;
+    padding: 1.25rem 0 0 0;
+  }
+}
+/* line 29, ../scss/_fc-content-sections.scss */
+.fccs-header h3 {
+  font-weight: bold;
+  border-bottom: 1px solid #bbb;
+  padding: 0 0 0.1875rem 0;
+  margin: 0 0 2.5rem 0;
+  color: #333333;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 37, ../scss/_fc-content-sections.scss */
+.fccs-header h3:hover {
+  color: #018ad2;
+}
+
+@media only screen {
+  /* line 49, ../scss/_fc-content-sections.scss */
+  .fccs-modal {
+    display: none;
+    max-width: none;
+    width: 100%;
+    background-color: #e8edf5;
+    padding: 1.25rem 1.25rem 0 1.25rem;
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 60, ../scss/_fc-content-sections.scss */
+  .fccs-modal {
+    background-color: #fff;
+  }
+}
+/* line 174, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed {
+  position: relative;
+  overflow: hidden;
+}
+/* line 78, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active {
+  position: relative;
+  width: 10.625rem;
+}
+/* line 83, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder {
+  background-color: #f4811f;
+  height: 13.4375rem;
+  position: relative;
+}
+/* line 88, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-icon {
+  position: absolute;
+  right: 0;
+  width: 1.875rem;
+  text-align: center;
+}
+/* line 95, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+/* line 106, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  overflow: hidden;
+}
+/* line 111, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 118, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-winner {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 133, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #f4811f;
+}
+/* line 147, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a .fccs-ch-date {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: #333333;
+}
+/* line 155, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active a:hover .fccs-ch-active-color-holder .fccs-ch-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 161, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12.5rem;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 180, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-active {
+  margin: 0 auto;
+}
+/* line 184, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: 5.3125rem;
+}
+/* line 78, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished {
+  position: relative;
+  width: 10.625rem;
+}
+/* line 83, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder {
+  background-color: #018ad2;
+  height: 13.4375rem;
+  position: relative;
+}
+/* line 88, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-icon {
+  position: absolute;
+  right: 0;
+  width: 1.875rem;
+  text-align: center;
+}
+/* line 95, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+/* line 106, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  overflow: hidden;
+}
+/* line 111, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 118, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-winner {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 133, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #018ad2;
+}
+/* line 147, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-date {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: #333333;
+}
+/* line 155, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a:hover .fccs-ch-finished-color-holder .fccs-ch-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 161, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12.5rem;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 192, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished {
+  float: left;
+  margin-right: 1.875rem;
+}
+/* line 198, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 5.3125rem;
+}
+/* line 78, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued {
+  position: relative;
+  width: 10.625rem;
+}
+/* line 83, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder {
+  background-color: #333333;
+  height: 13.4375rem;
+  position: relative;
+}
+/* line 88, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-icon {
+  position: absolute;
+  right: 0;
+  width: 1.875rem;
+  text-align: center;
+}
+/* line 95, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+/* line 106, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  overflow: hidden;
+}
+/* line 111, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 118, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-winner {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 133, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+/* line 147, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-date {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: #333333;
+}
+/* line 155, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a:hover .fccs-ch-queued-color-holder .fccs-ch-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 161, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12.5rem;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 206, ../scss/_fc-content-sections.scss */
+.fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued {
+  float: left;
+  margin-left: 1.875rem;
+}
+
+/* line 213, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded {
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 1.25rem;
+}
+/* line 78, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active {
+  position: relative;
+  width: 10.625rem;
+}
+/* line 83, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder {
+  background-color: #f4811f;
+  height: 13.4375rem;
+  position: relative;
+}
+/* line 88, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-icon {
+  position: absolute;
+  right: 0;
+  width: 1.875rem;
+  text-align: center;
+}
+/* line 95, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+/* line 106, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  overflow: hidden;
+}
+/* line 111, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 118, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-winner {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 133, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #f4811f;
+}
+/* line 147, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a .fccs-ch-date {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: #333333;
+}
+/* line 155, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active a:hover .fccs-ch-active-color-holder .fccs-ch-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 161, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12.5rem;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 78, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished {
+  position: relative;
+  width: 10.625rem;
+}
+/* line 83, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder {
+  background-color: #018ad2;
+  height: 13.4375rem;
+  position: relative;
+}
+/* line 88, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-icon {
+  position: absolute;
+  right: 0;
+  width: 1.875rem;
+  text-align: center;
+}
+/* line 95, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+/* line 106, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  overflow: hidden;
+}
+/* line 111, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 118, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-winner {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 133, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #018ad2;
+}
+/* line 147, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a .fccs-ch-date {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: #333333;
+}
+/* line 155, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished a:hover .fccs-ch-finished-color-holder .fccs-ch-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 161, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-finished:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12.5rem;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 78, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued {
+  position: relative;
+  width: 10.625rem;
+}
+/* line 83, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder {
+  background-color: #333333;
+  height: 13.4375rem;
+  position: relative;
+}
+/* line 88, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-icon {
+  position: absolute;
+  right: 0;
+  width: 1.875rem;
+  text-align: center;
+}
+/* line 95, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-name {
+  color: #fff;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: relative;
+}
+/* line 106, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image {
+  height: 10.625rem;
+  width: 10.625rem;
+  overflow: hidden;
+}
+/* line 111, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 118, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-winner {
+  position: absolute;
+  bottom: 0.9375rem;
+  left: 0;
+  right: 0;
+  color: #fff;
+  background-color: #333;
+  margin: 0;
+  padding: 0 1.875rem 0 0.625rem;
+  line-height: 1.875rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* line 133, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+/* line 147, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a .fccs-ch-date {
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1.25rem;
+  color: #333333;
+}
+/* line 155, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued a:hover .fccs-ch-queued-color-holder .fccs-ch-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 161, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-queued:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 12.5rem;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 226, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded .fccs-ch-active,
+.fccs-ch-expanded .fccs-ch-finished,
+.fccs-ch-expanded .fccs-ch-queued {
+  display: inline-block;
+  margin: 0 0.9375rem;
+}
+/* line 231, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded > div:first-child {
+  margin-left: 0;
+}
+/* line 234, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded > div:first-child:before {
+  left: 0;
+}
+/* line 239, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded > div:last-child {
+  margin-right: 0;
+}
+/* line 242, ../scss/_fc-content-sections.scss */
+.fccs-ch-expanded > div:last-child:before {
+  right: 0;
+}
+
+/* line 415, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed {
+  position: relative;
+  overflow: hidden;
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-first {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 0;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f4811f;
+  color: #f4811f;
+  background-image: url(../img/trophy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5.3125rem 5.3125rem;
+  padding: 0.46875rem 0 0.46875rem 0;
+  line-height: 5.3125rem;
+  font-size: 2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 421, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-first {
+  margin: 0 auto;
+}
+/* line 425, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container {
+  position: absolute;
+  top: 0;
+  right: 50%;
+  margin-right: 5.3125rem;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 425, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-left-container {
+    margin-right: 6.25rem;
+  }
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 1.25rem;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  background-color: #018ad2;
+  color: #fff;
+  padding: 0.9375rem 0 0 0;
+  line-height: 4.0625rem;
+  font-size: 2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 436, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second {
+  float: right;
+  margin-right: 1.875rem;
+}
+/* line 442, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: 5.3125rem;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 442, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-right-container {
+    margin-left: 6.25rem;
+  }
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 2.5rem;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  background-color: #018ad2;
+  color: #fff;
+  padding: 0.9375rem 0 0 0;
+  line-height: 2.8125rem;
+  font-size: 2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 453, ../scss/_fc-content-sections.scss */
+.fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third {
+  float: left;
+  margin-left: 1.875rem;
+}
+
+/* line 460, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded {
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4.0625rem;
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-first {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 0;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  background-color: #f4811f;
+  color: #f4811f;
+  background-image: url(../img/trophy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 5.3125rem 5.3125rem;
+  padding: 0.46875rem 0 0.46875rem 0;
+  line-height: 5.3125rem;
+  font-size: 2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-second {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 1.25rem;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  background-color: #018ad2;
+  color: #fff;
+  padding: 0.9375rem 0 0 0;
+  line-height: 4.0625rem;
+  font-size: 2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-second:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-third {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 2.5rem;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  background-color: #018ad2;
+  color: #fff;
+  padding: 0.9375rem 0 0 0;
+  line-height: 2.8125rem;
+  font-size: 2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-third:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 266, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium {
+  width: 10.625rem;
+  position: relative;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 266, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-no-podium {
+    width: 12.5rem;
+  }
+}
+/* line 273, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder {
+  position: relative;
+  padding-top: 5.3125rem;
+}
+/* line 289, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a {
+  display: block;
+  margin: 0 auto;
+}
+/* line 293, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a .fccs-rk-image {
+  height: 5rem;
+  width: 5rem;
+  margin: 0 auto;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+/* line 302, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a .fccs-rk-image > img {
+  height: inherit;
+  width: inherit;
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+}
+/* line 309, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a .fccs-rk-name {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 322, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a:hover .fccs-rk-image > img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+/* line 326, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a:hover .fccs-rk-name {
+  color: #018ad2;
+}
+/* line 332, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-points {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  line-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+/* line 341, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-points:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1.75rem;
+  left: 4.375rem;
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid transparent;
+  border-top: 0.9375rem solid #333333;
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 341, ../scss/_fc-content-sections.scss */
+  .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-points:after {
+    left: 5.3125rem;
+  }
+}
+/* line 358, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-placement {
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  width: 100%;
+  bottom: -2.8125rem;
+  font-size: 1.2rem;
+}
+/* line 402, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-no-podium:before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -1.875rem;
+  right: -1.875rem;
+  height: 0.9375rem;
+  background-color: #ccc;
+}
+/* line 475, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded .fccs-rk-first,
+.fccs-rk-expanded .fccs-rk-second,
+.fccs-rk-expanded .fccs-rk-third,
+.fccs-rk-expanded .fccs-rk-no-podium {
+  display: inline-block;
+  vertical-align: bottom;
+  margin: 0 0.9375rem;
+}
+/* line 481, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded > div:first-child {
+  margin-left: 0;
+}
+/* line 484, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded > div:first-child:before {
+  left: 0;
+}
+/* line 489, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded > div:last-child {
+  margin-right: 0;
+}
+/* line 492, ../scss/_fc-content-sections.scss */
+.fccs-rk-expanded > div:last-child:before {
+  right: 0;
+}
+
+/* line 684, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed {
+  overflow: hidden;
+  overflow-x: auto;
+}
+/* line 511, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table {
+  border-collapse: collapse;
+  width: 100%;
+}
+/* line 523, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table thead tr th {
+  padding: 0;
+  border-right: 1px solid #dddddd;
+}
+/* line 533, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table thead tr th:first-child {
+  width: 12.5rem;
+  min-width: 12.5rem;
+  max-width: 12.5rem;
+}
+/* line 539, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table thead tr th div {
+  padding: 0.5rem 0.625rem 0.625rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 550, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody {
+  border-top: 1px solid #dddddd;
+}
+/* line 553, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+/* line 557, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr:hover {
+  background-color: whitesmoke;
+}
+/* line 561, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td {
+  text-align: center;
+  border-right: 1px solid #dddddd;
+  padding: 0;
+}
+/* line 566, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td a {
+  display: block;
+  text-align: center;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 573, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td a:hover {
+  color: #018ad2;
+}
+/* line 578, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td:first-child {
+  padding: 0;
+  max-width: 0;
+}
+/* line 584, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td:first-child a {
+  display: block;
+  text-align: left;
+  border-left: 3px solid transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+/* line 595, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td:first-child a img {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 0.625rem;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 602, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr td:first-child a:hover {
+  color: #018ad2;
+  background-color: #eee;
+}
+/* line 611, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr.current-user td {
+  color: #018ad2;
+}
+/* line 614, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr.current-user td a {
+  color: #018ad2;
+}
+/* line 618, ../scss/_fc-content-sections.scss */
+.fccs-rt-compressed table tbody tr.current-user td:first-child a {
+  border-left: 3px solid #018ad2;
+}
+@media only screen and (max-width: 40em) {
+  /* line 629, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table {
+    background-color: #e8edf5;
+  }
+  /* line 634, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table thead tr th {
+    background-color: #e8edf5;
+    border-right: 1px solid #aaaaaa;
+  }
+  /* line 641, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table tbody {
+    border-top: 1px solid #aaaaaa;
+  }
+  /* line 644, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table tbody tr {
+    border-bottom: 1px solid #aaaaaa;
+  }
+  /* line 647, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table tbody tr td {
+    border-right: 1px solid #aaaaaa;
+  }
+  /* line 656, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table {
+    table-layout: auto;
+  }
+  /* line 664, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table thead tr th:first-child {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+  }
+  /* line 671, ../scss/_fc-content-sections.scss */
+  .fccs-rt-compressed table thead tr th:nth-child(2) {
+    width: 1px;
+    min-width: 0;
+    max-width: 100%;
+  }
+}
+
+/* line 691, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded {
+  overflow: hidden;
+  overflow-x: auto;
+  padding-bottom: 1.25rem;
+}
+/* line 511, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table {
+  border-collapse: collapse;
+  width: auto;
+}
+/* line 523, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table thead tr th {
+  padding: 0;
+  border-right: 1px solid #dddddd;
+  width: 10.625rem;
+  min-width: 10.625rem;
+  max-width: 10.625rem;
+}
+/* line 533, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table thead tr th:first-child {
+  width: 12.5rem;
+  min-width: 12.5rem;
+  max-width: 12.5rem;
+}
+/* line 539, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table thead tr th div {
+  padding: 0.5rem 0.625rem 0.625rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+/* line 550, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody {
+  border-top: 1px solid #dddddd;
+}
+/* line 553, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+/* line 557, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr:hover {
+  background-color: whitesmoke;
+}
+/* line 561, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td {
+  text-align: center;
+  border-right: 1px solid #dddddd;
+  padding: 0;
+}
+/* line 566, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td a {
+  display: block;
+  text-align: center;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 573, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td a:hover {
+  color: #018ad2;
+}
+/* line 578, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td:first-child {
+  padding: 0;
+  max-width: 0;
+}
+/* line 584, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td:first-child a {
+  display: block;
+  text-align: left;
+  border-left: 3px solid transparent;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0.5625rem 0.625rem;
+  color: #333333;
+  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+/* line 595, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td:first-child a img {
+  height: 3.125rem;
+  width: 3.125rem;
+  margin-right: 0.625rem;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 602, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr td:first-child a:hover {
+  color: #018ad2;
+  background-color: #eee;
+}
+/* line 611, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr.current-user td {
+  color: #018ad2;
+}
+/* line 614, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr.current-user td a {
+  color: #018ad2;
+}
+/* line 618, ../scss/_fc-content-sections.scss */
+.fccs-rt-expanded table tbody tr.current-user td:first-child a {
+  border-left: 3px solid #018ad2;
+}
+@media only screen and (max-width: 40em) {
+  /* line 629, ../scss/_fc-content-sections.scss */
+  .fccs-rt-expanded table {
+    background-color: #e8edf5;
+  }
+  /* line 634, ../scss/_fc-content-sections.scss */
+  .fccs-rt-expanded table thead tr th {
+    background-color: #e8edf5;
+    border-right: 1px solid #aaaaaa;
+  }
+  /* line 641, ../scss/_fc-content-sections.scss */
+  .fccs-rt-expanded table tbody {
+    border-top: 1px solid #aaaaaa;
+  }
+  /* line 644, ../scss/_fc-content-sections.scss */
+  .fccs-rt-expanded table tbody tr {
+    border-bottom: 1px solid #aaaaaa;
+  }
+  /* line 647, ../scss/_fc-content-sections.scss */
+  .fccs-rt-expanded table tbody tr td {
+    border-right: 1px solid #aaaaaa;
+  }
+}
+
+/* line 701, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-header {
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease;
+}
+/* line 705, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-header div {
+  padding-right: 1.875rem;
+  position: relative;
+}
+/* line 709, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-header div:after {
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  font-variant: normal;
+  font-size: inherit;
+  line-height: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: '\f0dc';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 1.875rem;
+  padding: 0.5rem 0.625rem 0.625rem;
+  text-align: center;
+  color: #aaa;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+/* line 733, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-header:hover {
+  background-color: whitesmoke;
+}
+/* line 736, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-header:hover div:after {
+  color: #333;
+}
+/* line 742, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-up div:after {
+  content: '\f0de';
+  color: #333;
+}
+/* line 747, ../scss/_fc-content-sections.scss */
+.table-sort th.sort-down div:after {
+  content: '\f0dd';
+  color: #333;
+}
+
 @media only screen and (max-width: 40em) {
   /* line 9, ../scss/_cup-page.scss */
   .cup-header-panel {
@@ -9577,1875 +11442,6 @@ th.hide-for-touch {
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 201, ../scss/_cup-page.scss */
-  .cup-section {
-    width: 90%;
-    margin: 0 5% 1.875rem 5%;
-    padding: 0 0 1.25rem 0;
-    background-color: #e8edf5;
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 210, ../scss/_cup-page.scss */
-  .cup-section {
-    margin: 0 auto 1.875rem auto;
-  }
-}
-/* line 220, ../scss/_cup-page.scss */
-.section-header h3 {
-  font-weight: bold;
-  border-bottom: 1px solid #bbb;
-  padding: 0 0 0.1875rem 0;
-  margin: 1.25rem 0 2.5rem 0;
-  color: #333333;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 228, ../scss/_cup-page.scss */
-.section-header h3:hover {
-  color: #018ad2;
-}
-
-/* line 234, ../scss/_cup-page.scss */
-.section-modal .section-header {
-  margin: 0 0 2.5rem 0;
-}
-
-@media only screen {
-  /* line 243, ../scss/_cup-page.scss */
-  .section-modal {
-    display: none;
-    max-width: none;
-    width: 100%;
-    background-color: #e8edf5;
-    padding: 1.25rem 1.25rem 0 1.25rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.4);
-  }
-}
-@media only screen and (min-width: 40.063em) {
-  /* line 254, ../scss/_cup-page.scss */
-  .section-modal {
-    background-color: #fff;
-  }
-}
-/* line 365, ../scss/_cup-page.scss */
-.ch-compressed {
-  position: relative;
-  overflow: hidden;
-}
-/* line 269, ../scss/_cup-page.scss */
-.ch-compressed .ch-active {
-  position: relative;
-  width: 10.625rem;
-}
-/* line 274, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder {
-  background-color: #f4811f;
-  height: 13.4375rem;
-  position: relative;
-}
-/* line 279, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder .ch-icon {
-  position: absolute;
-  right: 0;
-  width: 1.875rem;
-  text-align: center;
-}
-/* line 286, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder .ch-name {
-  color: #fff;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-/* line 297, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder .ch-image {
-  height: 10.625rem;
-  width: 10.625rem;
-  overflow: hidden;
-}
-/* line 302, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder .ch-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 309, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder .ch-winner {
-  position: absolute;
-  bottom: 0.9375rem;
-  left: 0;
-  right: 0;
-  color: #fff;
-  background-color: #333;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 324, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-active-color-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #f4811f;
-}
-/* line 338, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a .ch-date {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1.25rem;
-  color: #333333;
-}
-/* line 346, ../scss/_cup-page.scss */
-.ch-compressed .ch-active a:hover .ch-active-color-holder .ch-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 352, ../scss/_cup-page.scss */
-.ch-compressed .ch-active:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12.5rem;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 371, ../scss/_cup-page.scss */
-.ch-compressed .ch-active {
-  margin: 0 auto;
-}
-/* line 375, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  margin-right: 5.3125rem;
-}
-/* line 269, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished {
-  position: relative;
-  width: 10.625rem;
-}
-/* line 274, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder {
-  background-color: #018ad2;
-  height: 13.4375rem;
-  position: relative;
-}
-/* line 279, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-icon {
-  position: absolute;
-  right: 0;
-  width: 1.875rem;
-  text-align: center;
-}
-/* line 286, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-name {
-  color: #fff;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-/* line 297, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-image {
-  height: 10.625rem;
-  width: 10.625rem;
-  overflow: hidden;
-}
-/* line 302, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 309, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder .ch-winner {
-  position: absolute;
-  bottom: 0.9375rem;
-  left: 0;
-  right: 0;
-  color: #fff;
-  background-color: #333;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 324, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-finished-color-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #018ad2;
-}
-/* line 338, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a .ch-date {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1.25rem;
-  color: #333333;
-}
-/* line 346, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished a:hover .ch-finished-color-holder .ch-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 352, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12.5rem;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 383, ../scss/_cup-page.scss */
-.ch-compressed .ch-left-container .ch-finished {
-  float: left;
-  margin-right: 1.875rem;
-}
-/* line 389, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: 5.3125rem;
-}
-/* line 269, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued {
-  position: relative;
-  width: 10.625rem;
-}
-/* line 274, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder {
-  background-color: #333333;
-  height: 13.4375rem;
-  position: relative;
-}
-/* line 279, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-icon {
-  position: absolute;
-  right: 0;
-  width: 1.875rem;
-  text-align: center;
-}
-/* line 286, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-name {
-  color: #fff;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-/* line 297, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-image {
-  height: 10.625rem;
-  width: 10.625rem;
-  overflow: hidden;
-}
-/* line 302, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 309, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder .ch-winner {
-  position: absolute;
-  bottom: 0.9375rem;
-  left: 0;
-  right: 0;
-  color: #fff;
-  background-color: #333;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 324, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-queued-color-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-/* line 338, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a .ch-date {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1.25rem;
-  color: #333333;
-}
-/* line 346, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued a:hover .ch-queued-color-holder .ch-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 352, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12.5rem;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 397, ../scss/_cup-page.scss */
-.ch-compressed .ch-right-container .ch-queued {
-  float: left;
-  margin-left: 1.875rem;
-}
-
-/* line 404, ../scss/_cup-page.scss */
-.ch-expanded {
-  overflow: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-bottom: 1.25rem;
-}
-/* line 269, ../scss/_cup-page.scss */
-.ch-expanded .ch-active {
-  position: relative;
-  width: 10.625rem;
-}
-/* line 274, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder {
-  background-color: #f4811f;
-  height: 13.4375rem;
-  position: relative;
-}
-/* line 279, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder .ch-icon {
-  position: absolute;
-  right: 0;
-  width: 1.875rem;
-  text-align: center;
-}
-/* line 286, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder .ch-name {
-  color: #fff;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-/* line 297, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder .ch-image {
-  height: 10.625rem;
-  width: 10.625rem;
-  overflow: hidden;
-}
-/* line 302, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder .ch-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 309, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder .ch-winner {
-  position: absolute;
-  bottom: 0.9375rem;
-  left: 0;
-  right: 0;
-  color: #fff;
-  background-color: #333;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 324, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-active-color-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #f4811f;
-}
-/* line 338, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a .ch-date {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1.25rem;
-  color: #333333;
-}
-/* line 346, ../scss/_cup-page.scss */
-.ch-expanded .ch-active a:hover .ch-active-color-holder .ch-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 352, ../scss/_cup-page.scss */
-.ch-expanded .ch-active:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12.5rem;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 269, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished {
-  position: relative;
-  width: 10.625rem;
-}
-/* line 274, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder {
-  background-color: #018ad2;
-  height: 13.4375rem;
-  position: relative;
-}
-/* line 279, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder .ch-icon {
-  position: absolute;
-  right: 0;
-  width: 1.875rem;
-  text-align: center;
-}
-/* line 286, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder .ch-name {
-  color: #fff;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-/* line 297, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder .ch-image {
-  height: 10.625rem;
-  width: 10.625rem;
-  overflow: hidden;
-}
-/* line 302, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder .ch-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 309, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder .ch-winner {
-  position: absolute;
-  bottom: 0.9375rem;
-  left: 0;
-  right: 0;
-  color: #fff;
-  background-color: #333;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 324, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-finished-color-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #018ad2;
-}
-/* line 338, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a .ch-date {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1.25rem;
-  color: #333333;
-}
-/* line 346, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished a:hover .ch-finished-color-holder .ch-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 352, ../scss/_cup-page.scss */
-.ch-expanded .ch-finished:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12.5rem;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 269, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued {
-  position: relative;
-  width: 10.625rem;
-}
-/* line 274, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder {
-  background-color: #333333;
-  height: 13.4375rem;
-  position: relative;
-}
-/* line 279, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder .ch-icon {
-  position: absolute;
-  right: 0;
-  width: 1.875rem;
-  text-align: center;
-}
-/* line 286, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder .ch-name {
-  color: #fff;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  position: relative;
-}
-/* line 297, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder .ch-image {
-  height: 10.625rem;
-  width: 10.625rem;
-  overflow: hidden;
-}
-/* line 302, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder .ch-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 309, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder .ch-winner {
-  position: absolute;
-  bottom: 0.9375rem;
-  left: 0;
-  right: 0;
-  color: #fff;
-  background-color: #333;
-  margin: 0;
-  padding: 0 1.875rem 0 0.625rem;
-  line-height: 1.875rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-/* line 324, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-queued-color-holder:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-/* line 338, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a .ch-date {
-  font-weight: bold;
-  text-align: center;
-  padding-top: 1.25rem;
-  color: #333333;
-}
-/* line 346, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued a:hover .ch-queued-color-holder .ch-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 352, ../scss/_cup-page.scss */
-.ch-expanded .ch-queued:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 12.5rem;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 417, ../scss/_cup-page.scss */
-.ch-expanded .ch-active,
-.ch-expanded .ch-finished,
-.ch-expanded .ch-queued {
-  display: inline-block;
-  margin: 0 0.9375rem;
-}
-/* line 422, ../scss/_cup-page.scss */
-.ch-expanded > div:first-child {
-  margin-left: 0;
-}
-/* line 425, ../scss/_cup-page.scss */
-.ch-expanded > div:first-child:before {
-  left: 0;
-}
-/* line 430, ../scss/_cup-page.scss */
-.ch-expanded > div:last-child {
-  margin-right: 0;
-}
-/* line 433, ../scss/_cup-page.scss */
-.ch-expanded > div:last-child:before {
-  right: 0;
-}
-
-/* line 603, ../scss/_cup-page.scss */
-.rk-compressed {
-  position: relative;
-  overflow: hidden;
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-compressed .rk-first {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-compressed .rk-first {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder {
-  position: relative;
-  padding-top: 0;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-compressed .rk-first .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-compressed .rk-first .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  background-color: #f4811f;
-  color: #f4811f;
-  background-image: url(../img/trophy.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 5.3125rem 5.3125rem;
-  padding: 0.46875rem 0 0.46875rem 0;
-  line-height: 5.3125rem;
-  font-size: 2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-compressed .rk-first:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 609, ../scss/_cup-page.scss */
-.rk-compressed .rk-first {
-  margin: 0 auto;
-}
-/* line 613, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container {
-  position: absolute;
-  top: 0;
-  right: 50%;
-  margin-right: 5.3125rem;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 613, ../scss/_cup-page.scss */
-  .rk-compressed .rk-left-container {
-    margin-right: 6.25rem;
-  }
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-compressed .rk-left-container .rk-second {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder {
-  position: relative;
-  padding-top: 1.25rem;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  background-color: #018ad2;
-  color: #fff;
-  padding: 0.9375rem 0 0 0;
-  line-height: 4.0625rem;
-  font-size: 2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 624, ../scss/_cup-page.scss */
-.rk-compressed .rk-left-container .rk-second {
-  float: right;
-  margin-right: 1.875rem;
-}
-/* line 630, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: 5.3125rem;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 630, ../scss/_cup-page.scss */
-  .rk-compressed .rk-right-container {
-    margin-left: 6.25rem;
-  }
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-compressed .rk-right-container .rk-third {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder {
-  position: relative;
-  padding-top: 2.5rem;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  background-color: #018ad2;
-  color: #fff;
-  padding: 0.9375rem 0 0 0;
-  line-height: 2.8125rem;
-  font-size: 2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 641, ../scss/_cup-page.scss */
-.rk-compressed .rk-right-container .rk-third {
-  float: left;
-  margin-left: 1.875rem;
-}
-
-/* line 648, ../scss/_cup-page.scss */
-.rk-expanded {
-  overflow: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-bottom: 4.0625rem;
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-expanded .rk-first {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-expanded .rk-first {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder {
-  position: relative;
-  padding-top: 0;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-expanded .rk-first .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-expanded .rk-first .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  background-color: #f4811f;
-  color: #f4811f;
-  background-image: url(../img/trophy.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 5.3125rem 5.3125rem;
-  padding: 0.46875rem 0 0.46875rem 0;
-  line-height: 5.3125rem;
-  font-size: 2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-expanded .rk-first:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-expanded .rk-second {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-expanded .rk-second {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder {
-  position: relative;
-  padding-top: 1.25rem;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-expanded .rk-second .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-expanded .rk-second .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  background-color: #018ad2;
-  color: #fff;
-  padding: 0.9375rem 0 0 0;
-  line-height: 4.0625rem;
-  font-size: 2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-expanded .rk-second:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-expanded .rk-third {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-expanded .rk-third {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder {
-  position: relative;
-  padding-top: 2.5rem;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-expanded .rk-third .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-expanded .rk-third .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  background-color: #018ad2;
-  color: #fff;
-  padding: 0.9375rem 0 0 0;
-  line-height: 2.8125rem;
-  font-size: 2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-expanded .rk-third:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 454, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium {
-  width: 10.625rem;
-  position: relative;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 454, ../scss/_cup-page.scss */
-  .rk-expanded .rk-no-podium {
-    width: 12.5rem;
-  }
-}
-/* line 461, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder {
-  position: relative;
-  padding-top: 5.3125rem;
-}
-/* line 477, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder a {
-  display: block;
-  margin: 0 auto;
-}
-/* line 481, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder a .rk-image {
-  height: 5rem;
-  width: 5rem;
-  margin: 0 auto;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-  overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
-}
-/* line 490, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder a .rk-image > img {
-  height: inherit;
-  width: inherit;
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-}
-/* line 497, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder a .rk-name {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.2rem;
-  line-height: 2.5rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 510, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder a:hover .rk-image > img {
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-/* line 514, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder a:hover .rk-name {
-  color: #018ad2;
-}
-/* line 520, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder .rk-points {
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  line-height: 2.5rem;
-  background-color: #333;
-  color: #fff;
-  position: relative;
-}
-/* line 529, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder .rk-points:after {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: -1.75rem;
-  left: 4.375rem;
-  width: 0;
-  height: 0;
-  border: 0.9375rem solid transparent;
-  border-top: 0.9375rem solid #333333;
-}
-@media only screen and (min-width: 64.063em) {
-  /* line 529, ../scss/_cup-page.scss */
-  .rk-expanded .rk-no-podium .rk-info-holder .rk-points:after {
-    left: 5.3125rem;
-  }
-}
-/* line 546, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium .rk-info-holder .rk-placement {
-  text-align: center;
-  font-weight: bold;
-  position: absolute;
-  width: 100%;
-  bottom: -2.8125rem;
-  font-size: 1.2rem;
-}
-/* line 590, ../scss/_cup-page.scss */
-.rk-expanded .rk-no-podium:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 0;
-  left: -1.875rem;
-  right: -1.875rem;
-  height: 0.9375rem;
-  background-color: #ccc;
-}
-/* line 663, ../scss/_cup-page.scss */
-.rk-expanded .rk-first,
-.rk-expanded .rk-second,
-.rk-expanded .rk-third,
-.rk-expanded .rk-no-podium {
-  display: inline-block;
-  vertical-align: bottom;
-  margin: 0 0.9375rem;
-}
-/* line 669, ../scss/_cup-page.scss */
-.rk-expanded > div:first-child {
-  margin-left: 0;
-}
-/* line 672, ../scss/_cup-page.scss */
-.rk-expanded > div:first-child:before {
-  left: 0;
-}
-/* line 677, ../scss/_cup-page.scss */
-.rk-expanded > div:last-child {
-  margin-right: 0;
-}
-/* line 680, ../scss/_cup-page.scss */
-.rk-expanded > div:last-child:before {
-  right: 0;
-}
-
-/* line 869, ../scss/_cup-page.scss */
-.rt-compressed {
-  overflow: hidden;
-  overflow-x: auto;
-}
-/* line 696, ../scss/_cup-page.scss */
-.rt-compressed table {
-  border-collapse: collapse;
-  width: 100%;
-}
-/* line 708, ../scss/_cup-page.scss */
-.rt-compressed table thead tr th {
-  padding: 0;
-  border-right: 1px solid #dddddd;
-}
-/* line 718, ../scss/_cup-page.scss */
-.rt-compressed table thead tr th:first-child {
-  width: 12.5rem;
-  min-width: 12.5rem;
-  max-width: 12.5rem;
-}
-/* line 724, ../scss/_cup-page.scss */
-.rt-compressed table thead tr th div {
-  padding: 0.5rem 0.625rem 0.625rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-/* line 735, ../scss/_cup-page.scss */
-.rt-compressed table tbody {
-  border-top: 1px solid #dddddd;
-}
-/* line 738, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr {
-  border-bottom: 1px solid #dddddd;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-/* line 742, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr:hover {
-  background-color: whitesmoke;
-}
-/* line 746, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td {
-  text-align: center;
-  border-right: 1px solid #dddddd;
-  padding: 0;
-}
-/* line 751, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td a {
-  display: block;
-  text-align: center;
-  padding: 0.5625rem 0.625rem;
-  color: #333333;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 758, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td a:hover {
-  color: #018ad2;
-}
-/* line 763, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td:first-child {
-  padding: 0;
-  max-width: 0;
-}
-/* line 769, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td:first-child a {
-  display: block;
-  text-align: left;
-  border-left: 3px solid transparent;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0.5625rem 0.625rem;
-  color: #333333;
-  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
-  transition: color 0.2s ease, background-color 0.2s ease;
-}
-/* line 780, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td:first-child a img {
-  height: 3.125rem;
-  width: 3.125rem;
-  margin-right: 0.625rem;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-/* line 787, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr td:first-child a:hover {
-  color: #018ad2;
-  background-color: #eee;
-}
-/* line 796, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr.current-user td {
-  color: #018ad2;
-}
-/* line 799, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr.current-user td a {
-  color: #018ad2;
-}
-/* line 803, ../scss/_cup-page.scss */
-.rt-compressed table tbody tr.current-user td:first-child a {
-  border-left: 3px solid #018ad2;
-}
-@media only screen and (max-width: 40em) {
-  /* line 814, ../scss/_cup-page.scss */
-  .rt-compressed table {
-    background-color: #e8edf5;
-  }
-  /* line 819, ../scss/_cup-page.scss */
-  .rt-compressed table thead tr th {
-    background-color: #e8edf5;
-    border-right: 1px solid #aaaaaa;
-  }
-  /* line 826, ../scss/_cup-page.scss */
-  .rt-compressed table tbody {
-    border-top: 1px solid #aaaaaa;
-  }
-  /* line 829, ../scss/_cup-page.scss */
-  .rt-compressed table tbody tr {
-    border-bottom: 1px solid #aaaaaa;
-  }
-  /* line 832, ../scss/_cup-page.scss */
-  .rt-compressed table tbody tr td {
-    border-right: 1px solid #aaaaaa;
-  }
-  /* line 841, ../scss/_cup-page.scss */
-  .rt-compressed table {
-    table-layout: auto;
-  }
-  /* line 849, ../scss/_cup-page.scss */
-  .rt-compressed table thead tr th:first-child {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-  }
-  /* line 856, ../scss/_cup-page.scss */
-  .rt-compressed table thead tr th:nth-child(2) {
-    width: 1px;
-    min-width: 0;
-    max-width: 100%;
-  }
-}
-
-/* line 876, ../scss/_cup-page.scss */
-.rt-expanded {
-  overflow: hidden;
-  overflow-x: auto;
-  padding-bottom: 1.25rem;
-}
-/* line 696, ../scss/_cup-page.scss */
-.rt-expanded table {
-  border-collapse: collapse;
-  width: auto;
-}
-/* line 708, ../scss/_cup-page.scss */
-.rt-expanded table thead tr th {
-  padding: 0;
-  border-right: 1px solid #dddddd;
-  width: 10.625rem;
-  min-width: 10.625rem;
-  max-width: 10.625rem;
-}
-/* line 718, ../scss/_cup-page.scss */
-.rt-expanded table thead tr th:first-child {
-  width: 12.5rem;
-  min-width: 12.5rem;
-  max-width: 12.5rem;
-}
-/* line 724, ../scss/_cup-page.scss */
-.rt-expanded table thead tr th div {
-  padding: 0.5rem 0.625rem 0.625rem;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-/* line 735, ../scss/_cup-page.scss */
-.rt-expanded table tbody {
-  border-top: 1px solid #dddddd;
-}
-/* line 738, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr {
-  border-bottom: 1px solid #dddddd;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-/* line 742, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr:hover {
-  background-color: whitesmoke;
-}
-/* line 746, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td {
-  text-align: center;
-  border-right: 1px solid #dddddd;
-  padding: 0;
-}
-/* line 751, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td a {
-  display: block;
-  text-align: center;
-  padding: 0.5625rem 0.625rem;
-  color: #333333;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 758, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td a:hover {
-  color: #018ad2;
-}
-/* line 763, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td:first-child {
-  padding: 0;
-  max-width: 0;
-}
-/* line 769, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td:first-child a {
-  display: block;
-  text-align: left;
-  border-left: 3px solid transparent;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  padding: 0.5625rem 0.625rem;
-  color: #333333;
-  -webkit-transition: color 0.2s ease, background-color 0.2s ease;
-  transition: color 0.2s ease, background-color 0.2s ease;
-}
-/* line 780, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td:first-child a img {
-  height: 3.125rem;
-  width: 3.125rem;
-  margin-right: 0.625rem;
-  -o-border-radius: 50%;
-  border-radius: 50%;
-}
-/* line 787, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr td:first-child a:hover {
-  color: #018ad2;
-  background-color: #eee;
-}
-/* line 796, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr.current-user td {
-  color: #018ad2;
-}
-/* line 799, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr.current-user td a {
-  color: #018ad2;
-}
-/* line 803, ../scss/_cup-page.scss */
-.rt-expanded table tbody tr.current-user td:first-child a {
-  border-left: 3px solid #018ad2;
-}
-@media only screen and (max-width: 40em) {
-  /* line 814, ../scss/_cup-page.scss */
-  .rt-expanded table {
-    background-color: #e8edf5;
-  }
-  /* line 819, ../scss/_cup-page.scss */
-  .rt-expanded table thead tr th {
-    background-color: #e8edf5;
-    border-right: 1px solid #aaaaaa;
-  }
-  /* line 826, ../scss/_cup-page.scss */
-  .rt-expanded table tbody {
-    border-top: 1px solid #aaaaaa;
-  }
-  /* line 829, ../scss/_cup-page.scss */
-  .rt-expanded table tbody tr {
-    border-bottom: 1px solid #aaaaaa;
-  }
-  /* line 832, ../scss/_cup-page.scss */
-  .rt-expanded table tbody tr td {
-    border-right: 1px solid #aaaaaa;
-  }
-}
-
-/* line 886, ../scss/_cup-page.scss */
-.table-sort th.sort-header {
-  cursor: pointer;
-  -webkit-transition: background-color 0.2s ease;
-  transition: background-color 0.2s ease;
-}
-/* line 890, ../scss/_cup-page.scss */
-.table-sort th.sort-header div {
-  padding-right: 1.875rem;
-  position: relative;
-}
-/* line 894, ../scss/_cup-page.scss */
-.table-sort th.sort-header div:after {
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  font-variant: normal;
-  font-size: inherit;
-  line-height: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  content: '\f0dc';
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: block;
-  width: 1.875rem;
-  padding: 0.5rem 0.625rem 0.625rem;
-  text-align: center;
-  color: #aaa;
-  -webkit-transition: color 0.2s ease;
-  transition: color 0.2s ease;
-}
-/* line 918, ../scss/_cup-page.scss */
-.table-sort th.sort-header:hover {
-  background-color: whitesmoke;
-}
-/* line 921, ../scss/_cup-page.scss */
-.table-sort th.sort-header:hover div:after {
-  color: #333;
-}
-/* line 927, ../scss/_cup-page.scss */
-.table-sort th.sort-up div:after {
-  content: '\f0de';
-  color: #333;
-}
-/* line 932, ../scss/_cup-page.scss */
-.table-sort th.sort-down div:after {
-  content: '\f0dd';
-  color: #333;
-}
-
-@media only screen and (max-width: 40em) {
   /* line 9, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue {
     margin: 0;
@@ -11517,55 +11513,59 @@ th.hide-for-touch {
     color: white;
   }
 
-  /* line 55, ../scss/_challenge-detail.scss */
+  /* line 52, ../scss/_challenge-detail.scss */
+  .chd-header-panel-info {
+    border-bottom: 4px solid #c7d3e7;
+  }
+  /* line 57, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-name {
     line-height: 70px;
     white-space: nowrap;
   }
-  /* line 60, ../scss/_challenge-detail.scss */
+  /* line 62, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-categories {
     line-height: 40px;
   }
-  /* line 67, ../scss/_challenge-detail.scss */
+  /* line 69, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-categories .label:first-child {
     margin-left: 10px;
   }
-  /* line 76, ../scss/_challenge-detail.scss */
+  /* line 78, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan {
     background-color: transparent;
   }
-  /* line 79, ../scss/_challenge-detail.scss */
+  /* line 81, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan.fixed {
     background-color: #e8edf5;
     border-bottom: 4px solid #c7d3e7;
     padding-top: 5px !important;
     padding-left: 0.9375rem !important;
   }
-  /* line 86, ../scss/_challenge-detail.scss */
+  /* line 88, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav {
     padding: 0;
     margin: 0;
   }
-  /* line 90, ../scss/_challenge-detail.scss */
+  /* line 92, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd {
     margin: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 111, ../scss/_challenge-detail.scss */
+  /* line 113, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue {
     margin: 0;
   }
-  /* line 115, ../scss/_challenge-detail.scss */
+  /* line 117, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns {
     position: relative;
   }
-  /* line 118, ../scss/_challenge-detail.scss */
+  /* line 120, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-progress {
     margin-top: 0.9375rem;
     margin-left: 16.5625rem;
   }
-  /* line 122, ../scss/_challenge-detail.scss */
+  /* line 124, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-progress .chd-progress-circle {
     display: inline-block;
     border-radius: 50%;
@@ -11578,109 +11578,109 @@ th.hide-for-touch {
     margin: 0 10px 0 0;
     font-weight: bold;
   }
-  /* line 135, ../scss/_challenge-detail.scss */
+  /* line 137, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-progress .fa {
     padding: 0 10px;
   }
-  /* line 144, ../scss/_challenge-detail.scss */
+  /* line 146, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-img-div {
     position: absolute;
     top: 0;
     left: 0.9375rem;
   }
-  /* line 149, ../scss/_challenge-detail.scss */
+  /* line 151, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-img-div img {
     width: 250px;
     height: 250px;
   }
 
-  /* line 158, ../scss/_challenge-detail.scss */
+  /* line 160, ../scss/_challenge-detail.scss */
   .chd-header-panel-info {
     padding-bottom: 0;
     border-bottom: 4px solid #c7d3e7;
   }
-  /* line 164, ../scss/_challenge-detail.scss */
+  /* line 166, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-name {
     padding-left: 17.5rem;
     line-height: 70px;
     white-space: nowrap;
   }
-  /* line 170, ../scss/_challenge-detail.scss */
+  /* line 172, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-categories {
     padding-left: 17.5rem;
     line-height: 40px;
   }
-  /* line 178, ../scss/_challenge-detail.scss */
+  /* line 180, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-categories .label:first-child {
     margin-left: 10px;
   }
-  /* line 183, ../scss/_challenge-detail.scss */
+  /* line 185, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-show-details {
     padding-left: 17.5rem;
   }
-  /* line 187, ../scss/_challenge-detail.scss */
+  /* line 189, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan {
     margin-top: 50px;
     background-color: transparent;
   }
-  /* line 191, ../scss/_challenge-detail.scss */
+  /* line 193, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan.fixed {
     margin-top: 0;
     background-color: #e8edf5;
     border-bottom: 4px solid #c7d3e7;
   }
-  /* line 196, ../scss/_challenge-detail.scss */
+  /* line 198, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan.fixed dl.sub-nav {
     max-width: 62.5rem;
     margin: 0 auto -4px auto;
     padding-left: 0.9375rem;
   }
-  /* line 203, ../scss/_challenge-detail.scss */
+  /* line 205, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav {
     padding: 0;
     margin: 0;
     line-height: 30px;
     margin-bottom: -4px;
   }
-  /* line 209, ../scss/_challenge-detail.scss */
+  /* line 211, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd {
     border-bottom: 4px solid transparent;
     margin-left: 0;
     margin-right: 1rem;
   }
-  /* line 214, ../scss/_challenge-detail.scss */
+  /* line 216, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd a {
     padding: 0 10px;
   }
-  /* line 218, ../scss/_challenge-detail.scss */
+  /* line 220, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd.active, .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd:hover {
     border-bottom: 4px solid #018ad2;
   }
-  /* line 221, ../scss/_challenge-detail.scss */
+  /* line 223, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd.active a, .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd:hover a {
     border-radius: 0;
     background-color: inherit;
     color: #018ad2;
   }
 }
-/* line 239, ../scss/_challenge-detail.scss */
+/* line 241, ../scss/_challenge-detail.scss */
 #chd-details-modal {
   padding: 1.25rem;
   padding-top: 0;
 }
 @media only screen and (max-width: 40em) {
-  /* line 239, ../scss/_challenge-detail.scss */
+  /* line 241, ../scss/_challenge-detail.scss */
   #chd-details-modal {
     min-height: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 239, ../scss/_challenge-detail.scss */
+  /* line 241, ../scss/_challenge-detail.scss */
   #chd-details-modal {
     width: 31.25rem;
   }
 }
-/* line 251, ../scss/_challenge-detail.scss */
+/* line 253, ../scss/_challenge-detail.scss */
 #chd-details-modal .blue-square-icon {
   display: inline-block;
   text-align: center;
@@ -11690,7 +11690,7 @@ th.hide-for-touch {
   cursor: pointer;
 }
 @media only screen and (max-width: 40em) {
-  /* line 251, ../scss/_challenge-detail.scss */
+  /* line 253, ../scss/_challenge-detail.scss */
   #chd-details-modal .blue-square-icon {
     width: 3.75rem;
     height: 3.75rem;
@@ -11699,7 +11699,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 251, ../scss/_challenge-detail.scss */
+  /* line 253, ../scss/_challenge-detail.scss */
   #chd-details-modal .blue-square-icon {
     width: 5rem;
     height: 5rem;
@@ -11707,17 +11707,17 @@ th.hide-for-touch {
     font-size: 2rem;
   }
 }
-/* line 274, ../scss/_challenge-detail.scss */
+/* line 276, ../scss/_challenge-detail.scss */
 #chd-details-modal h3 {
   font-weight: bold;
   border-bottom: 1px solid #bbb;
   padding: 1.25rem 0 0.1875rem 0;
 }
-/* line 280, ../scss/_challenge-detail.scss */
+/* line 282, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback {
   position: relative;
 }
-/* line 283, ../scss/_challenge-detail.scss */
+/* line 285, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .players {
   color: #888;
   font-weight: bold;
@@ -11725,7 +11725,7 @@ th.hide-for-touch {
   top: 0;
   left: 0;
 }
-/* line 291, ../scss/_challenge-detail.scss */
+/* line 293, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .average {
   color: #888;
   font-weight: bold;
@@ -11733,36 +11733,36 @@ th.hide-for-touch {
   top: 0;
   right: 0;
 }
-/* line 299, ../scss/_challenge-detail.scss */
+/* line 301, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars {
   padding-top: 2.5rem;
   text-align: center;
 }
-/* line 303, ../scss/_challenge-detail.scss */
+/* line 305, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars i {
   color: #f4811f;
 }
 @media only screen and (max-width: 40em) {
-  /* line 303, ../scss/_challenge-detail.scss */
+  /* line 305, ../scss/_challenge-detail.scss */
   #chd-details-modal .feedback .stars i {
     font-size: 2.2rem;
     padding: 0.375rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 303, ../scss/_challenge-detail.scss */
+  /* line 305, ../scss/_challenge-detail.scss */
   #chd-details-modal .feedback .stars i {
     font-size: 2.5rem;
     padding: 0.5rem;
   }
 }
-/* line 316, ../scss/_challenge-detail.scss */
+/* line 318, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars i:hover {
   cursor: pointer;
   color: #d2660a;
 }
 
-/* line 332, ../scss/_challenge-detail.scss */
+/* line 334, ../scss/_challenge-detail.scss */
 .fc-dropdown {
   min-width: 0;
   max-width: none;
@@ -11773,14 +11773,14 @@ th.hide-for-touch {
   padding: 0.625rem 1.25rem;
   margin-top: 0.5rem;
 }
-/* line 342, ../scss/_challenge-detail.scss */
+/* line 344, ../scss/_challenge-detail.scss */
 .fc-dropdown:before {
   top: -0.875rem;
   left: 0.625rem;
   border: 0.5rem solid transparent;
   border-bottom: 0.5rem solid #333333;
 }
-/* line 350, ../scss/_challenge-detail.scss */
+/* line 352, ../scss/_challenge-detail.scss */
 .fc-dropdown:after {
   display: none;
 }
