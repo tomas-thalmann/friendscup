@@ -97,6 +97,26 @@ $(document).ready(function () {
         });
     }
     
+    // ----------------------------------
+    // Challenge Detail Modal Rating
+    // ----------------------------------
+    
+    $('#chd-details-modal .feedback .stars i').hover(function () {
+        $(this).prevAll('i').removeClass();
+        $(this).removeClass();
+        $(this).nextAll('i').removeClass();
+        
+        $(this).prevAll('i').addClass('fa fa-star');
+        $(this).addClass('fa fa-star');
+        $(this).nextAll('i').addClass('fa fa-star-o');
+    }, function () {
+        $('#chd-details-modal .feedback .stars').replaceWith(currentStars.clone(true));
+    });
+    
+    // because it clones the event-handlers too,
+    // this line must be unter the hover handler!
+    var currentStars = $('#chd-details-modal .feedback .stars').clone(true);
+    
     // ---------------------------
     // Media Queries
     // ---------------------------

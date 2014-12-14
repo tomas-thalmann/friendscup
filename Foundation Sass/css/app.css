@@ -11759,10 +11759,9 @@ th.hide-for-touch {
 /* line 318, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars i:hover {
   cursor: pointer;
-  color: #d2660a;
 }
 
-/* line 334, ../scss/_challenge-detail.scss */
+/* line 333, ../scss/_challenge-detail.scss */
 .fc-dropdown {
   min-width: 0;
   max-width: none;
@@ -11773,14 +11772,14 @@ th.hide-for-touch {
   padding: 0.625rem 1.25rem;
   margin-top: 0.5rem;
 }
-/* line 344, ../scss/_challenge-detail.scss */
+/* line 343, ../scss/_challenge-detail.scss */
 .fc-dropdown:before {
   top: -0.875rem;
   left: 0.625rem;
   border: 0.5rem solid transparent;
   border-bottom: 0.5rem solid #333333;
 }
-/* line 352, ../scss/_challenge-detail.scss */
+/* line 351, ../scss/_challenge-detail.scss */
 .fc-dropdown:after {
   display: none;
 }
