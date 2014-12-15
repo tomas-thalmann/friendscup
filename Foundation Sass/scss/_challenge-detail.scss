@@ -112,13 +112,16 @@
 @media #{$medium-up} {
     .chd-header-panel-blue {
         margin: 0;
+        padding-top: 0;
+        padding-bottom: 0;
         
         .row {
             .columns {
                 position: relative;
                 
                 .chd-progress {
-                    margin-top: $column-gutter / 2;
+                    margin-top: $column-gutter / 1.5;
+                    margin-bottom: $column-gutter / 1.5;
                     margin-left: ($column-gutter / 2) + rem-calc(250);
                     
                     .chd-progress-circle {
@@ -158,6 +161,7 @@
     }
     
     .chd-header-panel-info {
+        padding-top: rem-calc(10);
         padding-bottom: 0;
         border-bottom: 4px solid scale-color($fc-primary-bg, $lightness: -10%);
         
@@ -172,10 +176,6 @@
                 .chd-categories {
                     padding-left: $column-gutter + rem-calc(250);
                     line-height: 40px;
-                    
-                    .label {
-                        
-                    }
                     
                     .label:first-child {
                         margin-left: 10px;
@@ -228,6 +228,41 @@
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+
+// remove gap on the left for tablets
+@media #{$medium-only} {
+    .chd-header-panel-blue {
+        .row {
+            .columns {
+                .chd-progress {
+                    margin-left: rem-calc(250);
+                }
+                
+                .chd-img-div {
+                    left: 0;
+                }
+            }
+        }
+    }
+    
+    .chd-header-panel-info {
+        .row {
+            .columns {
+                .chd-name {
+                    padding-left: ($column-gutter / 2) + rem-calc(250);
+                }
+                
+                .chd-categories {
+                    padding-left: ($column-gutter / 2) + rem-calc(250);
+                }
+                
+                .chd-show-details {
+                    padding-left: ($column-gutter / 2) + rem-calc(250);
                 }
             }
         }
