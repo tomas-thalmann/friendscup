@@ -15,34 +15,31 @@
                 padding: 0;
                 
                 .chd-progress {
-                    margin: ($column-gutter / 2);
+                    padding: ($column-gutter / 2);
                     
                     .chd-progress-circle {
                         display: inline-block;
                         border-radius: 50%;
-                        width: 30px;
-                        height: 30px;
-                        line-height: 30px;
+                        width: rem-calc(30);
+                        height: rem-calc(30);
+                        line-height: rem-calc(30);
                         background-color: #fff;
                         color: $fc-primary;
                         text-align: center;
-                        margin: 0 10px 0 0;
+                        margin: rem-calc(0 10 0 0);
                         font-weight: bold;
                     }
                     
                     .fa {
-                        display: none;
-                    }
-                    
-                    a {
-                        @include button($bg:$alert-color,$full-width:true);
-                        margin: ($column-gutter / 2) 0 0 0;
+                        float: right;
+                        line-height: rem-calc(30);
                     }
                 }
                 
                 .chd-img-div {
                     img {
-                        
+                        width: 100%;
+                        height: auto;
                     }
                 }
             }
@@ -55,19 +52,19 @@
         .row {
             .columns {                
                 .chd-name {
-                    line-height: 70px;
+                    line-height: rem-calc(70);
                     white-space: nowrap;
                 }
                 
                 .chd-categories {
-                    line-height: 40px;
+                    line-height: rem-calc(40);
                     
                     .label {
                         
                     }
                     
                     .label:first-child {
-                        margin-left: 10px;
+                        margin-left: rem-calc(10);
                     }
                 }
                 
@@ -120,25 +117,26 @@
                 position: relative;
                 
                 .chd-progress {
-                    margin-top: $column-gutter / 1.5;
-                    margin-bottom: $column-gutter / 1.5;
-                    margin-left: $column-gutter + rem-calc(250);
+                    padding-top: $column-gutter / 1.5;
+                    padding-bottom: $column-gutter / 1.5;
+                    padding-left: $column-gutter;
+                    margin-left: rem-calc(250);
                     
                     .chd-progress-circle {
                         display: inline-block;
                         border-radius: 50%;
-                        width: 30px;
-                        height: 30px;
-                        line-height: 30px;
+                        width: rem-calc(30);
+                        height: rem-calc(30);
+                        line-height: rem-calc(30);
                         background-color: #fff;
                         color: $fc-primary;
                         text-align: center;
-                        margin: 0 10px 0 0;
+                        margin: rem-calc(0 10 0 0);
                         font-weight: bold;
                     }
                     
                     .fa {
-                        padding: 0 10px;
+                        padding: rem-calc(0 10);
                     }
                 }
                 
@@ -148,8 +146,8 @@
                     left: $column-gutter / 2;
                     
                     img {
-                        width: 250px;
-                        height: 250px;
+                        width: rem-calc(250);
+                        height: rem-calc(250);
                     }
                 }
             }
@@ -165,16 +163,16 @@
             .columns {
                 .chd-name {
                     padding-left: $column-gutter + rem-calc(250);
-                    line-height: 70px;
+                    line-height: rem-calc(70);
                     white-space: nowrap;
                 }
                 
                 .chd-categories {
                     padding-left: $column-gutter + rem-calc(250);
-                    line-height: 40px;
+                    line-height: rem-calc(40);
                     
                     .label:first-child {
-                        margin-left: 10px;
+                        margin-left: rem-calc(10);
                     }
                 }
                 
@@ -183,7 +181,7 @@
                 }
                 
                 .chd-magellan {
-                    margin-top: 50px;
+                    margin-top: rem-calc(50px);
                     background-color: transparent;
                     
                     &.fixed {
@@ -201,7 +199,7 @@
                     dl.sub-nav {
                         padding: 0;
                         margin: 0;
-                        line-height: 30px;
+                        line-height: rem-calc(30);
                         margin-bottom: -4px;
                         
                         dd {
@@ -210,7 +208,7 @@
                             margin-right: 1rem;
                             
                             a {
-                                padding: 0 10px
+                                padding: rem-calc(0 10);
                             }
                             
                             &.active, &:hover {
@@ -236,7 +234,7 @@
         .row {
             .columns {
                 .chd-progress {
-                    margin-left: ($column-gutter / 2) + rem-calc(250);
+                    padding-left: $column-gutter / 2;
                 }
                 
                 .chd-img-div {
