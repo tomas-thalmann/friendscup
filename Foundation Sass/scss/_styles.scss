@@ -432,13 +432,15 @@ $panel-arrow-size-medium-up: rem-calc(40);
             border: $panel-arrow-size-small solid transparent;
             border-top: $panel-arrow-size-small solid $fc-primary-bg;
             margin-left: -$panel-arrow-size-small;
-            margin-bottom: -($panel-arrow-size-small * 2);
+            margin-bottom: -($panel-arrow-size-small * 2) + rem-calc(2);
+            // +2px -> fix gap on higher font-size/zoom
         }
         @media #{$medium-up} {
             border: $panel-arrow-size-medium-up solid transparent;
             border-top: $panel-arrow-size-medium-up solid $fc-primary-bg;
             margin-left: -$panel-arrow-size-medium-up;
-            margin-bottom: -($panel-arrow-size-medium-up * 2);
+            margin-bottom: -($panel-arrow-size-medium-up * 2) + rem-calc(2);
+            // +2px -> fix gap on higher font-size/zoom
         }
     }
 }
