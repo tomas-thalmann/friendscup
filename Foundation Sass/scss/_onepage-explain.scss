@@ -1,0 +1,66 @@
+@import "compass";
+@import "colors"; // import Standard Colors
+
+// ----------------------------------
+// Step Digit
+// ----------------------------------
+
+@media #{$small-only} {
+    .op-explain-section {
+        // nothing to do here on mobile
+        
+        .op-explain-v-center {
+            
+            // illustration images
+            img {
+                padding: rem-calc(0 20);
+            }
+            
+            .op-explain-step {
+                width: rem-calc(50);
+                height: rem-calc(50);
+                line-height: rem-calc(50);
+                text-align: center;
+                margin: rem-calc(-20) auto rem-calc(15) auto;
+                background-color: $fc-primary;
+                border-radius: 50%;
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media #{$medium-up} {
+    .op-explain-section {
+        display: flex;
+        align-items: stretch;
+
+        .op-explain-v-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .op-explain-step {
+                width: rem-calc(50);
+                height: rem-calc(50);
+                line-height: rem-calc(50);
+                text-align: center;
+                background-color: $fc-primary;
+                border-radius: 50%;
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

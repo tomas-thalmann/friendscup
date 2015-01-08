@@ -6488,7 +6488,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Lato", Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
-  color: #222222;
+  color: #018ad2;
   text-rendering: optimizeLegibility;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -6497,7 +6497,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 262, ../bower_components/foundation/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: #6f6f6f;
+  color: #3ebcfe;
   line-height: 0;
 }
 
@@ -6534,7 +6534,7 @@ h6 {
 /* line 276, ../bower_components/foundation/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #3ebcfe;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem;
@@ -6691,7 +6691,7 @@ blockquote {
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
-  color: #555555;
+  color: #1aaffe;
 }
 /* line 406, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite:before {
@@ -6700,14 +6700,14 @@ blockquote cite:before {
 /* line 411, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
-  color: #555555;
+  color: #1aaffe;
 }
 
 /* line 417, ../bower_components/foundation/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f;
+  color: #3ebcfe;
 }
 
 /* Microformats */
@@ -11919,4 +11919,64 @@ th.hide-for-touch {
 /* line 380, ../scss/_challenge-detail.scss */
 .fc-dropdown:after {
   display: none;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 15, ../scss/_onepage-explain.scss */
+  .op-explain-section .op-explain-v-center img {
+    padding: 0 1.25rem;
+  }
+  /* line 19, ../scss/_onepage-explain.scss */
+  .op-explain-section .op-explain-v-center .op-explain-step {
+    width: 3.125rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+    margin: -1.25rem auto 0.9375rem auto;
+    background-color: #018ad2;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 36, ../scss/_onepage-explain.scss */
+  .op-explain-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  /* line 40, ../scss/_onepage-explain.scss */
+  .op-explain-section .op-explain-v-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* line 45, ../scss/_onepage-explain.scss */
+  .op-explain-section .op-explain-v-center .op-explain-step {
+    width: 3.125rem;
+    height: 3.125rem;
+    line-height: 3.125rem;
+    text-align: center;
+    background-color: #018ad2;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
 }
