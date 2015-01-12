@@ -316,14 +316,14 @@
     // --- START method to center vertically ---
     @media #{$medium-up} {
         .row {
-            display: flex;
-            align-items: stretch;
+            @include display-flex();
+            @include align-items(stretch);
         }
 
         .social-links, .logo-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include display-flex();
+            @include align-items(center);
+            @include justify-content(center);
 
             .flex-center {
                 width: 100%;

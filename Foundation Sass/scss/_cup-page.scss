@@ -41,14 +41,14 @@
     }
     
     .cup-header-panel > .row {
-        display: flex;
-        align-items: stretch;
+        @include display-flex();
+        @include align-items(stretch);
     }
     
     .cup-header-left {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include display-flex();
+        @include align-items(center);
+        @include justify-content(center);
     }
     
     .flex-center {

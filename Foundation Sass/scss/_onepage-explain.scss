@@ -34,13 +34,18 @@
 
 @media #{$medium-up} {
     .op-explain-section {
-        display: flex;
-        align-items: stretch;
+        @include display-flex();
+        @include align-items(stretch);
 
         .op-explain-v-center {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include display-flex();
+            @include align-items(center);
+            @include justify-content(center);
+            
+            // illustration images
+            img {
+                width: 100%;
+            }
 
             .op-explain-step {
                 width: rem-calc(50);
