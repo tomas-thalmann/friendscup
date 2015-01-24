@@ -9370,7 +9370,7 @@ th.hide-for-touch {
 
 /* line 464, ../scss/_styles.scss */
 .bg-image-panel, .bg-image-arrow-panel {
-  background-image: url("../img/bg-image-panel.png");
+  background: url("../img/bg-image-panel.png") no-repeat center center;
   -moz-background-size: cover;
   -o-background-size: cover;
   -webkit-background-size: cover;
@@ -11920,13 +11920,16 @@ th.hide-for-touch {
   }
   /* line 210, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd a {
-    padding: 0 0.625rem;
+    padding: 0 0.625rem 0.25rem 0.625rem;
+    margin-bottom: -0.25rem;
+    display: inline-block;
+    line-height: 1.875rem;
   }
-  /* line 214, ../scss/_challenge-detail.scss */
+  /* line 217, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd.active, .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd:hover {
     border-bottom: 4px solid #018ad2;
   }
-  /* line 217, ../scss/_challenge-detail.scss */
+  /* line 220, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd.active a, .chd-header-panel-info .row .columns .chd-magellan dl.sub-nav dd:hover a {
     border-radius: 0;
     background-color: inherit;
@@ -11934,46 +11937,46 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  /* line 236, ../scss/_challenge-detail.scss */
+  /* line 239, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-progress {
     padding-left: 0.9375rem;
   }
-  /* line 240, ../scss/_challenge-detail.scss */
+  /* line 243, ../scss/_challenge-detail.scss */
   .chd-header-panel-blue .row .columns .chd-img-div {
     left: 0;
   }
 
-  /* line 250, ../scss/_challenge-detail.scss */
+  /* line 253, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-name {
     padding-left: 16.5625rem;
   }
-  /* line 254, ../scss/_challenge-detail.scss */
+  /* line 257, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-categories {
     padding-left: 16.5625rem;
   }
-  /* line 258, ../scss/_challenge-detail.scss */
+  /* line 261, ../scss/_challenge-detail.scss */
   .chd-header-panel-info .row .columns .chd-show-details {
     padding-left: 16.5625rem;
   }
 }
-/* line 270, ../scss/_challenge-detail.scss */
+/* line 273, ../scss/_challenge-detail.scss */
 #chd-details-modal {
   padding: 1.25rem;
   padding-top: 0;
 }
 @media only screen and (max-width: 40em) {
-  /* line 270, ../scss/_challenge-detail.scss */
+  /* line 273, ../scss/_challenge-detail.scss */
   #chd-details-modal {
     min-height: 0;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 270, ../scss/_challenge-detail.scss */
+  /* line 273, ../scss/_challenge-detail.scss */
   #chd-details-modal {
     width: 31.25rem;
   }
 }
-/* line 282, ../scss/_challenge-detail.scss */
+/* line 285, ../scss/_challenge-detail.scss */
 #chd-details-modal .blue-square-icon {
   display: inline-block;
   text-align: center;
@@ -11983,7 +11986,7 @@ th.hide-for-touch {
   cursor: pointer;
 }
 @media only screen and (max-width: 40em) {
-  /* line 282, ../scss/_challenge-detail.scss */
+  /* line 285, ../scss/_challenge-detail.scss */
   #chd-details-modal .blue-square-icon {
     width: 3.75rem;
     height: 3.75rem;
@@ -11992,7 +11995,7 @@ th.hide-for-touch {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 282, ../scss/_challenge-detail.scss */
+  /* line 285, ../scss/_challenge-detail.scss */
   #chd-details-modal .blue-square-icon {
     width: 5rem;
     height: 5rem;
@@ -12000,17 +12003,17 @@ th.hide-for-touch {
     font-size: 2rem;
   }
 }
-/* line 305, ../scss/_challenge-detail.scss */
+/* line 308, ../scss/_challenge-detail.scss */
 #chd-details-modal h3 {
   font-weight: bold;
   border-bottom: 1px solid #bbb;
   padding: 1.25rem 0 0.1875rem 0;
 }
-/* line 311, ../scss/_challenge-detail.scss */
+/* line 314, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback {
   position: relative;
 }
-/* line 314, ../scss/_challenge-detail.scss */
+/* line 317, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .players {
   color: #888;
   font-weight: bold;
@@ -12018,7 +12021,7 @@ th.hide-for-touch {
   top: 0;
   left: 0;
 }
-/* line 322, ../scss/_challenge-detail.scss */
+/* line 325, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .average {
   color: #888;
   font-weight: bold;
@@ -12026,35 +12029,35 @@ th.hide-for-touch {
   top: 0;
   right: 0;
 }
-/* line 330, ../scss/_challenge-detail.scss */
+/* line 333, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars {
   padding-top: 2.5rem;
   text-align: center;
 }
-/* line 334, ../scss/_challenge-detail.scss */
+/* line 337, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars i {
   color: #f4811f;
 }
 @media only screen and (max-width: 40em) {
-  /* line 334, ../scss/_challenge-detail.scss */
+  /* line 337, ../scss/_challenge-detail.scss */
   #chd-details-modal .feedback .stars i {
     font-size: 2.2rem;
     padding: 0.375rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 334, ../scss/_challenge-detail.scss */
+  /* line 337, ../scss/_challenge-detail.scss */
   #chd-details-modal .feedback .stars i {
     font-size: 2.5rem;
     padding: 0.5rem;
   }
 }
-/* line 347, ../scss/_challenge-detail.scss */
+/* line 350, ../scss/_challenge-detail.scss */
 #chd-details-modal .feedback .stars i:hover {
   cursor: pointer;
 }
 
-/* line 362, ../scss/_challenge-detail.scss */
+/* line 365, ../scss/_challenge-detail.scss */
 .fc-dropdown {
   min-width: 0;
   max-width: none;
@@ -12065,14 +12068,14 @@ th.hide-for-touch {
   padding: 0.625rem 1.25rem;
   margin-top: 0.5rem;
 }
-/* line 372, ../scss/_challenge-detail.scss */
+/* line 375, ../scss/_challenge-detail.scss */
 .fc-dropdown:before {
   top: -0.875rem;
   left: 0.625rem;
   border: 0.5rem solid transparent;
   border-bottom: 0.5rem solid #333333;
 }
-/* line 380, ../scss/_challenge-detail.scss */
+/* line 383, ../scss/_challenge-detail.scss */
 .fc-dropdown:after {
   display: none;
 }

@@ -109,7 +109,7 @@
     // hover overlay
     
     .top-bar-section > ul > li:not(.login-button-not-mobile) > a {
-        height: 70px;
+        height: $topbar-height;
         @include box-sizing(border-box);
         border-bottom: solid 0px $fc-primary-dark;
         @include transition(border-bottom 0.2s ease, color 0.2s ease);
@@ -123,7 +123,7 @@
     // active element
     
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-        height: 70px;
+        height: $topbar-height;
         @include box-sizing(border-box);
         border-bottom: solid 5px $fc-primary-dark;
     }
@@ -463,7 +463,7 @@ $panel-arrow-size-medium-up: rem-calc(40);
 
 .bg-image-panel {
     @extend .bg-light-panel;
-    background-image: url('../img/bg-image-panel.png');
+    background: url('../img/bg-image-panel.png') no-repeat center center;
     @include background-size(cover);
 
     // colorize all sorts of text to white
