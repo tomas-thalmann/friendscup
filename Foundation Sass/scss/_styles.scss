@@ -183,8 +183,8 @@
     // dropdown items
     
     .top-bar-section .dropdown li a {
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: rem-calc(12);
+        padding-bottom: rem-calc(12);
     }
     
     // divider
@@ -216,7 +216,7 @@
     // basic dropdown item styling
     
     .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-        line-height: 50px;
+        line-height: rem-calc(50);
         background: $fc-primary-dark;
         text-align: right;
         @include transition(background 0.2s ease);
@@ -231,7 +231,7 @@
     
     .top-bar-section .dropdown label {
         text-align: right;
-        padding: 8px $topbar-link-padding 8px;
+        padding: rem-calc(8) $topbar-link-padding;
     }
 }
 
@@ -359,7 +359,7 @@
             height: auto;
             display: block;
             margin: 0 auto;
-            max-width: 200px;
+            max-width: rem-calc(200);
         }
     }
     

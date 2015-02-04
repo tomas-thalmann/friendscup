@@ -9089,8 +9089,8 @@ th.hide-for-touch {
 @media only screen and (max-width: 47.5em) {
   /* line 185, ../scss/_styles.scss */
   .top-bar-section .dropdown li a {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   /* line 192, ../scss/_styles.scss */
@@ -9122,7 +9122,7 @@ th.hide-for-touch {
 
   /* line 218, ../scss/_styles.scss */
   .top-bar-section .dropdown li:not(.has-form):not(.active) > a:not(.button) {
-    line-height: 50px;
+    line-height: 3.125rem;
     background: #10325c;
     text-align: right;
     -moz-transition: background 0.2s ease;
@@ -9140,7 +9140,7 @@ th.hide-for-touch {
   /* line 232, ../scss/_styles.scss */
   .top-bar-section .dropdown label {
     text-align: right;
-    padding: 8px 23.33333px 8px;
+    padding: 0.5rem 23.33333px;
   }
 }
 /* line 244, ../scss/_styles.scss */
@@ -9276,7 +9276,7 @@ th.hide-for-touch {
   height: auto;
   display: block;
   margin: 0 auto;
-  max-width: 200px;
+  max-width: 12.5rem;
 }
 /* line 366, ../scss/_styles.scss */
 .footer .footer-header {
@@ -11581,9 +11581,9 @@ th.hide-for-touch {
   /* line 58, ../scss/_cup-page.scss */
   .cup-header-left .flex-center > .cup-name {
     background-color: #f4811f;
-    padding: 0 20px;
-    line-height: 70px;
-    margin: 0.9375rem 35px 0.9375rem 0;
+    padding: 0 1.25rem;
+    line-height: 4.375rem;
+    margin: 0.9375rem 2.1875rem 0.9375rem 0;
     position: relative;
   }
 
@@ -11592,11 +11592,11 @@ th.hide-for-touch {
     content: "";
     display: block;
     position: absolute;
-    right: -70px;
+    right: -4.375rem;
     top: 0;
     width: 0;
-    border: 35px solid transparent;
-    border-left: 35px solid #f4811f;
+    border: 2.1875rem solid transparent;
+    border-left: 2.1875rem solid #f4811f;
   }
 
   /* line 78, ../scss/_cup-page.scss */
@@ -11604,17 +11604,17 @@ th.hide-for-touch {
     content: "";
     display: block;
     position: absolute;
-    right: -69px;
+    right: -4.3125rem;
     top: 0;
     width: 0;
-    border: 35px solid transparent;
-    border-left: 35px solid #f4811f;
+    border: 2.1875rem solid transparent;
+    border-left: 2.1875rem solid #f4811f;
   }
 
   /* line 89, ../scss/_cup-page.scss */
   .cup-header-left .flex-center > .cup-name > h3 {
     padding: 0;
-    line-height: 70px;
+    line-height: 4.375rem;
     text-align: center;
     color: #fff;
     white-space: nowrap;
@@ -11626,7 +11626,7 @@ th.hide-for-touch {
   .cup-header-left .flex-center > p {
     text-align: center;
     color: #fff;
-    margin: 0.9375rem 35px 0.9375rem 0;
+    margin: 0.9375rem 2.1875rem 0.9375rem 0;
   }
 
   /* line 105, ../scss/_cup-page.scss */
@@ -11707,7 +11707,7 @@ th.hide-for-touch {
   .cup-header-admin {
     display: block;
     text-align: center;
-    margin: 0.9375rem 35px 0.9375rem 0;
+    margin: 0.9375rem 2.1875rem 0.9375rem 0;
   }
 
   /* line 172, ../scss/_cup-page.scss */
@@ -11717,8 +11717,8 @@ th.hide-for-touch {
 
   /* line 176, ../scss/_cup-page.scss */
   .cup-header-admin img {
-    height: 70px;
-    width: 70px;
+    height: 4.375rem;
+    width: 4.375rem;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;

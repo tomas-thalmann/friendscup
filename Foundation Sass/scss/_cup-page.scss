@@ -57,9 +57,9 @@
     
     .cup-header-left .flex-center > .cup-name {
         background-color: $fc-orange;
-        padding: 0 20px;
-        line-height: 70px;
-        margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
+        padding: rem-calc(0 20);
+        line-height: rem-calc(70);
+        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
         position: relative;
     }
     
@@ -67,11 +67,11 @@
         content: "";
         display: block;
         position: absolute;
-        right: -70px;
+        right: rem-calc(-70);
         top: 0;
         width: 0;
-        border: 35px solid transparent;
-        border-left: 35px solid $fc-orange;
+        border: rem-calc(35) solid transparent;
+        border-left: rem-calc(35) solid $fc-orange;
     }
     
     // fix gap on higher zoom/system-font-size
@@ -79,16 +79,16 @@
         content: "";
         display: block;
         position: absolute;
-        right: -69px;
+        right: rem-calc(-69);
         top: 0;
         width: 0;
-        border: 35px solid transparent;
-        border-left: 35px solid $fc-orange;
+        border: rem-calc(35) solid transparent;
+        border-left: rem-calc(35) solid $fc-orange;
     }
     
     .cup-header-left .flex-center > .cup-name > h3 {
         padding: 0;
-        line-height: 70px;
+        line-height: rem-calc(70);
         text-align: center;
         color: #fff;
         white-space: nowrap;
@@ -99,7 +99,7 @@
     .cup-header-left .flex-center > p {
         text-align: center;
         color: #fff;
-        margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
+        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
     }
 
     .cup-header-right {
@@ -166,7 +166,7 @@
     .cup-header-admin {
         display: block; // override 'display: none'
         text-align: center;
-        margin: ($column-gutter / 2) 35px ($column-gutter / 2) 0;
+        margin: ($column-gutter / 2) rem-calc(35) ($column-gutter / 2) 0;
     }
     
     .cup-header-left hr {
@@ -174,8 +174,8 @@
     }
     
     .cup-header-admin img {
-        height: 70px;
-        width: 70px;
+        height: rem-calc(70);
+        width: rem-calc(70);
         @include border-radius(50%);
     }
 
@@ -185,7 +185,7 @@
     }
 
     .cup-header-admin p strong {
-        margin: 0 rem-calc(10);
+        margin: rem-calc(0 10);
     }
 
     .cup-header-admin p span {
