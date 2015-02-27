@@ -513,94 +513,95 @@ $panel-arrow-size-medium-up: rem-calc(40);
 // ----------------------------------
 
 @mixin generate-big-button($height, $media-query) {
-    .big-button {
-        position: relative;
-        display: block;
-        height: $height;
-        width: 100%;
-        overflow: hidden;
-        background-color: $fc-primary;
-        @include transition(background-color 0.3s);
+    position: relative;
+    display: block;
+    height: $height;
+    width: 100%;
+    overflow: hidden;
+    background-color: $fc-primary;
+    @include transition(background-color 0.3s);
 
-        img {
-            position: absolute;
-            height: $height + ($height / 4);
-            width: auto;
-            max-width: none; // image sizes are often higher than container
-            top: -($height / 8);
-            right: -($height / 8);
-            @include opacity(0.1);
-            @include transition(right 0.3s);
-        }
+    img {
+        position: absolute;
+        height: $height + ($height / 4);
+        width: auto;
+        max-width: none; // image sizes are often higher than container
+        top: -($height / 8);
+        right: -($height / 8);
+        @include opacity(0.1);
+        @include transition(right 0.3s);
+    }
 
-        h2 {
+    h2 {
+        color: #fff;
+        line-height: $height;
+        padding: 0 rem-calc(30);
+        margin: 0;
+        white-space: nowrap;
+        @include transition(line-height 0.3s);
+    }
+
+    @if $media-query == 'medium-up' {
+        p {
             color: #fff;
-            line-height: $height;
+            position: absolute;
+            top: ($height / 4) * 3;
             padding: 0 rem-calc(30);
-            margin: 0;
-            white-space: nowrap;
-            @include transition(line-height 0.3s);
+            @include opacity(0);
+            @include transition(opacity 0.3s, top 0.3s);
+        }
+    } @else if $media-query == 'small-only' {
+        p {
+            @include opacity(0);
+        }
+    }
+
+    @if $media-query == 'medium-up' {
+        &:hover {
+            background-color: scale-color($fc-primary, $lightness: 10%);;
+
+            img {
+                right: -($height / 4);
+            }
+
+            h2 {
+                line-height: ($height / 4) * 2.8;
+            }
+
+            p {
+                @include opacity(1);
+                top: $height / 2;
+                @include transition-delay(0.06s);
+            }
         }
 
-        @if $media-query == 'medium-up' {
+        // callback for touch based devices
+        &.touch {
+            h2 {
+                line-height: ($height / 4) * 2.8;
+            }
+
             p {
-                color: #fff;
-                position: absolute;
-                top: rem-calc(150);
-                padding: 0 rem-calc(30);
-                @include opacity(0);
-                @include transition(opacity 0.3s, top 0.3s);
-            }
-        } @else if $media-query == 'small-only' {
-            p {
-                @include opacity(0);
-            }
-        }
-        
-        @if $media-query == 'medium-up' {
-            &:hover {
-                background-color: scale-color($fc-primary, $lightness: 10%);;
-
-                img {
-                    right: -($height / 4);
-                }
-
-                h2 {
-                    line-height: rem-calc(140);
-                }
-
-                p {
-                    @include opacity(1);
-                    top: rem-calc(105);
-                    @include transition-delay(0.06s);
-                }
-            }
-            
-            // callback for touch based devices
-            &.touch {
-                h2 {
-                    line-height: rem-calc(140);
-                }
-
-                p {
-                    @include opacity(1);
-                    top: rem-calc(105);
-                }
+                @include opacity(1);
+                top: $height / 2;
             }
         }
     }
 }
 
+// Overall Big Button
+
 @media #{$small-only} {
-    @include generate-big-button(rem-calc(100), 'small-only');
+    .big-button {
+        @include generate-big-button(rem-calc(100), 'small-only');
+    }
 }
 
 @media #{$medium-up} {
-    @include generate-big-button(rem-calc(200), 'medium-up');
+    .big-button {
+        @include generate-big-button(rem-calc(200), 'medium-up');
+    }
 }
-
-
-
 
 
 

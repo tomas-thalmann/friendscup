@@ -1,0 +1,483 @@
+@import "compass";
+@import "colors"; // import Standard Colors
+
+// ---------------------------------------
+// OWL CAROUSEL PLUGIN CSS
+// ---------------------------------------
+// Core Owl Carousel CSS File
+// v1.3.3
+// rewritten in SCSS + Compass + rem-calc
+// ---------------------------------------
+
+.owl-carousel {
+	display: none; // display none until init
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+    
+    .owl-wrapper {
+        display: none;
+        position: relative;
+        @include translate3d(0px, 0px, 0px);
+        
+        // clearfix
+        &:after {
+            content: ".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+    }
+    
+    .owl-wrapper-outer {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        
+        &.autoHeight {
+            @include transition(height 500ms ease-in-out);
+        }
+    }
+    
+    .owl-item {
+        float: left;
+    }
+    
+    .owl-page,
+    .owl-buttons div {
+        cursor: pointer;
+    }
+    
+    // fix
+    .owl-wrapper,
+    .owl-item {
+        @include backface-visibility(hidden);
+        @include translate3d(0, 0, 0);
+    }
+}
+
+.owl-controls {
+    @include user-select(none);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// mouse grab icon
+.grabbing { 
+    cursor: url(../img/grabbing.png) 8 8, move;
+}
+
+// ---------------------------------------
+// OWL THEME PLUGIN CSS
+// ---------------------------------------
+// Owl Carousel Owl Demo Theme
+// v1.3.3
+// rewritten in SCSS + Compass + rem-calc
+// ---------------------------------------
+
+.owl-theme {
+    .owl-controls {
+        margin-top: rem-calc(10);
+        text-align: center;
+
+        // Styling Next and Prev buttons
+        .owl-buttons div {
+            color: #FFF;
+            display: inline-block;
+            zoom: 1;
+            *display: inline; // IE7 life-saver
+            margin: rem-calc(5);
+            padding: rem-calc(3 10);
+            font-size: rem-calc(12);
+            @include border-radius(30px);
+            background: $fc-primary;
+            //@include opacity(0.5);
+        }
+
+        // Clickable class fix problem with hover on touch devices
+        // Use it for non-touch hover action
+        &.clickable .owl-buttons div:hover {
+            //@include opacity(1);
+            text-decoration: none;
+        }
+        
+        // Styling Pagination
+        .owl-page {
+            display: inline-block;
+            zoom: 1;
+            *display: inline; // IE7 life-saver
+            
+            span {
+                display: block;
+                width: rem-calc(12);
+                height: rem-calc(12);
+                margin: rem-calc(5 7);
+                //@include opacity(0.5);
+                @include border-radius(50%);
+                background: $fc-primary;
+            }
+            
+            // If PaginationNumbers is true
+            span.owl-numbers {
+                height: auto;
+                width: auto;
+                color: #FFF;
+                padding: rem-calc(2 10);
+                font-size: rem-calc(12);
+                @include border-radius(30px);
+            }
+        }
+        
+        .owl-page.activeslider span,
+        &.clickable .owl-page:hover span {
+            //@include opacity(0.1);
+        }
+    }
+}
+
+// preloading images
+.owl-item.loading {
+	min-height: rem-calc(150);
+	background: url(AjaxLoader.gif) no-repeat center center
+}
+
+// ----------------------------------
+// CUSTOM OWL STYLE
+// ----------------------------------
+
+@media #{$small-up} {
+    #landing-page-slider {
+        .item  {
+            height: rem-calc(300);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            @include background-size(cover);
+        }
+        
+        // image positioning
+        .item-right {
+            background-position: 100% 50%;
+        }
+        .item-bottom {
+            background-position: 50% 100%;
+        }
+    }
+    
+    .owl-theme {
+        .owl-controls {
+            margin-top: rem-calc(-30);
+            z-index: 1001;
+            @include opacity (0.99);
+            
+            .owl-page {
+                span {
+                    background: rgba(255,255,255,0.3);
+                    
+                    &:hover {
+                        background: $fc-primary;   
+                    }
+                }
+            }
+            
+            .activeslider {
+                span {
+                    background: $fc-primary;
+                }
+            }
+        }
+    }
+}
+
+@media #{$medium-up} {
+    #landing-page-slider {
+        .item {
+            height: rem-calc(450);
+            
+            @media #{$portrait} {
+                height: rem-calc(600);
+            }
+        }
+    }
+}
+
+@media #{$large-up} { 
+    #landing-page-slider {
+        .item {
+            height: 65vh;
+        }
+    }
+}
+
+// ----------------------------------
+// CONTENT
+// ----------------------------------
+
+// animation for .explain-graphic-round
+@include keyframes (bounceOut) {
+    0% { @include box-shadow($fc-primary 0 0 0 4px); @include opacity (1); }
+    25% { @include box-shadow($fc-primary 0 0 0 1px); @include opacity (1); }
+    50% { @include box-shadow($fc-primary 0 0 0 7px); @include opacity (1); }
+    75% { @include box-shadow($fc-primary 0 0 0 4px); @include opacity (1); }
+    100% { @include box-shadow($fc-primary 0 0 0 5px); @include opacity (1); }
+}
+
+@media #{$small-up} {
+    .explain {
+        margin-top: rem-calc(40);
+        
+        .explain-graphic-round {
+            width: rem-calc(1000) / 3 - rem-calc(120);
+            height: rem-calc(1000) / 3 - rem-calc(120);
+            margin: 0 auto ($column-gutter / 2) auto;
+            background: $fc-primary;
+            @include border-radius(50%);
+            @include user-select(none);
+            @include box-shadow($fc-primary 0 0 0 5px);
+            
+            &:hover {
+                cursor: pointer;
+                @include animation(bounceOut 0.4s linear);
+            }
+        }
+        
+        h3 {
+            text-align: center;
+        }
+        
+        p {
+            text-align: center;
+        }
+    }
+    
+    .explain-info {
+        text-align: center;
+        
+        h3 {
+            margin-top: 0;
+            padding: 20px 0 0 0; // 20px = p standard margin-bottom
+        }
+        
+        img {
+            border: 1px solid $fc-primary;
+            margin-top: rem-calc(5);
+            height: rem-calc(100);  
+        }       
+    }
+    
+    .promo-vimeo-vid {
+        margin-top: rem-calc(20);
+        
+        position: relative;
+        padding-bottom: 43%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media #{$medium-up} {
+    // breakpoint, where the arrows will appear
+    @media screen and (min-width: 53.125em) {
+        .explain {
+            h3 {
+                padding: 0 ($column-gutter / 2);
+            }
+
+            p {
+                padding: 0 ($column-gutter / 2);
+            }
+        }
+        
+        .explain-arrow:before {
+            content: "\f054";
+            font-family: "FontAwesome"; 
+            display: block;
+            font-size: rem-calc(60); color: $fc-primary;
+            float: right; 
+            margin-right: -(rem-calc(38)); // 60/2 + 8
+            margin-top: ((rem-calc(1000)/3 - rem-calc(120))/2-(rem-calc(8))); // 8 = fa-reason
+        }
+    }
+    
+    .explain-info {
+        text-align: left;
+        
+        p {
+            margin-bottom: 0;   
+        }
+        
+        .video-promo-header {
+            text-align: right;
+        }
+        
+        img {
+            float: right;
+        }   
+    }
+}
+
+// ----------------------------------
+// Grid
+// ---------------------------------- 
+
+.lp-grid-row {
+    padding: 0 ($column-gutter / 2 - rem-calc(3));
+    
+    .lp-grid-item-container {
+        padding: rem-calc(3);
+        
+        .lp-grid-item {
+            display: block;
+            height: rem-calc(180);
+            overflow: hidden;
+            position: relative;
+            
+            @media #{$small-only} {
+                height: rem-calc(120);
+            }
+            
+            .lp-grid-bg-img {
+                height: inherit;
+                position: relative;
+                background-repeat: no-repeat;
+                background-position: center center;
+                @include background-size(cover);
+                @include transition(transform 0.6s ease);
+                
+                &:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background-color: #000;
+                    @include opacity(0);
+                    @include transition(opacity 0.4s ease);
+                }
+            }
+            
+            .lp-grid-item-name-container {
+                position: absolute;
+                bottom: rem-calc(-30);
+                left: 0;
+                right: 0;
+                background-color: $fc-primary;
+                @include opacity(0);
+                @include transition(opacity 0.2s ease, bottom 0.2s ease);
+                
+                @media #{$small-only} {
+                    bottom: 0;
+                    @include opacity(0.9);
+                }
+                
+                .lp-grid-item-name {
+                    position: relative;
+                    top: rem-calc(20);
+                    color: #fff;
+                    padding: rem-calc(0 12);
+                    line-height: rem-calc(40);
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    @include opacity(0);
+                    @include transition(opacity 0.3s ease, top 0.2s ease);
+                    
+                    @media #{$small-only} {
+                        top: 0;
+                        @include opacity(1);
+                    }
+                }
+            }
+        
+            .lp-grid-item-icon-container {
+                position: absolute;
+                top: rem-calc(-30);
+                right: rem-calc(20);
+                min-width: rem-calc(40);
+                text-align: center;
+                background-color: $fc-primary;
+                @include opacity(0);
+                @include transition(opacity 0.2s ease, top 0.2s ease);
+                
+                @media #{$small-only} {
+                    display: none;
+                }
+                
+                .lp-grid-item-icon {
+                    position: relative;
+                    bottom: rem-calc(20);
+                    color: #fff;
+                    padding: rem-calc(0 12);
+                    line-height: rem-calc(40);
+                    @include opacity(0);
+                    @include transition(opacity 0.3s ease, bottom 0.2s ease);
+                    
+                    @media #{$small-only} {
+                        display: none;
+                    }
+                }
+            }
+            
+            @media #{$medium-up} {
+                &:hover {
+                    .lp-grid-bg-img {
+                        @include scale(1.1);
+                        
+                        &:after {
+                            @include opacity(0.3);
+                        }
+                    }
+
+                    .lp-grid-item-name-container {
+                        bottom: 0;
+                        @include opacity(1);
+
+                        .lp-grid-item-name {
+                            top: 0;
+                            @include opacity(1);
+                            @include transition-delay(0.15s);
+                        }
+                    }
+
+                    .lp-grid-item-icon-container {
+                        top: 0;
+                        @include opacity(1);
+
+                        .lp-grid-item-icon {
+                            bottom: 0;
+                            @include opacity(1);
+                            @include transition-delay(0.15s);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Big-Button for Landing-Page Grid
+// (Mixin in _styles.scss)
+
+@media #{$small-only} {
+    .big-button-grid {
+        @include generate-big-button(rem-calc(100), 'small-only');
+    }
+}
+
+@media #{$medium-up} {
+    .big-button-grid {
+        @include generate-big-button(rem-calc(180), 'medium-up');
+    }
+}
+

@@ -117,6 +117,53 @@ $(document).ready(function () {
     // this line must be unter the hover handler!
     var currentStars = $('#chd-details-modal .feedback .stars').clone(true);
     
+    // ------------------------------
+    // Image Slider OwlSlider
+    // ------------------------------
+    
+    // check if the 'owlCarousel'-plugin is loaded
+    if (jQuery().owlCarousel) {
+        // enable the carousel
+        $('#landing-page-slider').owlCarousel({
+            navigation: false, // don't show next and prev buttons
+            slideSpeed: 500,
+            paginationSpeed: 400,
+            autoPlay: 10000,
+            singleItem: true
+        });
+    }
+    
+    // ------------------------------
+    // Landing Page Grid
+    // ------------------------------
+    
+    // check if the grid is available
+    if ($('.lp-grid-row').length) {
+        $('.lp-grid-item img').each(function (index) {
+            var gridImgSrc = $(this).attr('src');
+            $(this).after('<div class="lp-grid-bg-img" style="background-image: url(' + gridImgSrc + ');"></div>');
+            $(this).remove();
+        });
+    }
+    
+    // ------------------------------
+    // Smooth Scrolling
+    // ------------------------------
+    
+    // ----- Landing Page -----
+    
+    $('.smooth-video-scroll').bind('click', function (event) {
+        if ($(this).attr('href').toLowerCase().indexOf("#") >= 0) {
+            event.preventDefault();
+        }
+        setTimeout($.proxy(function () {
+            var $anchor = $(this);
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500, 'easeInOutExpo');
+        }, this), 50);
+    });
+    
     // ---------------------------
     // Media Queries
     // ---------------------------

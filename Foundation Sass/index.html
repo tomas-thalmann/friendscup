@@ -20,10 +20,10 @@
                 <input type="text" />
             </label>
             <label>Password
-                <input type="text" />
+                <input type="password" />
             </label>
         </form>
-        <a href="#" class="button small expand">Login</a>
+        <a href="cup-page.html" class="button small expand">Login</a>
         
         <a class="close-reveal-modal"><i class="fa fa-times"></i></a>
     </div>
@@ -42,7 +42,7 @@
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="cup-page.html">Cup Page</a></li>
                     <li class="has-dropdown">
-                        <a href="#">Infos und Tests</a>
+                        <a href="#">Entwicklung</a>
                         <ul class="dropdown">
                             <li><a href="all-elements.html">Foundation UI</a></li>
                             <li><label>Tests</label></li>
@@ -59,34 +59,220 @@
     
     <a href="#" class="button alert show-for-mobile-nav-only login-button-mobile" data-reveal-id="login-modal">Login</a>
     <!-- END - Navigation -->
-    
+
     <!-- BEGIN - Content -->
-    <div class="bg-image-panel">
+    <div id="landing-page-slider" class="owl-carousel owl-theme">
+        <div class="item item-right" style="background-image: url(img/landing-page-slider/biker.jpg);"></div>
+        <div class="item item-right" style="background-image: url(img/landing-page-slider/gokart.jpg);"></div>
+        <div class="item" style="background-image: url(img/landing-page-slider/oneguy.jpg);"></div>
+        <div class="item item-bottom" style="background-image: url(img/landing-page-slider/steg.jpg);"></div>
+        <div class="item item-bottom" style="background-image: url(img/landing-page-slider/wüste.jpg);"></div>
+    </div>
+
+    <div class="panel-extra-padding">
         <div class="row">
             <div class="small-12 columns">
-                <h1 class="text-center">Welcome Tester!</h1>
+                <h1 class="text-center">Was ist Friends Cup?</h1>
             </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="small-12 columns">
-            <h2 class="subheader text-center"><a href="paneltest.html">Prinzip Friends Cup &nbsp; <i class="fa fa-chevron-right" style="font-size: 1.7rem"></i></a></h2>
-        </div>
-    </div>
-    <div class="bg-light-panel panel-extra-padding">
+
         <div class="row">
-            <div class="small-12 medium-6 medium-push-6 columns">
-                <h3 class="small-only-text-center medium-text-right">Lobster Two Font</h3>
-                <p class="small-only-text-center medium-text-right">
-                    Marie, I said Cheetos, not Fritos. I must've said Cheetos like
-                    ten times. You need me to write it down for you? Well, I'm just
-                    saying, y'know, I said Cheetos. Ch-ch-ch sound. Virtually
-                    impossible to confuse Cheetos with Fritos it seems to me. Where
-                    are you going?
+            <div class="small-12 medium-4 columns explain explain-arrow">
+                <div class="explain-graphic-round">
+                    <a href="paneltest.html"><img src="img/lp-three-steps/lp-icon-01.png" draggable="false"></a>
+                </div>
+                <h3 class="header-primary">Finde deine Freunde</h3>
+                <p>
+                    Erzähle deinen Freunden von Friends Cup und starte schnell und gratis
+                    deinen eigenen Cup mit deinen Einstellungen.
                 </p>
             </div>
-            <div class="small-12 medium-6 medium-pull-6 columns">
-                <a href="#" class="big-button">
+
+            <div class="small-12 medium-4 columns explain  explain-arrow">
+                <div class="explain-graphic-round">
+                    <a href="paneltest.html"><img src="img/lp-three-steps/lp-icon-02.png" draggable="false"></a>
+                </div>
+                <h3 class="header-primary">Erlebe Action</h3>
+                <p>
+                    Wähle aus vielen Spiele und plane mit Hilfe von Friends Cup Zeitpunkt
+                    und Ort. Trage diese Spiele zusammen mit den Freunden mit Action aus.
+                </p>
+            </div>
+
+            <div class="small-12 medium-4 columns explain">
+                <div class="explain-graphic-round">
+                    <a href="paneltest.html"><img src="img/lp-three-steps/lp-icon-03.png" draggable="false"></a>
+                </div>
+                <h3 class="header-primary">Feier mit dem Sieger</h3>
+                <p>
+                    Nach allen gespielten Spielen bekommt ihr eine detaillierte Wertung mit
+                    einem Sieger. Lasst den Sieger hochleben.
+                </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="small-12 columns">
+                <hr>
+            </div>    
+        </div>
+        
+        <div class="row">
+            <div class="small-12 medium-6 columns explain-info">
+                <h3 class="header-primary">Erfahre mehr über Friends Cup</h3>
+                <p>Du hast noch Fragen wie Friends Cup funktioniert?
+                    <br>Kein Problem. In sieben einfachen Schritten bieten wir dir alle nötigen Informationen. <br>
+                    <a href="index.html">Hier erfährst du alles zum Friends Cup &nbsp;<i class="fa fa-arrow-right"></i></a>
+                </p>
+            </div>
+            <div class="small-12 medium-6 columns explain-info">
+                <h3 class="video-promo-header header-primary">Das bietet Friends Cup</h3>
+                <a class="smooth-video-scroll" href="#video-promo">
+                    <img src="img/video-promo-pic.jpg" draggable="false">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-light-panel panel-extra-padding">
+        <div class="row">
+            <div class="small-12 columns">
+                <h3 class="text-center">Riesige Auswahl an Spielen</h3>
+                <p class="text-center">
+                    Dank einer enorm großen Datenbank an Spielen findet ihr in eurem Friends Cup bestimmt eine passende
+                    Aktivität für dich und deine Freunde. Seid mutig und probiert neue Spiele aus um mehr Spaß und
+                    Action zu erleben.
+                </p>
+            </div>
+        </div>
+        <div class="row lp-grid-row">
+            <div class="small-4 medium-3 large-2 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-dart.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Dart</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="show-for-medium-up medium-3 large-2 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-tennis.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Tennis</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="small-8 medium-6 large-4 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-bowling.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Bowling</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="show-for-large-up large-4 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-fussball.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Fussball</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row lp-grid-row">
+            <div class="show-for-large-up large-4 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-schwimmen.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Schwimmen</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="show-for-medium-up medium-3 large-2 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-ski.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Skifahren</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="small-8 medium-6 large-4 medium-4 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-gokart.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Go-Kart</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="small-4 medium-3 large-2 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-schlitten.png" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Schlittenfahren</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="row lp-grid-row">
+            <div class="hide-for-medium-only small-4 large-2 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-laufen.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Laufen</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="small-8 medium-6 large-4 medium-4 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-eisstock.jpg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Eisstock schießen</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="show-for-large-up large-2 columns lp-grid-item-container">
+                <a href="#" class="lp-grid-item">
+                    <img src="img/grid-games/grid-poker.jpeg" alt="grid-image" />
+                    <div class="lp-grid-item-name-container">
+                        <div class="lp-grid-item-name">Poker</div>
+                    </div>
+                    <div class="lp-grid-item-icon-container">
+                        <div class="lp-grid-item-icon"><i class="fa fa-fire"></i></div>
+                    </div>
+                </a>
+            </div>
+            <div class="small-12 medium-6 large-4 medium-4 columns lp-grid-item-container">
+                <a href="#" class="big-button-grid">
                     <img src="img/big-buttons/bb-01.png" alt="all games" />
                     <h2>Alle Spiele</h2>
                     <p>Bacon ipsum dolor sit amet pork belly boudin landjaeger shankle</p>
@@ -94,45 +280,71 @@
             </div>
         </div>
     </div>
+    
     <div class="panel-extra-padding">
         <div class="row">
-            <div class="small-12 medium-6 columns">
-                <h3 class="small-only-text-center">Lobster Two Font</h3>
-                <p class="small-only-text-center">
-                    Marie, I said Cheetos, not Fritos. I must've said Cheetos like
-                    ten times. You need me to write it down for you? Well, I'm just
-                    saying, y'know, I said Cheetos. Ch-ch-ch sound. Virtually
-                    impossible to confuse Cheetos with Fritos it seems to me. Where
-                    are you going?
-                </p>
-            </div>
-            <div class="small-12 medium-6 columns">
-                <a href="#" class="big-button">
-                    <img src="img/big-buttons/bb-02.png" alt="registrate" />
-                    <h2>Registrieren</h2>
-                    <p>Bacon ipsum dolor sit amet pork belly boudin landjaeger shankle</p>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="bg-light-panel panel-extra-padding">
-        <div class="row">
             <div class="small-12 medium-6 medium-push-6 columns">
-                <h3 class="small-only-text-center medium-text-right">Lobster Two Font</h3>
+                <h3 class="small-only-text-center medium-text-right">Starte jetzt deinen Friends Cup</h3>
                 <p class="small-only-text-center medium-text-right">
-                    Marie, I said Cheetos, not Fritos. I must've said Cheetos like
-                    ten times. You need me to write it down for you? Well, I'm just
-                    saying, y'know, I said Cheetos. Ch-ch-ch sound. Virtually
-                    impossible to confuse Cheetos with Fritos it seems to me. Where
-                    are you going?
+                    Mit ein paar schnellen Klicks bist du bei Friends Cup angemeldet und ihr könnt alle Vorteile genießen. Nütze die Internetplattform und plane deine Freizeitaktivitäten zusammen mit deinen liebsten Menschen und erlebe unvergessliche und actionreiche Momente. Kämpfe mit deinen Freunden um den Cup-Sieg.
                 </p>
             </div>
             <div class="small-12 medium-6 medium-pull-6 columns">
                 <a href="#" class="big-button">
-                    <img src="img/big-buttons/bb-03.png" alt="find new" />
-                    <h2>Neues finden...</h2>
-                    <p>Bacon ipsum dolor sit amet pork belly boudin landjaeger shankle</p>
+                    <img src="img/big-buttons/bb-02.png" />
+                    <h2>Registrieren</h2>
+                    <p>Nütze alle Vorteile von Friends Cup - gratis und komplett unkompliziert. Lasst die Spiele beginnen.</p>
                 </a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bg-light-panel panel-extra-padding">
+        <div class="row">
+            <div class="small-12 medium-6 columns">
+                <h3 class="small-only-text-center">Is dir fad?</h3>
+                <p class="small-only-text-center">
+                    Ihr sitzt zuhause vor eurem Smartphone oder Tablet und wisst nicht was tun? Kein Problem. Nützte einfach die 'Mir is fad!'-Funktion von Friends Cup und lass dir eine lustige und spannende Freizeitaktivität aus der riesigen Friends Cup Datenbank vorschlagen. 
+                </p>
+            </div>
+            <div class="small-12 medium-6 columns">
+                <a href="#" class="big-button">
+                    <img src="img/big-buttons/bb-03.png" />
+                    <h2>Mir is fad!</h2>
+                    <p>Klick mich und erlebe mich. Danach ist dir und deinen Freunden bestimmt nicht mehr fad.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel-extra-padding">
+        <div class="row">
+            <div class="small-12 columns" >
+                <h2 class="text-center hide-for-small-only">
+                    <i class="fa fa-trophy">&nbsp;&nbsp;</i>Starte jetzt deinen Friends Cup&nbsp;&nbsp;<i class="fa fa-trophy"></i>
+                </h2>
+                <h2 class="text-center show-for-small-only">
+                    <i class="fa fa-trophy text-center"></i><br />
+                    Starte jetzt deinen Friends Cup
+                </h2>
+                <p class="text-center">
+                    Beginne jetzt einfach und gratis deinen persönlichen Friends Cup <br class="hide-for-small-only" />
+                    und fordere deine Freunde zu spannenden Spielen und Wettkämpfen heraus. <br class="hide-for-small-only" />
+                    Viel Spaß und Action sind bei der Friends Cup-Gesamtwertung garantiert <br class="hide-for-small-only" />
+                    und die große Auswahl an Spielen hält euch immer bei Laune. <br />
+                    <a href="paneltest.html">Hier erfährst du wie Friends Cup genau funktioniert</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-light-panel panel-extra-padding" id="video-promo">
+        <div class="row">
+            <div class="small-12 columns">
+                <h2 class="text-center">Spannung - Action - Spaß</h2>
+                <div class="promo-vimeo-vid">
+                    <iframe src="//player.vimeo.com/video/102557156?color=018AD2&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </div>
             </div>
         </div>
     </div>
@@ -177,22 +389,22 @@
             </div>
             <div class="small-12 medium-4 columns logo-container">
                 <div class="flex-center">
-                    <img src="img/logo.png" alt="Logo" />
+                    <img src="img/logo.png" />
                 </div>
             </div>
             <div class="small-12 medium-2 medium-pull-8 columns">
                 <div class="footer-header">Über</div>
                 <ul class="square footer-links">
-                    <li><a href="#">Impressum</a></li>
+                    <li><a href="impressum.html">Impressum</a></li>
                     <li><a href="#">Kontakt</a></li>
-                    <li><a href="#">Donate</a></li>
+                    <li><a href="#">Spenden</a></li>
                 </ul>
             </div>
             <div class="small-12 medium-2 medium-pull-8 columns">
                 <div class="footer-header">Info</div>
                 <ul class="square footer-links">
-                    <li><a href="#">Häufig gestellte Fragen...</a></li>
-                    <li><a href="#">Wie funktionierts?</a></li>
+                    <li><a href="paneltest.html">Häufig gestellte Fragen...</a></li>
+                    <li><a href="paneltest.html">Wie funktioniert's?</a></li>
                 </ul>
             </div>
         </div>
@@ -212,6 +424,8 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/app.js"></script>
 </body>
 
