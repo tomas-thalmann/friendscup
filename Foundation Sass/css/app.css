@@ -11894,12 +11894,12 @@ body:after {
   box-shadow: 0 0 6px 1px rgba(1, 138, 210, 0.5);
 }
 
-/* line 789, ../scss/_fc-content-sections.scss */
+/* line 797, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container {
   position: relative;
   margin-bottom: 1.25rem;
 }
-/* line 793, ../scss/_fc-content-sections.scss */
+/* line 801, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user {
   display: block;
   width: 4.375rem;
@@ -11908,12 +11908,12 @@ body:after {
   left: 0;
 }
 @media only screen and (max-width: 40em) {
-  /* line 793, ../scss/_fc-content-sections.scss */
+  /* line 801, ../scss/_fc-content-sections.scss */
   .fccs-uc .fccs-uc-msg-container .fccs-uc-user {
     width: 3.125rem;
   }
 }
-/* line 804, ../scss/_fc-content-sections.scss */
+/* line 812, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-image {
   height: 4.375rem;
   width: 4.375rem;
@@ -11924,13 +11924,13 @@ body:after {
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
 @media only screen and (max-width: 40em) {
-  /* line 804, ../scss/_fc-content-sections.scss */
+  /* line 812, ../scss/_fc-content-sections.scss */
   .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-image {
     height: 3.125rem;
     width: 3.125rem;
   }
 }
-/* line 817, ../scss/_fc-content-sections.scss */
+/* line 825, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-image > img {
   height: inherit;
   width: inherit;
@@ -11939,7 +11939,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 824, ../scss/_fc-content-sections.scss */
+/* line 832, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-name {
   text-align: center;
   color: #555555;
@@ -11952,20 +11952,20 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 835, ../scss/_fc-content-sections.scss */
+/* line 843, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user:hover .fccs-uc-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 839, ../scss/_fc-content-sections.scss */
+/* line 847, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user:hover .fccs-uc-name {
   color: #018ad2;
 }
-/* line 845, ../scss/_fc-content-sections.scss */
+/* line 853, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg {
-  margin-left: 6.25rem;
+  margin-left: 6.5625rem;
   margin-right: 0;
   min-height: 6.25rem;
   padding: 0.9375rem;
@@ -11974,72 +11974,74 @@ body:after {
   position: relative;
 }
 @media only screen and (max-width: 40em) {
-  /* line 845, ../scss/_fc-content-sections.scss */
+  /* line 853, ../scss/_fc-content-sections.scss */
   .fccs-uc .fccs-uc-msg-container .fccs-uc-msg {
     margin-left: 4.375rem;
     margin-right: 0;
-    background-color: #fff;
+    background-color: white;
     font-size: 0.8rem;
   }
 }
-/* line 862, ../scss/_fc-content-sections.scss */
+/* line 869, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg:before {
   content: '';
   display: block;
   position: absolute;
   width: 0;
   height: 0;
-  top: 1.5625rem;
-  left: -1.25rem;
-  border: 0.625rem solid transparent;
+  top: 1.25rem;
+  left: -1.75rem;
+  border: 0.9375rem solid transparent;
   border-right-color: #e8edf5;
 }
 @media only screen and (max-width: 40em) {
-  /* line 862, ../scss/_fc-content-sections.scss */
+  /* line 869, ../scss/_fc-content-sections.scss */
   .fccs-uc .fccs-uc-msg-container .fccs-uc-msg:before {
     top: 0.9375rem;
-    border-right-color: #fff;
+    left: -1.125rem;
+    border-width: 0.625rem;
+    border-right-color: white;
   }
 }
-/* line 879, ../scss/_fc-content-sections.scss */
+/* line 890, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg textarea {
   resize: vertical;
   overflow: auto;
 }
-/* line 885, ../scss/_fc-content-sections.scss */
+/* line 896, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg .button {
   margin: 0;
 }
-/* line 892, ../scss/_fc-content-sections.scss */
+/* line 903, ../scss/_fc-content-sections.scss */
 .fccs-uc .current-user .fccs-uc-user {
   left: auto;
   right: 0;
 }
-/* line 897, ../scss/_fc-content-sections.scss */
+/* line 908, ../scss/_fc-content-sections.scss */
 .fccs-uc .current-user .fccs-uc-msg {
   margin-left: 0;
-  margin-right: 6.25rem;
+  margin-right: 6.5625rem;
   border-right: none;
   border-left: 0.3125rem solid #f4811f;
 }
 @media only screen and (max-width: 40em) {
-  /* line 897, ../scss/_fc-content-sections.scss */
+  /* line 908, ../scss/_fc-content-sections.scss */
   .fccs-uc .current-user .fccs-uc-msg {
     margin-right: 4.375rem;
-    background-color: #fff;
   }
 }
-/* line 908, ../scss/_fc-content-sections.scss */
+/* line 918, ../scss/_fc-content-sections.scss */
 .fccs-uc .current-user .fccs-uc-msg:before {
   left: auto;
-  right: -1.25rem;
+  right: -1.75rem;
   border-right-color: transparent;
   border-left-color: #e8edf5;
 }
 @media only screen and (max-width: 40em) {
-  /* line 908, ../scss/_fc-content-sections.scss */
+  /* line 918, ../scss/_fc-content-sections.scss */
   .fccs-uc .current-user .fccs-uc-msg:before {
-    border-left-color: #fff;
+    right: -1.125rem;
+    border-left-color: white;
   }
 }
 

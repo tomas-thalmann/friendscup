@@ -767,7 +767,7 @@ $rt-mobile-border-color: #aaa;
     img {
         line-height: 0;
         display: inline-block;
-        border: solid rem-calc(4) white;
+        border: solid rem-calc(4) #fff;
         max-width: 100%;
         @include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.2));
         @include transition(all 0.2s ease-out);
@@ -785,6 +785,14 @@ $rt-mobile-border-color: #aaa;
 // Abbreviation: uc
 // ----------------------------------
 
+$uc-bg-color: $fc-primary-bg;
+$uc-bg-color-mobile: #fff;
+$uc-arrow-size: rem-calc(15);
+$uc-arrow-size-mobile: rem-calc(10);
+$uc-user-img-size: rem-calc(70);
+$uc-user-img-size-mobile: rem-calc(50);
+$uc-user-name-height: rem-calc(30);
+
 .fccs-uc {
     .fccs-uc-msg-container {
         position: relative;
@@ -792,26 +800,26 @@ $rt-mobile-border-color: #aaa;
         
         .fccs-uc-user {
             display: block;
-            width: rem-calc(70);
+            width: $uc-user-img-size;
             position: absolute;
             top: 0;
             left: 0;
             
             @media #{$small-only} {
-                width: rem-calc(50);
+                width: $uc-user-img-size-mobile;
             }
 
             .fccs-uc-image {
-                height: rem-calc(70);
-                width: rem-calc(70);
+                height: $uc-user-img-size;
+                width: $uc-user-img-size;
                 @include border-radius(50%);
                 overflow: hidden;
                 // fix problem with transition + border-radius
                 -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
                 
                 @media #{$small-only} {
-                    height: rem-calc(50);
-                    width: rem-calc(50);
+                    height: $uc-user-img-size-mobile;
+                    width: $uc-user-img-size-mobile;
                 }
 
                 > img {
@@ -824,7 +832,7 @@ $rt-mobile-border-color: #aaa;
             .fccs-uc-name {
                 text-align: center;
                 color: $body-font-color;
-                line-height: rem-calc(30);
+                line-height: $uc-user-name-height;
                 overflow: hidden;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -843,19 +851,18 @@ $rt-mobile-border-color: #aaa;
         }
         
         .fccs-uc-msg {
-            margin-left: rem-calc(100);
+            margin-left: $uc-user-img-size + rem-calc(20) + $uc-arrow-size;
             margin-right: 0;
-            min-height: rem-calc(100);
+            min-height: $uc-user-img-size + $uc-user-name-height;
             padding: rem-calc(15);
-            background-color: $fc-primary-bg;
-            //border-bottom: 3px solid darken($fc-primary-bg, 10%);
+            background-color: $uc-bg-color;
             border-right: rem-calc(5) solid $fc-primary;
             position: relative;
             
             @media #{$small-only} {
-                margin-left: rem-calc(70);
+                margin-left: $uc-user-img-size-mobile + rem-calc(10) + $uc-arrow-size-mobile;
                 margin-right: 0;
-                background-color: #fff;
+                background-color: $uc-bg-color-mobile;
                 font-size: 0.8rem;
             }
             
@@ -865,20 +872,24 @@ $rt-mobile-border-color: #aaa;
                 position: absolute;
                 width: 0;
                 height: 0;
-                top: rem-calc(25);
-                left: rem-calc(-20);
-                border: rem-calc(10) solid transparent;
-                border-right-color: $fc-primary-bg;
+                top: $uc-user-img-size / 2 - $uc-arrow-size;
+                // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                left: -($uc-arrow-size * 2) + rem-calc(2);
+                border: $uc-arrow-size solid transparent;
+                border-right-color: $uc-bg-color;
                 
                 @media #{$small-only} {
-                    top: rem-calc(15);
-                    border-right-color: #fff;
+                    top: $uc-user-img-size-mobile / 2 - $uc-arrow-size-mobile;
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                    left: -($uc-arrow-size-mobile * 2) + rem-calc(2);
+                    border-width: $uc-arrow-size-mobile;
+                    border-right-color: $uc-bg-color-mobile;
                 }
             }
             
             textarea {
                 resize: vertical;
-                // IE fix
+                // IE fix: hide scrollbar if content is not larger than area
                 overflow: auto;
             }
             
@@ -896,23 +907,25 @@ $rt-mobile-border-color: #aaa;
         
         .fccs-uc-msg {
             margin-left: 0;
-            margin-right: rem-calc(100);
+            margin-right: $uc-user-img-size + rem-calc(20) + $uc-arrow-size;
             border-right: none;
             border-left: rem-calc(5) solid $fc-orange;
             
             @media #{$small-only} {
-                margin-right: rem-calc(70);
-                background-color: #fff;
+                margin-right: $uc-user-img-size-mobile + rem-calc(10) + $uc-arrow-size-mobile;
             }
             
             &:before {
                 left: auto;
-                right: rem-calc(-20);
+                // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                right: -($uc-arrow-size * 2) + rem-calc(2);
                 border-right-color: transparent;
-                border-left-color: $fc-primary-bg;
+                border-left-color: $uc-bg-color;
                 
                 @media #{$small-only} {
-                    border-left-color: #fff;
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                    right: -($uc-arrow-size-mobile * 2) + rem-calc(2);
+                    border-left-color: $uc-bg-color-mobile;
                 }
             }
         }
