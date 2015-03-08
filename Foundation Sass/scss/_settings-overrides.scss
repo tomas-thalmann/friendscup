@@ -13,7 +13,7 @@ $warning-color: #f08a24;
 $info-color: #a0d3e8;
 
 // We use these to control various global styles
-$body-font-color: #333;
+$body-font-color: #555;
 $body-font-family: 'Lato', Arial, sans-serif;
 //$body-font-family: 'Raleway', Arial, sans-serif;
 //$body-font-family: 'Open Sans', Arial, sans-serif;
@@ -24,6 +24,9 @@ $body-font-family: 'Lato', Arial, sans-serif;
 
 // We use these to control header font styles
 $header-font-color: $fc-primary;
+
+// We use these to style paragraphs
+$paragraph-font-size: rem-calc(15);
 
 // ----------------------------------
 // Custom Media Queries
@@ -69,8 +72,8 @@ $topbar-dropdown-label-font-size: rem-calc(10);
 $topbar-dropdown-label-bg: scale-color($fc-primary-dark, $lightness: -20%);
 
 // Top menu icon styles
-$topbar-menu-link-color: #333;
-$topbar-menu-icon-color: #333;
+$topbar-menu-link-color: $body-font-color;
+$topbar-menu-icon-color: $body-font-color;
 
 // Divider Styles
 $topbar-divider-border-top: solid 1px scale-color($fc-primary-dark, $lightness: -20%);
@@ -119,11 +122,11 @@ $table-border-color: #ddd;
 // These control the table head styles
 $table-head-bg: #fff;
 $table-head-font-size: rem-calc(16);
-$table-head-font-color: #333;
+$table-head-font-color: $body-font-color;
 
 // These control the row padding and font styles
 $table-row-font-size: rem-calc(16);
-$table-row-font-color: #333;
+$table-row-font-color: $body-font-color;
 
 
 

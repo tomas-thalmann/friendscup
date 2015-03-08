@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Friends Cup</title>
-    <link rel="stylesheet" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
     <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Raleway:700,400|Open+Sans:400italic,700italic,400,700|Lobster+Two:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
@@ -75,10 +75,12 @@
             <div class="columns small-12">
                 <h1 class="chd-name"><strong>Sportklettern</strong></h1>
                 <div class="chd-categories">
-                    Kategorien:
-                    <span class="label alert">Bergsport</span>
-                    <span class="label alert">Adrenalin</span>
-                    <span class="label alert">Vertikale</span>
+                    <span class="chd-header-label">Kategorien:</span>
+                    <div class="chd-tags">
+                        <span class="label alert">Bergsport</span>
+                        <span class="label alert">Adrenalin</span>
+                        <span class="label alert">Vertikale</span>
+                    </div>
                 </div>
                 <a href="#" class="chd-show-details" data-reveal-id="chd-details-modal">mehr Details...</a>
                 <hr class="show-for-small-only">
@@ -96,9 +98,9 @@
     </div>
     
     <div id="chd-details-modal" class="reveal-modal" data-reveal>
-        <div class="blue-square-icon" data-dropdown="drop-adrenalin"><i class="fa fa-heart"></i></div>
+        <div class="blue-square-icon" data-dropdown="drop-adrenalin"><i class="fa fa-heartbeat"></i></div>
         <div class="blue-square-icon" data-dropdown="drop-team"><i class="fa fa-users"></i></div>
-        <div class="blue-square-icon" data-dropdown="drop-indoor"><i class="fa fa-home"></i></div>
+        <div class="blue-square-icon" data-dropdown="drop-outdoor"><i class="fa fa-tree"></i></div>
         
         <div id="drop-adrenalin" data-dropdown-content class="f-dropdown fc-dropdown">
             <p>Adrenalinjunkie</p>
@@ -106,8 +108,8 @@
         <div id="drop-team" data-dropdown-content class="f-dropdown fc-dropdown">
             <p>Teamsport</p>
         </div>
-        <div id="drop-indoor" data-dropdown-content class="f-dropdown fc-dropdown">
-            <p>Indoor</p>
+        <div id="drop-outdoor" data-dropdown-content class="f-dropdown fc-dropdown">
+            <p>Outdoor</p>
         </div>
         
         <h3>Kurze Beschreibung</h3>
@@ -136,7 +138,7 @@
     <a name="magellan-ranking"></a>
     <div class="row fc-content-section" data-magellan-destination="magellan-ranking">
         <div class="small-12 columns">
-            <a class="modal-open fccs-header" data-sectionmodalid="modal-ranking"><h3>Aktuelle Platzierung<i class="fa fa-arrows-alt right"></i></h3></a>
+            <a class="modal-open" data-sectionmodalid="modal-ranking"><h3 class="fccs-header">Aktuelle Platzierung<i class="fa fa-arrows-alt right"></i></h3></a>
             
             <div class="fccs-rk-compressed">
                 <div class="fccs-rk-left-container">
@@ -180,16 +182,16 @@
     <a name="magellan-desc"></a>
     <div class="row fc-content-section" data-magellan-destination="magellan-desc">
         <div class="small-12 columns">
-            <a class="modal-open fccs-header" data-sectionmodalid="modal-ranking"><h3>Beschreibung<i class="fa fa-arrows-alt right"></i></h3></a>
+            <h3 class="fccs-header-nolink">Beschreibung</h3>
             <p>
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                iudhalghakkbuaghs akghd ksagsh agk as <br />
-                iulidsagsakg slkg sasgals gkughsa gsduakg as <br />
-                grhiduashkg dsakgh dsghdaskg dksah gsdksah gdksahg dsakgn<br />
-                ksag hdsakjgs agkga duakg as <br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                saihg sakgskl gaskgnhdkag ahdkjs gdsakhgkjdhg kdalhg skahg<br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
+                Sportklettern ist eine Form des Freikletterns, dessen moderne Ausprägung Ende der
+                1960er und Anfang 1970er Jahre in den USA entstand und sich seitdem mit großen
+                Zuwachsraten international ausbreitet. Die Wurzeln des Sportkletterns liegen im
+                Freiklettergedanken, der sich in der Sächsischen Schweiz entwickelte und sich über
+                Fritz Wiessner in den USA verbreitete. Dabei wurde das Klettern weltweit revolutioniert.
+                Im westlichen Teil Deutschlands und in den Alpenländern erzwang das Sportklettern
+                im Jahr 1977, nach der Erstbegehung der Route „Pumprisse“ durch Reinhard Karl, die
+                unbegrenzte Öffnung der UIAA-Schwierigkeitsskala nach oben.
             </p>
         </div>
     </div>
@@ -197,51 +199,178 @@
     <a name="magellan-pics"></a>
     <div class="row fc-content-section" data-magellan-destination="magellan-pics">
         <div class="small-12 columns">
-            <a class="modal-open fccs-header" data-sectionmodalid="modal-ranking"><h3>Fotos<i class="fa fa-arrows-alt right"></i></h3></a>
-            <p>
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                iudhalghakkbuaghs akghd ksagsh agk as <br />
-                iulidsagsakg slkg sasgals gkughsa gsduakg as <br />
-                grhiduashkg dsakgh dsghdaskg dksah gsdksah gdksahg dsakgn<br />
-                ksag hdsakjgs agkga duakg as <br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                saihg sakgskl gaskgnhdkag ahdkjs gdsakhgkjdhg kdalhg skahg<br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-            </p>
+            <h3 class="fccs-header-nolink">Fotos</h3>
+            <div class="fccs-ig">
+                <ul class="small-block-grid-2 medium-block-grid-4 large-block-grid-5">
+                    <li>
+                        <a href="img/climbing/original/climbing-1.jpg" data-lightbox="ch-images" data-title="Chris Sharma - Deep Water Soloing">
+                            <img src="img/climbing/small/climbing-1.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-2.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-2.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-3.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-3.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-4.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-4.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-5.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-5.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-6.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-6.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-7.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-7.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-8.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-8.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-9.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-9.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-10.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-10.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-11.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-11.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-12.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-12.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-13.jpg" data-lightbox="ch-images">
+                            <img src="img/climbing/small/climbing-13.jpg" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-14.png" data-lightbox="ch-images" data-title="Alex Honnold - Route: Heaven (5.12d/5.13a) Yosemite">
+                            <img src="img/climbing/small/climbing-14.png" alt="image" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href="img/climbing/original/climbing-15.jpg" data-lightbox="ch-images" data-title="Alex Honnold">
+                            <img src="img/climbing/small/climbing-15.jpg" alt="image" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
     
     <a name="magellan-comments"></a>
     <div class="row fc-content-section" data-magellan-destination="magellan-comments">
         <div class="small-12 columns">
-            <a class="modal-open fccs-header" data-sectionmodalid="modal-ranking"><h3>Kommentare<i class="fa fa-arrows-alt right"></i></h3></a>
-            <p>
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                iudhalghakkbuaghs akghd ksagsh agk as <br />
-                iulidsagsakg slkg sasgals gkughsa gsduakg as <br />
-                grhiduashkg dsakgh dsghdaskg dksah gsdksah gdksahg dsakgn<br />
-                ksag hdsakjgs agkga duakg as <br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                saihg sakgskl gaskgnhdkag ahdkjs gdsakhgkjdhg kdalhg skahg<br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-            </p>
+            <h3 class="fccs-header-nolink">Kommentare</h3>
+            <div class="fccs-uc">
+                <div class="fccs-uc-msg-container">
+                    <a class="fccs-uc-user" href="#">
+                        <div class="fccs-uc-image"><img src="img/user/hank.png" alt="hank" /></div>
+                        <div class="fccs-uc-name">Hank</div>
+                    </a>
+                    <div class="fccs-uc-msg">
+                        Marie, I said Cheetos, not Fritos. I must've said Cheetos like ten times. You
+                        need me to write it down for you? Well, I'm just saying, y'know, I said Cheetos.
+                        Ch-ch-ch sound. Virtually impossible to confuse Cheetos with Fritos it seems
+                        to me. Where are you going?
+                    </div>
+                </div>
+                <div class="fccs-uc-msg-container">
+                    <a class="fccs-uc-user" href="#">
+                        <div class="fccs-uc-image"><img src="img/user/jesse.png" alt="jesse" /></div>
+                        <div class="fccs-uc-name">Jesse</div>
+                    </a>
+                    <div class="fccs-uc-msg">
+                        At first I thought to myself 'Hell yeah, bitch. Now give me a D and shut up so
+                        I can go blaze one with my boys.'
+                    </div>
+                </div>
+                <div class="fccs-uc-msg-container current-user">
+                    <a class="fccs-uc-user" href="#">
+                        <div class="fccs-uc-image"><img src="img/user/saul.png" alt="saul" /></div>
+                        <div class="fccs-uc-name">Saul</div>
+                    </a>
+                    <div class="fccs-uc-msg">
+                        Better safe than sorry. That's my motto. Yeah, you do seem to have a little 'shit
+                        creek' action going. You know, FYI, you can buy a paddle. Did you not plan for
+                        this contingency? I mean the Starship Enterprise had a self-destruct button. I'm
+                        just saying. 
+                    </div>
+                </div>
+                <div class="fccs-uc-msg-container">
+                    <a class="fccs-uc-user" href="#">
+                        <div class="fccs-uc-image"><img src="img/user/jesse.png" alt="jesse" /></div>
+                        <div class="fccs-uc-name">Jesse</div>
+                    </a>
+                    <div class="fccs-uc-msg">
+                        At first I thought to myself 'Hell yeah, bitch. Now give me a D and shut up so
+                        I can go blaze one with my boys.' I don't know. Maybe it was the way he said it,
+                        but... it was like he wasn't exactly saying it sucked. He was just asking me
+                        honestly, 'Is that all you got?' And for some reason, I thought to myself: 'Yeah,
+                        man, I can do better.' <br />
+                        At first I thought to myself 'Hell yeah, bitch. Now give me a D and shut up so
+                        I can go blaze one with my boys.' I don't know. Maybe it was the way he said it,
+                        but... it was like he wasn't exactly saying it sucked. He was just asking me
+                        honestly, 'Is that all you got?' And for some reason, I thought to myself: 'Yeah,
+                        man, I can do better.' 
+                    </div>
+                </div>
+                <div class="fccs-uc-msg-container current-user">
+                    <a class="fccs-uc-user" href="#">
+                        <div class="fccs-uc-image"><img src="img/user/saul.png" alt="saul" /></div>
+                        <div class="fccs-uc-name">Saul</div>
+                    </a>
+                    <div class="fccs-uc-msg clearfix">
+                        <textarea placeholder="Write a message..."></textarea>
+                        <a href="#" class="button tiny right">Kommentieren...</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
     <a name="magellan-awards"></a>
     <div class="row fc-content-section" data-magellan-destination="magellan-awards">
         <div class="small-12 columns">
-            <a class="modal-open fccs-header" data-sectionmodalid="modal-ranking"><h3>Auszeichnungen<i class="fa fa-arrows-alt right"></i></h3></a>
-            <p>
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                iudhalghakkbuaghs akghd ksagsh agk as <br />
-                iulidsagsakg slkg sasgals gkughsa gsduakg as <br />
-                grhiduashkg dsakgh dsghdaskg dksah gsdksah gdksahg dsakgn<br />
-                ksag hdsakjgs agkga duakg as <br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-                saihg sakgskl gaskgnhdkag ahdkjs gdsakhgkjdhg kdalhg skahg<br />
-                iudhalghaku askghdsa kgsakughsa gsduakg as <br />
-            </p>
+            <h3 class="fccs-header-nolink">Auszeichnungen</h3>
+            <div class="row">
+                <div class="small-6 medium-3 columns">Auszeichnungen</div>
+                <div class="small-6 medium-3 columns">FLEISCH</div>
+                <div class="small-6 medium-3 columns">Bacon</div>
+                <div class="small-6 medium-3 columns">Pizza</div>
+                <div class="small-6 medium-3 columns">Burger</div>
+                <div class="small-6 medium-3 columns">Beer</div>
+                <div class="small-6 medium-3 columns">Long Island</div>
+                <div class="small-6 medium-3 columns">Jacky</div>
+                <div class="small-6 medium-3 columns">Big Rösti</div>
+                <div class="small-6 medium-3 columns">Gurktaler</div>
+                <div class="small-6 medium-3 columns">PORTERHOUSE</div>
+                <div class="small-6 medium-3 columns">T-BONE</div>
+            </div>
         </div>
     </div>
     <!-- END - Content -->
@@ -319,7 +448,7 @@
     
     <!-- BEGIN - Modals -->
     <div id="modal-ranking" class="fccs-modal">
-        <a class="fccs-header" rel="modal:close"><h3>Aktuelle Platzierung<i class="fa fa-times right"></i></h3></a>
+        <a rel="modal:close"><h3 class="fccs-header">Aktuelle Platzierung<i class="fa fa-times right"></i></h3></a>
 
         <div class="fccs-rk-expanded">
             <div class="fccs-rk-first">
@@ -412,7 +541,7 @@
     <script src="js/jquery.modal.js"></script>
     <script src="js/jquery.mousewheel.js"></script>
     <script src="js/jquery.kinetic.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/lightbox.js"></script>
     <script src="js/app.js"></script>
 </body>
 

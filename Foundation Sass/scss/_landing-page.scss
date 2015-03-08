@@ -1,149 +1,8 @@
 @import "compass";
 @import "colors"; // import Standard Colors
 
-// ---------------------------------------
-// OWL CAROUSEL PLUGIN CSS
-// ---------------------------------------
-// Core Owl Carousel CSS File
-// v1.3.3
-// rewritten in SCSS + Compass + rem-calc
-// ---------------------------------------
-
-.owl-carousel {
-	display: none; // display none until init
-	position: relative;
-	width: 100%;
-	-ms-touch-action: pan-y;
-    
-    .owl-wrapper {
-        display: none;
-        position: relative;
-        @include translate3d(0px, 0px, 0px);
-        
-        // clearfix
-        &:after {
-            content: ".";
-            display: block;
-            clear: both;
-            visibility: hidden;
-            line-height: 0;
-            height: 0;
-        }
-    }
-    
-    .owl-wrapper-outer {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        
-        &.autoHeight {
-            @include transition(height 500ms ease-in-out);
-        }
-    }
-    
-    .owl-item {
-        float: left;
-    }
-    
-    .owl-page,
-    .owl-buttons div {
-        cursor: pointer;
-    }
-    
-    // fix
-    .owl-wrapper,
-    .owl-item {
-        @include backface-visibility(hidden);
-        @include translate3d(0, 0, 0);
-    }
-}
-
-.owl-controls {
-    @include user-select(none);
-	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-// mouse grab icon
-.grabbing { 
-    cursor: url(../img/grabbing.png) 8 8, move;
-}
-
-// ---------------------------------------
-// OWL THEME PLUGIN CSS
-// ---------------------------------------
-// Owl Carousel Owl Demo Theme
-// v1.3.3
-// rewritten in SCSS + Compass + rem-calc
-// ---------------------------------------
-
-.owl-theme {
-    .owl-controls {
-        margin-top: rem-calc(10);
-        text-align: center;
-
-        // Styling Next and Prev buttons
-        .owl-buttons div {
-            color: #FFF;
-            display: inline-block;
-            zoom: 1;
-            *display: inline; // IE7 life-saver
-            margin: rem-calc(5);
-            padding: rem-calc(3 10);
-            font-size: rem-calc(12);
-            @include border-radius(30px);
-            background: $fc-primary;
-            //@include opacity(0.5);
-        }
-
-        // Clickable class fix problem with hover on touch devices
-        // Use it for non-touch hover action
-        &.clickable .owl-buttons div:hover {
-            //@include opacity(1);
-            text-decoration: none;
-        }
-        
-        // Styling Pagination
-        .owl-page {
-            display: inline-block;
-            zoom: 1;
-            *display: inline; // IE7 life-saver
-            
-            span {
-                display: block;
-                width: rem-calc(12);
-                height: rem-calc(12);
-                margin: rem-calc(5 7);
-                //@include opacity(0.5);
-                @include border-radius(50%);
-                background: $fc-primary;
-            }
-            
-            // If PaginationNumbers is true
-            span.owl-numbers {
-                height: auto;
-                width: auto;
-                color: #FFF;
-                padding: rem-calc(2 10);
-                font-size: rem-calc(12);
-                @include border-radius(30px);
-            }
-        }
-        
-        .owl-page.activeslider span,
-        &.clickable .owl-page:hover span {
-            //@include opacity(0.1);
-        }
-    }
-}
-
-// preloading images
-.owl-item.loading {
-	min-height: rem-calc(150);
-	background: url(AjaxLoader.gif) no-repeat center center
-}
-
 // ----------------------------------
-// CUSTOM OWL STYLE
+// CUSTOM OWL CAROUSEL STYLE
 // ----------------------------------
 
 @media #{$small-up} {
@@ -215,11 +74,11 @@
 
 // animation for .explain-graphic-round
 @include keyframes (bounceOut) {
-    0% { @include box-shadow($fc-primary 0 0 0 4px); @include opacity (1); }
-    25% { @include box-shadow($fc-primary 0 0 0 1px); @include opacity (1); }
-    50% { @include box-shadow($fc-primary 0 0 0 7px); @include opacity (1); }
-    75% { @include box-shadow($fc-primary 0 0 0 4px); @include opacity (1); }
-    100% { @include box-shadow($fc-primary 0 0 0 5px); @include opacity (1); }
+    0% { @include box-shadow(0 0 0 4px $fc-primary); @include opacity (1); }
+    25% { @include box-shadow(0 0 0 1px $fc-primary); @include opacity (1); }
+    50% { @include box-shadow(0 0 0 7px $fc-primary); @include opacity (1); }
+    75% { @include box-shadow(0 0 0 4px $fc-primary); @include opacity (1); }
+    100% { @include box-shadow(0 0 0 5px $fc-primary); @include opacity (1); }
 }
 
 @media #{$small-up} {
@@ -231,14 +90,9 @@
             height: rem-calc(1000) / 3 - rem-calc(120);
             margin: 0 auto ($column-gutter / 2) auto;
             background: $fc-primary;
+            border: rem-calc(5) solid $fc-primary;
             @include border-radius(50%);
             @include user-select(none);
-            @include box-shadow($fc-primary 0 0 0 5px);
-            
-            &:hover {
-                cursor: pointer;
-                @include animation(bounceOut 0.4s linear);
-            }
         }
         
         h3 {
@@ -288,6 +142,17 @@
     // breakpoint, where the arrows will appear
     @media screen and (min-width: 53.125em) {
         .explain {
+            .explain-graphic-round {
+                // replace border from mobile with box-shadow for animation
+                border: none;
+                @include box-shadow(0 0 0 5px $fc-primary);
+
+                &:hover {
+                    cursor: pointer;
+                    @include animation(bounceOut 0.4s linear);
+                }
+            }
+            
             h3 {
                 padding: 0 ($column-gutter / 2);
             }

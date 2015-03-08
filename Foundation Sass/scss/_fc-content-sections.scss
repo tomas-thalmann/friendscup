@@ -26,18 +26,24 @@
 // ----------------------------------
 
 .fccs-header {
-    h3 {
-        font-weight: bold;
-        border-bottom: 1px solid #bbb;
-        padding: rem-calc(0 0 3 0);
-        margin: rem-calc(0 0 40 0);
-        color: $body-font-color;
-        @include transition(color 0.2s ease);
+    font-weight: bold;
+    border-bottom: 1px solid #bbb;
+    padding: rem-calc(0 0 3 0);
+    margin: rem-calc(0 0 40 0);
+    color: $body-font-color;
+    @include transition(color 0.2s ease);
 
-        &:hover {
-            color: $fc-primary;
-        }
+    &:hover {
+        color: $fc-primary;
     }
+}
+
+.fccs-header-nolink {
+    font-weight: bold;
+    border-bottom: 1px solid #bbb;
+    padding: rem-calc(0 0 3 0);
+    margin: rem-calc(0 0 40 0);
+    color: $body-font-color;
 }
 
 // ---------------------------------------------------------
@@ -734,18 +740,181 @@ $rt-mobile-border-color: #aaa;
             background-color: $rt-hover-bg;
             
             div:after {
-                color: #333;
+                color: $body-font-color;
             }
         }
     }
     
     th.sort-up div:after {
         content: '\f0de';
-        color: #333;
+        color: $body-font-color;
     }
     
     th.sort-down div:after {
         content: '\f0dd';
-        color: #333;
+        color: $body-font-color;
+    }
+}
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+// Type: Image Gallery
+// Abbreviation: ig
+// ----------------------------------
+
+.fccs-ig {
+    img {
+        line-height: 0;
+        display: inline-block;
+        border: solid rem-calc(4) white;
+        max-width: 100%;
+        @include box-shadow(0 0 0 1px rgba(0, 0, 0, 0.2));
+        @include transition(all 0.2s ease-out);
+        
+        &:hover, &:focus {
+            @include box-shadow(0 0 6px 1px rgba($fc-primary, 0.5));
+        }
+    }
+}
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+// Type: User Comments
+// Abbreviation: uc
+// ----------------------------------
+
+.fccs-uc {
+    .fccs-uc-msg-container {
+        position: relative;
+        margin-bottom: rem-calc(20);
+        
+        .fccs-uc-user {
+            display: block;
+            width: rem-calc(70);
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            @media #{$small-only} {
+                width: rem-calc(50);
+            }
+
+            .fccs-uc-image {
+                height: rem-calc(70);
+                width: rem-calc(70);
+                @include border-radius(50%);
+                overflow: hidden;
+                // fix problem with transition + border-radius
+                -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+                
+                @media #{$small-only} {
+                    height: rem-calc(50);
+                    width: rem-calc(50);
+                }
+
+                > img {
+                    height: inherit;
+                    width: inherit;
+                    @include transition(transform 0.2s ease);
+                }
+            }
+
+            .fccs-uc-name {
+                text-align: center;
+                color: $body-font-color;
+                line-height: rem-calc(30);
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                @include transition(color 0.2s ease);
+            }
+
+            &:hover {
+                .fccs-uc-image > img {
+                    @include transform(scale(1.1));
+                }
+
+                .fccs-uc-name {
+                    color: $fc-primary;
+                }
+            }
+        }
+        
+        .fccs-uc-msg {
+            margin-left: rem-calc(100);
+            margin-right: 0;
+            min-height: rem-calc(100);
+            padding: rem-calc(15);
+            background-color: $fc-primary-bg;
+            //border-bottom: 3px solid darken($fc-primary-bg, 10%);
+            border-right: rem-calc(5) solid $fc-primary;
+            position: relative;
+            
+            @media #{$small-only} {
+                margin-left: rem-calc(70);
+                margin-right: 0;
+                background-color: #fff;
+                font-size: 0.8rem;
+            }
+            
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: rem-calc(25);
+                left: rem-calc(-20);
+                border: rem-calc(10) solid transparent;
+                border-right-color: $fc-primary-bg;
+                
+                @media #{$small-only} {
+                    top: rem-calc(15);
+                    border-right-color: #fff;
+                }
+            }
+            
+            textarea {
+                resize: vertical;
+                // IE fix
+                overflow: auto;
+            }
+            
+            .button {
+                margin: 0;
+            }
+        }
+    }
+    
+    .current-user {
+        .fccs-uc-user {
+            left: auto;
+            right: 0;
+        }
+        
+        .fccs-uc-msg {
+            margin-left: 0;
+            margin-right: rem-calc(100);
+            border-right: none;
+            border-left: rem-calc(5) solid $fc-orange;
+            
+            @media #{$small-only} {
+                margin-right: rem-calc(70);
+                background-color: #fff;
+            }
+            
+            &:before {
+                left: auto;
+                right: rem-calc(-20);
+                border-right-color: transparent;
+                border-left-color: $fc-primary-bg;
+                
+                @media #{$small-only} {
+                    border-left-color: #fff;
+                }
+            }
+        }
     }
 }

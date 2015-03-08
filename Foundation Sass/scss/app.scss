@@ -1,12 +1,17 @@
-@import "settings";
-@import "settings-overrides";
-@import "foundation";
-@import "styles";
-@import "fc-content-sections";
-@import "landing-page";
-@import "cup-page";
-@import "challenge-detail";
-@import "onepage-explain";
+@import
+    'settings',
+    'settings-overrides',
+    'foundation',
+    // Plugin Styles
+    'owl-carousel',
+    'lightbox',
+    // Custom Friends Cup
+    'styles',
+    'fc-content-sections',
+    'landing-page',
+    'cup-page',
+    'challenge-detail',
+    'onepage-explain';
 
 // Or selectively include components
 // @import

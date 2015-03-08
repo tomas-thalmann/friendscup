@@ -57,19 +57,18 @@
                 }
                 
                 .chd-categories {
-                    line-height: rem-calc(40);
-                    
-                    .label {
-                        
+                    .chd-header-label {
+                        margin-right: rem-calc(10);
                     }
                     
-                    .label:first-child {
-                        margin-left: rem-calc(10);
+                    .chd-tags {
+                        display: inline-block;
                     }
                 }
                 
                 .chd-show-details {
-                    
+                    display: inline-block;
+                    margin-top: rem-calc(15);
                 }
                 
                 .chd-magellan {
@@ -171,8 +170,12 @@
                     padding-left: $column-gutter + rem-calc(250);
                     line-height: rem-calc(40);
                     
-                    .label:first-child {
-                        margin-left: rem-calc(10);
+                    .chd-header-label {
+                        margin-right: rem-calc(10);
+                    }
+                    
+                    .chd-tags {
+                        display: inline-block;
                     }
                 }
                 
@@ -206,16 +209,18 @@
                             border-bottom: 4px solid transparent;
                             margin-left: 0;
                             margin-right: 1rem;
+                            @include transition(border-bottom-color 0.2s);
                             
                             a {
                                 padding: rem-calc(0 10 4 10);
                                 margin-bottom: rem-calc(-4);
                                 display: inline-block;
                                 line-height: rem-calc(30);
+                                @include transition(color 0.2s);
                             }
                             
                             &.active, &:hover {
-                                border-bottom: 4px solid $fc-primary;
+                                border-bottom-color: $fc-primary;
                                 
                                 a {
                                     border-radius: 0;
