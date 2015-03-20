@@ -13381,8 +13381,12 @@ $uc-user-name-height: rem-calc(30);
 
 /* line 17, ../scss/_find-new.scss */
 .fn-container {
-  position: relative;
-  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
 }
 
 /* line 23, ../scss/_find-new.scss */
@@ -13390,26 +13394,8 @@ $uc-user-name-height: rem-calc(30);
   display: none;
 }
 
-/* line 27, ../scss/_find-new.scss */
-#fn-bg-canvas {
-  position: absolute;
-  top: -10px;
-  left: 0;
-}
-
-/* line 33, ../scss/_find-new.scss */
-.fn-bg-overlay {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0.5);
-}
-
 @media only screen {
-  /* line 56, ../scss/_find-new.scss */
+  /* line 40, ../scss/_find-new.scss */
   .fn-name {
     font-weight: bold;
     color: #333;
@@ -13417,21 +13403,21 @@ $uc-user-name-height: rem-calc(30);
     margin-bottom: 1.875rem;
   }
 
-  /* line 64, ../scss/_find-new.scss */
+  /* line 48, ../scss/_find-new.scss */
   .fn-wrapper .fn-image {
     display: block;
     width: 90%;
     height: auto;
     margin: 0 auto;
   }
-  /* line 71, ../scss/_find-new.scss */
+  /* line 55, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-first,
   .fn-wrapper .fn-square-second,
   .fn-wrapper .fn-square-third,
   .fn-wrapper .fn-square-tooltip {
     display: none;
   }
-  /* line 78, ../scss/_find-new.scss */
+  /* line 62, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup,
   .fn-wrapper .fn-next-ch {
     position: relative;
@@ -13440,7 +13426,7 @@ $uc-user-name-height: rem-calc(30);
     margin: 0 auto;
     background-color: #018ad2;
   }
-  /* line 86, ../scss/_find-new.scss */
+  /* line 70, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-header,
   .fn-wrapper .fn-next-ch .fn-next-header {
     display: block;
@@ -13451,7 +13437,7 @@ $uc-user-name-height: rem-calc(30);
     padding: 0.625rem 1.25rem 0 1.25rem;
     line-height: 1.875rem;
   }
-  /* line 96, ../scss/_find-new.scss */
+  /* line 80, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-subheader,
   .fn-wrapper .fn-next-ch .fn-next-subheader {
     color: #fff;
@@ -13459,7 +13445,7 @@ $uc-user-name-height: rem-calc(30);
     padding: 0 1.25rem 0.625rem 1.25rem;
     line-height: 1.875rem;
   }
-  /* line 103, ../scss/_find-new.scss */
+  /* line 87, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-icon,
   .fn-wrapper .fn-next-ch .fn-next-icon {
     position: absolute;
@@ -13472,13 +13458,13 @@ $uc-user-name-height: rem-calc(30);
     text-align: center;
     font-size: 2rem;
   }
-  /* line 116, ../scss/_find-new.scss */
+  /* line 100, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup {
     background-color: #f4811f;
   }
 }
 @media only screen and (max-width: 40em) {
-  /* line 123, ../scss/_find-new.scss */
+  /* line 107, ../scss/_find-new.scss */
   .fn-share-ch {
     width: 90%;
     line-height: 5rem;
@@ -13486,22 +13472,22 @@ $uc-user-name-height: rem-calc(30);
     background-color: rgba(255, 255, 255, 0.5);
     padding: 0 0 0 1.25rem;
   }
-  /* line 130, ../scss/_find-new.scss */
+  /* line 114, ../scss/_find-new.scss */
   .fn-share-ch .fa-stack {
     font-size: 1.4rem;
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 141, ../scss/_find-new.scss */
+  /* line 125, ../scss/_find-new.scss */
   .fn-wrapper {
     position: relative;
   }
-  /* line 144, ../scss/_find-new.scss */
+  /* line 128, ../scss/_find-new.scss */
   .fn-wrapper .fn-image {
     width: 13.75rem;
     margin: 0 0 0 3.75rem;
   }
-  /* line 149, ../scss/_find-new.scss */
+  /* line 133, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-first,
   .fn-wrapper .fn-square-second,
   .fn-wrapper .fn-square-third {
@@ -13516,23 +13502,23 @@ $uc-user-name-height: rem-calc(30);
     text-align: center;
     font-size: 1.6rem;
   }
-  /* line 164, ../scss/_find-new.scss */
+  /* line 148, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-first {
     top: 0;
   }
-  /* line 168, ../scss/_find-new.scss */
+  /* line 152, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-second {
     top: 5rem;
   }
-  /* line 172, ../scss/_find-new.scss */
+  /* line 156, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-third {
     bottom: 0;
   }
-  /* line 176, ../scss/_find-new.scss */
+  /* line 160, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-tooltip {
     display: none;
   }
-  /* line 180, ../scss/_find-new.scss */
+  /* line 164, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup,
   .fn-wrapper .fn-next-ch {
     position: absolute;
@@ -13544,7 +13530,7 @@ $uc-user-name-height: rem-calc(30);
     background-color: rgba(255, 255, 255, 0);
     transition: background-color 0.2s;
   }
-  /* line 191, ../scss/_find-new.scss */
+  /* line 175, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-header,
   .fn-wrapper .fn-next-ch .fn-next-header {
     color: #333;
@@ -13555,7 +13541,7 @@ $uc-user-name-height: rem-calc(30);
     margin-top: 0.3125rem;
     line-height: 1.875rem;
   }
-  /* line 201, ../scss/_find-new.scss */
+  /* line 185, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-subheader,
   .fn-wrapper .fn-next-ch .fn-next-subheader {
     color: #333;
@@ -13564,7 +13550,7 @@ $uc-user-name-height: rem-calc(30);
     margin-right: 3.75rem;
     line-height: 1.5625rem;
   }
-  /* line 209, ../scss/_find-new.scss */
+  /* line 193, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-icon,
   .fn-wrapper .fn-next-ch .fn-next-icon {
     background-color: #018ad2;
@@ -13573,21 +13559,21 @@ $uc-user-name-height: rem-calc(30);
     height: 3.75rem;
     line-height: 3.75rem;
   }
-  /* line 217, ../scss/_find-new.scss */
+  /* line 201, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup:hover,
   .fn-wrapper .fn-next-ch:hover {
     background-color: rgba(255, 255, 255, 0.5);
   }
-  /* line 223, ../scss/_find-new.scss */
+  /* line 207, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-icon {
     background-color: #f4811f;
   }
-  /* line 228, ../scss/_find-new.scss */
+  /* line 212, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-ch {
     top: auto;
     bottom: 0;
   }
-  /* line 233, ../scss/_find-new.scss */
+  /* line 217, ../scss/_find-new.scss */
   .fn-wrapper .fn-share-ch {
     display: block;
     line-height: 3.125rem;
@@ -13599,12 +13585,12 @@ $uc-user-name-height: rem-calc(30);
   }
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 253, ../scss/_find-new.scss */
+  /* line 237, ../scss/_find-new.scss */
   .fn-wrapper .fn-image {
     width: 18.75rem;
     margin: 0 auto;
   }
-  /* line 258, ../scss/_find-new.scss */
+  /* line 242, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-first,
   .fn-wrapper .fn-square-second,
   .fn-wrapper .fn-square-third {
@@ -13616,11 +13602,11 @@ $uc-user-name-height: rem-calc(30);
     margin-right: 9.375rem;
     font-size: 2rem;
   }
-  /* line 274, ../scss/_find-new.scss */
+  /* line 258, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-second {
     top: 6.875rem;
   }
-  /* line 282, ../scss/_find-new.scss */
+  /* line 266, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-tooltip {
     display: block;
     font-size: 1rem;
@@ -13632,7 +13618,7 @@ $uc-user-name-height: rem-calc(30);
     margin-top: 1.25rem;
     padding: 0 1.25rem;
   }
-  /* line 293, ../scss/_find-new.scss */
+  /* line 277, ../scss/_find-new.scss */
   .fn-wrapper .fn-square-tooltip:after {
     content: "";
     display: block;
@@ -13644,12 +13630,12 @@ $uc-user-name-height: rem-calc(30);
     border: 0.625rem solid transparent;
     border-left: 0.625rem solid #333333;
   }
-  /* line 307, ../scss/_find-new.scss */
+  /* line 291, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup,
   .fn-wrapper .fn-next-ch {
     height: 5rem;
   }
-  /* line 311, ../scss/_find-new.scss */
+  /* line 295, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-header,
   .fn-wrapper .fn-next-ch .fn-next-header {
     font-size: 1.3rem;
@@ -13657,13 +13643,13 @@ $uc-user-name-height: rem-calc(30);
     margin-top: 0.625rem;
     line-height: 1.875rem;
   }
-  /* line 318, ../scss/_find-new.scss */
+  /* line 302, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-subheader,
   .fn-wrapper .fn-next-ch .fn-next-subheader {
     margin-right: 5rem;
     line-height: 1.875rem;
   }
-  /* line 323, ../scss/_find-new.scss */
+  /* line 307, ../scss/_find-new.scss */
   .fn-wrapper .fn-next-start-cup .fn-next-icon,
   .fn-wrapper .fn-next-ch .fn-next-icon {
     width: 5rem;
@@ -13671,7 +13657,7 @@ $uc-user-name-height: rem-calc(30);
     line-height: 5rem;
     font-size: 2rem;
   }
-  /* line 341, ../scss/_find-new.scss */
+  /* line 325, ../scss/_find-new.scss */
   .fn-wrapper .fn-share-ch {
     top: 7.8125rem;
   }

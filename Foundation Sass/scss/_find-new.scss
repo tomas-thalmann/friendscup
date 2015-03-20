@@ -11,33 +11,17 @@
 }
 
 // ----------------------------------
-// Blurred Background
+// Blurred Background (see app.js)
 // ----------------------------------
 
 .fn-container {
-    position: relative;
-    // fix: canvas is too wide for the view if there is a scrollbar
-    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include background-size(cover);
 }
 
 #fn-bg-image {
     display: none;
-}
-
-#fn-bg-canvas {
-    position: absolute;
-    top: -10px; // prevent gaps (see app.js)
-    left: 0;
-}
-
-.fn-bg-overlay {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255,255,255,0.5);
 }
 
 // ----------------------------------

@@ -170,59 +170,16 @@ $(document).ready(function () {
     // Find New Image Canvas
     // ------------------------------
     
-    // wait for the image to load
-    // otherwise jQuery takes the wrong container height
-    $('.fn-image').one('load', function () {
-        
-        // check if the needed objects are available
-        if ($('#fn-bg-image').length && $('.fn-container').length) {
+    // check if the needed objects are available
+    if ($('#fn-bg-image').length && $('.fn-container').length) {
+        $('.fn-container').css('background-image', 'url(' + $('#fn-bg-image').attr('src') + ')');
 
-            var dpr, // device pixel ratio
-                screen_width, // real width of the device
-                screen_height, // real height of the device
-                screen_max, // take width or height -> the one that is larger
-                fnCtx, // canvas context
-                fnImg; // background image for canvas
-
-            if (window.devicePixelRatio !== undefined) {
-                dpr = window.devicePixelRatio;
-            } else {
-                dpr = 1;
-            }
-
-            screen_width = window.screen.width * dpr;
-            screen_height = window.screen.height * dpr;
-            
-            // check for larger one -> tablet has higher height than width
-            // -> would be too small if tablet is in landscape
-            if (screen_width > screen_height) {
-                screen_max = screen_width;
-            } else {
-                screen_max = screen_height;
-            }
-            
-            $('#fn-bg-image').after(
-                // ($('.fn-container').height() + 20) -> + 20 to prevent gaps (see _find-new.scss)
-                '<canvas id="fn-bg-canvas" width="' + screen_max + '" height="' + ($('.fn-container').height() + 20) + '"></canvas>',
-                '<div class="fn-bg-overlay"></div>'
-            );
-
-            fnCtx = $("#fn-bg-canvas")[0].getContext('2d');
-            fnImg = new Image();
-
-            fnImg.onload = function () {
-                drawImageProp(fnCtx, this);
-                stackBlurCanvasRGB('fn-bg-canvas', 0, 0, fnCtx.canvas.width, fnCtx.canvas.height, 50);
-            };
-
-            fnImg.src = $('#fn-bg-image').attr('src');
-        }
-        
-    }).each(function () {
-        if (this.complete) {
-            $(this).load();
-        }
-    });
+        $('.fn-container').blurjs({
+            source: '.fn-container',
+            radius: 70,
+            overlay: 'rgba(255,255,255,0.5)'
+        });
+    }
     
     // ---------------------------
     // Media Queries
