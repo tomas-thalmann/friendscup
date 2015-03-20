@@ -23,9 +23,9 @@
                 <input type="password" />
             </label>
         </form>
-        <a href="#" class="button small expand">Login</a>
+        <a href="cup-page.html" class="button small expand">Login</a>
         
-        <a class="close-reveal-modal"><i class="fi-x"></i></a>
+        <a class="close-reveal-modal"><i class="fa fa-times"></i></a>
     </div>
     <!-- END - Login Modal -->
     
@@ -39,10 +39,10 @@
             
             <section class="top-bar-section">
                 <ul class="right">
-                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="cup-page.html">Cup Page</a></li>
                     <li class="has-dropdown">
-                        <a href="#">Infos und Tests</a>
+                        <a href="#">Entwicklung</a>
                         <ul class="dropdown">
                             <li><a href="how-it-works.html">7 Schritte</a></li>
                             <li><a href="find-new.html">Mir is fad</a></li>
@@ -53,7 +53,7 @@
                             <li><a href="formtest.html">Formulare</a></li>
                         </ul>
                     </li>
-                    <li class="hide-for-mobile-nav-only login-button-not-mobile"><a href="#"  data-reveal-id="login-modal">Login</a></li>
+                    <li class="hide-for-mobile-nav-only login-button-not-mobile"><a href="#" data-reveal-id="login-modal">Login</a></li>
                 </ul>
             </section>
         </nav>
@@ -61,59 +61,63 @@
     
     <a href="#" class="button alert show-for-mobile-nav-only login-button-mobile" data-reveal-id="login-modal">Login</a>
     <!-- END - Navigation -->
-    
+
     <!-- BEGIN - Content -->
     <div class="bg-image-arrow-panel">
         <div class="row">
             <div class="small-12 columns">
-                <h1 class="text-center">Impressum</h1>
+                <h1 class="fn-header">Versuchs mal mit <br /> ...</h1>
             </div>
         </div>
     </div>
-    <div class="bg-white-panel panel-extra-padding">
-        <div class="row">
-            <h2 class="text-center">Entwicklung</h2>
-            <p class="text-center">
-                Diese Website ist nur eine Entwicklungseite für eine Diplomarbeit an der HTL Villach. <br />
-                Diese Website ist nicht für die Öffentlichkeit bestimmt, sie dient nur Entwicklungszwecken. <br />
-                Jeglicher Inhalt ist nicht für die Veröffentlichung gedacht.
-            </p>
-        </div>
-    </div>
-    <div class="bg-light-panel panel-extra-padding">
-        <div class="row">
-            <h2 class="text-center">Verwendete Javascript/jQuery Plugins</h2>
-            <h4>jQuery Modal</h4>
-            <p>
-                Hier gehts zum Plugin: <a href="https://github.com/kylefox/jquery-modal">Klick mich!</a> <br />
-                Wir verwenden eine abgeänderte Version um das Plugin besser in unsere Seite integrieren zu können.
-            </p>
-            <hr>
-            <h4>Horizontales Scrolling mit Mausrad</h4>
-            <p>
-                Hier gehts zum Plugin: <a href="https://github.com/jquery/jquery-mousewheel">Klick mich!</a> <br />
-                Das Horizontale Scrolling wurde mit Hilfe von <a href="http://css-tricks.com/snippets/jquery/horz-scroll-with-mouse-wheel/">diesem Artikel</a> realisiert.
-            </p>
-            <hr>
-            <h4>Dragscrolling</h4>
-            <p>
-                Hier gehts zum Plugin: <a href="https://github.com/davetayls/jquery.kinetic">Klick mich!</a> <br />
-            </p>
-            <hr>
-            <h4>Tablesorting</h4>
-            <p>
-                Hier gehts zum Plugin: <a href="http://tristen.ca/tablesort/demo/">Klick mich!</a> <br />
-            </p>
-            <hr>
-            <h4>Lightbox</h4>
-            <p>
-                Hier gehts zum Plugin: <a href="http://lokeshdhakar.com/projects/lightbox2/">Klick mich!</a> <br />
-            </p>
-            <hr>
-            <h4>Image Blur</h4>
-            <p>
-                Hier gehts zum Plugin: <a href="https://github.com/flozz/StackBlur">Klick mich!</a> <br />
-            </p>
+    <div class="fn-container">
+        <img id="fn-bg-image" src="img/find-new/big.jpg" alt="climbing" />
+        <div class="panel-extra-padding">
+            <div class="row">
+                <div class="small-12 columns">
+                    <h1 class="fn-name">Sportklettern</h1>
+                    <div class="fn-wrapper">
+                        <img class="fn-image" src="img/find-new/small.jpg" alt="climbing" />
+                        <div class="fn-square-first">
+                            <i class="fa fa-heartbeat"></i>
+                            <div class="fn-square-tooltip">Adrenalinjunkie</div>
+                        </div>
+                        <div class="fn-square-second">
+                            <i class="fa fa-users"></i>
+                            <div class="fn-square-tooltip">Mehrspieler</div>
+                        </div>
+                        <div class="fn-square-third">
+                            <i class="fa fa-tree"></i>
+                            <div class="fn-square-tooltip">Outdoor</div>
+                        </div>
+                        <a href="#" class="fn-next-start-cup">
+                            <div class="fn-next-header">Super!</div>
+                            <div class="fn-next-subheader">Cup jetzt starten...</div>
+                            <div class="fn-next-icon"><i class="fa fa-arrow-right"></i></div>
+                        </a>
+                        <a href="#" class="fn-next-ch">
+                            <div class="fn-next-header">Meh!</div>
+                            <div class="fn-next-subheader">Will was anderes...</div>
+                            <div class="fn-next-icon"><i class="fa fa-random"></i></div>
+                        </a>
+                        <div class="fn-share-ch">
+                            Teilen: &nbsp; &nbsp;
+                            <a href="#" class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                            </a>
+                            <a href="#" class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                            </a>
+                            <a href="#" class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- END - Content -->
@@ -188,11 +192,11 @@
         </div>
     </div>
     <!-- END - Footer -->
-    
 
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/fastclick/lib/fastclick.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/stackblur-and-cover.js"></script>
     <script src="js/app.js"></script>
 </body>
 

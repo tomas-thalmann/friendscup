@@ -9943,8 +9943,12 @@ body:after {
 .fccs-header:hover {
   color: #018ad2;
 }
+/* line 40, ../scss/_fc-content-sections.scss */
+.fccs-header i {
+  line-height: inherit;
+}
 
-/* line 41, ../scss/_fc-content-sections.scss */
+/* line 46, ../scss/_fc-content-sections.scss */
 .fccs-header-nolink {
   font-weight: bold;
   border-bottom: 1px solid #bbb;
@@ -9954,7 +9958,7 @@ body:after {
 }
 
 @media only screen {
-  /* line 55, ../scss/_fc-content-sections.scss */
+  /* line 60, ../scss/_fc-content-sections.scss */
   .fccs-modal {
     display: none;
     max-width: none;
@@ -9967,35 +9971,35 @@ body:after {
   }
 }
 @media only screen and (min-width: 40.063em) {
-  /* line 66, ../scss/_fc-content-sections.scss */
+  /* line 71, ../scss/_fc-content-sections.scss */
   .fccs-modal {
     background-color: #fff;
   }
 }
-/* line 180, ../scss/_fc-content-sections.scss */
+/* line 185, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed {
   position: relative;
   overflow: hidden;
 }
-/* line 84, ../scss/_fc-content-sections.scss */
+/* line 89, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active {
   position: relative;
   width: 10.625rem;
 }
-/* line 89, ../scss/_fc-content-sections.scss */
+/* line 94, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder {
   background-color: #f4811f;
   height: 13.4375rem;
   position: relative;
 }
-/* line 94, ../scss/_fc-content-sections.scss */
+/* line 99, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 101, ../scss/_fc-content-sections.scss */
+/* line 106, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-name {
   color: #fff;
   margin: 0;
@@ -10006,13 +10010,13 @@ body:after {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 112, ../scss/_fc-content-sections.scss */
+/* line 117, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 117, ../scss/_fc-content-sections.scss */
+/* line 122, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image > img {
   height: inherit;
   width: inherit;
@@ -10021,7 +10025,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 124, ../scss/_fc-content-sections.scss */
+/* line 129, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10036,7 +10040,7 @@ body:after {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 139, ../scss/_fc-content-sections.scss */
+/* line 144, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-active-color-holder:after {
   content: "";
   display: block;
@@ -10048,21 +10052,21 @@ body:after {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #f4811f;
 }
-/* line 153, ../scss/_fc-content-sections.scss */
+/* line 158, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a .fccs-ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #555555;
 }
-/* line 161, ../scss/_fc-content-sections.scss */
+/* line 166, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active a:hover .fccs-ch-active-color-holder .fccs-ch-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 167, ../scss/_fc-content-sections.scss */
+/* line 172, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active:before {
   content: "";
   display: block;
@@ -10073,36 +10077,36 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 186, ../scss/_fc-content-sections.scss */
+/* line 191, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-active {
   margin: 0 auto;
 }
-/* line 190, ../scss/_fc-content-sections.scss */
+/* line 195, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container {
   position: absolute;
   top: 0;
   right: 50%;
   margin-right: 5.3125rem;
 }
-/* line 84, ../scss/_fc-content-sections.scss */
+/* line 89, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished {
   position: relative;
   width: 10.625rem;
 }
-/* line 89, ../scss/_fc-content-sections.scss */
+/* line 94, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder {
   background-color: #018ad2;
   height: 13.4375rem;
   position: relative;
 }
-/* line 94, ../scss/_fc-content-sections.scss */
+/* line 99, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 101, ../scss/_fc-content-sections.scss */
+/* line 106, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-name {
   color: #fff;
   margin: 0;
@@ -10113,13 +10117,13 @@ body:after {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 112, ../scss/_fc-content-sections.scss */
+/* line 117, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 117, ../scss/_fc-content-sections.scss */
+/* line 122, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image > img {
   height: inherit;
   width: inherit;
@@ -10128,7 +10132,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 124, ../scss/_fc-content-sections.scss */
+/* line 129, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10143,7 +10147,7 @@ body:after {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 139, ../scss/_fc-content-sections.scss */
+/* line 144, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-finished-color-holder:after {
   content: "";
   display: block;
@@ -10155,21 +10159,21 @@ body:after {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #018ad2;
 }
-/* line 153, ../scss/_fc-content-sections.scss */
+/* line 158, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a .fccs-ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #555555;
 }
-/* line 161, ../scss/_fc-content-sections.scss */
+/* line 166, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished a:hover .fccs-ch-finished-color-holder .fccs-ch-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 167, ../scss/_fc-content-sections.scss */
+/* line 172, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished:before {
   content: "";
   display: block;
@@ -10180,37 +10184,37 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 198, ../scss/_fc-content-sections.scss */
+/* line 203, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-left-container .fccs-ch-finished {
   float: left;
   margin-right: 1.875rem;
 }
-/* line 204, ../scss/_fc-content-sections.scss */
+/* line 209, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: 5.3125rem;
 }
-/* line 84, ../scss/_fc-content-sections.scss */
+/* line 89, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued {
   position: relative;
   width: 10.625rem;
 }
-/* line 89, ../scss/_fc-content-sections.scss */
+/* line 94, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder {
   background-color: #333333;
   height: 13.4375rem;
   position: relative;
 }
-/* line 94, ../scss/_fc-content-sections.scss */
+/* line 99, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 101, ../scss/_fc-content-sections.scss */
+/* line 106, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-name {
   color: #fff;
   margin: 0;
@@ -10221,13 +10225,13 @@ body:after {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 112, ../scss/_fc-content-sections.scss */
+/* line 117, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 117, ../scss/_fc-content-sections.scss */
+/* line 122, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image > img {
   height: inherit;
   width: inherit;
@@ -10236,7 +10240,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 124, ../scss/_fc-content-sections.scss */
+/* line 129, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10251,7 +10255,7 @@ body:after {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 139, ../scss/_fc-content-sections.scss */
+/* line 144, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-queued-color-holder:after {
   content: "";
   display: block;
@@ -10263,21 +10267,21 @@ body:after {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #333333;
 }
-/* line 153, ../scss/_fc-content-sections.scss */
+/* line 158, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a .fccs-ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #555555;
 }
-/* line 161, ../scss/_fc-content-sections.scss */
+/* line 166, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued a:hover .fccs-ch-queued-color-holder .fccs-ch-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 167, ../scss/_fc-content-sections.scss */
+/* line 172, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued:before {
   content: "";
   display: block;
@@ -10288,38 +10292,38 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 212, ../scss/_fc-content-sections.scss */
+/* line 217, ../scss/_fc-content-sections.scss */
 .fccs-ch-compressed .fccs-ch-right-container .fccs-ch-queued {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 219, ../scss/_fc-content-sections.scss */
+/* line 224, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 1.25rem;
 }
-/* line 84, ../scss/_fc-content-sections.scss */
+/* line 89, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active {
   position: relative;
   width: 10.625rem;
 }
-/* line 89, ../scss/_fc-content-sections.scss */
+/* line 94, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder {
   background-color: #f4811f;
   height: 13.4375rem;
   position: relative;
 }
-/* line 94, ../scss/_fc-content-sections.scss */
+/* line 99, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 101, ../scss/_fc-content-sections.scss */
+/* line 106, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-name {
   color: #fff;
   margin: 0;
@@ -10330,13 +10334,13 @@ body:after {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 112, ../scss/_fc-content-sections.scss */
+/* line 117, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 117, ../scss/_fc-content-sections.scss */
+/* line 122, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-image > img {
   height: inherit;
   width: inherit;
@@ -10345,7 +10349,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 124, ../scss/_fc-content-sections.scss */
+/* line 129, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder .fccs-ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10360,7 +10364,7 @@ body:after {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 139, ../scss/_fc-content-sections.scss */
+/* line 144, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-active-color-holder:after {
   content: "";
   display: block;
@@ -10372,21 +10376,21 @@ body:after {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #f4811f;
 }
-/* line 153, ../scss/_fc-content-sections.scss */
+/* line 158, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a .fccs-ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #555555;
 }
-/* line 161, ../scss/_fc-content-sections.scss */
+/* line 166, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active a:hover .fccs-ch-active-color-holder .fccs-ch-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 167, ../scss/_fc-content-sections.scss */
+/* line 172, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active:before {
   content: "";
   display: block;
@@ -10397,25 +10401,25 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 84, ../scss/_fc-content-sections.scss */
+/* line 89, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished {
   position: relative;
   width: 10.625rem;
 }
-/* line 89, ../scss/_fc-content-sections.scss */
+/* line 94, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder {
   background-color: #018ad2;
   height: 13.4375rem;
   position: relative;
 }
-/* line 94, ../scss/_fc-content-sections.scss */
+/* line 99, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 101, ../scss/_fc-content-sections.scss */
+/* line 106, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-name {
   color: #fff;
   margin: 0;
@@ -10426,13 +10430,13 @@ body:after {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 112, ../scss/_fc-content-sections.scss */
+/* line 117, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 117, ../scss/_fc-content-sections.scss */
+/* line 122, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-image > img {
   height: inherit;
   width: inherit;
@@ -10441,7 +10445,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 124, ../scss/_fc-content-sections.scss */
+/* line 129, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder .fccs-ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10456,7 +10460,7 @@ body:after {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 139, ../scss/_fc-content-sections.scss */
+/* line 144, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-finished-color-holder:after {
   content: "";
   display: block;
@@ -10468,21 +10472,21 @@ body:after {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #018ad2;
 }
-/* line 153, ../scss/_fc-content-sections.scss */
+/* line 158, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a .fccs-ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #555555;
 }
-/* line 161, ../scss/_fc-content-sections.scss */
+/* line 166, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished a:hover .fccs-ch-finished-color-holder .fccs-ch-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 167, ../scss/_fc-content-sections.scss */
+/* line 172, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-finished:before {
   content: "";
   display: block;
@@ -10493,25 +10497,25 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 84, ../scss/_fc-content-sections.scss */
+/* line 89, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued {
   position: relative;
   width: 10.625rem;
 }
-/* line 89, ../scss/_fc-content-sections.scss */
+/* line 94, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder {
   background-color: #333333;
   height: 13.4375rem;
   position: relative;
 }
-/* line 94, ../scss/_fc-content-sections.scss */
+/* line 99, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-icon {
   position: absolute;
   right: 0;
   width: 1.875rem;
   text-align: center;
 }
-/* line 101, ../scss/_fc-content-sections.scss */
+/* line 106, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-name {
   color: #fff;
   margin: 0;
@@ -10522,13 +10526,13 @@ body:after {
   text-overflow: ellipsis;
   position: relative;
 }
-/* line 112, ../scss/_fc-content-sections.scss */
+/* line 117, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image {
   height: 10.625rem;
   width: 10.625rem;
   overflow: hidden;
 }
-/* line 117, ../scss/_fc-content-sections.scss */
+/* line 122, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-image > img {
   height: inherit;
   width: inherit;
@@ -10537,7 +10541,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 124, ../scss/_fc-content-sections.scss */
+/* line 129, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder .fccs-ch-winner {
   position: absolute;
   bottom: 0.9375rem;
@@ -10552,7 +10556,7 @@ body:after {
   white-space: nowrap;
   text-overflow: ellipsis;
 }
-/* line 139, ../scss/_fc-content-sections.scss */
+/* line 144, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-queued-color-holder:after {
   content: "";
   display: block;
@@ -10564,21 +10568,21 @@ body:after {
   border: 0.9375rem solid transparent;
   border-top: 0.9375rem solid #333333;
 }
-/* line 153, ../scss/_fc-content-sections.scss */
+/* line 158, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a .fccs-ch-date {
   font-weight: bold;
   text-align: center;
   padding-top: 1.25rem;
   color: #555555;
 }
-/* line 161, ../scss/_fc-content-sections.scss */
+/* line 166, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued a:hover .fccs-ch-queued-color-holder .fccs-ch-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 167, ../scss/_fc-content-sections.scss */
+/* line 172, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-queued:before {
   content: "";
   display: block;
@@ -10589,57 +10593,57 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 230, ../scss/_fc-content-sections.scss */
+/* line 235, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded .fccs-ch-active,
 .fccs-ch-expanded .fccs-ch-finished,
 .fccs-ch-expanded .fccs-ch-queued {
   display: inline-block;
   margin: 0 0.9375rem;
 }
-/* line 237, ../scss/_fc-content-sections.scss */
+/* line 242, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded > div:first-child {
   margin-left: 0;
 }
-/* line 240, ../scss/_fc-content-sections.scss */
+/* line 245, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded > div:first-child:before {
   left: 0;
 }
-/* line 245, ../scss/_fc-content-sections.scss */
+/* line 250, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded > div:last-child {
   margin-right: 0;
 }
-/* line 248, ../scss/_fc-content-sections.scss */
+/* line 253, ../scss/_fc-content-sections.scss */
 .fccs-ch-expanded > div:last-child:before {
   right: 0;
 }
 
-/* line 421, ../scss/_fc-content-sections.scss */
+/* line 426, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed {
   position: relative;
   overflow: hidden;
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-first {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder {
   position: relative;
   padding-top: 0;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -10650,7 +10654,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -10659,7 +10663,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -10674,18 +10678,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -10695,7 +10699,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -10708,12 +10712,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10730,7 +10734,7 @@ body:after {
   line-height: 5.3125rem;
   font-size: 2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first:before {
   content: "";
   display: block;
@@ -10741,11 +10745,11 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 427, ../scss/_fc-content-sections.scss */
+/* line 432, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-first {
   margin: 0 auto;
 }
-/* line 431, ../scss/_fc-content-sections.scss */
+/* line 436, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container {
   position: absolute;
   top: 0;
@@ -10753,33 +10757,33 @@ body:after {
   margin-right: 5.3125rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 431, ../scss/_fc-content-sections.scss */
+  /* line 436, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-left-container {
     margin-right: 6.25rem;
   }
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder {
   position: relative;
   padding-top: 1.25rem;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -10790,7 +10794,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -10799,7 +10803,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -10814,18 +10818,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -10835,7 +10839,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -10848,12 +10852,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10863,7 +10867,7 @@ body:after {
   line-height: 4.0625rem;
   font-size: 2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second:before {
   content: "";
   display: block;
@@ -10874,12 +10878,12 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 442, ../scss/_fc-content-sections.scss */
+/* line 447, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-left-container .fccs-rk-second {
   float: right;
   margin-right: 1.875rem;
 }
-/* line 448, ../scss/_fc-content-sections.scss */
+/* line 453, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container {
   position: absolute;
   top: 0;
@@ -10887,33 +10891,33 @@ body:after {
   margin-left: 5.3125rem;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 448, ../scss/_fc-content-sections.scss */
+  /* line 453, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-right-container {
     margin-left: 6.25rem;
   }
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder {
   position: relative;
   padding-top: 2.5rem;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -10924,7 +10928,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -10933,7 +10937,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -10948,18 +10952,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -10969,7 +10973,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -10982,12 +10986,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -10997,7 +11001,7 @@ body:after {
   line-height: 2.8125rem;
   font-size: 2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third:before {
   content: "";
   display: block;
@@ -11008,41 +11012,41 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 459, ../scss/_fc-content-sections.scss */
+/* line 464, ../scss/_fc-content-sections.scss */
 .fccs-rk-compressed .fccs-rk-right-container .fccs-rk-third {
   float: left;
   margin-left: 1.875rem;
 }
 
-/* line 466, ../scss/_fc-content-sections.scss */
+/* line 471, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded {
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;
   padding-bottom: 4.0625rem;
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-first {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder {
   position: relative;
   padding-top: 0;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -11053,7 +11057,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -11062,7 +11066,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -11077,18 +11081,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -11098,7 +11102,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -11111,12 +11115,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11133,7 +11137,7 @@ body:after {
   line-height: 5.3125rem;
   font-size: 2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first:before {
   content: "";
   display: block;
@@ -11144,28 +11148,28 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-second {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder {
   position: relative;
   padding-top: 1.25rem;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -11176,7 +11180,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -11185,7 +11189,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -11200,18 +11204,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -11221,7 +11225,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -11234,12 +11238,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11249,7 +11253,7 @@ body:after {
   line-height: 4.0625rem;
   font-size: 2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-second:before {
   content: "";
   display: block;
@@ -11260,28 +11264,28 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-third {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder {
   position: relative;
   padding-top: 2.5rem;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -11292,7 +11296,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -11301,7 +11305,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -11316,18 +11320,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -11337,7 +11341,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -11350,12 +11354,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11365,7 +11369,7 @@ body:after {
   line-height: 2.8125rem;
   font-size: 2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-third:before {
   content: "";
   display: block;
@@ -11376,28 +11380,28 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 272, ../scss/_fc-content-sections.scss */
+/* line 277, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium {
   width: 10.625rem;
   position: relative;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 272, ../scss/_fc-content-sections.scss */
+  /* line 277, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-no-podium {
     width: 12.5rem;
   }
 }
-/* line 279, ../scss/_fc-content-sections.scss */
+/* line 284, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder {
   position: relative;
   padding-top: 5.3125rem;
 }
-/* line 295, ../scss/_fc-content-sections.scss */
+/* line 300, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a {
   display: block;
   margin: 0 auto;
 }
-/* line 299, ../scss/_fc-content-sections.scss */
+/* line 304, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a .fccs-rk-image {
   height: 5rem;
   width: 5rem;
@@ -11408,7 +11412,7 @@ body:after {
   overflow: hidden;
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
-/* line 308, ../scss/_fc-content-sections.scss */
+/* line 313, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a .fccs-rk-image > img {
   height: inherit;
   width: inherit;
@@ -11417,7 +11421,7 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 315, ../scss/_fc-content-sections.scss */
+/* line 320, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a .fccs-rk-name {
   text-align: center;
   color: #555555;
@@ -11432,18 +11436,18 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 328, ../scss/_fc-content-sections.scss */
+/* line 333, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a:hover .fccs-rk-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 332, ../scss/_fc-content-sections.scss */
+/* line 337, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder a:hover .fccs-rk-name {
   color: #018ad2;
 }
-/* line 338, ../scss/_fc-content-sections.scss */
+/* line 343, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-points {
   text-align: center;
   padding: 0;
@@ -11453,7 +11457,7 @@ body:after {
   color: #fff;
   position: relative;
 }
-/* line 347, ../scss/_fc-content-sections.scss */
+/* line 352, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-points:after {
   content: "";
   display: block;
@@ -11466,12 +11470,12 @@ body:after {
   border-top: 0.9375rem solid #333333;
 }
 @media only screen and (min-width: 64.063em) {
-  /* line 347, ../scss/_fc-content-sections.scss */
+  /* line 352, ../scss/_fc-content-sections.scss */
   .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-points:after {
     left: 5.3125rem;
   }
 }
-/* line 364, ../scss/_fc-content-sections.scss */
+/* line 369, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium .fccs-rk-info-holder .fccs-rk-placement {
   text-align: center;
   font-weight: bold;
@@ -11480,7 +11484,7 @@ body:after {
   bottom: -2.8125rem;
   font-size: 1.2rem;
 }
-/* line 408, ../scss/_fc-content-sections.scss */
+/* line 413, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-no-podium:before {
   content: "";
   display: block;
@@ -11491,7 +11495,7 @@ body:after {
   height: 0.9375rem;
   background-color: #ccc;
 }
-/* line 478, ../scss/_fc-content-sections.scss */
+/* line 483, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded .fccs-rk-first,
 .fccs-rk-expanded .fccs-rk-second,
 .fccs-rk-expanded .fccs-rk-third,
@@ -11500,45 +11504,45 @@ body:after {
   vertical-align: bottom;
   margin: 0 0.9375rem;
 }
-/* line 487, ../scss/_fc-content-sections.scss */
+/* line 492, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded > div:first-child {
   margin-left: 0;
 }
-/* line 490, ../scss/_fc-content-sections.scss */
+/* line 495, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded > div:first-child:before {
   left: 0;
 }
-/* line 495, ../scss/_fc-content-sections.scss */
+/* line 500, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded > div:last-child {
   margin-right: 0;
 }
-/* line 498, ../scss/_fc-content-sections.scss */
+/* line 503, ../scss/_fc-content-sections.scss */
 .fccs-rk-expanded > div:last-child:before {
   right: 0;
 }
 
-/* line 690, ../scss/_fc-content-sections.scss */
+/* line 695, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed {
   overflow: hidden;
   overflow-x: auto;
 }
-/* line 517, ../scss/_fc-content-sections.scss */
+/* line 522, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table {
   border-collapse: collapse;
   width: 100%;
 }
-/* line 529, ../scss/_fc-content-sections.scss */
+/* line 534, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table thead tr th {
   padding: 0;
   border-right: 1px solid #dddddd;
 }
-/* line 539, ../scss/_fc-content-sections.scss */
+/* line 544, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table thead tr th:first-child {
   width: 12.5rem;
   min-width: 12.5rem;
   max-width: 12.5rem;
 }
-/* line 545, ../scss/_fc-content-sections.scss */
+/* line 550, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table thead tr th div {
   padding: 0.5rem 0.625rem 0.625rem;
   -moz-user-select: -moz-none;
@@ -11549,11 +11553,11 @@ body:after {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 556, ../scss/_fc-content-sections.scss */
+/* line 561, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody {
   border-top: 1px solid #dddddd;
 }
-/* line 559, ../scss/_fc-content-sections.scss */
+/* line 564, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr {
   border-bottom: 1px solid #dddddd;
   -moz-transition: background-color 0.2s ease;
@@ -11561,17 +11565,17 @@ body:after {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-/* line 563, ../scss/_fc-content-sections.scss */
+/* line 568, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr:hover {
   background-color: whitesmoke;
 }
-/* line 567, ../scss/_fc-content-sections.scss */
+/* line 572, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td {
   text-align: center;
   border-right: 1px solid #dddddd;
   padding: 0;
 }
-/* line 572, ../scss/_fc-content-sections.scss */
+/* line 577, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td a {
   display: block;
   text-align: center;
@@ -11582,16 +11586,16 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 579, ../scss/_fc-content-sections.scss */
+/* line 584, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td a:hover {
   color: #018ad2;
 }
-/* line 584, ../scss/_fc-content-sections.scss */
+/* line 589, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td:first-child {
   padding: 0;
   max-width: 0;
 }
-/* line 590, ../scss/_fc-content-sections.scss */
+/* line 595, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td:first-child a {
   display: block;
   text-align: left;
@@ -11606,7 +11610,7 @@ body:after {
   -webkit-transition: color 0.2s ease, background-color 0.2s ease;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
-/* line 601, ../scss/_fc-content-sections.scss */
+/* line 606, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td:first-child a img {
   height: 3.125rem;
   width: 3.125rem;
@@ -11615,56 +11619,56 @@ body:after {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 608, ../scss/_fc-content-sections.scss */
+/* line 613, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr td:first-child a:hover {
   color: #018ad2;
   background-color: #eee;
 }
-/* line 617, ../scss/_fc-content-sections.scss */
+/* line 622, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr.current-user td {
   color: #018ad2;
 }
-/* line 620, ../scss/_fc-content-sections.scss */
+/* line 625, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr.current-user td a {
   color: #018ad2;
 }
-/* line 624, ../scss/_fc-content-sections.scss */
+/* line 629, ../scss/_fc-content-sections.scss */
 .fccs-rt-compressed table tbody tr.current-user td:first-child a {
   border-left: 3px solid #018ad2;
 }
 @media only screen and (max-width: 40em) {
-  /* line 635, ../scss/_fc-content-sections.scss */
+  /* line 640, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table {
     background-color: #e8edf5;
   }
-  /* line 640, ../scss/_fc-content-sections.scss */
+  /* line 645, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table thead tr th {
     background-color: #e8edf5;
     border-right: 1px solid #aaaaaa;
   }
-  /* line 647, ../scss/_fc-content-sections.scss */
+  /* line 652, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table tbody {
     border-top: 1px solid #aaaaaa;
   }
-  /* line 650, ../scss/_fc-content-sections.scss */
+  /* line 655, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table tbody tr {
     border-bottom: 1px solid #aaaaaa;
   }
-  /* line 653, ../scss/_fc-content-sections.scss */
+  /* line 658, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table tbody tr td {
     border-right: 1px solid #aaaaaa;
   }
-  /* line 662, ../scss/_fc-content-sections.scss */
+  /* line 667, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table {
     table-layout: auto;
   }
-  /* line 670, ../scss/_fc-content-sections.scss */
+  /* line 675, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table thead tr th:first-child {
     width: 100%;
     min-width: 0;
     max-width: 100%;
   }
-  /* line 677, ../scss/_fc-content-sections.scss */
+  /* line 682, ../scss/_fc-content-sections.scss */
   .fccs-rt-compressed table thead tr th:nth-child(2) {
     width: 1px;
     min-width: 0;
@@ -11672,18 +11676,18 @@ body:after {
   }
 }
 
-/* line 697, ../scss/_fc-content-sections.scss */
+/* line 702, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded {
   overflow: hidden;
   overflow-x: auto;
   padding-bottom: 1.25rem;
 }
-/* line 517, ../scss/_fc-content-sections.scss */
+/* line 522, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table {
   border-collapse: collapse;
   width: auto;
 }
-/* line 529, ../scss/_fc-content-sections.scss */
+/* line 534, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table thead tr th {
   padding: 0;
   border-right: 1px solid #dddddd;
@@ -11691,13 +11695,13 @@ body:after {
   min-width: 10.625rem;
   max-width: 10.625rem;
 }
-/* line 539, ../scss/_fc-content-sections.scss */
+/* line 544, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table thead tr th:first-child {
   width: 12.5rem;
   min-width: 12.5rem;
   max-width: 12.5rem;
 }
-/* line 545, ../scss/_fc-content-sections.scss */
+/* line 550, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table thead tr th div {
   padding: 0.5rem 0.625rem 0.625rem;
   -moz-user-select: -moz-none;
@@ -11708,11 +11712,11 @@ body:after {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-/* line 556, ../scss/_fc-content-sections.scss */
+/* line 561, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody {
   border-top: 1px solid #dddddd;
 }
-/* line 559, ../scss/_fc-content-sections.scss */
+/* line 564, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr {
   border-bottom: 1px solid #dddddd;
   -moz-transition: background-color 0.2s ease;
@@ -11720,17 +11724,17 @@ body:after {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-/* line 563, ../scss/_fc-content-sections.scss */
+/* line 568, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr:hover {
   background-color: whitesmoke;
 }
-/* line 567, ../scss/_fc-content-sections.scss */
+/* line 572, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td {
   text-align: center;
   border-right: 1px solid #dddddd;
   padding: 0;
 }
-/* line 572, ../scss/_fc-content-sections.scss */
+/* line 577, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td a {
   display: block;
   text-align: center;
@@ -11741,16 +11745,16 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 579, ../scss/_fc-content-sections.scss */
+/* line 584, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td a:hover {
   color: #018ad2;
 }
-/* line 584, ../scss/_fc-content-sections.scss */
+/* line 589, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td:first-child {
   padding: 0;
   max-width: 0;
 }
-/* line 590, ../scss/_fc-content-sections.scss */
+/* line 595, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td:first-child a {
   display: block;
   text-align: left;
@@ -11765,7 +11769,7 @@ body:after {
   -webkit-transition: color 0.2s ease, background-color 0.2s ease;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
-/* line 601, ../scss/_fc-content-sections.scss */
+/* line 606, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td:first-child a img {
   height: 3.125rem;
   width: 3.125rem;
@@ -11774,48 +11778,48 @@ body:after {
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 608, ../scss/_fc-content-sections.scss */
+/* line 613, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr td:first-child a:hover {
   color: #018ad2;
   background-color: #eee;
 }
-/* line 617, ../scss/_fc-content-sections.scss */
+/* line 622, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr.current-user td {
   color: #018ad2;
 }
-/* line 620, ../scss/_fc-content-sections.scss */
+/* line 625, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr.current-user td a {
   color: #018ad2;
 }
-/* line 624, ../scss/_fc-content-sections.scss */
+/* line 629, ../scss/_fc-content-sections.scss */
 .fccs-rt-expanded table tbody tr.current-user td:first-child a {
   border-left: 3px solid #018ad2;
 }
 @media only screen and (max-width: 40em) {
-  /* line 635, ../scss/_fc-content-sections.scss */
+  /* line 640, ../scss/_fc-content-sections.scss */
   .fccs-rt-expanded table {
     background-color: #e8edf5;
   }
-  /* line 640, ../scss/_fc-content-sections.scss */
+  /* line 645, ../scss/_fc-content-sections.scss */
   .fccs-rt-expanded table thead tr th {
     background-color: #e8edf5;
     border-right: 1px solid #aaaaaa;
   }
-  /* line 647, ../scss/_fc-content-sections.scss */
+  /* line 652, ../scss/_fc-content-sections.scss */
   .fccs-rt-expanded table tbody {
     border-top: 1px solid #aaaaaa;
   }
-  /* line 650, ../scss/_fc-content-sections.scss */
+  /* line 655, ../scss/_fc-content-sections.scss */
   .fccs-rt-expanded table tbody tr {
     border-bottom: 1px solid #aaaaaa;
   }
-  /* line 653, ../scss/_fc-content-sections.scss */
+  /* line 658, ../scss/_fc-content-sections.scss */
   .fccs-rt-expanded table tbody tr td {
     border-right: 1px solid #aaaaaa;
   }
 }
 
-/* line 707, ../scss/_fc-content-sections.scss */
+/* line 712, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-header {
   cursor: pointer;
   -moz-transition: background-color 0.2s ease;
@@ -11823,12 +11827,12 @@ body:after {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease;
 }
-/* line 711, ../scss/_fc-content-sections.scss */
+/* line 716, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-header div {
   padding-right: 1.875rem;
   position: relative;
 }
-/* line 715, ../scss/_fc-content-sections.scss */
+/* line 720, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-header div:after {
   font-family: FontAwesome;
   font-weight: normal;
@@ -11854,26 +11858,26 @@ body:after {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-/* line 739, ../scss/_fc-content-sections.scss */
+/* line 744, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-header:hover {
   background-color: whitesmoke;
 }
-/* line 742, ../scss/_fc-content-sections.scss */
+/* line 747, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-header:hover div:after {
   color: #555555;
 }
-/* line 748, ../scss/_fc-content-sections.scss */
+/* line 753, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-up div:after {
   content: '\f0de';
   color: #555555;
 }
-/* line 753, ../scss/_fc-content-sections.scss */
+/* line 758, ../scss/_fc-content-sections.scss */
 .table-sort th.sort-down div:after {
   content: '\f0dd';
   color: #555555;
 }
 
-/* line 767, ../scss/_fc-content-sections.scss */
+/* line 772, ../scss/_fc-content-sections.scss */
 .fccs-ig img {
   line-height: 0;
   display: inline-block;
@@ -11887,33 +11891,186 @@ body:after {
   -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
 }
-/* line 775, ../scss/_fc-content-sections.scss */
+/* line 780, ../scss/_fc-content-sections.scss */
 .fccs-ig img:hover, .fccs-ig img:focus {
   -moz-box-shadow: 0 0 6px 1px rgba(1, 138, 210, 0.5);
   -webkit-box-shadow: 0 0 6px 1px rgba(1, 138, 210, 0.5);
   box-shadow: 0 0 6px 1px rgba(1, 138, 210, 0.5);
 }
 
-/* line 797, ../scss/_fc-content-sections.scss */
+/*
+$uc-bg-color: $fc-primary-bg;
+$uc-bg-color-mobile: #fff;
+$uc-arrow-size: rem-calc(15);
+$uc-arrow-size-mobile: rem-calc(10);
+$uc-user-img-size: rem-calc(70);
+$uc-user-img-size-mobile: rem-calc(50);
+$uc-user-name-height: rem-calc(30);
+
+.fccs-uc {
+    .fccs-uc-msg-container {
+        position: relative;
+        margin-bottom: rem-calc(20);
+        
+        .fccs-uc-user {
+            display: block;
+            width: $uc-user-img-size;
+            position: absolute;
+            top: 0;
+            left: 0;
+            
+            @media only screen and (max-width: 40em) {
+                width: $uc-user-img-size-mobile;
+            }
+
+            .fccs-uc-image {
+                height: $uc-user-img-size;
+                width: $uc-user-img-size;
+                @include border-radius(50%);
+                overflow: hidden;
+                // fix problem with transition + border-radius
+                -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+                
+                @media only screen and (max-width: 40em) {
+                    height: $uc-user-img-size-mobile;
+                    width: $uc-user-img-size-mobile;
+                }
+
+                > img {
+                    height: inherit;
+                    width: inherit;
+                    @include transition(transform 0.2s ease);
+                }
+            }
+
+            .fccs-uc-name {
+                text-align: center;
+                color: $body-font-color;
+                line-height: $uc-user-name-height;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                @include transition(color 0.2s ease);
+            }
+
+            &:hover {
+                .fccs-uc-image > img {
+                    @include transform(scale(1.1));
+                }
+
+                .fccs-uc-name {
+                    color: $fc-primary;
+                }
+            }
+        }
+        
+        .fccs-uc-msg {
+            margin-left: $uc-user-img-size + rem-calc(20) + $uc-arrow-size;
+            margin-right: 0;
+            min-height: $uc-user-img-size + $uc-user-name-height;
+            padding: rem-calc(15);
+            background-color: $uc-bg-color;
+            border-right: rem-calc(5) solid $fc-primary;
+            position: relative;
+            
+            @media only screen and (max-width: 40em) {
+                margin-left: $uc-user-img-size-mobile + rem-calc(10) + $uc-arrow-size-mobile;
+                margin-right: 0;
+                background-color: $uc-bg-color-mobile;
+                font-size: 0.8rem;
+            }
+            
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: $uc-user-img-size / 2 - $uc-arrow-size;
+                // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                left: -($uc-arrow-size * 2) + rem-calc(2);
+                border: $uc-arrow-size solid transparent;
+                border-right-color: $uc-bg-color;
+                
+                @media only screen and (max-width: 40em) {
+                    top: $uc-user-img-size-mobile / 2 - $uc-arrow-size-mobile;
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                    left: -($uc-arrow-size-mobile * 2) + rem-calc(2);
+                    border-width: $uc-arrow-size-mobile;
+                    border-right-color: $uc-bg-color-mobile;
+                }
+            }
+            
+            textarea {
+                resize: vertical;
+                // IE fix: hide scrollbar if content is not larger than area
+                overflow: auto;
+            }
+            
+            .button {
+                margin: 0;
+            }
+        }
+    }
+    
+    .current-user {
+        .fccs-uc-user {
+            left: auto;
+            right: 0;
+        }
+        
+        .fccs-uc-msg {
+            margin-left: 0;
+            margin-right: $uc-user-img-size + rem-calc(20) + $uc-arrow-size;
+            border-right: none;
+            border-left: rem-calc(5) solid $fc-orange;
+            
+            @media only screen and (max-width: 40em) {
+                margin-right: $uc-user-img-size-mobile + rem-calc(10) + $uc-arrow-size-mobile;
+            }
+            
+            &:before {
+                left: auto;
+                // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                right: -($uc-arrow-size * 2) + rem-calc(2);
+                border-right-color: transparent;
+                border-left-color: $uc-bg-color;
+                
+                @media only screen and (max-width: 40em) {
+                    // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                    right: -($uc-arrow-size-mobile * 2) + rem-calc(2);
+                    border-left-color: $uc-bg-color-mobile;
+                }
+            }
+        }
+    }
+}*/
+/* line 955, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container {
   position: relative;
   margin-bottom: 1.25rem;
-}
-/* line 801, ../scss/_fc-content-sections.scss */
-.fccs-uc .fccs-uc-msg-container .fccs-uc-user {
-  display: block;
-  width: 4.375rem;
-  position: absolute;
-  top: 0;
-  left: 0;
+  padding-top: 2.1875rem;
 }
 @media only screen and (max-width: 40em) {
-  /* line 801, ../scss/_fc-content-sections.scss */
-  .fccs-uc .fccs-uc-msg-container .fccs-uc-user {
-    width: 3.125rem;
+  /* line 955, ../scss/_fc-content-sections.scss */
+  .fccs-uc .fccs-uc-msg-container {
+    padding-top: 1.5625rem;
   }
 }
-/* line 812, ../scss/_fc-content-sections.scss */
+/* line 964, ../scss/_fc-content-sections.scss */
+.fccs-uc .fccs-uc-msg-container .fccs-uc-user {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 1.25rem;
+}
+@media only screen and (max-width: 40em) {
+  /* line 964, ../scss/_fc-content-sections.scss */
+  .fccs-uc .fccs-uc-msg-container .fccs-uc-user {
+    left: 0.625rem;
+  }
+}
+/* line 974, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-image {
   height: 4.375rem;
   width: 4.375rem;
@@ -11924,13 +12081,13 @@ body:after {
   -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 }
 @media only screen and (max-width: 40em) {
-  /* line 812, ../scss/_fc-content-sections.scss */
+  /* line 974, ../scss/_fc-content-sections.scss */
   .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-image {
     height: 3.125rem;
     width: 3.125rem;
   }
 }
-/* line 825, ../scss/_fc-content-sections.scss */
+/* line 987, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-image > img {
   height: inherit;
   width: inherit;
@@ -11939,11 +12096,10 @@ body:after {
   -webkit-transition: -webkit-transform 0.2s ease;
   transition: transform 0.2s ease;
 }
-/* line 832, ../scss/_fc-content-sections.scss */
+/* line 994, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-name {
-  text-align: center;
+  font-size: 1.2rem;
   color: #555555;
-  line-height: 1.875rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -11951,98 +12107,74 @@ body:after {
   -o-transition: color 0.2s ease;
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
+  position: absolute;
+  bottom: 2.1875rem;
+  left: 4.375rem;
+  padding: 0 0.625rem;
 }
-/* line 843, ../scss/_fc-content-sections.scss */
+@media only screen and (max-width: 40em) {
+  /* line 994, ../scss/_fc-content-sections.scss */
+  .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-name {
+    bottom: 1.5625rem;
+    left: 3.125rem;
+  }
+}
+/* line 1012, ../scss/_fc-content-sections.scss */
+.fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-time {
+  font-size: 0.7rem;
+  color: #555555;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  position: absolute;
+  top: 2.1875rem;
+  left: 4.375rem;
+  padding: 0 0.625rem;
+}
+@media only screen and (max-width: 40em) {
+  /* line 1012, ../scss/_fc-content-sections.scss */
+  .fccs-uc .fccs-uc-msg-container .fccs-uc-user .fccs-uc-time {
+    top: 1.5625rem;
+    left: 3.125rem;
+  }
+}
+/* line 1030, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user:hover .fccs-uc-image > img {
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
-/* line 847, ../scss/_fc-content-sections.scss */
+/* line 1034, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-user:hover .fccs-uc-name {
   color: #018ad2;
 }
-/* line 853, ../scss/_fc-content-sections.scss */
+/* line 1040, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg {
-  margin-left: 6.5625rem;
-  margin-right: 0;
-  min-height: 6.25rem;
-  padding: 0.9375rem;
+  padding: 3.125rem 0.9375rem 0.9375rem 0.9375rem;
   background-color: #e8edf5;
   border-right: 0.3125rem solid #018ad2;
-  position: relative;
 }
 @media only screen and (max-width: 40em) {
-  /* line 853, ../scss/_fc-content-sections.scss */
+  /* line 1040, ../scss/_fc-content-sections.scss */
   .fccs-uc .fccs-uc-msg-container .fccs-uc-msg {
-    margin-left: 4.375rem;
-    margin-right: 0;
+    padding: 2.5rem 0.9375rem 0.9375rem 0.9375rem;
     background-color: white;
     font-size: 0.8rem;
   }
 }
-/* line 869, ../scss/_fc-content-sections.scss */
-.fccs-uc .fccs-uc-msg-container .fccs-uc-msg:before {
-  content: '';
-  display: block;
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 1.25rem;
-  left: -1.75rem;
-  border: 0.9375rem solid transparent;
-  border-right-color: #e8edf5;
-}
-@media only screen and (max-width: 40em) {
-  /* line 869, ../scss/_fc-content-sections.scss */
-  .fccs-uc .fccs-uc-msg-container .fccs-uc-msg:before {
-    top: 0.9375rem;
-    left: -1.125rem;
-    border-width: 0.625rem;
-    border-right-color: white;
-  }
-}
-/* line 890, ../scss/_fc-content-sections.scss */
+/* line 1051, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg textarea {
   resize: vertical;
   overflow: auto;
 }
-/* line 896, ../scss/_fc-content-sections.scss */
+/* line 1057, ../scss/_fc-content-sections.scss */
 .fccs-uc .fccs-uc-msg-container .fccs-uc-msg .button {
   margin: 0;
 }
-/* line 903, ../scss/_fc-content-sections.scss */
-.fccs-uc .current-user .fccs-uc-user {
-  left: auto;
-  right: 0;
-}
-/* line 908, ../scss/_fc-content-sections.scss */
+/* line 1064, ../scss/_fc-content-sections.scss */
 .fccs-uc .current-user .fccs-uc-msg {
-  margin-left: 0;
-  margin-right: 6.5625rem;
-  border-right: none;
-  border-left: 0.3125rem solid #f4811f;
-}
-@media only screen and (max-width: 40em) {
-  /* line 908, ../scss/_fc-content-sections.scss */
-  .fccs-uc .current-user .fccs-uc-msg {
-    margin-right: 4.375rem;
-  }
-}
-/* line 918, ../scss/_fc-content-sections.scss */
-.fccs-uc .current-user .fccs-uc-msg:before {
-  left: auto;
-  right: -1.75rem;
-  border-right-color: transparent;
-  border-left-color: #e8edf5;
-}
-@media only screen and (max-width: 40em) {
-  /* line 918, ../scss/_fc-content-sections.scss */
-  .fccs-uc .current-user .fccs-uc-msg:before {
-    right: -1.125rem;
-    border-left-color: white;
-  }
+  border-right: 0.3125rem solid #f4811f;
 }
 
 @media only screen {
@@ -13241,6 +13373,309 @@ body:after {
   display: none;
 }
 
+/* line 8, ../scss/_find-new.scss */
+.fn-header {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* line 17, ../scss/_find-new.scss */
+.fn-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 23, ../scss/_find-new.scss */
+#fn-bg-image {
+  display: none;
+}
+
+/* line 27, ../scss/_find-new.scss */
+#fn-bg-canvas {
+  position: absolute;
+  top: -10px;
+  left: 0;
+}
+
+/* line 33, ../scss/_find-new.scss */
+.fn-bg-overlay {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen {
+  /* line 56, ../scss/_find-new.scss */
+  .fn-name {
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.875rem;
+  }
+
+  /* line 64, ../scss/_find-new.scss */
+  .fn-wrapper .fn-image {
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* line 71, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-first,
+  .fn-wrapper .fn-square-second,
+  .fn-wrapper .fn-square-third,
+  .fn-wrapper .fn-square-tooltip {
+    display: none;
+  }
+  /* line 78, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup,
+  .fn-wrapper .fn-next-ch {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #018ad2;
+  }
+  /* line 86, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-header,
+  .fn-wrapper .fn-next-ch .fn-next-header {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: left;
+    padding: 0.625rem 1.25rem 0 1.25rem;
+    line-height: 1.875rem;
+  }
+  /* line 96, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-subheader,
+  .fn-wrapper .fn-next-ch .fn-next-subheader {
+    color: #fff;
+    text-align: left;
+    padding: 0 1.25rem 0.625rem 1.25rem;
+    line-height: 1.875rem;
+  }
+  /* line 103, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-icon,
+  .fn-wrapper .fn-next-ch .fn-next-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+  }
+  /* line 116, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup {
+    background-color: #f4811f;
+  }
+}
+@media only screen and (max-width: 40em) {
+  /* line 123, ../scss/_find-new.scss */
+  .fn-share-ch {
+    width: 90%;
+    line-height: 5rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 0 0 0 1.25rem;
+  }
+  /* line 130, ../scss/_find-new.scss */
+  .fn-share-ch .fa-stack {
+    font-size: 1.4rem;
+  }
+}
+@media only screen and (min-width: 40.063em) {
+  /* line 141, ../scss/_find-new.scss */
+  .fn-wrapper {
+    position: relative;
+  }
+  /* line 144, ../scss/_find-new.scss */
+  .fn-wrapper .fn-image {
+    width: 13.75rem;
+    margin: 0 0 0 3.75rem;
+  }
+  /* line 149, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-first,
+  .fn-wrapper .fn-square-second,
+  .fn-wrapper .fn-square-third {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 3.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+    background-color: #018ad2;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+  }
+  /* line 164, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-first {
+    top: 0;
+  }
+  /* line 168, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-second {
+    top: 5rem;
+  }
+  /* line 172, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-third {
+    bottom: 0;
+  }
+  /* line 176, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-tooltip {
+    display: none;
+  }
+  /* line 180, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup,
+  .fn-wrapper .fn-next-ch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    height: 3.75rem;
+    margin: 0;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.2s;
+  }
+  /* line 191, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-header,
+  .fn-wrapper .fn-next-ch .fn-next-header {
+    color: #333;
+    font-size: 1.2rem;
+    text-align: right;
+    padding: 0 1.25rem;
+    margin-right: 3.75rem;
+    margin-top: 0.3125rem;
+    line-height: 1.875rem;
+  }
+  /* line 201, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-subheader,
+  .fn-wrapper .fn-next-ch .fn-next-subheader {
+    color: #333;
+    text-align: right;
+    padding: 0 1.25rem;
+    margin-right: 3.75rem;
+    line-height: 1.5625rem;
+  }
+  /* line 209, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-icon,
+  .fn-wrapper .fn-next-ch .fn-next-icon {
+    background-color: #018ad2;
+    font-size: 1.6rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    line-height: 3.75rem;
+  }
+  /* line 217, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup:hover,
+  .fn-wrapper .fn-next-ch:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  /* line 223, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-icon {
+    background-color: #f4811f;
+  }
+  /* line 228, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-ch {
+    top: auto;
+    bottom: 0;
+  }
+  /* line 233, ../scss/_find-new.scss */
+  .fn-wrapper .fn-share-ch {
+    display: block;
+    line-height: 3.125rem;
+    text-align: right;
+    color: #333;
+    position: absolute;
+    right: 0;
+    top: 5.3125rem;
+  }
+}
+@media only screen and (min-width: 64.063em) {
+  /* line 253, ../scss/_find-new.scss */
+  .fn-wrapper .fn-image {
+    width: 18.75rem;
+    margin: 0 auto;
+  }
+  /* line 258, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-first,
+  .fn-wrapper .fn-square-second,
+  .fn-wrapper .fn-square-third {
+    left: auto;
+    right: 50%;
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    margin-right: 9.375rem;
+    font-size: 2rem;
+  }
+  /* line 274, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-second {
+    top: 6.875rem;
+  }
+  /* line 282, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-tooltip {
+    display: block;
+    font-size: 1rem;
+    position: absolute;
+    top: 0;
+    right: 6.25rem;
+    background-color: #333;
+    line-height: 2.5rem;
+    margin-top: 1.25rem;
+    padding: 0 1.25rem;
+  }
+  /* line 293, ../scss/_find-new.scss */
+  .fn-wrapper .fn-square-tooltip:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0.625rem;
+    right: -1.125rem;
+    width: 0;
+    height: 0;
+    border: 0.625rem solid transparent;
+    border-left: 0.625rem solid #333333;
+  }
+  /* line 307, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup,
+  .fn-wrapper .fn-next-ch {
+    height: 5rem;
+  }
+  /* line 311, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-header,
+  .fn-wrapper .fn-next-ch .fn-next-header {
+    font-size: 1.3rem;
+    margin-right: 5rem;
+    margin-top: 0.625rem;
+    line-height: 1.875rem;
+  }
+  /* line 318, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-subheader,
+  .fn-wrapper .fn-next-ch .fn-next-subheader {
+    margin-right: 5rem;
+    line-height: 1.875rem;
+  }
+  /* line 323, ../scss/_find-new.scss */
+  .fn-wrapper .fn-next-start-cup .fn-next-icon,
+  .fn-wrapper .fn-next-ch .fn-next-icon {
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+  }
+  /* line 341, ../scss/_find-new.scss */
+  .fn-wrapper .fn-share-ch {
+    top: 7.8125rem;
+  }
+}
 @media only screen and (max-width: 40em) {
   /* line 15, ../scss/_onepage-explain.scss */
   .op-explain-section .op-explain-v-center img {

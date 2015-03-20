@@ -1,0 +1,347 @@
+@import "compass";
+@import "colors"; // import Standard Colors
+
+// ----------------------------------
+// Header
+// ----------------------------------
+
+.fn-header {
+    font-weight: bold;
+    text-align: center;
+}
+
+// ----------------------------------
+// Blurred Background
+// ----------------------------------
+
+.fn-container {
+    position: relative;
+    // fix: canvas is too wide for the view if there is a scrollbar
+    overflow: hidden;
+}
+
+#fn-bg-image {
+    display: none;
+}
+
+#fn-bg-canvas {
+    position: absolute;
+    top: -10px; // prevent gaps (see app.js)
+    left: 0;
+}
+
+.fn-bg-overlay {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255,0.5);
+}
+
+// ----------------------------------
+// Content
+// ----------------------------------
+
+$small-content-width: 90%;
+$medium-img-width: rem-calc(220);
+$medium-square-width: rem-calc(60);
+$medium-text-height: rem-calc(25);
+$large-img-width: rem-calc(300);
+$large-square-width: rem-calc(80);
+$large-text-height: rem-calc(30);
+
+@media #{$small-up} {
+    .fn-name {
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin-bottom: rem-calc(30);
+    }
+    
+    .fn-wrapper {
+        .fn-image {
+            display: block;
+            width: $small-content-width;
+            height: auto;
+            margin: 0 auto;
+        }
+        
+        .fn-square-first,
+        .fn-square-second,
+        .fn-square-third,
+        .fn-square-tooltip {
+            display: none;
+        }
+        
+        .fn-next-start-cup,
+        .fn-next-ch {
+            position: relative;
+            display: block;
+            width: $small-content-width;
+            margin: 0 auto;
+            background-color: $fc-primary;
+            
+            .fn-next-header {
+                display: block;
+                font-weight: bold;
+                color: #fff;
+                font-size: 1.3rem;
+                text-align: left;
+                padding: rem-calc(10 20 0 20);
+                line-height: rem-calc(30);
+            }
+            
+            .fn-next-subheader {
+                color: #fff;
+                text-align: left;
+                padding: rem-calc(0 20 10 20);
+                line-height: rem-calc(30);
+            }
+            
+            .fn-next-icon {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: rem-calc(80);
+                height: rem-calc(80);
+                line-height: rem-calc(80);
+                color: #fff;
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+        
+        .fn-next-start-cup {
+            background-color: $fc-orange;
+        }
+    }
+}
+
+@media #{$small-only} {
+    .fn-share-ch {
+        width: $small-content-width;
+        line-height: rem-calc(80);
+        margin: 0 auto;
+        background-color: rgba(255,255,255,0.5);
+        padding: rem-calc(0 0 0 20);
+        
+        .fa-stack {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media #{$medium-up} {
+    .fn-name {
+        
+    }
+    
+    .fn-wrapper {
+        position: relative;
+        
+        .fn-image {
+            width: $medium-img-width;
+            margin: 0 0 0 $medium-square-width;
+        }
+        
+        .fn-square-first,
+        .fn-square-second,
+        .fn-square-third {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: $medium-square-width;
+            height: $medium-square-width;
+            line-height: $medium-square-width;
+            background-color: $fc-primary;
+            color: #fff;
+            text-align: center;
+            font-size: 1.6rem;
+        }
+        
+        .fn-square-first {
+            top: 0;
+        }
+        
+        .fn-square-second {
+            top: ($medium-img-width / 2) - ($medium-square-width / 2);
+        }
+        
+        .fn-square-third {
+            bottom: 0;
+        }
+        
+        .fn-square-tooltip {
+            display: none;
+        }
+        
+        .fn-next-start-cup,
+        .fn-next-ch {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: auto;
+            height: $medium-square-width;
+            margin: 0;
+            background-color: rgba(255,255,255,0);
+            transition: background-color 0.2s;
+            
+            .fn-next-header {
+                color: #333;
+                font-size: 1.2rem;
+                text-align: right;
+                padding: rem-calc(0 20);
+                margin-right: $medium-square-width;
+                margin-top: ($medium-square-width / 2) - $medium-text-height;
+                line-height: $large-text-height;
+            }
+            
+            .fn-next-subheader {
+                color: #333;
+                text-align: right;
+                padding: rem-calc(0 20);
+                margin-right: $medium-square-width;
+                line-height: $medium-text-height;
+            }
+            
+            .fn-next-icon {
+                background-color: $fc-primary;
+                font-size: 1.6rem;
+                width: $medium-square-width;
+                height: $medium-square-width;
+                line-height: $medium-square-width;
+            }
+            
+            &:hover {
+                background-color: rgba(255,255,255,0.5);
+            }
+        }
+        
+        .fn-next-start-cup {
+            .fn-next-icon {
+                background-color: $fc-orange;
+            }
+        }
+        
+        .fn-next-ch {
+            top: auto;
+            bottom: 0;
+        }
+        
+        .fn-share-ch {
+            display: block;
+            line-height: rem-calc(50);
+            text-align: right;
+            color: #333;
+            position: absolute;
+            right: 0;
+            // 1) go down half of the image
+            // 2) go back up half of the line-height of .fn-share-ch
+            top: ($medium-img-width / 2) - (rem-calc(50) / 2);
+        }
+    }
+}
+
+@media #{$large-up} {
+    .fn-name {
+        
+    }
+    
+    .fn-wrapper {
+        .fn-image {
+            width: $large-img-width;
+            margin: 0 auto;
+        }
+        
+        .fn-square-first,
+        .fn-square-second,
+        .fn-square-third {
+            left: auto;
+            right: 50%;
+            width: $large-square-width;
+            height: $large-square-width;
+            line-height: $large-square-width;
+            margin-right: $large-img-width / 2;
+            font-size: 2rem;
+        }
+        
+        .fn-square-first {
+            
+        }
+        
+        .fn-square-second {
+            top: ($large-img-width / 2) - ($large-square-width / 2)
+        }
+        
+        .fn-square-third {
+            
+        }
+        
+        .fn-square-tooltip {
+            display: block;
+            font-size: 1rem;
+            position: absolute;
+            top: 0;
+            right: $large-square-width + rem-calc(20);
+            background-color: #333;
+            line-height: $large-square-width / 2;
+            margin-top: $large-square-width / 4;
+            padding: rem-calc(0 20);
+            
+            &:after {
+                content: "";
+                display: block;
+                position: absolute;
+                top: ($large-square-width / 4) - rem-calc(10);
+                // reduce shift with 2px -> fixes problem on higher zoom/system-font-size
+                right: rem-calc(-20) + rem-calc(2);
+                width: 0;
+                height: 0;
+                border: rem-calc(10) solid transparent;
+                border-left: rem-calc(10) solid #333;
+            }
+        }
+        
+        .fn-next-start-cup,
+        .fn-next-ch {
+            height: $large-square-width;
+            
+            .fn-next-header {
+                font-size: 1.3rem;
+                margin-right: $large-square-width;
+                margin-top: ($large-square-width / 2) - $large-text-height;
+                line-height:$large-text-height;
+            }
+            
+            .fn-next-subheader {
+                margin-right: $large-square-width;
+                line-height: $large-text-height;
+            }
+            
+            .fn-next-icon {
+                width: $large-square-width;
+                height: $large-square-width;
+                line-height: $large-square-width;
+                font-size: 2rem;
+            }
+        }
+        
+        .fn-next-start-cup {
+            .fn-next-icon {
+                
+            }
+        }
+        
+        .fn-next-ch {
+            
+        }
+        
+        .fn-share-ch {
+            // 1) go down half of the image
+            // 2) go back up half of the line-height of .fn-share-ch
+            top: ($large-img-width / 2) - (rem-calc(50) / 2);
+        }
+    }
+}

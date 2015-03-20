@@ -36,6 +36,11 @@
     &:hover {
         color: $fc-primary;
     }
+    
+    i {
+        // fix floating problem
+        line-height: inherit;
+    }
 }
 
 .fccs-header-nolink {
@@ -783,8 +788,9 @@ $rt-mobile-border-color: #aaa;
 // ----------------------------------
 // Type: User Comments
 // Abbreviation: uc
+// Version: 1
 // ----------------------------------
-
+/*
 $uc-bg-color: $fc-primary-bg;
 $uc-bg-color-mobile: #fff;
 $uc-arrow-size: rem-calc(15);
@@ -928,6 +934,135 @@ $uc-user-name-height: rem-calc(30);
                     border-left-color: $uc-bg-color-mobile;
                 }
             }
+        }
+    }
+}*/
+
+// ----------------------------------
+// Content Section
+// ----------------------------------
+// Type: User Comments
+// Abbreviation: uc
+// Version: 2
+// ----------------------------------
+
+$uc-bg-color: $fc-primary-bg;
+$uc-bg-color-mobile: #fff;
+$uc-user-img-size: rem-calc(70);
+$uc-user-img-size-mobile: rem-calc(50);
+
+.fccs-uc {
+    .fccs-uc-msg-container {
+        position: relative;
+        margin-bottom: rem-calc(20);
+        padding-top: $uc-user-img-size / 2;
+        
+        @media #{$small-only} {
+            padding-top: $uc-user-img-size-mobile / 2;
+        }
+        
+        .fccs-uc-user {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: rem-calc(20);
+            
+            @media #{$small-only} {
+                left: rem-calc(10);
+            }
+
+            .fccs-uc-image {
+                height: $uc-user-img-size;
+                width: $uc-user-img-size;
+                @include border-radius(50%);
+                overflow: hidden;
+                // fix problem with transition + border-radius
+                -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+                
+                @media #{$small-only} {
+                    height: $uc-user-img-size-mobile;
+                    width: $uc-user-img-size-mobile;
+                }
+
+                > img {
+                    height: inherit;
+                    width: inherit;
+                    @include transition(transform 0.2s ease);
+                }
+            }
+
+            .fccs-uc-name {
+                font-size: 1.2rem;
+                color: $body-font-color;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                @include transition(color 0.2s ease);
+                position: absolute;
+                bottom: $uc-user-img-size / 2;
+                left: $uc-user-img-size;
+                padding: rem-calc(0 10);
+                
+                @media #{$small-only} {
+                    bottom: $uc-user-img-size-mobile / 2;
+                    left: $uc-user-img-size-mobile;
+                }
+            }
+            
+            .fccs-uc-time {
+                font-size: 0.7rem;
+                color: $body-font-color;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                position: absolute;
+                top: $uc-user-img-size / 2;
+                left: $uc-user-img-size;
+                padding: rem-calc(0 10);
+                
+                @media #{$small-only} {
+                    top: $uc-user-img-size-mobile / 2;
+                    left: $uc-user-img-size-mobile;
+                }
+            }
+
+            &:hover {
+                .fccs-uc-image > img {
+                    @include transform(scale(1.1));
+                }
+
+                .fccs-uc-name {
+                    color: $fc-primary;
+                }
+            }
+        }
+        
+        .fccs-uc-msg {
+            padding: (rem-calc(15) + $uc-user-img-size / 2) rem-calc(15 15 15);
+            background-color: $uc-bg-color;
+            border-right: rem-calc(5) solid $fc-primary;
+            
+            @media #{$small-only} {
+                padding: (rem-calc(15) + $uc-user-img-size-mobile / 2) rem-calc(15 15 15);
+                background-color: $uc-bg-color-mobile;
+                font-size: 0.8rem;
+            }
+            
+            textarea {
+                resize: vertical;
+                // IE fix: hide scrollbar if content is not larger than area
+                overflow: auto;
+            }
+            
+            .button {
+                margin: 0;
+            }
+        }
+    }
+    
+    .current-user {
+        .fccs-uc-msg {
+            border-right: rem-calc(5) solid $fc-orange;
         }
     }
 }

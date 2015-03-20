@@ -5,7 +5,7 @@
 //
 // *************************************
 
-/*global $, jQuery, enquire, Foundation, Modernizr, Tablesort*/
+/*global $, jQuery, enquire, Foundation, Modernizr, Tablesort, drawImageProp, stackBlurCanvasRGB */
 
 // ---------------------------
 // Foundation Configuration
@@ -101,6 +101,8 @@ $(document).ready(function () {
     // Challenge Detail Modal Rating
     // ----------------------------------
     
+    var currentStars;
+    
     $('#chd-details-modal .feedback .stars i').hover(function () {
         $(this).prevAll('i').removeClass();
         $(this).removeClass();
@@ -115,7 +117,7 @@ $(document).ready(function () {
     
     // because it clones the event-handlers too,
     // this line must be unter the hover handler!
-    var currentStars = $('#chd-details-modal .feedback .stars').clone(true);
+    currentStars = $('#chd-details-modal .feedback .stars').clone(true);
     
     // ------------------------------
     // Image Slider OwlSlider
@@ -162,6 +164,64 @@ $(document).ready(function () {
                 scrollTop: $($anchor.attr('href')).offset().top
             }, 1500, 'easeInOutExpo');
         }, this), 50);
+    });
+    
+    // ------------------------------
+    // Find New Image Canvas
+    // ------------------------------
+    
+    // wait for the image to load
+    // otherwise jQuery takes the wrong container height
+    $('.fn-image').one('load', function () {
+        
+        // check if the needed objects are available
+        if ($('#fn-bg-image').length && $('.fn-container').length) {
+
+            var dpr, // device pixel ratio
+                screen_width, // real width of the device
+                screen_height, // real height of the device
+                screen_max, // take width or height -> the one that is larger
+                fnCtx, // canvas context
+                fnImg; // background image for canvas
+
+            if (window.devicePixelRatio !== undefined) {
+                dpr = window.devicePixelRatio;
+            } else {
+                dpr = 1;
+            }
+
+            screen_width = window.screen.width * dpr;
+            screen_height = window.screen.height * dpr;
+            
+            // check for larger one -> tablet has higher height than width
+            // -> would be too small if tablet is in landscape
+            if (screen_width > screen_height) {
+                screen_max = screen_width;
+            } else {
+                screen_max = screen_height;
+            }
+            
+            $('#fn-bg-image').after(
+                // ($('.fn-container').height() + 20) -> + 20 to prevent gaps (see _find-new.scss)
+                '<canvas id="fn-bg-canvas" width="' + screen_max + '" height="' + ($('.fn-container').height() + 20) + '"></canvas>',
+                '<div class="fn-bg-overlay"></div>'
+            );
+
+            fnCtx = $("#fn-bg-canvas")[0].getContext('2d');
+            fnImg = new Image();
+
+            fnImg.onload = function () {
+                drawImageProp(fnCtx, this);
+                stackBlurCanvasRGB('fn-bg-canvas', 0, 0, fnCtx.canvas.width, fnCtx.canvas.height, 50);
+            };
+
+            fnImg.src = $('#fn-bg-image').attr('src');
+        }
+        
+    }).each(function () {
+        if (this.complete) {
+            $(this).load();
+        }
     });
     
     // ---------------------------
