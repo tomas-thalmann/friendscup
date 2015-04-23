@@ -174,11 +174,11 @@ $(document).ready(function () {
     if ($('#fn-bg-image').length && $('.fn-container').length) {
         $('.fn-container').css('background-image', 'url(' + $('#fn-bg-image').attr('src') + ')');
 
-        $('.fn-container').blurjs({
+        /*$('.fn-container').blurjs({
             source: '.fn-container',
             radius: 70,
             overlay: 'rgba(255,255,255,0.5)'
-        });
+        });*/
     }
     
     // ---------------------------

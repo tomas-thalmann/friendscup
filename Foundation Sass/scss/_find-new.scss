@@ -18,6 +18,11 @@
     background-repeat: no-repeat;
     background-position: center center;
     @include background-size(cover);
+    
+    // implementation with pre-blurred bg-image
+    .panel-extra-padding {
+        background-color: rgba(255,255,255,0.5);
+    }
 }
 
 #fn-bg-image {
